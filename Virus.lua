@@ -617,20 +617,34 @@ return VirusTeam
 end
 function IdRank(user_id,chat_id) 
 if tonumber(user_id) == tonumber(1925927748) then 
-VirusTeam = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(119541395) then 
-VirusTeam = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(Virus) then 
-VirusTeam = 'البوت' elseif SudoId(user_id) then 
-VirusTeam = 'المطور الاساسي' elseif DevSOFI:sismember(Virus..'SOFI:SOFISudo:', user_id) then 
-VirusTeam = 'المطور الاساسي' elseif DevSOFI:sismember(Virus..'SOFI:SecondSudo:', user_id) then 
-VirusTeam = 'المطور الاساسي²' elseif DevSOFI:sismember(Virus..'SOFI:SudoBot:', user_id) then 
-VirusTeam = DevSOFI:get(Virus.."SOFI:SudoBot:Rd"..chat_id) or 'المطور' elseif DevSOFI:sismember(Virus..'SOFI:SOFIConstructor:'..chat_id, user_id) then 
-VirusTeam = 'المالك' elseif DevSOFI:sismember(Virus..'SOFI:Owner:', user_id) then 
-VirusTeam = 'المالك' elseif DevSOFI:sismember(Virus..'SOFI:BasicConstructor:'..chat_id, user_id) then 
-VirusTeam = DevSOFI:get(Virus.."SOFI:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevSOFI:sismember(Virus..'SOFI:Constructor:'..chat_id, user_id) then 
-VirusTeam = DevSOFI:get(Virus.."SOFI:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevSOFI:sismember(Virus..'SOFI:Managers:'..chat_id, user_id) then 
-VirusTeam = DevSOFI:get(Virus.."SOFI:Managers:Rd"..chat_id) or 'المدير' elseif DevSOFI:sismember(Virus..'SOFI:Admins:'..chat_id, user_id) then 
-VirusTeam = DevSOFI:get(Virus.."SOFI:Admins:Rd"..chat_id) or 'الادمن' elseif DevSOFI:sismember(Virus..'SOFI:VipMem:'..chat_id, user_id) then 
-VirusTeam = DevSOFI:get(Virus.."SOFI:VipMem:Rd"..chat_id) or 'المميز' elseif DevSOFI:sismember(Virus..'SOFI:Cleaner:'..chat_id, user_id) then 
+VirusTeam = 'مبرمج السورس' 
+elseif tonumber(user_id) == tonumber(119541395) then 
+VirusTeam = 'مبرمج السورس' 
+elseif tonumber(user_id) == tonumber(Virus) then 
+VirusTeam = 'البوت' 
+elseif SudoId(user_id) then 
+VirusTeam = 'المطور الاساسي' 
+elseif DevSOFI:sismember(Virus..'SOFI:SOFISudo:', user_id) then 
+VirusTeam = 'المطور الاساسي' 
+elseif DevSOFI:sismember(Virus..'SOFI:SecondSudo:', user_id) then 
+VirusTeam = 'المطور الاساسي²' 
+elseif DevSOFI:sismember(Virus..'SOFI:SudoBot:', user_id) then 
+VirusTeam = DevSOFI:get(Virus.."SOFI:SudoBot:Rd"..chat_id) or 'المطور' 
+elseif DevSOFI:sismember(Virus..'SOFI:SOFIConstructor:'..chat_id, user_id) then 
+VirusTeam = 'المالك' 
+elseif DevSOFI:sismember(Virus..'SOFI:Owner:', user_id) then 
+VirusTeam = 'المالك' 
+elseif DevSOFI:sismember(Virus..'SOFI:BasicConstructor:'..chat_id, user_id) then 
+VirusTeam = DevSOFI:get(Virus.."SOFI:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' 
+elseif DevSOFI:sismember(Virus..'SOFI:Constructor:'..chat_id, user_id) then 
+VirusTeam = DevSOFI:get(Virus.."SOFI:Constructor:Rd"..chat_id) or 'المنشئ' 
+elseif DevSOFI:sismember(Virus..'SOFI:Managers:'..chat_id, user_id) then 
+VirusTeam = DevSOFI:get(Virus.."SOFI:Managers:Rd"..chat_id) or 'المدير' 
+elseif DevSOFI:sismember(Virus..'SOFI:Admins:'..chat_id, user_id) then 
+VirusTeam = DevSOFI:get(Virus.."SOFI:Admins:Rd"..chat_id) or 'الادمن' 
+elseif DevSOFI:sismember(Virus..'SOFI:VipMem:'..chat_id, user_id) then 
+VirusTeam = DevSOFI:get(Virus.."SOFI:VipMem:Rd"..chat_id) or 'المميز' 
+elseif DevSOFI:sismember(Virus..'SOFI:Cleaner:'..chat_id, user_id) then 
 VirusTeam = DevSOFI:get(Virus.."SOFI:Cleaner:Rd"..chat_id) or 'المنظف' else 
 VirusTeam = DevSOFI:get(Virus.."SOFI:mem:Rd"..chat_id) or 'العضو' 
 end 
@@ -842,13 +856,13 @@ end
 function SOFImoned(chat_id, user_id, msg_id, text, offset, length) local tt = DevSOFI:get(Virus..'endmsg') or '' tdcli_function ({ ID = "SendMessage", chat_id_ = chat_id, reply_to_message_id_ = msg_id, disable_notification_ = 0, from_background_ = 1, reply_markup_ = nil, input_message_content_ = { ID = "InputMessageText", text_ = text..'\n\n'..tt, disable_web_page_preview_ = 1, clear_draft_ = 0, entities_ = {[0]={ ID="MessageEntityMentionName", offset_=offset, length_=length, user_id_=user_id }, }, }, }, dl_cb, nil) end
 --     Source Virus     --
 function SourceCh(msg) 
-local url,res = https.request('https://ccccxcc.ml/Virus/SourceCh.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://api-dragon.tk/Bots/chmeb/Virus.php?user='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.ChatMember.Virus ~= true then
+if data.result ~= true then
 Var = false
 Text = "*☭︙عذرا لاتستطيع استخدام البوت !\n☭︙عليك الاشتراك في قناة السورس اولا :*"
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="☭ 𝗗𝗮𝘃𝗶𝗱 : 𝗧𝗲𝗮𝗠 .",url="t.me/V_IRUS1"}}} 
+keyboard.inline_keyboard = {{{text="☭ 𝗩𝗜𝗥𝗨𝗦 : 𝗧𝗘𝗔𝗠 .",url="t.me/s00f4ch"}}}
 Msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
@@ -6624,6 +6638,54 @@ DevSOFI:srem(Virus..'User:Donky:'..msg.chat_id_, result.sender_user_id_)
 ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من قائمة المطايه") 
 end end
 getMessage(msg.chat_id_, msg.reply_to_message_id_,donky_by_reply)
+end end
+--     Source Virus     --
+if msg.reply_to_message_id_ ~= 0 then
+if text and text:match("^رفع شيخ$") and not DevSOFI:get(Virus..'SOFI:Lock:Stupid'..msg.chat_id_) and ChCheck(msg) then
+function shek_by_reply(extra, result, success)
+if DevSOFI:sismember(Virus..'User:shek:'..msg.chat_id_, result.sender_user_id_) then
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙هو شيخ شرفع منه بعد😹💔") 
+else
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه في قائمة الشيوخ") 
+DevSOFI:sadd(Virus..'User:shek:'..msg.chat_id_, result.sender_user_id_)
+end end
+getMessage(msg.chat_id_, msg.reply_to_message_id_,shek_by_reply)
+end end
+--     Source Virus     --
+if msg.reply_to_message_id_ ~= 0  then
+if text and text:match("^تنزيل شيخ$") and not DevSOFI:get(Virus..'SOFI:Lock:Stupid'..msg.chat_id_) and ChCheck(msg) then
+function shek_by_reply(extra, result, success)
+if not DevSOFI:sismember(Virus..'User:shek:'..msg.chat_id_, result.sender_user_id_) then
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙هو ليس شيخ ليتم تنزيله") 
+else
+DevSOFI:srem(Virus..'User:shek:'..msg.chat_id_, result.sender_user_id_)
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من قائمة الشيوخ") 
+end end
+getMessage(msg.chat_id_, msg.reply_to_message_id_,shek_by_reply)
+end end
+--     Source Virus     --
+if msg.reply_to_message_id_ ~= 0 then
+if text and text:match("^رفع شيخة$") and not DevSOFI:get(Virus..'SOFI:Lock:Stupid'..msg.chat_id_) and ChCheck(msg) then
+function sheka_by_reply(extra, result, success)
+if DevSOFI:sismember(Virus..'User:sheka:'..msg.chat_id_, result.sender_user_id_) then
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙هو شيخة شرفع منه بعد😹💔") 
+else
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه في قائمة الشيخات") 
+DevSOFI:sadd(Virus..'User:sheka:'..msg.chat_id_, result.sender_user_id_)
+end end
+getMessage(msg.chat_id_, msg.reply_to_message_id_,sheka_by_reply)
+end end
+--     Source Virus     --
+if msg.reply_to_message_id_ ~= 0  then
+if text and text:match("^تنزيل شيخة$") and not DevSOFI:get(Virus..'SOFI:Lock:Stupid'..msg.chat_id_) and ChCheck(msg) then
+function sheka_by_reply(extra, result, success)
+if not DevSOFI:sismember(Virus..'User:sheka:'..msg.chat_id_, result.sender_user_id_) then
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙هو ليس شيخه ليتم تنزيله") 
+else
+DevSOFI:srem(Virus..'User:sheka:'..msg.chat_id_, result.sender_user_id_)
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من قائمة الشيخات") 
+end end
+getMessage(msg.chat_id_, msg.reply_to_message_id_,sheka_by_reply)
 end end
 --     Source Virus     --
 if Admin(msg) then
