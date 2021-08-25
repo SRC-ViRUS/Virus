@@ -619,7 +619,7 @@ function IdRank(user_id,chat_id)
 if tonumber(user_id) == tonumber(1925927748) then 
 VirusTeam = 'مبرمج السورس' 
 elseif tonumber(user_id) == tonumber(119541395) then 
-VirusTeam = 'مبرمج السورس' 
+VirusTeam = 'Dev Main' 
 elseif tonumber(user_id) == tonumber(Virus) then 
 VirusTeam = 'البوت' 
 elseif SudoId(user_id) then 
@@ -862,7 +862,7 @@ if data.result ~= true then
 Var = false
 Text = "*☭︙عذرا لاتستطيع استخدام البوت !\n☭︙عليك الاشتراك في قناة السورس اولا :*"
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="☭ 𝗩𝗜𝗥𝗨𝗦 : 𝗧𝗘𝗔𝗠 .",url="t.me/s00f4ch"}}}
+keyboard.inline_keyboard = {{{text="☭ 𝗩𝗜𝗥𝗨𝗦 : 𝗧𝗘𝗔𝗠 .",url="t.me/YYYT99"}}}
 Msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
@@ -7001,6 +7001,38 @@ text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then
 text = "☭︙*لا يوجد مطايه كلها اوادم*"
+end
+Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
+end
+--     Source Virus     --
+if text == "الشيوخ" and ChCheck(msg) or text == "شيوخ" and ChCheck(msg) then
+local List = DevSOFI:smembers(Virus..'User:shek:'..msg.chat_id_)
+text = "☭︙قائمة الشيوخ المجموعه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+for k,v in pairs(List) do
+local username = DevSOFI:get(Virus..'Save:UserName'..v)
+if username then
+text = text..k.."~ : [@"..username.."]\n"
+else
+text = text..k.."~ : `"..v.."`\n"
+end end
+if #List == 0 then
+text = "☭︙*لا يوجد شيوخ كلها فيطيه*"
+end
+Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
+end
+--     Source Virus     --
+if text == "الشيخات" and ChCheck(msg) or text == "شيخات" and ChCheck(msg) then
+local List = DevSOFI:smembers(Virus..'User:sheka:'..msg.chat_id_)
+text = "☭︙قائمة شيخات المجموعه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+for k,v in pairs(List) do
+local username = DevSOFI:get(Virus..'Save:UserName'..v)
+if username then
+text = text..k.."~ : [@"..username.."]\n"
+else
+text = text..k.."~ : `"..v.."`\n"
+end end
+if #List == 0 then
+text = "☭︙*لا يوجد شيخات كلها فرج*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end
