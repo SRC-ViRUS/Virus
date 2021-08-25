@@ -1,8 +1,8 @@
 ------------------------------------------------
--- This Source Was Developed By (SOFI) @tsttt.--
---   This Is The Source Channel @L9L9L .   --
---                - Virus -                 --
---        -- https://t.me/L9L9L --         --
+-- This Source Was Developed By (SOFI) @s00f4.--
+--   This Is The Source Channel @V_IRUS1 .    --
+--                - Virus -                   --
+--        -- https://t.me/V_IRUS1 --          --
 ------------------------------------------------ 
 DevSOFI  = dofile("./libs/redis.lua").connect("127.0.0.1", 6379)
 serpent = dofile("./libs/serpent.lua")
@@ -120,14 +120,14 @@ end
 Load_Virus() 
 print("\27[36m"..[[          
 ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' 
-'                _________ _______           _______      '
-'       |\     /|\__   __/(  ____ )|\     /|(  ____ \     '
-'       | )   ( |   ) (   | (    )|| )   ( || (    \/     '
-'       | |   | |   | |   | (____)|| |   | || (_____      '
-'       ( (   ) )   | |   |     __)| |   | |(_____  )     '
-'        \ \_/ /    | |   | (\ (   | |   | |      ) |     '
-'         \   /  ___) (___| ) \ \__| (___) |/\____) |     '
-'          \_/   \_______/|/   \__/(_______)\_______)     '
+'               _________ _______           _______       '
+'      |\     /|\__   __/(  ____ )|\     /|(  ____ \      '
+'      | )   ( |   ) (   | (    )|| )   ( || (    \/      '
+'      | |   | |   | |   | (____)|| |   | || (_____       '
+'      ( (   ) )   | |   |     __)| |   | |(_____  )      '
+'       \ \_/ /    | |   | (\ (   | |   | |      ) |      '
+'        \   /  ___) (___| ) \ \__| (___) |/\____) |      '
+'         \_/   \_______/|/   \__/(_______)\_______)      '
 '                                                         '
 ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' 
 ]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\27[m")
@@ -408,14 +408,14 @@ end
 function AddFile(msg,chat,ID_FILE,File_Name)
 if File_Name:match('.json') then
 if File_Name:lower():match('(%d+)') ~= Virus:lower() then 
-send(chat,msg.id_,"᥀︙عذرا هذا الملف ليس تابع لهذا البوت")   
+send(chat,msg.id_,"☭︙عذرا هذا الملف ليس تابع لهذا البوت")   
 return false 
 end
-send(chat,msg.id_,"᥀︙جاري رفع الملف ... .")
+send(chat,msg.id_,"☭︙جاري رفع الملف ... .")
 local File = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/getfile?file_id='..ID_FILE) ) 
 download_to_file('https://api.telegram.org/file/bot'..TokenBot..'/'..File.result.file_path, ''..File_Name) 
 else
-send(chat,msg.id_,"᥀︙عذرا الملف ليس بصيغة ↫ Json يرجى رفع الملف الصحيح")
+send(chat,msg.id_,"☭︙عذرا الملف ليس بصيغة ↫ Json يرجى رفع الملف الصحيح")
 end
 local info_file = io.open('./'..Virus..'.json', "r"):read('*a')
 local JsonInfo = JSON.decode(info_file)
@@ -478,7 +478,7 @@ print('( تم وضع ترحيب المجموعات )')
 end
 end
 end
-send(chat,msg.id_,"᥀︙تم رفع النسخه بنجاح \n᥀︙تم تفعيل جميع المجموعات \n᥀︙تم استرجاع مشرفين المجموعات \n᥀︙تم استرجاع اوامر القفل والفتح في جميع مجموعات البوت ")
+send(chat,msg.id_,"☭︙تم رفع النسخه بنجاح \n☭︙تم تفعيل جميع المجموعات \n☭︙تم استرجاع مشرفين المجموعات \n☭︙تم استرجاع اوامر القفل والفتح في جميع مجموعات البوت ")
 end
 --     Source Virus     --
 function resolve_username(username,cb)
@@ -708,24 +708,24 @@ end
 function ReplyStatus(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,dp) 
 if dp.first_name_ ~= false then
-local UserName = (dp.username_ or "L9L9L")
+local UserName = (dp.username_ or "V_IRUS1")
 for gmatch in string.gmatch(dp.first_name_, "[^%s]+") do
 dp.first_name_ = gmatch
 end
 if status == "WrongWay" then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙عذرا عزيزي ↫ ["..dp.first_name_.."](T.me/"..UserName..")".."\n"..text, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙عذرا عزيزي ↫ ["..dp.first_name_.."](T.me/"..UserName..")".."\n"..text, 1, 'md')
 return false
 end
 if status == "Reply" then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙العضو ↫ ["..dp.first_name_.."](T.me/"..UserName..")".."\n"..text, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙العضو ↫ ["..dp.first_name_.."](T.me/"..UserName..")".."\n"..text, 1, 'md')
 return false
 end
 if status == "ReplyBy" then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙بواسطة ↫ ["..dp.first_name_.."](T.me/"..UserName..")".."\n"..text, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙بواسطة ↫ ["..dp.first_name_.."](T.me/"..UserName..")".."\n"..text, 1, 'md')
 return false
 end
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙الحساب محذوف قم بالتاكد واعد المحاوله", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙الحساب محذوف قم بالتاكد واعد المحاوله", 1, 'md')
 end
 end,nil)   
 end
@@ -754,13 +754,13 @@ local Check = https.request('https://api.telegram.org/bot'..TokenBot..'/getChatM
 local GetInfo = JSON.decode(Check)
 if GetInfo.ok == true then
 if GetInfo.result.status == "creator" then
-send(msg.chat_id_,msg.id_,'᥀︙مالك المجموعه')   
+send(msg.chat_id_,msg.id_,'☭︙مالك المجموعه')   
 return false  end 
 if GetInfo.result.status == "member" then
-send(msg.chat_id_,msg.id_,'᥀︙مجرد عضو هنا')   
+send(msg.chat_id_,msg.id_,'☭︙مجرد عضو هنا')   
 return false  end
 if GetInfo.result.status == 'left' then
-send(msg.chat_id_,msg.id_,'᥀︙الشخص غير موجود هنا')   
+send(msg.chat_id_,msg.id_,'☭︙الشخص غير موجود هنا')   
 return false  end
 if GetInfo.result.status == "administrator" then
 if GetInfo.result.can_change_info == true then EDT = '✔️' else EDT = '✖️' end
@@ -769,7 +769,7 @@ if GetInfo.result.can_invite_users == true then INV = '✔️' else INV = '✖�
 if GetInfo.result.can_pin_messages == true then PIN = '✔️' else PIN = '✖️' end
 if GetInfo.result.can_restrict_members == true then BAN = '✔️' else BAN = '✖️' end
 if GetInfo.result.can_promote_members == true then VIP = '✔️' else VIP = '✖️' end 
-send(msg.chat_id_,msg.id_,'᥀︙صلاحيات '..GetCustomTitle(user_id,msg.chat_id_)..' هي ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙حذف الرسائل ↫ '..DEL..'\n᥀︙دعوة المستخدمين ↫ '..INV..'\n᥀︙حظر المستخدمين ↫ '..BAN..'\n᥀︙تثبيت الرسائل ↫ '..PIN..'\n᥀︙تغيير المعلومات ↫ '..EDT..'\n᥀︙اضافة مشرفين ↫ '..VIP..'\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉')
+send(msg.chat_id_,msg.id_,'☭︙صلاحيات '..GetCustomTitle(user_id,msg.chat_id_)..' هي ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙حذف الرسائل ↫ '..DEL..'\n☭︙دعوة المستخدمين ↫ '..INV..'\n☭︙حظر المستخدمين ↫ '..BAN..'\n☭︙تثبيت الرسائل ↫ '..PIN..'\n☭︙تغيير المعلومات ↫ '..EDT..'\n☭︙اضافة مشرفين ↫ '..VIP..'\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉')
 end
 end
 end
@@ -846,9 +846,9 @@ local url,res = https.request('https://ccccxcc.ml/Virus/SourceCh.php?id='..msg.s
 data = JSON.decode(url)
 if data.ChatMember.Virus ~= true then
 Var = false
-Text = "*᥀︙عذرا لاتستطيع استخدام البوت !\n᥀︙عليك الاشتراك في قناة السورس اولا :*"
+Text = "*☭︙عذرا لاتستطيع استخدام البوت !\n☭︙عليك الاشتراك في قناة السورس اولا :*"
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="᥀ 𝗗𝗮𝘃𝗶𝗱 : 𝗧𝗲𝗮𝗠 .",url="t.me/L9L9L"}}} 
+keyboard.inline_keyboard = {{{text="☭ 𝗗𝗮𝘃𝗶𝗱 : 𝗧𝗲𝗮𝗠 .",url="t.me/V_IRUS1"}}} 
 Msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
@@ -875,7 +875,7 @@ User = "https://t.me/"..GetInfo.result.username
 else
 User = GetInfo.result.invite_link
 end
-Text = "*᥀︙عذرا لاتستطيع استخدام البوت !\n᥀︙عليك الاشتراك في القناة اولا :*"
+Text = "*☭︙عذرا لاتستطيع استخدام البوت !\n☭︙عليك الاشتراك في القناة اولا :*"
 keyboard = {} 
 keyboard.inline_keyboard = {{{text=GetInfo.result.title,url=User}}} 
 Msg_id = msg.id_/2097152/0.5
@@ -899,25 +899,25 @@ if DataText == '/delyes' and DevSOFI:get(Virus..'yes'..data.sender_user_id_) == 
 DevSOFI:del(Virus..'yes'..data.sender_user_id_, 'delyes')
 DevSOFI:del(Virus..'no'..data.sender_user_id_, 'delno')
 if RankChecking(data.sender_user_id_, data.chat_id_) then
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙لا استطيع طرد ↫ "..IdRank(data.sender_user_id_, data.chat_id_)) 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙لا استطيع طرد ↫ "..IdRank(data.sender_user_id_, data.chat_id_)) 
 return false
 end
 tdcli_function({ID="ChangeChatMemberStatus",chat_id_=data.chat_id_,user_id_=data.sender_user_id_,status_={ID="ChatMemberStatusKicked"},},function(arg,da) 
 if (da and da.code_ and da.code_ == 400 and da.message_ == "CHAT_ADMIN_REQUIRED") then 
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
 return false  
 end
 if (da and da.code_ and da.code_ == 3) then 
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙البوت ليس ادمن يرجى ترقيتي !") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙البوت ليس ادمن يرجى ترقيتي !") 
 return false  
 end
 if da and da.code_ and da.code_ == 400 and da.message_ == "USER_ADMIN_INVALID" then 
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙لا استطيع طرد مشرفين المجموعه") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙لا استطيع طرد مشرفين المجموعه") 
 return false  
 end
 if da and da.ID and da.ID == "Ok" then
 ChatKick(data.chat_id_, data.sender_user_id_)
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙تم طردك من المجموعه") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙تم طردك من المجموعه") 
 return false
 end
 end,nil)  
@@ -925,7 +925,7 @@ end
 if DataText == '/delno' and DevSOFI:get(Virus..'no'..data.sender_user_id_) == 'delno' then
 DevSOFI:del(Virus..'yes'..data.sender_user_id_, 'delyes')
 DevSOFI:del(Virus..'no'..data.sender_user_id_, 'delno')
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙تم الغاء امر اطردني") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙تم الغاء امر اطردني") 
 end
 --     Source Virus     --
 if DataText == '/yesdel' and DevSOFI:get(Virus..'yesdel'..data.sender_user_id_) == 'delyes' then
@@ -950,28 +950,28 @@ DevSOFI:srem(Virus..'SOFI:Admins:'..data.chat_id_,data.sender_user_id_)
 DevSOFI:srem(Virus..'SOFI:VipMem:'..data.chat_id_,data.sender_user_id_)
 DevSOFI:srem(Virus..'SOFI:Cleaner:'..data.chat_id_,data.sender_user_id_)
 DevSOFI:srem(Virus..'User:Donky:'..data.chat_id_,data.sender_user_id_)
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙تم تنزيلك من ↫ ⤈\n~ ( "..constructor..Managers..admins..vipmem..cleaner..donky.." ) ~ \n") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙تم تنزيلك من ↫ ⤈\n~ ( "..constructor..Managers..admins..vipmem..cleaner..donky.." ) ~ \n") 
 else 
 if IdRank(data.sender_user_id_, data.chat_id_) == 'العضو' then
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙ليس لديك رتبه في البوت") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙ليس لديك رتبه في البوت") 
 else 
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙لا استطيع تنزيل ↫ "..IdRank(data.sender_user_id_, data.chat_id_)) 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙لا استطيع تنزيل ↫ "..IdRank(data.sender_user_id_, data.chat_id_)) 
 end
 end
 end
 if DevSOFI:get(Virus.."SOFI:NewDev"..data.sender_user_id_) then
 if DataText == '/setno' then
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙تم الغاء امر تغير المطور الاساسي") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙تم الغاء امر تغير المطور الاساسي") 
 DevSOFI:del(Virus.."SOFI:NewDev"..data.sender_user_id_)
 return false
 end
 if DataText == '/setyes' then
 local NewDev = DevSOFI:get(Virus.."SOFI:NewDev"..data.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = NewDev},function(arg,dp) 
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙المطور الجديد ↫ ["..dp.first_name_.."](tg://user?id="..dp.id_..")\n᥀︙تم تغير المطور الاساسي بنجاح") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙المطور الجديد ↫ ["..dp.first_name_.."](tg://user?id="..dp.id_..")\n☭︙تم تغير المطور الاساسي بنجاح") 
 end,nil)
 tdcli_function ({ID = "GetUser",user_id_ = data.sender_user_id_},function(arg,dp) 
-SendText(NewDev,"᥀︙بواسطة ↫ ["..dp.first_name_.."](tg://user?id="..dp.id_..")\n᥀︙لقد اصبحت انت مطور هذا البوت",0,'md')
+SendText(NewDev,"☭︙بواسطة ↫ ["..dp.first_name_.."](tg://user?id="..dp.id_..")\n☭︙لقد اصبحت انت مطور هذا البوت",0,'md')
 end,nil)
 local Create = function(data, file, uglify)  
 file = io.open(file, "w+")   
@@ -998,7 +998,7 @@ end
 if DataText == '/nodel' and DevSOFI:get(Virus..'nodel'..data.sender_user_id_) == 'delno' then
 DevSOFI:del(Virus..'yesdel'..data.sender_user_id_, 'delyes')
 DevSOFI:del(Virus..'nodel'..data.sender_user_id_, 'delno')
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙تم الغاء امر نزلني") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙تم الغاء امر نزلني") 
 end
 if DataText == '/YesRolet' and DevSOFI:get(Virus.."SOFI:WittingStartRolet"..data.chat_id_..data.sender_user_id_) then
 local List = DevSOFI:smembers(Virus..'SOFI:ListRolet'..data.chat_id_) 
@@ -1008,18 +1008,18 @@ DevSOFI:incrby(Virus..'SOFI:GamesNumber'..data.chat_id_..dp.id_, 5)
 end,nil) 
 DevSOFI:del(Virus..'SOFI:ListRolet'..data.chat_id_) 
 DevSOFI:del(Virus.."SOFI:WittingStartRolet"..data.chat_id_..data.sender_user_id_)
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙*صاحب الحظ* ↫ ["..UserName.."]\n᥀︙*مبروك لقد ربحت وحصلت على 5 نقاط يمكنك استبدالها بالرسائل*")
+EditMsg(Chat_Id2, Msg_Id2, "☭︙*صاحب الحظ* ↫ ["..UserName.."]\n☭︙*مبروك لقد ربحت وحصلت على 5 نقاط يمكنك استبدالها بالرسائل*")
 end
 if DataText == '/NoRolet' then
 DevSOFI:del(Virus..'SOFI:ListRolet'..data.chat_id_) 
 DevSOFI:del(Virus.."SOFI:NumRolet"..data.chat_id_..data.sender_user_id_) 
 DevSOFI:del(Virus.."SOFI:WittingStartRolet"..data.chat_id_..data.sender_user_id_)
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙تم الغاء اللعبه لاعادة اللعب ارسل الالعاب") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙تم الغاء اللعبه لاعادة اللعب ارسل الالعاب") 
 end
 if DataText == '/ListRolet' then
 local List = DevSOFI:smembers(Virus..'SOFI:ListRolet'..data.chat_id_) 
-local Text = '᥀︙قائمة الاعبين ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n' 
-local Textt = '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙تم اكتمال العدد الكلي هل انت مستعد ؟'
+local Text = '☭︙قائمة الاعبين ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n' 
+local Textt = '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙تم اكتمال العدد الكلي هل انت مستعد ؟'
 for k, v in pairs(List) do 
 Text = Text..k.."~ : [" ..v.."]\n"  
 end 
@@ -1032,14 +1032,14 @@ if DevSOFI:sismember(Virus..'SOFI:Tkeed:'..Chat_Id2, data.sender_user_id_) then
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..Chat_Id2.."&user_id="..data.sender_user_id_.."&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
 DevSOFI:srem(Virus..'SOFI:Tkeed:'..Chat_Id2, data.sender_user_id_)
 DeleteMessage(Chat_Id2,{[0] = MsgId2})
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ تم الغاء تقيدك من المجموعه بنجاح .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ تم الغاء تقيدك من المجموعه بنجاح .")..'&show_alert=true')
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا هذا الامر لكشف الروبوت وليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا هذا الامر لكشف الروبوت وليس لك .")..'&show_alert=true')
 end 
 end
 if DataText and DataText:match('/DelRed:'..tonumber(data.sender_user_id_)..'(.*)') then
 local SOFI = DataText:match('/DelRed:'..tonumber(data.sender_user_id_)..'(.*)')
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙الكلمه ↫ "..SOFI.." تم حذفها") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙الكلمه ↫ "..SOFI.." تم حذفها") 
 DevSOFI:del(Virus..'SOFI:Text:GpTexts'..SOFI..data.chat_id_)
 DevSOFI:srem(Virus..'SOFI:Manager:GpRedod'..data.chat_id_,SOFI)
 end
@@ -1047,30 +1047,30 @@ if DataText and DataText:match('/EndRedod:'..tonumber(data.sender_user_id_)..'(.
 local SOFI = DataText:match('/EndRedod:'..tonumber(data.sender_user_id_)..'(.*)')
 local List = DevSOFI:smembers(Virus..'SOFI:Text:GpTexts'..SOFI..data.chat_id_)
 if DevSOFI:get(Virus..'SOFI:Add:GpRedod'..data.sender_user_id_..data.chat_id_) then
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙تم انهاء وحفظ ↫ "..#List.." من الردود المتعدده للامر ↫ "..SOFI) 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙تم انهاء وحفظ ↫ "..#List.." من الردود المتعدده للامر ↫ "..SOFI) 
 DevSOFI:del(Virus..'SOFI:Add:GpRedod'..data.sender_user_id_..data.chat_id_)
 else
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙عذرا صلاحية الامر منتهيه !") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙عذرا صلاحية الامر منتهيه !") 
 end
 end
 if DataText and DataText:match('/DelRedod:'..tonumber(data.sender_user_id_)..'(.*)') then
 local SOFI = DataText:match('/DelRedod:'..tonumber(data.sender_user_id_)..'(.*)')
 if DevSOFI:get(Virus..'SOFI:Add:GpRedod'..data.sender_user_id_..data.chat_id_) then
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙تم الغاء عملية حفظ الردود المتعدده للامر ↫ "..SOFI) 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙تم الغاء عملية حفظ الردود المتعدده للامر ↫ "..SOFI) 
 DevSOFI:del(Virus..'SOFI:Add:GpRedod'..data.sender_user_id_..data.chat_id_)
 DevSOFI:del(Virus..'SOFI:Text:GpTexts'..SOFI..data.chat_id_)
 DevSOFI:del(Virus..'SOFI:Add:GpTexts'..data.sender_user_id_..data.chat_id_)
 DevSOFI:srem(Virus..'SOFI:Manager:GpRedod'..data.chat_id_,SOFI)
 else
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙عذرا صلاحية الامر منتهيه !") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙عذرا صلاحية الامر منتهيه !") 
 end
 end
 if DataText and DataText:match('/HideHelpList:(.*)') then
 local SOFI = DataText:match('/HideHelpList:(.*)')
 if tonumber(SOFI) == tonumber(data.sender_user_id_) then
-EditMsg(Chat_Id2, Msg_Id2, "᥀︙تم اخفاء كليشة الاوامر") 
+EditMsg(Chat_Id2, Msg_Id2, "☭︙تم اخفاء كليشة الاوامر") 
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList:(.*)') then
@@ -1078,343 +1078,343 @@ local SOFI = DataText:match('/HelpList:(.*)')
 if tonumber(SOFI) == tonumber(data.sender_user_id_) then
 local Help = DevSOFI:get(Virus..'SOFI:Help')
 local Text = [[
-᥀︙اهلا بك في قائمة الاوامر ↫ ⤈ 
+☭︙اهلا بك في قائمة الاوامر ↫ ⤈ 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙م1 ↫ اوامر الحمايه
-᥀︙م2 ↫ اوامر الادمنيه
-᥀︙م3 ↫ اوامر المدراء
-᥀︙م4 ↫ اوامر المنشئين
-᥀︙م5 ↫ اوامر المطورين
-᥀︙م6 ↫ اوامر الاعضاء
+☭︙م1 ↫ اوامر الحمايه
+☭︙م2 ↫ اوامر الادمنيه
+☭︙م3 ↫ اوامر المدراء
+☭︙م4 ↫ اوامر المنشئين
+☭︙م5 ↫ اوامر المطورين
+☭︙م6 ↫ اوامر الاعضاء
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList1:(.*)') then
 local SOFI = DataText:match('/HelpList1:(.*)')
 if tonumber(SOFI) == tonumber(data.sender_user_id_) then
 if not Admin(data) then
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
 end
 local Help = DevSOFI:get(Virus..'SOFI:Help1')
 local Text = [[
-᥀︙اوامر حماية المجموعه ↫ ⤈
+☭︙اوامر حماية المجموعه ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙قفل • فتح ↫ الروابط
-᥀︙قفل • فتح ↫ المعرفات
-᥀︙قفل • فتح ↫ البوتات
-᥀︙قفل • فتح ↫ المتحركه
-᥀︙قفل • فتح ↫ الملصقات
-᥀︙قفل • فتح ↫ الملفات
-᥀︙قفل • فتح ↫ الصور
-᥀︙قفل • فتح ↫ الفيديو
-᥀︙قفل • فتح ↫ الاونلاين
-᥀︙قفل • فتح ↫ الدردشه
-᥀︙قفل • فتح ↫ التوجيه
-᥀︙قفل • فتح ↫ الاغاني
-᥀︙قفل • فتح ↫ الصوت
-᥀︙قفل • فتح ↫ الجهات
-᥀︙قفل • فتح ↫ الماركداون
-᥀︙قفل • فتح ↫ التكرار
-᥀︙قفل • فتح ↫ الهاشتاك
-᥀︙قفل • فتح ↫ التعديل
-᥀︙قفل • فتح ↫ التثبيت
-᥀︙قفل • فتح ↫ الاشعارات
-᥀︙قفل • فتح ↫ الكلايش
-᥀︙قفل • فتح ↫ الدخول
-᥀︙قفل • فتح ↫ الشبكات
-᥀︙قفل • فتح ↫ المواقع
-᥀︙قفل • فتح ↫ الفشار
-᥀︙قفل • فتح ↫ الكفر
-᥀︙قفل • فتح ↫ الطائفيه
-᥀︙قفل • فتح ↫ الكل
-᥀︙قفل • فتح ↫ العربيه
-᥀︙قفل • فتح ↫ الانكليزيه
-᥀︙قفل • فتح ↫ الفارسيه
-᥀︙قفل • فتح ↫ التفليش
+☭︙قفل • فتح ↫ الروابط
+☭︙قفل • فتح ↫ المعرفات
+☭︙قفل • فتح ↫ البوتات
+☭︙قفل • فتح ↫ المتحركه
+☭︙قفل • فتح ↫ الملصقات
+☭︙قفل • فتح ↫ الملفات
+☭︙قفل • فتح ↫ الصور
+☭︙قفل • فتح ↫ الفيديو
+☭︙قفل • فتح ↫ الاونلاين
+☭︙قفل • فتح ↫ الدردشه
+☭︙قفل • فتح ↫ التوجيه
+☭︙قفل • فتح ↫ الاغاني
+☭︙قفل • فتح ↫ الصوت
+☭︙قفل • فتح ↫ الجهات
+☭︙قفل • فتح ↫ الماركداون
+☭︙قفل • فتح ↫ التكرار
+☭︙قفل • فتح ↫ الهاشتاك
+☭︙قفل • فتح ↫ التعديل
+☭︙قفل • فتح ↫ التثبيت
+☭︙قفل • فتح ↫ الاشعارات
+☭︙قفل • فتح ↫ الكلايش
+☭︙قفل • فتح ↫ الدخول
+☭︙قفل • فتح ↫ الشبكات
+☭︙قفل • فتح ↫ المواقع
+☭︙قفل • فتح ↫ الفشار
+☭︙قفل • فتح ↫ الكفر
+☭︙قفل • فتح ↫ الطائفيه
+☭︙قفل • فتح ↫ الكل
+☭︙قفل • فتح ↫ العربيه
+☭︙قفل • فتح ↫ الانكليزيه
+☭︙قفل • فتح ↫ الفارسيه
+☭︙قفل • فتح ↫ التفليش
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙اوامر حمايه اخرى ↫ ⤈
+☭︙اوامر حمايه اخرى ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙قفل • فتح + الامر ↫ ⤈
-᥀︙التكرار بالطرد
-᥀︙التكرار بالكتم
-᥀︙التكرار بالتقيد
-᥀︙الفارسيه بالطرد
-᥀︙البوتات بالطرد
-᥀︙البوتات بالتقيد
+☭︙قفل • فتح + الامر ↫ ⤈
+☭︙التكرار بالطرد
+☭︙التكرار بالكتم
+☭︙التكرار بالتقيد
+☭︙الفارسيه بالطرد
+☭︙البوتات بالطرد
+☭︙البوتات بالتقيد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList2:(.*)') then
 local SOFI = DataText:match('/HelpList2:(.*)')
 if tonumber(SOFI) == tonumber(data.sender_user_id_) then
 if not Admin(data) then
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
 end
 local Help = DevSOFI:get(Virus..'SOFI:Help2')
 local Text = [[
-᥀︙اوامر الادمنيه ↫ ⤈
+☭︙اوامر الادمنيه ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙الاعدادت
-᥀︙تاك للكل 
-᥀︙انشاء رابط
-᥀︙ضع وصف
-᥀︙ضع رابط
-᥀︙ضع صوره
-᥀︙حذف الرابط
-᥀︙كشف البوتات
-᥀︙طرد البوتات
-᥀︙تنظيف + العدد
-᥀︙تنظيف التعديل
-᥀︙كللهم + الكلمه
-᥀︙اسم البوت + الامر
-᥀︙ضع • حذف ↫ ترحيب
-᥀︙ضع • حذف ↫ قوانين
-᥀︙اضف • حذف ↫ صلاحيه
-᥀︙الصلاحيات • حذف الصلاحيات
+☭︙الاعدادت
+☭︙تاك للكل 
+☭︙انشاء رابط
+☭︙ضع وصف
+☭︙ضع رابط
+☭︙ضع صوره
+☭︙حذف الرابط
+☭︙كشف البوتات
+☭︙طرد البوتات
+☭︙تنظيف + العدد
+☭︙تنظيف التعديل
+☭︙كللهم + الكلمه
+☭︙اسم البوت + الامر
+☭︙ضع • حذف ↫ ترحيب
+☭︙ضع • حذف ↫ قوانين
+☭︙اضف • حذف ↫ صلاحيه
+☭︙الصلاحيات • حذف الصلاحيات
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙ضع سبام + العدد
-᥀︙ضع تكرار + العدد
+☭︙ضع سبام + العدد
+☭︙ضع تكرار + العدد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙رفع مميز • تنزيل مميز
-᥀︙المميزين • حذف المميزين
-᥀︙كشف القيود • رفع القيود
+☭︙رفع مميز • تنزيل مميز
+☭︙المميزين • حذف المميزين
+☭︙كشف القيود • رفع القيود
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙حذف • مسح + بالرد
-᥀︙منع • الغاء منع
-᥀︙قائمه المنع
-᥀︙حذف قائمه المنع
+☭︙حذف • مسح + بالرد
+☭︙منع • الغاء منع
+☭︙قائمه المنع
+☭︙حذف قائمه المنع
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تفعيل • تعطيل ↫ الرابط
-᥀︙تفعيل • تعطيل ↫ الالعاب
-᥀︙تفعيل • تعطيل ↫ الترحيب
-᥀︙تفعيل • تعطيل ↫ التاك للكل
-᥀︙تفعيل • تعطيل ↫ كشف الاعدادات
+☭︙تفعيل • تعطيل ↫ الرابط
+☭︙تفعيل • تعطيل ↫ الالعاب
+☭︙تفعيل • تعطيل ↫ الترحيب
+☭︙تفعيل • تعطيل ↫ التاك للكل
+☭︙تفعيل • تعطيل ↫ كشف الاعدادات
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙طرد المحذوفين
-᥀︙طرد ↫ بالرد • بالمعرف • بالايدي
-᥀︙كتم • الغاء كتم
-᥀︙تقيد • الغاء تقيد
-᥀︙حظر • الغاء حظر
-᥀︙المكتومين • حذف المكتومين
-᥀︙المقيدين • حذف المقيدين
-᥀︙المحظورين • حذف المحظورين
+☭︙طرد المحذوفين
+☭︙طرد ↫ بالرد • بالمعرف • بالايدي
+☭︙كتم • الغاء كتم
+☭︙تقيد • الغاء تقيد
+☭︙حظر • الغاء حظر
+☭︙المكتومين • حذف المكتومين
+☭︙المقيدين • حذف المقيدين
+☭︙المحظورين • حذف المحظورين
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تقييد دقيقه + عدد الدقائق
-᥀︙تقييد ساعه + عدد الساعات
-᥀︙تقييد يوم + عدد الايام
-᥀︙الغاء تقييد ↫ لالغاء التقييد بالوقت
+☭︙تقييد دقيقه + عدد الدقائق
+☭︙تقييد ساعه + عدد الساعات
+☭︙تقييد يوم + عدد الايام
+☭︙الغاء تقييد ↫ لالغاء التقييد بالوقت
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList3:(.*)') then
 local SOFI = DataText:match('/HelpList3:(.*)')
 if tonumber(SOFI) == tonumber(data.sender_user_id_) then
 if not Admin(data) then
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
 end
 local Help = DevSOFI:get(Virus..'SOFI:Help3')
 local Text = [[
-᥀︙اوامر المدراء ↫ ⤈
+☭︙اوامر المدراء ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙فحص البوت
-᥀︙ضع اسم + الاسم
-᥀︙اضف • حذف ↫ رد
-᥀︙ردود المدير
-᥀︙حذف ردود المدير
-᥀︙اضف • حذف ↫ رد متعدد
-᥀︙حذف رد من متعدد
-᥀︙الردود المتعدده
-᥀︙حذف الردود المتعدده
-᥀︙حذف قوائم المنع
-᥀︙منع ↫ بالرد على ( ملصق • صوره • متحركه )
-᥀︙حذف قائمه منع + ↫ ⤈
+☭︙فحص البوت
+☭︙ضع اسم + الاسم
+☭︙اضف • حذف ↫ رد
+☭︙ردود المدير
+☭︙حذف ردود المدير
+☭︙اضف • حذف ↫ رد متعدد
+☭︙حذف رد من متعدد
+☭︙الردود المتعدده
+☭︙حذف الردود المتعدده
+☭︙حذف قوائم المنع
+☭︙منع ↫ بالرد على ( ملصق • صوره • متحركه )
+☭︙حذف قائمه منع + ↫ ⤈
 ( الصور • المتحركات • الملصقات )
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تنزيل الكل
-᥀︙رفع ادمن • تنزيل ادمن
-᥀︙الادمنيه • حذف الادمنيه
+☭︙تنزيل الكل
+☭︙رفع ادمن • تنزيل ادمن
+☭︙الادمنيه • حذف الادمنيه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تثبيت
-᥀︙الغاء التثبيت
-᥀︙اعاده التثبيت
-᥀︙الغاء تثبيت الكل
+☭︙تثبيت
+☭︙الغاء التثبيت
+☭︙اعاده التثبيت
+☭︙الغاء تثبيت الكل
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تغير رد + اسم الرتبه + النص ↫ ⤈
-᥀︙المطور • منشئ الاساسي
-᥀︙المنشئ • المدير • الادمن
-᥀︙المميز • المنظف • العضو
-᥀︙حذف ردود الرتب
+☭︙تغير رد + اسم الرتبه + النص ↫ ⤈
+☭︙المطور • منشئ الاساسي
+☭︙المنشئ • المدير • الادمن
+☭︙المميز • المنظف • العضو
+☭︙حذف ردود الرتب
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تغيير الايدي ↫ لتغيير الكليشه
-᥀︙تعيين الايدي ↫ لتعيين الكليشه
-᥀︙حذف الايدي ↫ لحذف الكليشه
+☭︙تغيير الايدي ↫ لتغيير الكليشه
+☭︙تعيين الايدي ↫ لتعيين الكليشه
+☭︙حذف الايدي ↫ لحذف الكليشه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تفعيل • تعطيل + الامر ↫ ⤈
-᥀︙اطردني • الايدي بالصوره • الابراج
-᥀︙معاني الاسماء • اوامر النسب • انطق
-᥀︙الايدي • تحويل الصيغ • اوامر التحشيش
-᥀︙ردود المدير • ردود المطور • التحقق
-᥀︙ضافني • حساب العمر • الزخرفه
+☭︙تفعيل • تعطيل + الامر ↫ ⤈
+☭︙اطردني • الايدي بالصوره • الابراج
+☭︙معاني الاسماء • اوامر النسب • انطق
+☭︙الايدي • تحويل الصيغ • اوامر التحشيش
+☭︙ردود المدير • ردود المطور • التحقق
+☭︙ضافني • حساب العمر • الزخرفه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList4:(.*)') then
 local SOFI = DataText:match('/HelpList4:(.*)')
 if tonumber(SOFI) == tonumber(data.sender_user_id_) then
 if not Admin(data) then
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
 end
 local Help = DevSOFI:get(Virus..'SOFI:Help4')
 local Text = [[
-᥀︙اوامر المنشئين ↫ ⤈
+☭︙اوامر المنشئين ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تنزيل الكل
-᥀︙الميديا • امسح
-᥀︙تعين عدد الحذف
-᥀︙ترتيب الاوامر
-᥀︙اضف • حذف ↫ امر
-᥀︙حذف الاوامر المضافه
-᥀︙الاوامر المضافه
-᥀︙اضف نقاط ↫ بالرد • بالايدي
-᥀︙اضف رسائل ↫ بالرد • بالايدي
-᥀︙رفع منظف • تنزيل منظف
-᥀︙المنظفين • حذف المنظفين
-᥀︙رفع مدير • تنزيل مدير
-᥀︙المدراء • حذف المدراء
-᥀︙تفعيل • تعطيل + الامر ↫ ⤈
-᥀︙نزلني • امسح
-᥀︙الحظر • الكتم
+☭︙تنزيل الكل
+☭︙الميديا • امسح
+☭︙تعين عدد الحذف
+☭︙ترتيب الاوامر
+☭︙اضف • حذف ↫ امر
+☭︙حذف الاوامر المضافه
+☭︙الاوامر المضافه
+☭︙اضف نقاط ↫ بالرد • بالايدي
+☭︙اضف رسائل ↫ بالرد • بالايدي
+☭︙رفع منظف • تنزيل منظف
+☭︙المنظفين • حذف المنظفين
+☭︙رفع مدير • تنزيل مدير
+☭︙المدراء • حذف المدراء
+☭︙تفعيل • تعطيل + الامر ↫ ⤈
+☭︙نزلني • امسح
+☭︙الحظر • الكتم
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙اوامر المنشئين الاساسيين ↫ ⤈
+☭︙اوامر المنشئين الاساسيين ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙وضع لقب + اللقب
-᥀︙تفعيل • تعطيل ↫ الرفع
-᥀︙رفع منشئ • تنزيل منشئ
-᥀︙المنشئين • حذف المنشئين
-᥀︙رفع • تنزيل ↫ مشرف
-᥀︙رفع بكل الصلاحيات
-᥀︙حذف القوائم
+☭︙وضع لقب + اللقب
+☭︙تفعيل • تعطيل ↫ الرفع
+☭︙رفع منشئ • تنزيل منشئ
+☭︙المنشئين • حذف المنشئين
+☭︙رفع • تنزيل ↫ مشرف
+☭︙رفع بكل الصلاحيات
+☭︙حذف القوائم
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙اوامر المالكين ↫ ⤈
+☭︙اوامر المالكين ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙رفع • تنزيل ↫ منشئ اساسي
-᥀︙حذف المنشئين الاساسيين 
-᥀︙المنشئين الاساسيين 
-᥀︙حذف جميع الرتب
+☭︙رفع • تنزيل ↫ منشئ اساسي
+☭︙حذف المنشئين الاساسيين 
+☭︙المنشئين الاساسيين 
+☭︙حذف جميع الرتب
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList5:(.*)') then
 local SOFI = DataText:match('/HelpList5:(.*)')
 if tonumber(SOFI) == tonumber(data.sender_user_id_) then
 if not Admin(data) then
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
 end
 local Help = DevSOFI:get(Virus..'SOFI:Help5')
 local Text = [[
-᥀︙اوامر المطورين ↫ ⤈
+☭︙اوامر المطورين ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙الكروبات
-᥀︙المطورين
-᥀︙المشتركين
-᥀︙الاحصائيات
-᥀︙المجموعات
-᥀︙اسم البوت + غادر
-᥀︙اسم البوت + تعطيل
-᥀︙كشف + -ايدي المجموعه
-᥀︙رفع مالك • تنزيل مالك
-᥀︙المالكين • حذف المالكين
+☭︙الكروبات
+☭︙المطورين
+☭︙المشتركين
+☭︙الاحصائيات
+☭︙المجموعات
+☭︙اسم البوت + غادر
+☭︙اسم البوت + تعطيل
+☭︙كشف + -ايدي المجموعه
+☭︙رفع مالك • تنزيل مالك
+☭︙المالكين • حذف المالكين
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙رفع • تنزيل ↫ مدير عام
-᥀︙حذف • المدراء العامين 
-᥀︙رفع • تنزيل ↫ ادمن عام
-᥀︙حذف • الادمنيه العامين 
-᥀︙رفع • تنزيل ↫ مميز عام
-᥀︙حذف • المميزين عام 
+☭︙رفع • تنزيل ↫ مدير عام
+☭︙حذف • المدراء العامين 
+☭︙رفع • تنزيل ↫ ادمن عام
+☭︙حذف • الادمنيه العامين 
+☭︙رفع • تنزيل ↫ مميز عام
+☭︙حذف • المميزين عام 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙اوامر المطور الاساسي ↫ ⤈
+☭︙اوامر المطور الاساسي ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تحديث
-᥀︙السيرفر
-᥀︙روابط الكروبات
-᥀︙تحديث السورس
-᥀︙تنظيف الكروبات
-᥀︙تنظيف المشتركين
-᥀︙حذف جميع الملفات
-᥀︙تعيين الايدي العام
-᥀︙تغير المطور الاساسي
-᥀︙حذف معلومات الترحيب
-᥀︙تغير معلومات الترحيب
-᥀︙غادر + -ايدي المجموعه
-᥀︙تعيين عدد الاعضاء + العدد
-᥀︙حظر عام • الغاء العام
-᥀︙كتم عام • الغاء العام
-᥀︙قائمه العام • حذف قائمه العام
-᥀︙وضع • حذف ↫ اسم البوت
-᥀︙اضف • حذف ↫ رد عام
-᥀︙ردود المطور • حذف ردود المطور
-᥀︙تعيين • حذف • جلب ↫ رد الخاص
-᥀︙جلب نسخه الكروبات
-᥀︙رفع النسخه + بالرد على الملف
-᥀︙تعيين • حذف ↫ قناة الاشتراك
-᥀︙جلب كليشه الاشتراك
-᥀︙تغيير • حذف ↫ كليشه الاشتراك
-᥀︙رفع • تنزيل ↫ مطور
-᥀︙المطورين • حذف المطورين
-᥀︙رفع • تنزيل ↫ مطور ثانوي
-᥀︙الثانويين • حذف الثانويين
-᥀︙تعيين • حذف ↫ كليشة الايدي
-᥀︙اذاعه للكل بالتوجيه ↫ بالرد
+☭︙تحديث
+☭︙السيرفر
+☭︙روابط الكروبات
+☭︙تحديث السورس
+☭︙تنظيف الكروبات
+☭︙تنظيف المشتركين
+☭︙حذف جميع الملفات
+☭︙تعيين الايدي العام
+☭︙تغير المطور الاساسي
+☭︙حذف معلومات الترحيب
+☭︙تغير معلومات الترحيب
+☭︙غادر + -ايدي المجموعه
+☭︙تعيين عدد الاعضاء + العدد
+☭︙حظر عام • الغاء العام
+☭︙كتم عام • الغاء العام
+☭︙قائمه العام • حذف قائمه العام
+☭︙وضع • حذف ↫ اسم البوت
+☭︙اضف • حذف ↫ رد عام
+☭︙ردود المطور • حذف ردود المطور
+☭︙تعيين • حذف • جلب ↫ رد الخاص
+☭︙جلب نسخه الكروبات
+☭︙رفع النسخه + بالرد على الملف
+☭︙تعيين • حذف ↫ قناة الاشتراك
+☭︙جلب كليشه الاشتراك
+☭︙تغيير • حذف ↫ كليشه الاشتراك
+☭︙رفع • تنزيل ↫ مطور
+☭︙المطورين • حذف المطورين
+☭︙رفع • تنزيل ↫ مطور ثانوي
+☭︙الثانويين • حذف الثانويين
+☭︙تعيين • حذف ↫ كليشة الايدي
+☭︙اذاعه للكل بالتوجيه ↫ بالرد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تفعيل ملف + اسم الملف
-᥀︙تعطيل ملف + اسم الملف
-᥀︙تفعيل • تعطيل + الامر ↫ ⤈
-᥀︙الاذاعه • الاشتراك الاجباري
-᥀︙ترحيب البوت • المغادره
-᥀︙البوت الخدمي • التواصل
+☭︙تفعيل ملف + اسم الملف
+☭︙تعطيل ملف + اسم الملف
+☭︙تفعيل • تعطيل + الامر ↫ ⤈
+☭︙الاذاعه • الاشتراك الاجباري
+☭︙ترحيب البوت • المغادره
+☭︙البوت الخدمي • التواصل
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList6:(.*)') then
@@ -1422,39 +1422,39 @@ local SOFI = DataText:match('/HelpList6:(.*)')
 if tonumber(SOFI) == tonumber(data.sender_user_id_) then
 local Help = DevSOFI:get(Virus..'SOFI:Help6')
 local Text = [[
-᥀︙اوامر الاعضاء ↫ ⤈
+☭︙اوامر الاعضاء ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙السورس • موقعي • رتبتي • معلوماتي 
-᥀︙رقمي • لقبي • نبذتي • صلاحياتي • غنيلي
-᥀︙ميمز • متحركه • صوره • ريمكس • فلم • مسلسل • انمي
-᥀︙رسائلي • حذف رسائلي • اسمي • معرفي 
-᥀︙ايدي •ايديي • جهاتي • راسلني • الالعاب 
-᥀︙نقاطي • بيع نقاطي • القوانين • زخرفه 
-᥀︙رابط الحذف • نزلني • اطردني • المطور 
-᥀︙منو ضافني • مشاهدات المنشور • الرابط 
-᥀︙ايدي المجموعه • معلومات المجموعه 
-᥀︙نسبه الحب • نسبه الكره • نسبه الغباء 
-᥀︙نسبه الرجوله • نسبه الانوثه • التفاعل
+☭︙السورس • موقعي • رتبتي • معلوماتي 
+☭︙رقمي • لقبي • نبذتي • صلاحياتي • غنيلي
+☭︙ميمز • متحركه • صوره • ريمكس • فلم • مسلسل • انمي
+☭︙رسائلي • حذف رسائلي • اسمي • معرفي 
+☭︙ايدي •ايديي • جهاتي • راسلني • الالعاب 
+☭︙نقاطي • بيع نقاطي • القوانين • زخرفه 
+☭︙رابط الحذف • نزلني • اطردني • المطور 
+☭︙منو ضافني • مشاهدات المنشور • الرابط 
+☭︙ايدي المجموعه • معلومات المجموعه 
+☭︙نسبه الحب • نسبه الكره • نسبه الغباء 
+☭︙نسبه الرجوله • نسبه الانوثه • التفاعل
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙لقبه + بالرد
-᥀︙كول + الكلمه
-᥀︙زخرفه + اسمك
-᥀︙برج + نوع البرج
-᥀︙معنى اسم + الاسم
-᥀︙بوسه • بوسها ↫ بالرد
-᥀︙احسب + تاريخ ميلادك
-᥀︙صلاحياته ↫ بالرد • بالمعرف • بالايدي
-᥀︙ايدي • كشف  ↫ بالرد • بالمعرف • بالايدي
-᥀︙تحويل + بالرد ↫ صوره • ملصق • صوت • بصمه
-᥀︙انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
+☭︙لقبه + بالرد
+☭︙كول + الكلمه
+☭︙زخرفه + اسمك
+☭︙برج + نوع البرج
+☭︙معنى اسم + الاسم
+☭︙بوسه • بوسها ↫ بالرد
+☭︙احسب + تاريخ ميلادك
+☭︙صلاحياته ↫ بالرد • بالمعرف • بالايدي
+☭︙ايدي • كشف  ↫ بالرد • بالمعرف • بالايدي
+☭︙تحويل + بالرد ↫ صوره • ملصق • صوت • بصمه
+☭︙انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("᥀ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("☭ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 end
@@ -1467,9 +1467,9 @@ if NewCmmd then
 DevSOFI:del(Virus.."Set:Cmd:Group:New1"..msg.chat_id_..":"..text)
 DevSOFI:del(Virus.."Set:Cmd:Group:New"..msg.chat_id_)
 DevSOFI:srem(Virus.."List:Cmd:Group:New"..msg.chat_id_,text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حذف الامر من المجموعه", 1, 'html')  
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حذف الامر من المجموعه", 1, 'html')  
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لايوجد امر بهذا الاسم", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لايوجد امر بهذا الاسم", 1, 'html')
 end
 DevSOFI:del(Virus.."Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
 return false
@@ -1485,7 +1485,7 @@ end
 end
 if text and DevSOFI:get(Virus.."Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_) == "true" then
 DevSOFI:set(Virus.."Set:Cmd:Group:New"..msg.chat_id_,text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل الامر الجديد", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل الامر الجديد", 1, 'html')
 DevSOFI:del(Virus.."Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
 DevSOFI:set(Virus.."Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_,"true1") 
 return false
@@ -1494,14 +1494,14 @@ if text and DevSOFI:get(Virus.."Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_u
 local NewCmd = DevSOFI:get(Virus.."Set:Cmd:Group:New"..msg.chat_id_)
 DevSOFI:set(Virus.."Set:Cmd:Group:New1"..msg.chat_id_..":"..text,NewCmd)
 DevSOFI:sadd(Virus.."List:Cmd:Group:New"..msg.chat_id_,text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ الامر", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ الامر", 1, 'html')
 DevSOFI:del(Virus.."Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_)
 return false
 end
 if Constructor(msg) then
 if text == "الاوامر المضافه" and ChCheck(msg) then
 local List = DevSOFI:smembers(Virus.."List:Cmd:Group:New"..msg.chat_id_.."") 
-t = "᥀︙قائمة الاوامر المضافه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+t = "☭︙قائمة الاوامر المضافه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 Cmds = DevSOFI:get(Virus.."Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
 if Cmds then 
@@ -1511,7 +1511,7 @@ t = t..k.."~ ("..v..") \n"
 end
 end
 if #List == 0 then
-t = "᥀︙لاتوجد اوامر مضافه في المجموعه"
+t = "☭︙لاتوجد اوامر مضافه في المجموعه"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
@@ -1521,7 +1521,7 @@ for k,v in pairs(List) do
 DevSOFI:del(Virus.."Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
 DevSOFI:del(Virus.."List:Cmd:Group:New"..msg.chat_id_)
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حذف الاوامر المضافه في المجموعه", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حذف الاوامر المضافه في المجموعه", 1, 'html')
 end
 if text == "ترتيب الاوامر" and Constructor(msg) and ChCheck(msg) then
 DevSOFI:set(Virus.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
@@ -1562,16 +1562,16 @@ DevSOFI:set(Virus.."Set:Cmd:Group:New1"..msg.chat_id_..":غ","غنيلي")
 DevSOFI:sadd(Virus.."List:Cmd:Group:New"..msg.chat_id_,"غ")
 DevSOFI:set(Virus.."Set:Cmd:Group:New1"..msg.chat_id_..":#","مسح قائمه العام")
 DevSOFI:sadd(Virus.."List:Cmd:Group:New"..msg.chat_id_,"#")
-send(msg.chat_id_, msg.id_,"᥀︙تم ترتيب الاوامر بالشكل التالي ~\n᥀︙ ايدي - ا .\n᥀︙ رفع مميز - م .\n᥀︙رفع ادمن - اد .\n᥀︙ رفع مدير - مد . \n᥀︙ رفع منشى - من . \n᥀︙ رفع منشئ الاساسي - اس  .\n᥀︙ رفع مطور - مط .\n᥀︙رفع مطور ثانوي - ثانوي .\n᥀︙ تنزيل الكل - تك .\n᥀︙ تعطيل الايدي بالصوره - تعط .\n᥀︙ تفعيل الايدي بالصوره - تفع .\n᥀︙ الرابط - ر .\n᥀︙ ردود المدير - رر .\n᥀︙ مسح المكتومين - ،، .\n᥀︙ اضف رد - رد .\n᥀︙ مسح سحكاتي - سح .\n᥀︙ مسح رسائلي - رس .\n᥀︙ غنيلي - غ .\n᥀︙مسح قائمه العام - #")  
+send(msg.chat_id_, msg.id_,"☭︙تم ترتيب الاوامر بالشكل التالي ~\n☭︙ ايدي - ا .\n☭︙ رفع مميز - م .\n☭︙رفع ادمن - اد .\n☭︙ رفع مدير - مد . \n☭︙ رفع منشى - من . \n☭︙ رفع منشئ الاساسي - اس  .\n☭︙ رفع مطور - مط .\n☭︙رفع مطور ثانوي - ثانوي .\n☭︙ تنزيل الكل - تك .\n☭︙ تعطيل الايدي بالصوره - تعط .\n☭︙ تفعيل الايدي بالصوره - تفع .\n☭︙ الرابط - ر .\n☭︙ ردود المدير - رر .\n☭︙ مسح المكتومين - ،، .\n☭︙ اضف رد - رد .\n☭︙ مسح سحكاتي - سح .\n☭︙ مسح رسائلي - رس .\n☭︙ غنيلي - غ .\n☭︙مسح قائمه العام - #")  
 end
 if text == "اضف امر" and ChCheck(msg) or text == "اضافة امر" and ChCheck(msg) or text == "اضافه امر" and ChCheck(msg) then
 DevSOFI:set(Virus.."Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل الامر القديم", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل الامر القديم", 1, 'html')
 return false
 end
 if text == "حذف امر" and ChCheck(msg) or text == "مسح امر" and ChCheck(msg) then 
 DevSOFI:set(Virus.."Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل الامر الذي قمت باضافته يدويا", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل الامر الذي قمت باضافته يدويا", 1, 'html')
 return false
 end
 end
@@ -1579,10 +1579,10 @@ end
 if text == "الصلاحيات" and ChCheck(msg) or text == "صلاحيات" and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus.."Coomds"..msg.chat_id_)
 if #List == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لاتوجد صلاحيات مضافه", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لاتوجد صلاحيات مضافه", 1, 'html')
 return false
 end
-t = "᥀︙قائمة الصلاحيات المضافه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+t = "☭︙قائمة الصلاحيات المضافه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 var = DevSOFI:get(Virus.."Comd:New:rt:SOFI:"..v..msg.chat_id_)
 if var then
@@ -1600,7 +1600,7 @@ for k,v in pairs(List) do
 DevSOFI:del(Virus.."Comd:New:rt:SOFI:"..v..msg.chat_id_)
 DevSOFI:del(Virus.."Coomds"..msg.chat_id_)
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حذف الصلاحيات المضافه", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حذف الصلاحيات المضافه", 1, 'html')
 end
 end
 if text and text:match("^اضف صلاحيه (.*)$") and ChCheck(msg) then 
@@ -1608,41 +1608,41 @@ ComdNew = text:match("^اضف صلاحيه (.*)$")
 DevSOFI:set(Virus.."Comd:New:rt"..msg.chat_id_..msg.sender_user_id_,ComdNew)  
 DevSOFI:sadd(Virus.."Coomds"..msg.chat_id_,ComdNew)  
 DevSOFI:setex(Virus.."Comd:New"..msg.chat_id_..msg.sender_user_id_,200,true)  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل نوع الصلاحيه \n{ عضو • مميز  • ادمن  • مدير }\n᥀︙ارسل الغاء لالغاء الامر ", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل نوع الصلاحيه \n{ عضو • مميز  • ادمن  • مدير }\n☭︙ارسل الغاء لالغاء الامر ", 1, 'html')
 end
 if text and text:match("^حذف صلاحيه (.*)$") and ChCheck(msg) or text and text:match("^مسح صلاحيه (.*)$") and ChCheck(msg) then 
 ComdNew = text:match("^حذف صلاحيه (.*)$") or text:match("^مسح صلاحيه (.*)$")
 DevSOFI:del(Virus.."Comd:New:rt:SOFI:"..ComdNew..msg.chat_id_)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حذف الصلاحيه", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حذف الصلاحيه", 1, 'html')
 end
 if DevSOFI:get(Virus.."Comd:New"..msg.chat_id_..msg.sender_user_id_) then 
-if text and text:match("^↫ الغاء ᥀$") then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء الامر", 1, 'html')
+if text and text:match("^↫ الغاء ☭$") then 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء الامر", 1, 'html')
 DevSOFI:del(Virus.."Comd:New"..msg.chat_id_..msg.sender_user_id_) 
 return false  
 end 
 if text == "مدير" then
 if not Constructor(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تستطيع اضافة صلاحية ( عضو • مميز  • ادمن )\n᥀︙ارسال نوع الصلاحيه مره اخرى", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تستطيع اضافة صلاحية ( عضو • مميز  • ادمن )\n☭︙ارسال نوع الصلاحيه مره اخرى", 1, 'html')
 return false
 end
 end
 if text == "ادمن" then
 if not Manager(msg) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تستطيع اضافة صلاحية ( عضو • مميز )\n᥀︙ارسال نوع الصلاحيه مره اخرى", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تستطيع اضافة صلاحية ( عضو • مميز )\n☭︙ارسال نوع الصلاحيه مره اخرى", 1, 'html')
 return false
 end
 end
 if text == "مميز" then
 if not Admin(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تستطيع اضافة صلاحية ( عضو )\n᥀︙ارسال نوع الصلاحيه مره اخرى", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تستطيع اضافة صلاحية ( عضو )\n☭︙ارسال نوع الصلاحيه مره اخرى", 1, 'html')
 return false
 end
 end
 if text == "مدير" or text == "ادمن" or text == "مميز" or text == "عضو" then
 local textn = DevSOFI:get(Virus.."Comd:New:rt"..msg.chat_id_..msg.sender_user_id_)  
 DevSOFI:set(Virus.."Comd:New:rt:SOFI:"..textn..msg.chat_id_,text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم اضافة الصلاحيه", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم اضافة الصلاحيه", 1, 'html')
 DevSOFI:del(Virus.."Comd:New"..msg.chat_id_..msg.sender_user_id_) 
 return false  
 end 
@@ -1655,19 +1655,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local mrSOFI = DevSOFI:get(Virus.."Comd:New:rt:SOFI:"..DEV_SOFI..msg.chat_id_)
 if mrSOFI == "مميز" and VipMem(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'L9L9L')..')'..' ❩\n᥀︙تم رفعه ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'V_IRUS1')..')'..' ❩\n☭︙تم رفعه ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
 DevSOFI:set(Virus.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_SOFI) 
 DevSOFI:sadd(Virus..'SOFI:VipMem:'..msg.chat_id_, result.sender_user_id_)
 elseif mrSOFI == "ادمن" and Admin(msg) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'L9L9L')..')'..' ❩\n᥀︙تم رفعه ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'V_IRUS1')..')'..' ❩\n☭︙تم رفعه ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
 DevSOFI:set(Virus.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_SOFI)
 DevSOFI:sadd(Virus..'SOFI:Admins:'..msg.chat_id_, result.sender_user_id_)
 elseif mrSOFI == "مدير" and Manager(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'L9L9L')..')'..' ❩\n᥀︙تم رفعه ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'V_IRUS1')..')'..' ❩\n☭︙تم رفعه ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
 DevSOFI:set(Virus.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_SOFI)  
 DevSOFI:sadd(Virus..'SOFI:Managers:'..msg.chat_id_, result.sender_user_id_)
 elseif mrSOFI == "عضو" then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'L9L9L')..')'..' ❩\n᥀︙تم رفعه ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'V_IRUS1')..')'..' ❩\n☭︙تم رفعه ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1681,19 +1681,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local mrSOFI = DevSOFI:get(Virus.."Comd:New:rt:SOFI:"..DEV_SOFI..msg.chat_id_)
 if mrSOFI == "مميز" and VipMem(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'L9L9L')..')'..' ❩\n᥀︙تم تنزيله ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'V_IRUS1')..')'..' ❩\n☭︙تم تنزيله ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
 DevSOFI:srem(Virus..'SOFI:VipMem:'..msg.chat_id_, result.sender_user_id_)
 DevSOFI:del(Virus.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrSOFI == "ادمن" and Admin(msg) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'L9L9L')..')'..' ❩\n᥀︙تم تنزيله ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'V_IRUS1')..')'..' ❩\n☭︙تم تنزيله ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
 DevSOFI:srem(Virus..'SOFI:Admins:'..msg.chat_id_, result.sender_user_id_)
 DevSOFI:del(Virus.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrSOFI == "مدير" and Manager(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'L9L9L')..')'..' ❩\n᥀︙تم تنزيله ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'V_IRUS1')..')'..' ❩\n☭︙تم تنزيله ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
 DevSOFI:srem(Virus..'SOFI:Managers:'..msg.chat_id_, result.sender_user_id_)
 DevSOFI:del(Virus.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrSOFI == "عضو" then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'L9L9L')..')'..' ❩\n᥀︙تم تنزيله ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'V_IRUS1')..')'..' ❩\n☭︙تم تنزيله ❨ '..DEV_SOFI..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1707,22 +1707,22 @@ function py_username(extra, result, success)
 if result.id_ then
 local mrSOFI = DevSOFI:get(Virus.."Comd:New:rt:SOFI:"..text1[2]..msg.chat_id_)
 if mrSOFI == "مميز" and VipMem(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'L9L9L')..')'..' ❩\n᥀︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'V_IRUS1')..')'..' ❩\n☭︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevSOFI:sadd(Virus..'SOFI:VipMem:'..msg.chat_id_, result.id_)
 DevSOFI:set(Virus.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrSOFI == "ادمن" and Admin(msg) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'L9L9L')..')'..' ❩\n᥀︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'V_IRUS1')..')'..' ❩\n☭︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevSOFI:sadd(Virus..'SOFI:Admins:'..msg.chat_id_, result.id_)
 DevSOFI:set(Virus.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrSOFI == "مدير" and Manager(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'L9L9L')..')'..' ❩\n᥀︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'V_IRUS1')..')'..' ❩\n☭︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevSOFI:sadd(Virus..'SOFI:Managers:'..msg.chat_id_, result.id_)
 DevSOFI:set(Virus.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrSOFI == "عضو" then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'L9L9L')..')'..' ❩\n᥀︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'V_IRUS1')..')'..' ❩\n☭︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 end
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*المعرف غير صحيح*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*المعرف غير صحيح*", 1, 'md')
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = text1[3]},py_username,nil) 
@@ -1735,22 +1735,22 @@ function py_username(extra, result, success)
 if result.id_ then
 local mrSOFI = DevSOFI:get(Virus.."Comd:New:rt:SOFI:"..text1[2]..msg.chat_id_)
 if mrSOFI == "مميز" and VipMem(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'L9L9L')..')'..' ❩\n᥀︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'V_IRUS1')..')'..' ❩\n☭︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevSOFI:srem(Virus..'SOFI:VipMem:'..msg.chat_id_, result.id_)
 DevSOFI:del(Virus.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrSOFI == "ادمن" and Admin(msg) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'L9L9L')..')'..' ❩\n᥀︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'V_IRUS1')..')'..' ❩\n☭︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevSOFI:srem(Virus..'SOFI:Admins:'..msg.chat_id_, result.id_)
 DevSOFI:del(Virus.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrSOFI == "مدير" and Manager(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'L9L9L')..')'..' ❩\n᥀︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'V_IRUS1')..')'..' ❩\n☭︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevSOFI:srem(Virus..'SOFI:Managers:'..msg.chat_id_, result.id_)
 DevSOFI:del(Virus.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrSOFI == "عضو" then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'L9L9L')..')'..' ❩\n᥀︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'V_IRUS1')..')'..' ❩\n☭︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 end
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*المعرف غير صحيح*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*المعرف غير صحيح*", 1, 'md')
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = text1[3]},py_username,nil) 
@@ -1775,22 +1775,22 @@ end
 end 
 --     Source Virus     --
 if ChatType == 'pv' then 
-if text == '/start' or text == '↫ رجوع ᥀' then 
+if text == '/start' or text == '↫ رجوع ☭' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '᥀︙مرحبا عزيزي المطور \n᥀︙انت المطور الاساسي هنا \n᥀︙اليك ازرار سورس فايروس \n᥀︙تستطيع التحكم بكل الاوامر فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '☭︙مرحبا عزيزي المطور \n☭︙انت المطور الاساسي هنا \n☭︙اليك ازرار سورس فايروس \n☭︙تستطيع التحكم بكل الاوامر فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫ السورس ᥀','وضع اسم البوت'},
-{'↫  المطورين ᥀','↫ الاحصائيات ᥀'},
-{'↫ التفعيل والتعطيل ᥀','↫ الاذاعه ᥀'},
-{'↫ تعيين كلايش الاوامر ᥀','↫ العام ᥀','↫ ردود الخاص ᥀'},
-{'↫ الاشتراك الاجباري ᥀','↫ الاوامر الخدميه ᥀'},
+{'↫ السورس ☭','وضع اسم البوت'},
+{'↫  المطورين ☭','↫ الاحصائيات ☭'},
+{'↫ التفعيل والتعطيل ☭','↫ الاذاعه ☭'},
+{'↫ تعيين كلايش الاوامر ☭','↫ العام ☭','↫ ردود الخاص ☭'},
+{'↫ الاشتراك الاجباري ☭','↫ الاوامر الخدميه ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end end
-if text == '↫ تعيين كلايش الاوامر ᥀' then 
+if text == '↫ تعيين كلايش الاوامر ☭' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي المطور \n᥀︙اليك الازرار الخاصه بتعديل وتغيير كلايش سورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي المطور \n☭︙اليك الازرار الخاصه بتعديل وتغيير كلايش سورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'تغير معلومات الترحيب'},
 {'حذف كليشة الايدي','تعيين كليشة الايدي'},
@@ -1798,187 +1798,187 @@ local key = {
 {'تعيين امر م3','تعيين امر م2','تعيين امر م1'},
 {'تعيين امر م6','تعيين امر م5','تعيين امر م4'},
 {'استعادة كلايش الاوامر'},
-{'↫ رجوع ᥀'},
+{'↫ رجوع ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end end
-if text == '↫ السورس ᥀' then 
+if text == '↫ السورس ☭' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي المطور \n᥀︙اليك الازرار الخاصه بتحديث  سورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي المطور \n☭︙اليك الازرار الخاصه بتحديث  سورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫ تحديث السورس ᥀','↫ تحديث ᥀'},
-{'↫ السيرفر ᥀'},
-{'↫ مبرمج السورس ᥀','↫ قناة السورس ᥀'},
-{'↫  السورس ᥀'},
-{'↫ رجوع ᥀'},
+{'↫ تحديث السورس ☭','↫ تحديث ☭'},
+{'↫ السيرفر ☭'},
+{'↫ مبرمج السورس ☭','↫ قناة السورس ☭'},
+{'↫  السورس ☭'},
+{'↫ رجوع ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end end
-if text == '↫ الاحصائيات ᥀' then 
+if text == '↫ الاحصائيات ☭' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي المطور \n᥀︙اليك الازرار الخاصه ب أحصائيات  سورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي المطور \n☭︙اليك الازرار الخاصه ب أحصائيات  سورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫  الاحصائيات ᥀'},
-{'↫ المشتركين ᥀','↫ المجموعات ᥀'},
-{'↫ روابط المجموعات ᥀','↫ جلب نسخه احتياطيه ᥀'},
-{'↫ تنظيف المشتركين ᥀','↫ تنظيف المجموعات ᥀'},
-{'↫ نقل الاحصائيات ᥀'},
-{'↫ رجوع ᥀'},
+{'↫  الاحصائيات ☭'},
+{'↫ المشتركين ☭','↫ المجموعات ☭'},
+{'↫ روابط المجموعات ☭','↫ جلب نسخه احتياطيه ☭'},
+{'↫ تنظيف المشتركين ☭','↫ تنظيف المجموعات ☭'},
+{'↫ نقل الاحصائيات ☭'},
+{'↫ رجوع ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end end
-if text == '↫  المطورين ᥀' then 
+if text == '↫  المطورين ☭' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي المطور \n᥀︙اليك الازرار الخاصه ب المطورين لسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي المطور \n☭︙اليك الازرار الخاصه ب المطورين لسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫ الاساسيين ᥀','مسح الاساسيين'},
-{'↫ الثانويين ᥀','مسح الثانويين'},
-{'↫ المطورين ᥀','مسح المطورين'},
-{'↫ تغير المطور الاساسي ᥀','↫ تغيير كليشه المطور ᥀'},
-{'↫ رجوع ᥀'},
+{'↫ الاساسيين ☭','مسح الاساسيين'},
+{'↫ الثانويين ☭','مسح الثانويين'},
+{'↫ المطورين ☭','مسح المطورين'},
+{'↫ تغير المطور الاساسي ☭','↫ تغيير كليشه المطور ☭'},
+{'↫ رجوع ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end end
-if text == '↫ التفعيل والتعطيل ᥀' then 
+if text == '↫ التفعيل والتعطيل ☭' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي المطور \n᥀︙اليك الازرار الخاصه ب التفعيل والتعطيل لسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي المطور \n☭︙اليك الازرار الخاصه ب التفعيل والتعطيل لسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫ تعطيل التواصل ᥀','↫ تفعيل التواصل ᥀'},
-{'↫ تعطيل ترحيب البوت ᥀','↫ تفعيل ترحيب البوت ᥀'},
-{'↫ تعطيل المغادره ᥀','↫ تفعيل المغادره ᥀'},
-{'↫ تعطيل الاذاعه ᥀','↫ تفعيل الاذاعه ᥀'},
-{'↫ تعطيل البوت الخدمي ᥀','↫ تفعيل البوت الخدمي ᥀'},
-{'↫ تعطيل النسخه التلقائيه ᥀','↫ تفعيل النسخه التلقائيه ᥀'},
-{'↫ رجوع ᥀'},
+{'↫ تعطيل التواصل ☭','↫ تفعيل التواصل ☭'},
+{'↫ تعطيل ترحيب البوت ☭','↫ تفعيل ترحيب البوت ☭'},
+{'↫ تعطيل المغادره ☭','↫ تفعيل المغادره ☭'},
+{'↫ تعطيل الاذاعه ☭','↫ تفعيل الاذاعه ☭'},
+{'↫ تعطيل البوت الخدمي ☭','↫ تفعيل البوت الخدمي ☭'},
+{'↫ تعطيل النسخه التلقائيه ☭','↫ تفعيل النسخه التلقائيه ☭'},
+{'↫ رجوع ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end end
-if text == '↫ الاذاعه ᥀' then 
+if text == '↫ الاذاعه ☭' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي المطور \n᥀︙اليك الازرار الخاصه بالاذاعه لسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي المطور \n☭︙اليك الازرار الخاصه بالاذاعه لسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫ اذاعه بالتثبيت ᥀'},
-{'↫ اذاعه خاص ᥀','↫ اذاعه عام ᥀'},
-{'↫ اذاعه خاص بالتوجيه ᥀','↫ اذاعه عام بالتوجيه ᥀'},
+{'↫ اذاعه بالتثبيت ☭'},
+{'↫ اذاعه خاص ☭','↫ اذاعه عام ☭'},
+{'↫ اذاعه خاص بالتوجيه ☭','↫ اذاعه عام بالتوجيه ☭'},
 {'الغاء'},
-{'↫ رجوع ᥀'},
+{'↫ رجوع ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end end
-if text == '↫ العام ᥀' then 
+if text == '↫ العام ☭' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي المطور \n᥀︙اليك الازرار الخاصه بالعام لسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي المطور \n☭︙اليك الازرار الخاصه بالعام لسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫ اضف رد عام ᥀','↫ حذف رد عام ᥀'},
-{'↫ ردود العام ᥀','↫ مسح ردود العام ᥀'},
-{'↫ قائمه العام ᥀','مسح قائمه العام'},
-{'↫ رجوع ᥀'},
+{'↫ اضف رد عام ☭','↫ حذف رد عام ☭'},
+{'↫ ردود العام ☭','↫ مسح ردود العام ☭'},
+{'↫ قائمه العام ☭','مسح قائمه العام'},
+{'↫ رجوع ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end end
-if text == '↫ ردود الخاص ᥀' then 
+if text == '↫ ردود الخاص ☭' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي المطور \n᥀︙اليك الازرار الخاصه بردود الخاص لسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي المطور \n☭︙اليك الازرار الخاصه بردود الخاص لسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫ تعيين رد الخاص ᥀','↫ حذف رد الخاص ᥀'},
-{'↫ جلب رد الخاص ᥀'},
-{'↫ رجوع ᥀'},
+{'↫ تعيين رد الخاص ☭','↫ حذف رد الخاص ☭'},
+{'↫ جلب رد الخاص ☭'},
+{'↫ رجوع ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end end
-if text == '↫ الاشتراك الاجباري ᥀' then 
+if text == '↫ الاشتراك الاجباري ☭' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي المطور \n᥀︙اليك الازرار الخاصه بالاشتراك الاجباري لسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي المطور \n☭︙اليك الازرار الخاصه بالاشتراك الاجباري لسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫  تفعيل الاشتراك الاجباري ᥀','↫  تعطيل الاشتراك الاجباري ᥀'},
-{'↫ تعيين قناة الاشتراك ᥀',' ↫ حذف قناة الاشتراك ᥀'},
-{'↫ تغير كليشه الاشتراك ᥀','↫ حذف كليشه الاشتراك ᥀'},
-{'↫ كليشه الاشتراك ᥀','↫ قناة الاشتراك ᥀'},
-{'↫ رجوع ᥀'},
+{'↫  تفعيل الاشتراك الاجباري ☭','↫  تعطيل الاشتراك الاجباري ☭'},
+{'↫ تعيين قناة الاشتراك ☭',' ↫ حذف قناة الاشتراك ☭'},
+{'↫ تغير كليشه الاشتراك ☭','↫ حذف كليشه الاشتراك ☭'},
+{'↫ كليشه الاشتراك ☭','↫ قناة الاشتراك ☭'},
+{'↫ رجوع ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end end
-if text == '↫ الاوامر الخدميه ᥀' or text == '/play' or text == '↫  رجوع  ᥀' or text == 'اوامر الخدميه' or text == '/free' then
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي \n᥀︙اليك الازرار الخاصه بالاوامر الخدميه الخاصه بسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+if text == '↫ الاوامر الخدميه ☭' or text == '/play' or text == '↫  رجوع  ☭' or text == 'اوامر الخدميه' or text == '/free' then
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي \n☭︙اليك الازرار الخاصه بالاوامر الخدميه الخاصه بسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫ اوامر التسليه ᥀','↫ الاوامر الخدميه  ᥀'},
-{'↫ اوامر النسب ᥀','↫ البوتات ᥀'},
-{'↫ العاب ᥀'},
-{'↫  السورس ᥀','↫  المطور ᥀'},
-{'↫ رجوع ᥀'},
+{'↫ اوامر التسليه ☭','↫ الاوامر الخدميه  ☭'},
+{'↫ اوامر النسب ☭','↫ البوتات ☭'},
+{'↫ العاب ☭'},
+{'↫  السورس ☭','↫  المطور ☭'},
+{'↫ رجوع ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end
-if text == '↫ اوامر التسليه ᥀' then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي \n᥀︙اليك الازرار الخاصه بأوامر التسليه الخاصه بسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+if text == '↫ اوامر التسليه ☭' then 
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي \n☭︙اليك الازرار الخاصه بأوامر التسليه الخاصه بسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫ غنيلي ᥀','↫ اغنيه ᥀'},
-{'↫ ميمز ᥀','↫ ريمكس ᥀'},
-{'↫ صوره ᥀','↫ متحركه ᥀'},
-{'↫ مسلسل ᥀','↫ فلم ᥀'},
-{'↫  رجوع  ᥀'},
+{'↫ غنيلي ☭','↫ اغنيه ☭'},
+{'↫ ميمز ☭','↫ ريمكس ☭'},
+{'↫ صوره ☭','↫ متحركه ☭'},
+{'↫ مسلسل ☭','↫ فلم ☭'},
+{'↫  رجوع  ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end
-if text == '↫ الاوامر الخدميه  ᥀' then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي \n᥀︙اليك الازرار الخاصه بالاوامر الخدميه الخاصه بسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+if text == '↫ الاوامر الخدميه  ☭' then 
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي \n☭︙اليك الازرار الخاصه بالاوامر الخدميه الخاصه بسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫ الابراج ᥀','↫ حساب العمر ᥀'},
-{'↫ الزخرفه ᥀','↫ معاني الاسماء ᥀'},
-{'↫ الحمايه ᥀'},
-{'↫  معرفي ᥀','↫  اسمي ᥀','↫ ايديي ᥀'},
-{'↫  نبذتي ᥀','↫ نبذا ᥀'},
-{'↫  رجوع  ᥀'},
+{'↫ الابراج ☭','↫ حساب العمر ☭'},
+{'↫ الزخرفه ☭','↫ معاني الاسماء ☭'},
+{'↫ الحمايه ☭'},
+{'↫  معرفي ☭','↫  اسمي ☭','↫ ايديي ☭'},
+{'↫  نبذتي ☭','↫ نبذا ☭'},
+{'↫  رجوع  ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end
-if text == '↫ البوتات ᥀' then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي \n᥀︙اليك الازرار الخاصه بأوامر البوتات الخاصه بسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+if text == '↫ البوتات ☭' then 
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي \n☭︙اليك الازرار الخاصه بأوامر البوتات الخاصه بسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫ بوت الحذف ᥀','↫ بوت الهمسه ᥀'},
-{'↫ بوت اليوتيوب ᥀','↫ بوت الكت ᥀'},
-{'↫ بوت الزخرفه ᥀'},
-{'↫  رجوع  ᥀'},
+{'↫ بوت الحذف ☭','↫ بوت الهمسه ☭'},
+{'↫ بوت اليوتيوب ☭','↫ بوت الكت ☭'},
+{'↫ بوت الزخرفه ☭'},
+{'↫  رجوع  ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end
-if text == '↫ اوامر النسب ᥀' then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي \n᥀︙اليك الازرار الخاصه بأوامر النسب الخاصه بسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
+if text == '↫ اوامر النسب ☭' then 
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي \n☭︙اليك الازرار الخاصه بأوامر النسب الخاصه بسورس فايروس فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'↫ نسبه الكره ᥀','↫ نسبه الحب ᥀'},
-{'↫ نسبه الرجوله ᥀','↫ نسبه الانوثه ᥀'},
-{'↫ نسبه الغباء ᥀','↫ نسبه الجمال ᥀'},
-{'↫ نسبه الخيانه ᥀'},
-{'↫  رجوع  ᥀'},
+{'↫ نسبه الكره ☭','↫ نسبه الحب ☭'},
+{'↫ نسبه الرجوله ☭','↫ نسبه الانوثه ☭'},
+{'↫ نسبه الغباء ☭','↫ نسبه الجمال ☭'},
+{'↫ نسبه الخيانه ☭'},
+{'↫  رجوع  ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end
-if text == '↫ العاب ᥀' then 
-local Sudo_Welcome = '᥀︙اهلا بك مجددا عزيزي \n᥀︙اليك الازرار الخاصه بألعاب سورس فايروس فقط اضغط على اللعبه الذي تريد لعبها'
+if text == '↫ العاب ☭' then 
+local Sudo_Welcome = '☭︙اهلا بك مجددا عزيزي \n☭︙اليك الازرار الخاصه بألعاب سورس فايروس فقط اضغط على اللعبه الذي تريد لعبها'
 local key = {
-{'↫ الالعاب ᥀','↫ الالعاب المتطوره ᥀'},
-{'↫ كت ᥀'},
-{'↫ سمايلات ᥀','↫ معاني ᥀'},
-{'↫ ترتيب ᥀','↫ حزوره ᥀'},
-{'↫ العكس ᥀','↫ المختلف ᥀'},
-{'↫ امثله ᥀','↫ اسئله ᥀'},
-{'↫ تخمين ᥀',''},
-{'↫ رياضيات ᥀','↫ انكليزي ᥀'},
-{'↫  رجوع  ᥀'},
+{'↫ الالعاب ☭','↫ الالعاب المتطوره ☭'},
+{'↫ كت ☭'},
+{'↫ سمايلات ☭','↫ معاني ☭'},
+{'↫ ترتيب ☭','↫ حزوره ☭'},
+{'↫ العكس ☭','↫ المختلف ☭'},
+{'↫ امثله ☭','↫ اسئله ☭'},
+{'↫ تخمين ☭',''},
+{'↫ رياضيات ☭','↫ انكليزي ☭'},
+{'↫  رجوع  ☭'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
@@ -1988,14 +1988,14 @@ if text == '/start' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Start:Time'..msg.sender_user_id_) then
 tdcli_function({ID="GetUser",user_id_=ViRUS},function(arg,dp) 
 local inline = {
-{{text="᥀ المطور .",url="t.me/"..(dp.username_ or "L9L9L")}},
-{{text="᥀ السورس .",url="https://t.me/L9L9L"},{text="᥀ لتنصيب بوت .",url="https://t.me/tsttt"}},{{text="᥀ اضفني في مجموعتك .",url="t.me/"..dp.username_.."?startgroup=botstart"}}
+{{text="☭ المطور .",url="t.me/"..(dp.username_ or "V_IRUS1")}},
+{{text="☭ السورس .",url="https://t.me/V_IRUS1"},{text="☭ لتنصيب بوت .",url="https://t.me/OOO0OOQ"}},{{text="☭ اضفني في مجموعتك .",url="t.me/"..dp.username_.."?startgroup=botstart"}}
 }
 local start = DevSOFI:get(Virus.."SOFI:Start:Bot")
 if start then 
 Start_Source = start
 else
-Start_Source = "᥀︙مرحبا انا بوت اسمي "..NameBot.."\n᥀︙اختصاصي حماية المجموعات\n᥀︙من التفليش والسبام والخخ .. . ،\n᥀︙تفعيلي سهل ومجانا فقط قم برفعي ادمن في مجموعتك وارسل امر ↫ تفعيل\n᥀︙سيتم رفع الادمنيه والمنشئ تلقائيا\n᥀︙ارسل امر /free او /play للتمتع باوامر الاعضاء"
+Start_Source = "☭︙مرحبا انا بوت اسمي "..NameBot.."\n☭︙اختصاصي حماية المجموعات\n☭︙من التفليش والسبام والخخ .. . ،\n☭︙تفعيلي سهل ومجانا فقط قم برفعي ادمن في مجموعتك وارسل امر ↫ تفعيل\n☭︙سيتم رفع الادمنيه والمنشئ تلقائيا\n☭︙ارسل امر /free او /play للتمتع باوامر الاعضاء"
 end 
 SendInline(msg.chat_id_,Start_Source,nil,inline)
 end,nil)
@@ -2006,12 +2006,12 @@ end
 --     Source Virus     --
 if not SecondSudo(msg) and not DevSOFI:sismember(Virus..'SOFI:Ban:Pv',msg.sender_user_id_) and not DevSOFI:get(Virus..'SOFI:Texting:Pv') then
 tdcli_function({ID="GetUser",user_id_=ViRUS},function(arg,chat) 
-Dev_SOFI(msg.sender_user_id_, msg.id_, 1, '᥀︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "L9L9L")..')', 1, 'md') 
+Dev_SOFI(msg.sender_user_id_, msg.id_, 1, '☭︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "V_IRUS1")..')', 1, 'md') 
 tdcli_function({ID="ForwardMessages",chat_id_=ViRUS,from_chat_id_= msg.sender_user_id_,message_ids_={[0]=msg.id_},disable_notification_=1,from_background_=1},function(arg,data) 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(arg,dp) 
 if data and data.messages_ and data.messages_[0] ~= false and data.ID ~= "Error" then
 if data and data.messages_ and data.messages_[0].content_.sticker_ then
-SendText(ViRUS,'᥀︙تم ارسال الملصق من ↫ ⤈\n['..string.sub(dp.first_name_,0, 40)..'](tg://user?id='..dp.id_..')',0,'md') 
+SendText(ViRUS,'☭︙تم ارسال الملصق من ↫ ⤈\n['..string.sub(dp.first_name_,0, 40)..'](tg://user?id='..dp.id_..')',0,'md') 
 return false
 end;end;end,nil);end,nil);end,nil);end
 if SecondSudo(msg) and msg.reply_to_message_id_ ~= 0  then    
@@ -2021,13 +2021,13 @@ id_user = result.forward_info_.sender_user_id_
 end 
 tdcli_function ({ID = "GetUser",user_id_ = id_user},function(arg,data) 
 if text == 'حظر' or text == 'حضر' then
-local Text = '᥀︙العضو ↫ ['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')'..'\n᥀︙تم حظره من التواصل'
+local Text = '☭︙العضو ↫ ['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')'..'\n☭︙تم حظره من التواصل'
 SendText(ViRUS,Text,msg.id_/2097152/0.5,'md') 
 DevSOFI:sadd(Virus..'SOFI:Ban:Pv',data.id_)  
 return false  
 end 
 if text == 'الغاء الحظر' or text == 'الغاء حظر' then
-local Text = '᥀︙العضو ↫ ['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')'..'\n᥀︙تم الغاء حظره من التواصل'
+local Text = '☭︙العضو ↫ ['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')'..'\n☭︙تم الغاء حظره من التواصل'
 SendText(ViRUS,Text,msg.id_/2097152/0.5,'md') 
 DevSOFI:srem(Virus..'SOFI:Ban:Pv',data.id_)  
 return false  
@@ -2035,24 +2035,24 @@ end
 tdcli_function({ID='GetChat',chat_id_ = id_user},function(arg,dataq)
 tdcli_function ({ ID = "SendChatAction",chat_id_ = id_user, action_ = {  ID = "SendMessageTypingAction", progress_ = 100} },function(arg,dp) 
 if dp.code_ == 400 or dp.code_ == 5 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو قام بحظر البوت لا تستطيع ارسال الرسائل له', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو قام بحظر البوت لا تستطيع ارسال الرسائل له', 1, 'md')
 return false  
 end 
 if text then
 Dev_SOFI(id_user, 0, 1, text, 1, "md")  
-Text = '᥀︙تم ارسال الرساله الى ↫ ⤈'
+Text = '☭︙تم ارسال الرساله الى ↫ ⤈'
 elseif msg.content_.ID == 'MessageSticker' then    
 sendSticker(id_user, msg.id_, 0, 1,nil, msg.content_.sticker_.sticker_.persistent_id_)   
-Text = '᥀︙تم ارسال الملصق الى ↫ ⤈'
+Text = '☭︙تم ارسال الملصق الى ↫ ⤈'
 elseif msg.content_.ID == 'MessagePhoto' then    
 sendPhoto(id_user, msg.id_, 0, 1,nil, msg.content_.photo_.sizes_[0].photo_.persistent_id_,(msg.content_.caption_ or ''))    
-Text = '᥀︙تم ارسال الصوره الى ↫ ⤈'
+Text = '☭︙تم ارسال الصوره الى ↫ ⤈'
 elseif msg.content_.ID == 'MessageAnimation' then    
 sendDocument(id_user, msg.id_, 0, 1,nil, msg.content_.animation_.animation_.persistent_id_)    
-Text = '᥀︙تم ارسال المتحركه الى ↫ ⤈'
+Text = '☭︙تم ارسال المتحركه الى ↫ ⤈'
 elseif msg.content_.ID == 'MessageVoice' then    
 sendVoice(id_user, msg.id_, 0, 1,nil, msg.content_.voice_.voice_.persistent_id_)    
-Text = '᥀︙تم ارسال البصمه الى ↫ ⤈'
+Text = '☭︙تم ارسال البصمه الى ↫ ⤈'
 end     
 SendText(ViRUS, Text..'\n'..'['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')',0,'md') 
 end,nil);
@@ -2064,127 +2064,127 @@ end
 --     Source Virus     --
 if text and DevSOFI:get(Virus..'SOFI:Start:Bots'..msg.sender_user_id_) then
 if text == 'الغاء' then   
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء حفظ كليشة الستارت', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء حفظ كليشة الستارت', 1, 'md')
 DevSOFI:del(Virus..'SOFI:Start:Bots'..msg.sender_user_id_) 
 return false
 end
 DevSOFI:set(Virus.."SOFI:Start:Bot",text)  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حفظ كليشة الستارت', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حفظ كليشة الستارت', 1, 'md')
 DevSOFI:del(Virus..'SOFI:Start:Bots'..msg.sender_user_id_) 
 return false
 end
 if SecondSudo(msg) then
-if text == 'تعيين رد الخاص' and ChCheck(msg) or text == 'ضع كليشه ستارت' and ChCheck(msg) or text == '↫ تعيين رد الخاص ᥀' and ChCheck(msg) then 
+if text == 'تعيين رد الخاص' and ChCheck(msg) or text == 'ضع كليشه ستارت' and ChCheck(msg) or text == '↫ تعيين رد الخاص ☭' and ChCheck(msg) then 
 DevSOFI:set(Virus..'SOFI:Start:Bots'..msg.sender_user_id_,true) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ارسل لي كليشة الستارت الان', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ارسل لي كليشة الستارت الان', 1, 'md')
 return false
 end
-if text == 'حذف رد الخاص' and ChCheck(msg) or text == 'حذف كليشه ستارت' and ChCheck(msg) or text == '↫ حذف رد الخاص ᥀' and ChCheck(msg) then 
+if text == 'حذف رد الخاص' and ChCheck(msg) or text == 'حذف كليشه ستارت' and ChCheck(msg) or text == '↫ حذف رد الخاص ☭' and ChCheck(msg) then 
 DevSOFI:del(Virus..'Start:Bot') 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حذف كليشة الستارت بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حذف كليشة الستارت بنجاح', 1, 'md')
 end
-if text == 'جلب رد الخاص' and ChCheck(msg) or text == '↫ جلب رد الخاص ᥀' and ChCheck(msg) then  
+if text == 'جلب رد الخاص' and ChCheck(msg) or text == '↫ جلب رد الخاص ☭' and ChCheck(msg) then  
 local start = DevSOFI:get(Virus.."SOFI:Start:Bot")
 if start then 
 Start_Source = start
 else
-Start_Source = "᥀︙مرحبا انا بوت اسمي "..NameBot.."\n᥀︙اختصاصي حماية المجموعات\n᥀︙من التفليش والسبام والخخ .. . ،\n᥀︙تفعيلي سهل ومجانا فقط قم برفعي ادمن في مجموعتك وارسل امر ↫ تفعيل\n᥀︙سيتم رفع الادمنيه والمنشئ تلقائيا"
+Start_Source = "☭︙مرحبا انا بوت اسمي "..NameBot.."\n☭︙اختصاصي حماية المجموعات\n☭︙من التفليش والسبام والخخ .. . ،\n☭︙تفعيلي سهل ومجانا فقط قم برفعي ادمن في مجموعتك وارسل امر ↫ تفعيل\n☭︙سيتم رفع الادمنيه والمنشئ تلقائيا"
 end 
 Dev_SOFI(msg.chat_id_, msg.id_, 1, Start_Source, 1, 'md')
 return false
 end
-if text == 'تفعيل التواصل' and ChCheck(msg) or text == '↫ تفعيل التواصل ᥀' and ChCheck(msg) then   
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل التواصل بنجاح'
+if text == 'تفعيل التواصل' and ChCheck(msg) or text == '↫ تفعيل التواصل ☭' and ChCheck(msg) then   
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل التواصل بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Texting:Pv') 
 end
-if text == 'تعطيل التواصل' and ChCheck(msg) or text == '↫ تعطيل التواصل ᥀' and ChCheck(msg) then  
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل التواصل بنجاح'
+if text == 'تعطيل التواصل' and ChCheck(msg) or text == '↫ تعطيل التواصل ☭' and ChCheck(msg) then  
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل التواصل بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Texting:Pv',true) 
 end
 if Sudo(msg) then
-if text == 'تفعيل النسخه التلقائيه' or text == 'تفعيل جلب نسخه الكروبات' or text == 'تفعيل عمل نسخه للمجموعات' or text == '↫ تفعيل النسخه التلقائيه ᥀' then   
-Dev_SOFI(msg.chat_id_,msg.id_, 1, "᥀︙تم تفعيل جلب نسخة الكروبات التلقائيه\n᥀︙سيتم ارسال نسخه تلقائيه للكروبات كل يوم الى خاص المطور الاساسي", 1, 'md')
+if text == 'تفعيل النسخه التلقائيه' or text == 'تفعيل جلب نسخه الكروبات' or text == 'تفعيل عمل نسخه للمجموعات' or text == '↫ تفعيل النسخه التلقائيه ☭' then   
+Dev_SOFI(msg.chat_id_,msg.id_, 1, "☭︙تم تفعيل جلب نسخة الكروبات التلقائيه\n☭︙سيتم ارسال نسخه تلقائيه للكروبات كل يوم الى خاص المطور الاساسي", 1, 'md')
 DevSOFI:del(Virus.."SOFI:Lock:AutoFile")
 end
-if text == 'تعطيل النسخه التلقائيه' or text == 'تعطيل جلب نسخه الكروبات' or text == 'تعطيل عمل نسخه للمجموعات' or text == '↫ تعطيل النسخه التلقائيه ᥀' then  
-Dev_SOFI(msg.chat_id_,msg.id_, 1, "᥀︙تم تعطيل جلب نسخة الكروبات التلقائيه", 1, 'md')
+if text == 'تعطيل النسخه التلقائيه' or text == 'تعطيل جلب نسخه الكروبات' or text == 'تعطيل عمل نسخه للمجموعات' or text == '↫ تعطيل النسخه التلقائيه ☭' then  
+Dev_SOFI(msg.chat_id_,msg.id_, 1, "☭︙تم تعطيل جلب نسخة الكروبات التلقائيه", 1, 'md')
 DevSOFI:set(Virus.."SOFI:Lock:AutoFile",true) 
 end
 end
 end
 --     Source Virus     --
-if text == "الابراج" or text == "↫ الابراج ᥀" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ من خلال البوت يمكنك معرفه توقعات برجك \n᥀︙ فقط قم بارسال امر برج + اسم البرج \n᥀︙ مثال : برج الاسد ،\n᥀︙ لمعرفه برجك قم بالرجوع الى قسم حساب العمر ', 1, 'md') end
-if text == "حساب العمر" or text == "↫ حساب العمر ᥀" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ من خلال البوت يمكنك حساب عمرك \n᥀︙ فقط قم بارسال امر احسب + مواليدك الى البوت \n᥀︙ بالتنسيق التالي مثال : احسب 2000/7/24', 1, 'md') end
-if text == "الحمايه" or text == "↫ الحمايه ᥀" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ اضف البوت في المجموعه ثم قم برفعه مشرف وارسل تفعيل \n᥀︙ وتمتع بخدمات غير موجوده في باقي البوتات ', 1, 'md') end
-if text == "الزخرفه" or text == "↫ الزخرفه ᥀" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙قم بأرسال أمر زخرفه وثم ارسال الاسم الذي تريد زخرفته بألانكليزي أو العربي', 1, 'md') end
-if text == "معاني الاسماء" or text == "↫ معاني الاسماء ᥀" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ من خلال البوت يمكنك معرفه معنى اسمك \n᥀︙ فقط قم بارسال امر معنى اسم + الاسم \n᥀︙ مثال : معنى اسم ريو', 1, 'md') end
-if text == "عدد المسح" or text == "تعين عدد المسح" or text == "تعيين عدد المسح" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ فقط قم بارسال امر عدد المسح + عدد المسح \n᥀︙ مثال : عدد المسح 100', 1, 'md') end
-if text == "انطق" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ فقط قم بارسال امر انطق + الكلمه\n᥀︙سيقوم البوت بنطق الكلمه \n᥀︙ مثال : انطق هلو', 1, 'md') end
-if text == "يوتيوب" and ChCheck(msg) or text == "اليوتيوب" and ChCheck(msg) or text == "↫ بوت اليوتيوب ᥀" and ChCheck(msg) or text == "بوت اليوتيوب" and ChCheck(msg) or text == "اريد بوت يوتيوب" and ChCheck(msg) or text == "شمرلي بوت يوتيوب" and ChCheck(msg) or text == "يوت" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/t_stbot"}}} SendInline(msg.chat_id_,'*᥀︙اضغط للحصول على بوت اليوتيوب*',nil,inline) return false end
-if text == "اهمس" and ChCheck(msg) or text == "↫ بوت الهمسه ᥀" and ChCheck(msg) or text == "بوت الهمسه" and ChCheck(msg) or text == "همسه" and ChCheck(msg) or text == "اريد بوت الهمسه" and ChCheck(msg) or text == "دزلي بوت الهمسه" and ChCheck(msg) or text == "دزولي بوت الهمسه" and ChCheck(msg) then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙@HMSEBOT\n᥀︙@nnbbot\n᥀︙@ocBot\n᥀︙@hebot ', 1, 'md') end
-if text == "رابط حذف" and ChCheck(msg) or text == "رابط الحذف" and ChCheck(msg) or text == "اريد رابط الحذف" and ChCheck(msg) or text == "شمرلي رابط الحذف" and ChCheck(msg) or text == "اريد رابط حذف" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'*᥀︙اضغط للحصول على رابط الحذف*',nil,inline) return false end
-if text == "↫ بوت الحذف ᥀" and ChCheck(msg) or text == "بوت الحذف" and ChCheck(msg) or text == "اريد بوت الحذف" and ChCheck(msg) or text == "اريد بوت حذف" and ChCheck(msg) or text == "بوت حذف" and ChCheck(msg) or text == "بوت حذف حسابات" and ChCheck(msg) or text == "راح احذف" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'*᥀︙اضغط للحصول على بوت الحذف*',nil,inline) return false end
-if text == "↫ بوت الكت ᥀" and ChCheck(msg) or text == "بوت الكت" and ChCheck(msg) or text == "بوت كت" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/E9OBot"}}} SendInline(msg.chat_id_,'*᥀︙اضغط للحصول على بوت الكت*',nil,inline) return false end
-if text == "↫ بوت الزخرفه ᥀" and ChCheck(msg) or text == "بوت الزخرفه" and ChCheck(msg) or text == "بوت زخرفه" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/W5555Bot"}}} SendInline(msg.chat_id_,'*᥀︙اضغط للحصول على بوت الزخرفه*',nil,inline) return false end
-if text == "ايديي" and ChCheck(msg) or text == "↫ ايديي ᥀" and ChCheck(msg) then Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙ايديك ↫ ❨ `'..msg.sender_user_id_..'` ❩', 1, 'md') end
+if text == "الابراج" or text == "↫ الابراج ☭" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ من خلال البوت يمكنك معرفه توقعات برجك \n☭︙ فقط قم بارسال امر برج + اسم البرج \n☭︙ مثال : برج الاسد ،\n☭︙ لمعرفه برجك قم بالرجوع الى قسم حساب العمر ', 1, 'md') end
+if text == "حساب العمر" or text == "↫ حساب العمر ☭" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ من خلال البوت يمكنك حساب عمرك \n☭︙ فقط قم بارسال امر احسب + مواليدك الى البوت \n☭︙ بالتنسيق التالي مثال : احسب 2000/7/24', 1, 'md') end
+if text == "الحمايه" or text == "↫ الحمايه ☭" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ اضف البوت في المجموعه ثم قم برفعه مشرف وارسل تفعيل \n☭︙ وتمتع بخدمات غير موجوده في باقي البوتات ', 1, 'md') end
+if text == "الزخرفه" or text == "↫ الزخرفه ☭" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙قم بأرسال أمر زخرفه وثم ارسال الاسم الذي تريد زخرفته بألانكليزي أو العربي', 1, 'md') end
+if text == "معاني الاسماء" or text == "↫ معاني الاسماء ☭" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ من خلال البوت يمكنك معرفه معنى اسمك \n☭︙ فقط قم بارسال امر معنى اسم + الاسم \n☭︙ مثال : معنى اسم ريو', 1, 'md') end
+if text == "عدد المسح" or text == "تعين عدد المسح" or text == "تعيين عدد المسح" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ فقط قم بارسال امر عدد المسح + عدد المسح \n☭︙ مثال : عدد المسح 100', 1, 'md') end
+if text == "انطق" then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ فقط قم بارسال امر انطق + الكلمه\n☭︙سيقوم البوت بنطق الكلمه \n☭︙ مثال : انطق هلو', 1, 'md') end
+if text == "يوتيوب" and ChCheck(msg) or text == "اليوتيوب" and ChCheck(msg) or text == "↫ بوت اليوتيوب ☭" and ChCheck(msg) or text == "بوت اليوتيوب" and ChCheck(msg) or text == "اريد بوت يوتيوب" and ChCheck(msg) or text == "شمرلي بوت يوتيوب" and ChCheck(msg) or text == "يوت" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/t_stbot"}}} SendInline(msg.chat_id_,'*☭︙اضغط للحصول على بوت اليوتيوب*',nil,inline) return false end
+if text == "اهمس" and ChCheck(msg) or text == "↫ بوت الهمسه ☭" and ChCheck(msg) or text == "بوت الهمسه" and ChCheck(msg) or text == "همسه" and ChCheck(msg) or text == "اريد بوت الهمسه" and ChCheck(msg) or text == "دزلي بوت الهمسه" and ChCheck(msg) or text == "دزولي بوت الهمسه" and ChCheck(msg) then  Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙@HMSEBOT\n☭︙@nnbbot\n☭︙@ocBot\n☭︙@hebot ', 1, 'md') end
+if text == "رابط حذف" and ChCheck(msg) or text == "رابط الحذف" and ChCheck(msg) or text == "اريد رابط الحذف" and ChCheck(msg) or text == "شمرلي رابط الحذف" and ChCheck(msg) or text == "اريد رابط حذف" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'*☭︙اضغط للحصول على رابط الحذف*',nil,inline) return false end
+if text == "↫ بوت الحذف ☭" and ChCheck(msg) or text == "بوت الحذف" and ChCheck(msg) or text == "اريد بوت الحذف" and ChCheck(msg) or text == "اريد بوت حذف" and ChCheck(msg) or text == "بوت حذف" and ChCheck(msg) or text == "بوت حذف حسابات" and ChCheck(msg) or text == "راح احذف" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'*☭︙اضغط للحصول على بوت الحذف*',nil,inline) return false end
+if text == "↫ بوت الكت ☭" and ChCheck(msg) or text == "بوت الكت" and ChCheck(msg) or text == "بوت كت" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/E9OBot"}}} SendInline(msg.chat_id_,'*☭︙اضغط للحصول على بوت الكت*',nil,inline) return false end
+if text == "↫ بوت الزخرفه ☭" and ChCheck(msg) or text == "بوت الزخرفه" and ChCheck(msg) or text == "بوت زخرفه" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/W5555Bot"}}} SendInline(msg.chat_id_,'*☭︙اضغط للحصول على بوت الزخرفه*',nil,inline) return false end
+if text == "ايديي" and ChCheck(msg) or text == "↫ ايديي ☭" and ChCheck(msg) then Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙ايديك ↫ ❨ `'..msg.sender_user_id_..'` ❩', 1, 'md') end
 -- Source Virus --
-if text == 'نبذا' and ChCheck(msg) or text == '↫ نبذا ᥀' then
+if text == 'نبذا' and ChCheck(msg) or text == '↫ نبذا ☭' then
 local VirusTeam = {'- Nothing stops him who wants you .','make them wish they had you !.','Maybe a magical girl','٫ 𝖡𝖾 𝗌𝗂𝗆𝗉𝗅𝖾 𝖺𝗇𝖽 𝖽𝗂𝖿𝖿𝖾𝗋𝖾𝗇𝗍','. 𝖬𝖺𝗄𝖾 𝖽𝗋𝖾𝖺𝗆𝗌 𝖿𝗋𝗈𝗆 𝗒𝗈𝗎𝗋 𝗋𝖾𝖿𝗋𝖺𝖼𝗍𝗂𝗈𝗇𝗌 . .',':Life is lying .','𝖨 𝗐𝗂𝗅𝗅 𝖺𝗅𝗐𝖺𝗒𝗌 𝗅𝗈𝗏𝖾 𝗒𝗈𝗎 𝗇𝖾𝗏𝖾𝗋 𝖿𝗈𝗋𝗀𝖾𝗍'}  
 Dev_SOFI(msg.chat_id_, msg.id_, 1, ''..VirusTeam[math.random(#VirusTeam)]..'' , 1, 'md')  
 return false
 end
 --     Source Virus     --
-if text and (text == 'المطور' or text == 'مطور' or text == '↫  المطور ᥀') then
+if text and (text == 'المطور' or text == 'مطور' or text == '↫  المطور ☭') then
 tdcli_function({ID="GetUser",user_id_=ViRUS},function(arg,result)
 local msg_id = msg.id_/2097152/0.5
-Text = "*᥀︙Dev Name ↬ * ["..result.first_name_.."](T.me/"..result.username_..")\n*᥀︙Dev User ↬* [@"..result.username_.."]"
+Text = "*☭︙Dev Name ↬ * ["..result.first_name_.."](T.me/"..result.username_..")\n*☭︙Dev User ↬* [@"..result.username_.."]"
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = ''..result.first_name_..' ',url="t.me/"..result.username_ or L9L9L}}}
+keyboard.inline_keyboard = {{{text = ''..result.first_name_..' ',url="t.me/"..result.username_ or V_IRUS1}}}
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..result.username_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
 end
 --     Source Virus     --
-if text == "معرفي" or text == "↫  معرفي ᥀" then
+if text == "معرفي" or text == "↫  معرفي ☭" then
 function get_username(extra,result,success)
-text = '᥀︙معرفك ↫ ❨ User ❩'
+text = '☭︙معرفك ↫ ❨ User ❩'
 local text = text:gsub('User',('@'..result.username_ or ''))
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
 getUser(msg.sender_user_id_,get_username)
 end
-if text == "اسمي" or text == "↫  اسمي ᥀" then
+if text == "اسمي" or text == "↫  اسمي ☭" then
 function get_firstname(extra,result,success)
-text = '᥀︙اسمك ↫ firstname lastname'
+text = '☭︙اسمك ↫ firstname lastname'
 local text = text:gsub('firstname',(result.first_name_ or ''))
 local text = text:gsub('lastname',(result.last_name_ or ''))
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
 getUser(msg.sender_user_id_,get_firstname)
 end 
-if text == 'نبذتي' or text == 'بايو' or text == '↫  نبذتي ᥀' then
+if text == 'نبذتي' or text == 'بايو' or text == '↫  نبذتي ☭' then
 send(msg.chat_id_, msg.id_,'['..GetBio(msg.sender_user_id_)..']')
 end
-if text == "صورتي" or text == "↫ صورتي ᥀" then
+if text == "صورتي" or text == "↫ صورتي ☭" then
 local my_ph = DevSOFI:get(Virus.."SOFI:Photo:Profile"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_," ᥀︙الصوره معطله") 
+send(msg.chat_id_, msg.id_," ☭︙الصوره معطله") 
 return false  
 end
 local function getpro(extra, result, success)
 if result.photos_[0] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_," ᥀︙عدد صورك ↫ "..result.total_count_.." صوره‌‏", msg.id_, msg.id_, "md")
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_," ☭︙عدد صورك ↫ "..result.total_count_.." صوره‌‏", msg.id_, msg.id_, "md")
 else
 send(msg.chat_id_, msg.id_,'لا تمتلك صوره في حسابك', 1, 'md')
 end end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
 end
 --     Source Virus     --
-if text == "الالعاب المتطوره" or text == "الالعاب الاحترافيه" or text == "↫ الالعاب المتطوره ᥀" then
+if text == "الالعاب المتطوره" or text == "الالعاب الاحترافيه" or text == "↫ الالعاب المتطوره ☭" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Gamesinline'..msg.chat_id_) then
 Text =[[
-*᥀︙قائمه الالعاب المتطوره اضغط للعب*
+*☭︙قائمه الالعاب المتطوره اضغط للعب*
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -2203,7 +2203,7 @@ keyboard.inline_keyboard = {
 {{text="🔵 لعبة الالوان 🔴",url='https://t.me/T4TTTTBOT?game=color'}},
 {{text="🚀 لعبة الصاروخ 🚀",url='https://t.me/T4TTTTBOT?game=rocket'},{text="🏹 لعبة السهام 🏹",url='https://t.me/T4TTTTBOT?game=arrow'}},
 {{text="لعبة النينجا",url='https://t.me/gamee?game=GravityNinja21'},{text="لعبة الكرتي",url='https://t.me/gamee?game=KarateKid2'}},
-{{text = '᥀ Virus Team .', url="t.me/L9L9L"}},
+{{text = '☭ Virus Team .', url="t.me/V_IRUS1"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -2298,7 +2298,7 @@ local NameChat = NameChat:gsub("*","")
 local NameChat = NameChat:gsub("{","") 
 local NameChat = NameChat:gsub("}","") 
 if not Sudo(msg) and not Bot(msg) then
-SendText(ViRUS,"᥀︙تم طرد البوت من المجموعه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙بواسطة ↫ "..Name.."\n᥀︙اسم المجموعه ↫ ["..NameChat.."]\n᥀︙ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙الوقت ↫ "..os.date("%I:%M%p").."\n᥀︙التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(ViRUS,"☭︙تم طرد البوت من المجموعه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙بواسطة ↫ "..Name.."\n☭︙اسم المجموعه ↫ ["..NameChat.."]\n☭︙ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙الوقت ↫ "..os.date("%I:%M%p").."\n☭︙التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end,nil)
 end,nil)
@@ -2317,15 +2317,15 @@ end
 if text ==('تفعيل') and not SudoBot(msg) and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:FreeBot'..Virus) then
 if ChatType == 'pv' then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لاتستطيع تفعيلي هنا يرجى اضافتي في مجموعه اولا', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لاتستطيع تفعيلي هنا يرجى اضافتي في مجموعه اولا', 1, 'md')
 return false
 end
 if ChatType ~= 'sp' then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المجموعه عاديه وليست خارقه لا تستطيع تفعيلي يرجى ان تضع سجل رسائل المجموعه ضاهر وليس مخفي ومن بعدها يمكنك رفعي ادمن ثم تفعيلي', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المجموعه عاديه وليست خارقه لا تستطيع تفعيلي يرجى ان تضع سجل رسائل المجموعه ضاهر وليس مخفي ومن بعدها يمكنك رفعي ادمن ثم تفعيلي', 1, 'md')
 return false
 end
 if msg.can_be_deleted_ == false then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙البوت ليس ادمن يرجى ترقيتي !', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙البوت ليس ادمن يرجى ترقيتي !', 1, 'md')
 return false  
 end
 tdcli_function ({ ID = "GetChannelFull", channel_id_ = msg.chat_id_:gsub("-100","")}, function(arg,data)  
@@ -2367,13 +2367,13 @@ end
 end
 end,nil)
 if DevSOFI:sismember(Virus..'SOFI:Groups',msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المجموعه بالتاكيد مفعله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المجموعه بالتاكيد مفعله', 1, 'md')
 else
 if tonumber(data.member_count_) < tonumber(DevSOFI:get(Virus..'SOFI:Num:Add:Bot') or 0) and not SecondSudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙عدد اعضاء المجموعه اقل من ↫ *'..(DevSOFI:get(Virus..'SOFI:Num:Add:Bot') or 0)..'* عضو', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙عدد اعضاء المجموعه اقل من ↫ *'..(DevSOFI:get(Virus..'SOFI:Num:Add:Bot') or 0)..'* عضو', 1, 'md')
 return false
 end
-ReplyStatus(msg,result.id_,"ReplyBy","᥀︙تم تفعيل المجموعه "..dp.title_)  
+ReplyStatus(msg,result.id_,"ReplyBy","☭︙تم تفعيل المجموعه "..dp.title_)  
 DevSOFI:sadd(Virus.."SOFI:Groups",msg.chat_id_)
 DevSOFI:sadd(Virus..'SOFI:BasicConstructor:'..msg.chat_id_,msg.sender_user_id_)
 local Name1 = result.first_name_
@@ -2399,7 +2399,7 @@ else
 LinkGroup = 'لا يوجد'
 end
 DevSOFI:set(Virus.."SOFI:Groups:Links"..msg.chat_id_,LinkGroup) 
-SendText(ViRUS,"᥀︙تم تفعيل مجموعه جديده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙بواسطة ↫ "..Name.."\n᥀︙موقعه في المجموعه ↫ "..status.."\n᥀︙اسم المجموعه ↫ ["..NameChat.."]\n᥀︙عدد اعضاء المجموعه ↫ ❨ *"..NumMem.."* ❩\n᥀︙ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n᥀︙رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙الوقت ↫ "..os.date("%I:%M%p").."\n᥀︙التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(ViRUS,"☭︙تم تفعيل مجموعه جديده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙بواسطة ↫ "..Name.."\n☭︙موقعه في المجموعه ↫ "..status.."\n☭︙اسم المجموعه ↫ ["..NameChat.."]\n☭︙عدد اعضاء المجموعه ↫ ❨ *"..NumMem.."* ❩\n☭︙ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n☭︙رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙الوقت ↫ "..os.date("%I:%M%p").."\n☭︙التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end end
 end,nil)
@@ -2407,7 +2407,7 @@ end,nil)
 end,nil)
 end,nil)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع تفعيل هذه المجموعه بسبب تعطيل البوت الخدمي من قبل المطور الاساسي', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع تفعيل هذه المجموعه بسبب تعطيل البوت الخدمي من قبل المطور الاساسي', 1, 'md') 
 end 
 end 
 --     Source Virus     --
@@ -2428,7 +2428,7 @@ if DevSOFI:get(Virus..'SOFI:Lock:Robot'..msg.chat_id_) then
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(arg,dp) 
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..dp.id_)
 DevSOFI:sadd(Virus..'SOFI:Tkeed:'..msg.chat_id_, dp.id_)
-local Text = '᥀︙اهلا عزيزي ↫ ['..string.sub(dp.first_name_,0, 40)..'](tg://user?id='..dp.id_..')\n᥀︙يجب علينا التأكد أنك لست روبوت\n᥀︙تم تقيدك اضغط الزر بالاسفل لفكه'
+local Text = '☭︙اهلا عزيزي ↫ ['..string.sub(dp.first_name_,0, 40)..'](tg://user?id='..dp.id_..')\n☭︙يجب علينا التأكد أنك لست روبوت\n☭︙تم تقيدك اضغط الزر بالاسفل لفكه'
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اضغط هنا لفك تقيدك",callback_data="/UnTkeed"}}} 
 Msg_id = msg.id_/2097152/0.5
@@ -2446,7 +2446,7 @@ if not Bot(msg) then
 local filter = DevSOFI:smembers(Virus.."SOFI:FilterPhoto"..msg.chat_id_)
 for k,v in pairs(filter) do
 if v == msg.content_.photo_.id_ then
-ReplyStatus(msg,msg.sender_user_id_,"WrongWay","᥀︙الصوره التي ارسلتها تم منعها من المجموعه")  
+ReplyStatus(msg,msg.sender_user_id_,"WrongWay","☭︙الصوره التي ارسلتها تم منعها من المجموعه")  
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 return false   
 end
@@ -2458,7 +2458,7 @@ if not Bot(msg) then
 local filter = DevSOFI:smembers(Virus.."SOFI:FilterAnimation"..msg.chat_id_)
 for k,v in pairs(filter) do
 if v == msg.content_.animation_.animation_.persistent_id_ then
-ReplyStatus(msg,msg.sender_user_id_,"WrongWay","᥀︙المتحركه التي ارسلتها تم منعها من المجموعه")  
+ReplyStatus(msg,msg.sender_user_id_,"WrongWay","☭︙المتحركه التي ارسلتها تم منعها من المجموعه")  
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
 return false   
 end
@@ -2470,7 +2470,7 @@ if not Bot(msg) then
 local filter = DevSOFI:smembers(Virus.."SOFI:FilterSteckr"..msg.chat_id_)
 for k,v in pairs(filter) do
 if v == msg.content_.sticker_.sticker_.persistent_id_ then
-ReplyStatus(msg,msg.sender_user_id_,"WrongWay","᥀︙الملصق الذي ارسلته تم منعه من المجموعه")  
+ReplyStatus(msg,msg.sender_user_id_,"WrongWay","☭︙الملصق الذي ارسلته تم منعه من المجموعه")  
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 return false   
 end
@@ -2482,7 +2482,7 @@ if text and text:match("^(.*)$") then
 local DelGpRedRedods = DevSOFI:get(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 local GetGpTexts = DevSOFI:get(Virus..'SOFI:Add:GpTexts'..msg.sender_user_id_..msg.chat_id_)
 if DelGpRedRedods == 'DelGpRedRedods' then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙الرد ↫ '..msg.content_.text_..' للكلمه ↫ '..GetGpTexts..' تم حذفها',  1, "html")
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙الرد ↫ '..msg.content_.text_..' للكلمه ↫ '..GetGpTexts..' تم حذفها',  1, "html")
 DevSOFI:del(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 DevSOFI:srem(Virus..'SOFI:Text:GpTexts'..GetGpTexts..msg.chat_id_,msg.content_.text_)
 return false
@@ -2491,7 +2491,7 @@ end
 if text and text:match("^(.*)$") then
 local DelGpRed = DevSOFI:get(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 if DelGpRed == 'DelGpRedod' then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙الكلمه ( '..msg.content_.text_..' ) تم حذفها',  1, "html")
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙الكلمه ( '..msg.content_.text_..' ) تم حذفها',  1, "html")
 DevSOFI:del(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 DevSOFI:del(Virus..'SOFI:Text:GpTexts'..msg.content_.text_..msg.chat_id_)
 DevSOFI:srem(Virus..'SOFI:Manager:GpRedod'..msg.chat_id_,msg.content_.text_)
@@ -2501,7 +2501,7 @@ end
 if text and text:match("^(.*)$") then
 local DelGpRed = DevSOFI:get(Virus..'SOFI:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
 if DelGpRed == 'DelGpRed' then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙الكلمه ( '..msg.content_.text_..' ) تم حذفها',  1, "html")
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙الكلمه ( '..msg.content_.text_..' ) تم حذفها',  1, "html")
 DevSOFI:del(Virus..'SOFI:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
 DevSOFI:del(Virus..'SOFI:Gif:GpRed'..msg.content_.text_..msg.chat_id_)
 DevSOFI:del(Virus..'SOFI:Voice:GpRed'..msg.content_.text_..msg.chat_id_)
@@ -2518,7 +2518,7 @@ end
 if text and text:match("^(.*)$") then
 local DelAllRed = DevSOFI:get(Virus.."SOFI:Add:AllRed"..msg.sender_user_id_)
 if DelAllRed == 'DelAllRed' then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙الكلمه ( '..msg.content_.text_..' ) تم حذفها',  1, "html")
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙الكلمه ( '..msg.content_.text_..' ) تم حذفها',  1, "html")
 DevSOFI:del(Virus.."SOFI:Add:AllRed"..msg.sender_user_id_)
 DevSOFI:del(Virus.."SOFI:Gif:AllRed"..msg.content_.text_)
 DevSOFI:del(Virus.."SOFI:Voice:AllRed"..msg.content_.text_)
@@ -2539,7 +2539,7 @@ if SaveGpRedod == 'SaveGpRedod' then
 local GetGpTexts = DevSOFI:get(Virus..'SOFI:Add:GpTexts'..msg.sender_user_id_..msg.chat_id_)
 local List = DevSOFI:smembers(Virus..'SOFI:Text:GpTexts'..GetGpTexts..msg.chat_id_)
 if text == "الغاء" then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙᥀︙تم الغاء عملية حفظ الردود المتعدده للامر ↫ "..GetGpTexts ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙☭︙تم الغاء عملية حفظ الردود المتعدده للامر ↫ "..GetGpTexts ,  1, "md")
 DevSOFI:del(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 DevSOFI:del(Virus..'SOFI:Text:GpTexts'..GetGpTexts..msg.chat_id_)
 DevSOFI:del(Virus..'SOFI:Add:GpTexts'..msg.sender_user_id_..msg.chat_id_)
@@ -2549,11 +2549,11 @@ end
 Text = text:gsub('"',""):gsub('"',""):gsub("`",""):gsub("*","")
 DevSOFI:sadd(Virus..'SOFI:Text:GpTexts'..GetGpTexts..msg.chat_id_,Text)
 if #List == 4 then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ ↫ 5 من الردود المتعدده للامر ↫ "..GetGpTexts ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ ↫ 5 من الردود المتعدده للامر ↫ "..GetGpTexts ,  1, "md")
 DevSOFI:del(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 return false
 end
-local SOFI = "᥀︙تم حفظ الرد رقم ↫ "..(#List+1).."\n᥀︙قم بارسال الرد رقم ↫ "..(#List+2)
+local SOFI = "☭︙تم حفظ الرد رقم ↫ "..(#List+1).."\n☭︙قم بارسال الرد رقم ↫ "..(#List+2)
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="انهاء وحفظ "..(#List+1).." من الردود",callback_data="/EndRedod:"..msg.sender_user_id_..GetGpTexts}},{{text="الغاء وحذف التخزين",callback_data="/DelRedod:"..msg.sender_user_id_..GetGpTexts}}} 
 Msg_id = msg.id_/2097152/0.5
@@ -2574,7 +2574,7 @@ if SaveGpRed == 'SaveGpRed' then
 if text == 'الغاء' then
 local DelManagerRep = DevSOFI:get(Virus..'DelManagerRep'..msg.chat_id_)
 DevSOFI:srem(Virus..'SOFI:Manager:GpRed'..msg.chat_id_,DelManagerRep)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء حفظ الرد', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء حفظ الرد', 1, 'md')
 DevSOFI:del(Virus..'SOFI:Add:GpText'..msg.sender_user_id_..msg.chat_id_)
 DevSOFI:del(Virus..'SOFI:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
 DevSOFI:del(Virus..'DelManagerRep'..msg.chat_id_)
@@ -2612,7 +2612,7 @@ end
 if msg.content_.text_ then
 DevSOFI:set(Virus..'SOFI:Text:GpRed'..SaveGpRed..msg.chat_id_, msg.content_.text_)
 end 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حفظ الرد الجديد', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حفظ الرد الجديد', 1, 'md') 
 DevSOFI:del(Virus..'SOFI:Add:GpText'..msg.sender_user_id_..msg.chat_id_)
 DevSOFI:del(Virus..'DelManagerRep'..msg.chat_id_)
 return false 
@@ -2665,7 +2665,7 @@ if SaveAllRed == 'SaveAllRed' then
 if text == 'الغاء' then
 local DelSudoRep = DevSOFI:get(Virus..'DelSudoRep')
 DevSOFI:del(Virus.."SOFI:Sudo:AllRed",DelSudoRep)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء حفظ الرد', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء حفظ الرد', 1, 'md')
 DevSOFI:del(Virus.."SOFI:Add:AllText"..msg.sender_user_id_)
 DevSOFI:del(Virus.."SOFI:Add:AllRed"..msg.sender_user_id_)
 DevSOFI:del(Virus.."DelSudoRep")
@@ -2709,7 +2709,7 @@ end
 if msg.content_.text_ then
 DevSOFI:set(Virus.."SOFI:Text:AllRed"..SaveAllRed, msg.content_.text_)
 end 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حفظ الرد الجديد', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حفظ الرد الجديد', 1, 'md') 
 DevSOFI:del(Virus.."SOFI:Add:AllText"..msg.sender_user_id_)
 DevSOFI:del(Virus..'DelSudoRep')
 return false end end
@@ -2770,7 +2770,7 @@ DeleteMessage(msg.chat_id_, {[0] = data.messages_[0].id_})
 end;end;end, nil)
 msgm = msgm - 1048576
 end
-Text = '᥀︙العضو ↫ '..GetName..' \n᥀︙قام بالتكرار المحدد تم طرده '
+Text = '☭︙العضو ↫ '..GetName..' \n☭︙قام بالتكرار المحدد تم طرده '
 SendText(msg.chat_id_,Text,0,'md')
 return false  
 end 
@@ -2792,7 +2792,7 @@ DeleteMessage(msg.chat_id_, {[0] = data.messages_[0].id_})
 end;end;end, nil)
 msgm = msgm - 1048576
 end
-Text = '᥀︙العضو ↫ '..GetName..' \n᥀︙قام بالتكرار المحدد تم تقيده '
+Text = '☭︙العضو ↫ '..GetName..' \n☭︙قام بالتكرار المحدد تم تقيده '
 SendText(msg.chat_id_,Text,0,'md')
 return false  
 end  
@@ -2809,7 +2809,7 @@ DeleteMessage(msg.chat_id_, {[0] = data.messages_[0].id_})
 end;end;end, nil)
 msgm = msgm - 1048576
 end
-Text = '᥀︙العضو ↫ '..GetName..' \n᥀︙قام بالتكرار المحدد تم كتمه '
+Text = '☭︙العضو ↫ '..GetName..' \n☭︙قام بالتكرار المحدد تم كتمه '
 SendText(msg.chat_id_,Text,0,'md')
 return false  
 end
@@ -2874,7 +2874,7 @@ if DevSOFI:get(Virus..'SOFI:viewget'..msg.sender_user_id_) then
 if not msg.forward_info_ then
 DevSOFI:del(Virus..'SOFI:viewget'..msg.sender_user_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙عدد مشاهدات المنشور هي ↫ ('..msg.views_..')', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙عدد مشاهدات المنشور هي ↫ ('..msg.views_..')', 1, 'md')
 DevSOFI:del(Virus..'SOFI:viewget'..msg.sender_user_id_)
 end
 end
@@ -3011,7 +3011,7 @@ Welcomes = '• نورت حبي \n• firstname \n• username'
 end
 local Welcomes = Welcomes:gsub('"',"") Welcomes = Welcomes:gsub("'","") Welcomes = Welcomes:gsub(",","") Welcomes = Welcomes:gsub("*","") Welcomes = Welcomes:gsub(";","") Welcomes = Welcomes:gsub("`","") Welcomes = Welcomes:gsub("{","") Welcomes = Welcomes:gsub("}","") 
 local Welcomes = Welcomes:gsub('firstname',('['..result.first_name_..']' or ''))
-local Welcomes = Welcomes:gsub('username',('[@'..result.username_..']' or '[@L9L9L]'))
+local Welcomes = Welcomes:gsub('username',('[@'..result.username_..']' or '[@V_IRUS1]'))
 Dev_SOFI(msg.chat_id_, msg.id_, 1, Welcomes, 1, 'md')
 end 
 if DevSOFI:get(Virus.."SOFI:Lock:Welcome"..msg.chat_id_) then
@@ -3025,8 +3025,8 @@ tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = Virus,offset_ = 0,limit_
 for i=0,#msg.content_.members_ do    
 BotWelcome = msg.content_.members_[i].id_    
 if BotWelcome and BotWelcome == tonumber(Virus) then 
-if DevSOFI:sismember(Virus..'SOFI:Groups',msg.chat_id_) then BotText = "مفعله في السابق\n᥀︙ارسل ↫ الاوامر واستمتع بالمميزيات" else BotText = "معطله يجب رفعي مشرف\n᥀︙بعد ذلك يرجى ارسال امر ↫ تفعيل\n᥀︙سيتم رفع الادمنيه والمنشئ تلقائيا" end 
-if DevSOFI:get(Virus.."SOFI:Text:BotWelcome") then SOFIText = DevSOFI:get(Virus.."SOFI:Text:BotWelcome") else SOFIText = "᥀︙مرحبا انا بوت اسمي "..NameBot.."\n᥀︙حالة المجموعه ↫ "..BotText.."\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉" end 
+if DevSOFI:sismember(Virus..'SOFI:Groups',msg.chat_id_) then BotText = "مفعله في السابق\n☭︙ارسل ↫ الاوامر واستمتع بالمميزيات" else BotText = "معطله يجب رفعي مشرف\n☭︙بعد ذلك يرجى ارسال امر ↫ تفعيل\n☭︙سيتم رفع الادمنيه والمنشئ تلقائيا" end 
+if DevSOFI:get(Virus.."SOFI:Text:BotWelcome") then SOFIText = DevSOFI:get(Virus.."SOFI:Text:BotWelcome") else SOFIText = "☭︙مرحبا انا بوت اسمي "..NameBot.."\n☭︙حالة المجموعه ↫ "..BotText.."\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉" end 
 if DevSOFI:get(Virus.."SOFI:Photo:BotWelcome") then SOFIPhoto = DevSOFI:get(Virus.."SOFI:Photo:BotWelcome") elseif SOFI.photos_[0] then SOFIPhoto = SOFI.photos_[0].sizes_[1].photo_.persistent_id_ else SOFIPhoto = nil end 
 if SOFIPhoto ~= nil then
 sendPhoto(msg.chat_id_,msg.id_,0,1,nil,SOFIPhoto,SOFIText)
@@ -3059,7 +3059,7 @@ Welcomes = '• نورت حبي \n• firstname \n• username'
 end
 local Welcomes = Welcomes:gsub('"',"") Welcomes = Welcomes:gsub("'","") Welcomes = Welcomes:gsub(",","") Welcomes = Welcomes:gsub("*","") Welcomes = Welcomes:gsub(";","") Welcomes = Welcomes:gsub("`","") Welcomes = Welcomes:gsub("{","") Welcomes = Welcomes:gsub("}","") 
 local Welcomes = Welcomes:gsub('firstname',('['..msg.content_.members_[0].first_name_..']' or ''))
-local Welcomes = Welcomes:gsub('username',('[@'..msg.content_.members_[0].username_..']' or '[@L9L9L]'))
+local Welcomes = Welcomes:gsub('username',('[@'..msg.content_.members_[0].username_..']' or '[@V_IRUS1]'))
 Dev_SOFI(msg.chat_id_, msg.id_, 1, Welcomes, 1, 'md')
 end
 --     Source Virus     --
@@ -3379,14 +3379,14 @@ end
 --     Source Virus     --
 if DevSOFI:get(Virus.."SOFI:Set:Groups:Links"..msg.chat_id_..msg.sender_user_id_) then
 if text == "الغاء" then
-send(msg.chat_id_,msg.id_,"᥀︙تم الغاء حفظ الرابط")       
+send(msg.chat_id_,msg.id_,"☭︙تم الغاء حفظ الرابط")       
 DevSOFI:del(Virus.."SOFI:Set:Groups:Links"..msg.chat_id_..msg.sender_user_id_) 
 return false
 end
 if msg.content_.text_:match("(https://telegram.me/joinchat/%S+)") or msg.content_.text_:match("(https://t.me/joinchat/%S+)") then
 local Link = msg.content_.text_:match("(https://telegram.me/joinchat/%S+)") or msg.content_.text_:match("(https://t.me/joinchat/%S+)")
 DevSOFI:set(Virus.."SOFI:Groups:Links"..msg.chat_id_,Link)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حفظ الرابط بنجاح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حفظ الرابط بنجاح', 1, 'md')
 DevSOFI:del(Virus.."SOFI:Set:Groups:Links"..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end
@@ -3398,14 +3398,14 @@ if text and Constructor(msg) then
 if DevSOFI:get('VirusTeam:'..Virus.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_) then 
 if text and text:match("^الغاء$") then 
 DevSOFI:del('VirusTeam:'..Virus..'id:user'..msg.chat_id_)  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء الامر', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء الامر', 1, 'md')
 DevSOFI:del('VirusTeam:'..Virus.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 return false  end 
 DevSOFI:del('VirusTeam:'..Virus.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 local numadded = string.match(text, "(%d+)") 
 local iduserr = DevSOFI:get('VirusTeam:'..Virus..'id:user'..msg.chat_id_)  
 DevSOFI:incrby(Virus..'SOFI:UsersMsgs'..msg.chat_id_..':'..iduserr,numadded)
-Dev_SOFI(msg.chat_id_, msg.id_,  1, "᥀︙تم اضافة "..numadded..' رساله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_,  1, "☭︙تم اضافة "..numadded..' رساله', 1, 'md')
 DevSOFI:del('VirusTeam:'..Virus..'id:user'..msg.chat_id_) 
 end
 end
@@ -3413,14 +3413,14 @@ if text and Constructor(msg) then
 if DevSOFI:get('VirusTeam:'..Virus.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_) then 
 if text and text:match("^الغاء$") then 
 DevSOFI:del('VirusTeam:'..Virus..'ids:user'..msg.chat_id_)  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء الامر', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء الامر', 1, 'md')
 DevSOFI:del('VirusTeam:'..Virus.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 return false  end 
 DevSOFI:del('VirusTeam:'..Virus.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 local numadded = string.match(text, "(%d+)") 
 local iduserr = DevSOFI:get('VirusTeam:'..Virus..'ids:user'..msg.chat_id_)  
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..iduserr,numadded)  
-Dev_SOFI(msg.chat_id_, msg.id_,  1, "᥀︙تم اضافة "..numadded..' نقطه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_,  1, "☭︙تم اضافة "..numadded..' نقطه', 1, 'md')
 DevSOFI:del('VirusTeam:'..Virus..'ids:user'..msg.chat_id_)  
 end
 end
@@ -3428,12 +3428,12 @@ end
 if text and (text:match("طيز") or text:match("ديس") or text:match("انيج") or text:match("نيج") or text:match("ديوس") or text:match("عير") or text:match("كسختك") or text:match("كسمك") or text:match("كسربك") or text:match("بلاع") or text:match("ابو العيوره") or text:match("منيوج") or text:match("كحبه") or text:match("كحاب") or text:match("الكحبه") or text:match("كسك") or text:match("طيزك") or text:match("كس امك") or text:match("صرم") or text:match("كس اختك")) then
 if not DevSOFI:get(Virus.."SOFI:Lock:Fshar"..msg.chat_id_) and not VipMem(msg) then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
-ReplyStatus(msg,msg.sender_user_id_,"WrongWay","᥀︙ممنوع الفشار في المجموعه")  
+ReplyStatus(msg,msg.sender_user_id_,"WrongWay","☭︙ممنوع الفشار في المجموعه")  
 end end
 if text and (text:match("ڬ") or text:match("ٺ") or text:match("چ") or text:match("ڇ") or text:match("ڿ") or text:match("ڀ") or text:match("ڎ") or text:match("ݫ") or text:match("ژ") or text:match("ڟ") or text:match("ݜ") or text:match("ڸ") or text:match("پ") or text:match("۴") or text:match("مک") or text:match("زدن") or text:match("دخترا") or text:match("دیوث") or text:match("کلیپشن") or text:match("خوششون") or text:match("میدا") or text:match("که") or text:match("بدانیم") or text:match("باید") or text:match("زناشویی") or text:match("آموزش") or text:match("راحتی") or text:match("خسته") or text:match("بیام") or text:match("بپوشم") or text:match("كرمه")) then
 if DevSOFI:get(Virus.."SOFI:Lock:Farsi"..msg.chat_id_) and not VipMem(msg) then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
-ReplyStatus(msg,msg.sender_user_id_,"WrongWay","᥀︙ممنوع التكلم بالغه الفارسيه هنا")  
+ReplyStatus(msg,msg.sender_user_id_,"WrongWay","☭︙ممنوع التكلم بالغه الفارسيه هنا")  
 end end
 if text and (text:match("ڬ") or text:match("ٺ") or text:match("چ") or text:match("ڇ") or text:match("ڿ") or text:match("ڀ") or text:match("ڎ") or text:match("ݫ") or text:match("ژ") or text:match("ڟ") or text:match("ݜ") or text:match("ڸ") or text:match("پ") or text:match("۴") or text:match("مک") or text:match("زدن") or text:match("دخترا") or text:match("دیوث") or text:match("کلیپشن") or text:match("خوششون") or text:match("میدا") or text:match("که") or text:match("بدانیم") or text:match("باید") or text:match("زناشویی") or text:match("آموزش") or text:match("راحتی") or text:match("خسته") or text:match("بیام") or text:match("بپوشم") or text:match("كرمه")) then
 if DevSOFI:get(Virus.."SOFI:Lock:FarsiBan"..msg.chat_id_) and not VipMem(msg) then
@@ -3443,16 +3443,16 @@ end end
 if text and (text:match("خره بالله") or text:match("خبربك") or text:match("كسدينربك") or text:match("خرب بالله") or text:match("خرب الله") or text:match("خره بربك") or text:match("الله الكواد") or text:match("خره بمحمد") or text:match("كسم الله") or text:match("كسم ربك") or text:match("كسربك") or text:match("كسختالله") or text:match("كسخت الله") or text:match("خره بدينك") or text:match("خرهبدينك") or text:match("كسالله") or text:match("خربالله")) then
 if not DevSOFI:get(Virus.."SOFI:Lock:Kfr"..msg.chat_id_) and not VipMem(msg) then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
-ReplyStatus(msg,msg.sender_user_id_,"WrongWay","᥀︙ممنوع الكفر في المجموعه") 
+ReplyStatus(msg,msg.sender_user_id_,"WrongWay","☭︙ممنوع الكفر في المجموعه") 
 end end
 if text and (text:match("سني نكس") or text:match("شيعه") or text:match("الشيعه") or text:match("السنه") or text:match("طائفتكم") or text:match("شيعي") or text:match("انا سني") or text:match("مسيحي") or text:match("يهودي") or text:match("صابئي") or text:match("ملحد") or text:match("بالسنه") or text:match("شيعة")) then
 if not DevSOFI:get(Virus.."SOFI:Lock:Taf"..msg.chat_id_) and not VipMem(msg) then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
-ReplyStatus(msg,msg.sender_user_id_,"WrongWay","᥀︙ممنوع التكلم بالطائفيه هنا") 
+ReplyStatus(msg,msg.sender_user_id_,"WrongWay","☭︙ممنوع التكلم بالطائفيه هنا") 
 end end
 --     Source Virus     --
 if SecondSudo(msg) then
-if text == 'جلب نسخه الكروبات' and ChCheck(msg) or text == 'جلب نسخه احتياطيه' and ChCheck(msg) or text == 'جلب النسخه الاحتياطيه' and ChCheck(msg) or text == '↫ جلب نسخه احتياطيه ᥀' and ChCheck(msg) then
+if text == 'جلب نسخه الكروبات' and ChCheck(msg) or text == 'جلب نسخه احتياطيه' and ChCheck(msg) or text == 'جلب النسخه الاحتياطيه' and ChCheck(msg) or text == '↫ جلب نسخه احتياطيه ☭' and ChCheck(msg) then
 local List = DevSOFI:smembers(Virus..'SOFI:Groups') 
 local BotName = (DevSOFI:get(Virus.."SOFI:NameBot") or 'فايروس')
 local GetJson = '{"BotId": '..Virus..',"BotName": "'..BotName..'","GroupsList":{'  
@@ -3546,7 +3546,7 @@ GetJson = GetJson..'}}'
 local File = io.open('./'..Virus..'.json', "w")
 File:write(GetJson)
 File:close()
-sendDocument(msg.chat_id_, msg.id_, 0, 1, nil, './'..Virus..'.json', '᥀︙يحتوي الملف على ↫ '..#List..' مجموعه',dl_cb, nil)
+sendDocument(msg.chat_id_, msg.id_, 0, 1, nil, './'..Virus..'.json', '☭︙يحتوي الملف على ↫ '..#List..' مجموعه',dl_cb, nil)
 io.popen('rm -rf ./'..Virus..'.json')
 end
 if text and (text == 'رفع النسخه' or text == 'رفع النسخه الاحتياطيه' or text == 'رفع نسخه الاحتياطيه') and tonumber(msg.reply_to_message_id_) > 0 then   
@@ -3565,42 +3565,42 @@ if DevSOFI:get(Virus.."SET:GAME"..msg.chat_id_) then
 if text and text:match("^(%d+)$") then
 local NUM = text:match("^(%d+)$")
 if tonumber(NUM) > 6 then
-Dev_SOFI( msg.chat_id_, msg.id_, 1,"᥀︙يوجد فقط ( 6 ) اختيارات\n᥀︙ارسل اختيارك مره اخرى", 1, "md")    
+Dev_SOFI( msg.chat_id_, msg.id_, 1,"☭︙يوجد فقط ( 6 ) اختيارات\n☭︙ارسل اختيارك مره اخرى", 1, "md")    
 return false  end 
 local GETNUM = DevSOFI:get(Virus.."GAMES"..msg.chat_id_)
 if tonumber(NUM) == tonumber(GETNUM) then
 DevSOFI:del(Virus.."SET:GAME"..msg.chat_id_)   
-Dev_SOFI( msg.chat_id_, msg.id_, 1,'᥀︙*المحيبس باليد رقم* ↫ '..NUM..'\n᥀︙*مبروك لقد ربحت وحصلت على 5 نقاط يمكنك استبدالها بالرسائل*', 1, "md") 
+Dev_SOFI( msg.chat_id_, msg.id_, 1,'☭︙*المحيبس باليد رقم* ↫ '..NUM..'\n☭︙*مبروك لقد ربحت وحصلت على 5 نقاط يمكنك استبدالها بالرسائل*', 1, "md") 
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_,5)  
 elseif tonumber(NUM) ~= tonumber(GETNUM) then
 DevSOFI:del(Virus.."SET:GAME"..msg.chat_id_)   
-Dev_SOFI( msg.chat_id_, msg.id_, 1,'᥀︙*المحيبس باليد رقم* ↫ '..GETNUM..'\n᥀︙*للاسف لقد خسرت حاول مره اخرى للعثور على المحيبس*', 1, "md")
+Dev_SOFI( msg.chat_id_, msg.id_, 1,'☭︙*المحيبس باليد رقم* ↫ '..GETNUM..'\n☭︙*للاسف لقد خسرت حاول مره اخرى للعثور على المحيبس*', 1, "md")
 end
 end
 end
 if DevSOFI:get(Virus..'DevSOFI4'..msg.sender_user_id_) then
 if text and text:match("^الغاء$") then 
-send(msg.chat_id_, msg.id_, "᥀︙تم الغاء الامر")
+send(msg.chat_id_, msg.id_, "☭︙تم الغاء الامر")
 DevSOFI:del(Virus..'DevSOFI4'..msg.sender_user_id_)
 return false  end 
 DevSOFI:del(Virus..'DevSOFI4'..msg.sender_user_id_)
 local username = string.match(text, "@[%a%d_]+") 
 tdcli_function({ID = "SearchPublicChat",username_ = username},function(arg,data) 
 if data and data.message_ and data.message_ == "USERNAME_NOT_OCCUPIED" then 
-send(msg.chat_id_, msg.id_, '᥀︙المعرف لا يوجد فيه قناة')
+send(msg.chat_id_, msg.id_, '☭︙المعرف لا يوجد فيه قناة')
 return false  end
 if data and data.type_ and data.type_.ID and data.type_.ID == 'PrivateChatInfo' then
-send(msg.chat_id_, msg.id_, '᥀︙عذرا لا يمكنك وضع معرف حسابات في الاشتراك')
+send(msg.chat_id_, msg.id_, '☭︙عذرا لا يمكنك وضع معرف حسابات في الاشتراك')
 return false  end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.is_supergroup_ == true then
-send(msg.chat_id_, msg.id_, '᥀︙عذرا لا يمكنك وضع معرف مجموعه في الاشتراك')
+send(msg.chat_id_, msg.id_, '☭︙عذرا لا يمكنك وضع معرف مجموعه في الاشتراك')
 return false  end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.is_supergroup_ == false then
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.ID and data.type_.channel_.status_.ID == 'ChatMemberStatusEditor' then
-send(msg.chat_id_, msg.id_,'᥀︙البوت ادمن في القناة \n᥀︙تم تفعيل الاشتراك الاجباري \n᥀︙ايدي القناة ↫ '..data.id_..'\n᥀︙معرف القناة ↫ [@'..data.type_.channel_.username_..']')
+send(msg.chat_id_, msg.id_,'☭︙البوت ادمن في القناة \n☭︙تم تفعيل الاشتراك الاجباري \n☭︙ايدي القناة ↫ '..data.id_..'\n☭︙معرف القناة ↫ [@'..data.type_.channel_.username_..']')
 DevSOFI:set(Virus..'SOFI:ChId',data.id_)
 else
-send(msg.chat_id_, msg.id_,'᥀︙عذرا البوت ليس ادمن في القناة')
+send(msg.chat_id_, msg.id_,'☭︙عذرا البوت ليس ادمن في القناة')
 end
 return false  
 end
@@ -3610,21 +3610,21 @@ end
 if DevSOFI:get(Virus.."SOFI:DevText"..msg.chat_id_..":" .. msg.sender_user_id_) then
 if text and text:match("^الغاء$") then 
 DevSOFI:del(Virus.."SOFI:DevText"..msg.chat_id_..":" .. msg.sender_user_id_)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء الامر', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء الامر', 1, 'md')
 return false 
 end 
 DevSOFI:del(Virus.."SOFI:DevText"..msg.chat_id_..":" .. msg.sender_user_id_)
 local DevText = msg.content_.text_:match("(.*)")
 DevSOFI:set(Virus.."DevText", DevText)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ كليشة المطور", 1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ كليشة المطور", 1, "md")
 end
 if DevSOFI:get(Virus..'SOFI:NameBot'..msg.sender_user_id_) == 'msg' then
 if text and text:match("^الغاء$") then 
 DevSOFI:del(Virus..'SOFI:NameBot'..msg.sender_user_id_)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء الامر', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء الامر', 1, 'md')
 return false 
 end 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حفظ اسم البوت ', 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حفظ اسم البوت ', 1, 'html')
 DevSOFI:del(Virus..'SOFI:NameBot'..msg.sender_user_id_)
 DevSOFI:set(Virus..'SOFI:NameBot', text)
 return false 
@@ -3633,9 +3633,9 @@ end
 if text == "الرابط" then
 if not DevSOFI:get(Virus..'SOFI:Lock:GpLinks'..msg.chat_id_) then 
 if DevSOFI:get(Virus.."SOFI:Groups:Links"..msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙Group Link ↬ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"..DevSOFI:get(Virus.."SOFI:Groups:Links"..msg.chat_id_), 1, "html")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙Group Link ↬ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"..DevSOFI:get(Virus.."SOFI:Groups:Links"..msg.chat_id_), 1, "html")
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لايوجد رابط ارسل ↫ ضع رابط او ارسل ↫ انشاء رابط للانشاء', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لايوجد رابط ارسل ↫ ضع رابط او ارسل ↫ انشاء رابط للانشاء', 1, 'md')
 end
 else
 end
@@ -3646,11 +3646,11 @@ if not DevSOFI:get(Virus.."SOFI:Lock:GpLinksinline"..msg.chat_id_) then
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or DevSOFI:get(Virus.."Private:Group:Link"..msg.chat_id_) 
 if linkgpp.ok == true then 
-local Text = '᥀︙𝖫𝗂𝗇𝗄 𝖦𝗋𝗈𝗎𝗉 ↬ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n['..ta.title_..']('..linkgpp.result..')'
+local Text = '☭︙𝖫𝗂𝗇𝗄 𝖦𝗋𝗈𝗎𝗉 ↬ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n['..ta.title_..']('..linkgpp.result..')'
 keyboard = {}  
 keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}}}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/X6UX6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/V_IRUS1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else 
 end 
 end,nil) 
@@ -3698,15 +3698,15 @@ return false
 end
 if text =='نقاطي' and ChCheck(msg) then 
 if tonumber((DevSOFI:get(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_) or 0)) == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لم تربح اي نقطه\n᥀︙ارسل ↫ الالعاب للعب', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لم تربح اي نقطه\n☭︙ارسل ↫ الالعاب للعب', 1, 'md')
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙عدد النقاط التي ربحتها ↫ '..(DevSOFI:get(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_)), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙عدد النقاط التي ربحتها ↫ '..(DevSOFI:get(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_)), 1, 'md')
 end
 end
-if text ==  'حذف رسائلي' and ChCheck(msg) or text ==  'مسح رسائلي' and ChCheck(msg) then DevSOFI:del(Virus..'SOFI:UsersMsgs'..msg.chat_id_..':'..msg.sender_user_id_) Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حذف جميع رسائلك', 1, 'md') end
-if text ==  'حذف نقاطي' and ChCheck(msg) or text ==  'مسح نقاطي' and ChCheck(msg) then DevSOFI:del(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_) Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حذف جميع نقاطك', 1, 'md') end
+if text ==  'حذف رسائلي' and ChCheck(msg) or text ==  'مسح رسائلي' and ChCheck(msg) then DevSOFI:del(Virus..'SOFI:UsersMsgs'..msg.chat_id_..':'..msg.sender_user_id_) Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حذف جميع رسائلك', 1, 'md') end
+if text ==  'حذف نقاطي' and ChCheck(msg) or text ==  'مسح نقاطي' and ChCheck(msg) then DevSOFI:del(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_) Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حذف جميع نقاطك', 1, 'md') end
 --     Source Virus     --
-if text == 'سمايلات' and ChCheck(msg) or text == 'السمايلات' and ChCheck(msg) or text == '↫ سمايلات ᥀' and ChCheck(msg) then
+if text == 'سمايلات' and ChCheck(msg) or text == 'السمايلات' and ChCheck(msg) or text == '↫ سمايلات ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 DevSOFI2 = {'🍏','🍎','🍐','🍊','🍋','🍌','🍉','🍇','🍓','🍈','🍒','🍑','🍍','🥥','🥝','🍅','🍆','🥑','🥦','🥒','🌶','🌽','🥕','🥔','🍠','🥐','🍞','🥖','🥨','🧀','🥚','🍳','🥞','🥓','🥩','🍗','🍖','🌭','🍔','🍟','🍕','🥪','🥙','🍼','☕️','🍵','🥤','🍶','🍺','🍻','🏀','⚽️','🏈','⚾️','🎾','🏐','🏉','🎱','🏓','🏸','🥅','🎰','🎮','🎳','🎯','🏆','🎻','🎸','🎺','🥁','🎹','🎼','🎧','🎤','🎬','🎨','🎭','🎪','🛎','📤','🎗','🏵','🎖','🏆','🥌','🛷','🚕','🚗','🚙','🚌','🚎','🏎','🚓','🚑','🚚','🚛','🚜','🇮🇶','⚔️','🛡','🔮','🌡','💣','⏱','🛢','📓','📗','📂','📅','📪','📫','📬','📭','⏰','📺','🎚','☎️','📡'}
 name = DevSOFI2[math.random(#DevSOFI2)]
@@ -3828,19 +3828,19 @@ name = string.gsub(name,'⏰','⏰')
 name = string.gsub(name,'📺','📺')
 name = string.gsub(name,'🎚','🎚')
 name = string.gsub(name,'☎️','☎️')
-VirusTeam = '᥀︙اول واحد يدز هذا السمايل يربح ↫ '..name
+VirusTeam = '☭︙اول واحد يدز هذا السمايل يربح ↫ '..name
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 return false
 end end
 if text == DevSOFI:get(Virus..'SOFI:GameNum'..msg.chat_id_) and not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then
 if not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then 
-VirusTeam = '᥀︙مبروك لقد ربحت في اللعبه \n᥀︙ارسل ↫ سمايلات للعب مره اخرى'
+VirusTeam = '☭︙مبروك لقد ربحت في اللعبه \n☭︙ارسل ↫ سمايلات للعب مره اخرى'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevSOFI:set(Virus..'SOFI:Games:Ids'..msg.chat_id_,true)
 end
-if text == 'ترتيب' and ChCheck(msg) or text == 'الترتيب' and ChCheck(msg) or text == '↫ ترتيب ᥀' and ChCheck(msg) then
+if text == 'ترتيب' and ChCheck(msg) or text == 'الترتيب' and ChCheck(msg) or text == '↫ ترتيب ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 DevSOFI2 = {'سحور','سياره','استقبال','قنفه','ايفون','بزونه','مطبخ','كرستيانو','دجاجه','مدرسه','الوان','غرفه','ثلاجه','كهوه','سفينه','العراق','محطه','طياره','رادار','منزل','مستشفى','كهرباء','تفاحه','اخطبوط','سلمون','فرنسا','برتقاله','تفاح','مطرقه','بتيته','لهانه','شباك','باص','سمكه','ذباب','تلفاز','حاسوب','انترنيت','ساحه','جسر'};
 name = DevSOFI2[math.random(#DevSOFI2)]
@@ -3886,19 +3886,19 @@ name = string.gsub(name,'حاسوب','س ا ح و ب')
 name = string.gsub(name,'انترنيت','ا ت ن ر ن ي ت')
 name = string.gsub(name,'ساحه','ح ا ه س')
 name = string.gsub(name,'جسر','ر ج س')
-VirusTeam = '᥀︙اول واحد يرتبها يربح ↫ '..name
+VirusTeam = '☭︙اول واحد يرتبها يربح ↫ '..name
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 return false
 end end
 if text == DevSOFI:get(Virus..'SOFI:GameNum'..msg.chat_id_) and not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then
 if not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then 
-VirusTeam = '᥀︙مبروك لقد ربحت في اللعبه \n᥀︙ارسل ↫ ترتيب للعب مره اخرى'
+VirusTeam = '☭︙مبروك لقد ربحت في اللعبه \n☭︙ارسل ↫ ترتيب للعب مره اخرى'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevSOFI:set(Virus..'SOFI:Games:Ids'..msg.chat_id_,true)
 end
-if text == 'محيبس' and ChCheck(msg) or text == 'بات' and ChCheck(msg) or text == 'المحيبس' and ChCheck(msg) or text == '↫ محيبس ᥀' and ChCheck(msg) then
+if text == 'محيبس' and ChCheck(msg) or text == 'بات' and ChCheck(msg) or text == 'المحيبس' and ChCheck(msg) or text == '↫ محيبس ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 Num = math.random(1,6)
 DevSOFI:set(Virus.."GAMES"..msg.chat_id_,Num) 
@@ -3906,14 +3906,14 @@ TEST = [[
 ➀     ➁     ➂     ➃     ➄     ➅
 ↓     ↓     ↓     ↓     ↓     ↓
 👊 ‹› 👊🏻 ‹› 👊🏼 ‹› 👊🏽 ‹› 👊🏾 ‹› 👊🏿
-᥀︙اختر رقم لاستخراج المحيبس
-᥀︙الفائز يحصل على (5) نقاط
+☭︙اختر رقم لاستخراج المحيبس
+☭︙الفائز يحصل على (5) نقاط
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, TEST, 1, "md") 
 DevSOFI:setex(Virus.."SET:GAME"..msg.chat_id_, 100, true)  
 return false  
 end end
-if text == 'حزوره' and ChCheck(msg) or text == 'الحزوره' and ChCheck(msg) or text == '↫ حزوره ᥀' and ChCheck(msg) then
+if text == 'حزوره' and ChCheck(msg) or text == 'الحزوره' and ChCheck(msg) or text == '↫ حزوره ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 DevSOFI2 = {'الجرس','عقرب الساعه','السمك','المطر','5','الكتاب','البسمار','7','الكعبه','بيت الشعر','لهانه','انا','امي','الابره','الساعه','22','غلط','كم الساعه','البيتنجان','البيض','المرايه','الضوء','الهواء','الضل','العمر','القلم','المشط','الحفره','البحر','الثلج','الاسفنج','الصوت','بلم'};
 name = DevSOFI2[math.random(#DevSOFI2)]
@@ -3952,19 +3952,19 @@ name = string.gsub(name,'الثلج','انا ابن الماء فان تركون
 name = string.gsub(name,'الاسفنج','كلي ثقوب ومع ذالك احفض الماء فمن اكون ؟')
 name = string.gsub(name,'الصوت','اسير بلا رجلين ولا ادخل الا بالاذنين فمن انا ؟')
 name = string.gsub(name,'بلم','حامل ومحمول نصف ناشف ونصف مبلول فمن اكون ؟ ')
-VirusTeam = '᥀︙اول واحد يحلها يربح ↫ '..name
+VirusTeam = '☭︙اول واحد يحلها يربح ↫ '..name
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 return false
 end end
 if text == DevSOFI:get(Virus..'SOFI:GameNum'..msg.chat_id_) and not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then
 if not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then 
-VirusTeam = '᥀︙مبروك لقد ربحت في اللعبه \n᥀︙ارسل ↫ حزوره للعب مره اخرى'
+VirusTeam = '☭︙مبروك لقد ربحت في اللعبه \n☭︙ارسل ↫ حزوره للعب مره اخرى'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevSOFI:set(Virus..'SOFI:Games:Ids'..msg.chat_id_,true)
 end 
-if text == 'المعاني' and ChCheck(msg) or text == 'معاني' and ChCheck(msg) or text == '↫ معاني ᥀' and ChCheck(msg) then
+if text == 'المعاني' and ChCheck(msg) or text == 'معاني' and ChCheck(msg) or text == '↫ معاني ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 DevSOFI2 = {'قرد','دجاجه','بطريق','ضفدع','بومه','نحله','ديك','جمل','بقره','دولفين','تمساح','قرش','نمر','اخطبوط','سمكه','خفاش','اسد','فأر','ذئب','فراشه','عقرب','زرافه','قنفذ','تفاحه','باذنجان'}
 name = DevSOFI2[math.random(#DevSOFI2)]
@@ -3995,19 +3995,19 @@ name = string.gsub(name,'زرافه','🦒')
 name = string.gsub(name,'قنفذ','🦔')
 name = string.gsub(name,'تفاحه','🍎')
 name = string.gsub(name,'باذنجان','🍆')
-VirusTeam = '᥀︙ما معنى هذا السمايل :؟ ↫ '..name
+VirusTeam = '☭︙ما معنى هذا السمايل :؟ ↫ '..name
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 return false
 end end
 if text == DevSOFI:get(Virus..'SOFI:GameNum2'..msg.chat_id_) and not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then
 if not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then 
-VirusTeam = '᥀︙مبروك لقد ربحت في اللعبه \n᥀︙ارسل ↫ المعاني للعب مره اخرى'
+VirusTeam = '☭︙مبروك لقد ربحت في اللعبه \n☭︙ارسل ↫ المعاني للعب مره اخرى'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevSOFI:set(Virus..'SOFI:Games:Ids'..msg.chat_id_,true)
 end 
-if text == 'العكس' and ChCheck(msg) or text == 'عكس' and ChCheck(msg) or text == '↫ العكس ᥀' and ChCheck(msg) then
+if text == 'العكس' and ChCheck(msg) or text == 'عكس' and ChCheck(msg) or text == '↫ العكس ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 DevSOFI2 = {'باي','فهمت','موزين','اسمعك','احبك','موحلو','نضيف','حاره','ناصي','جوه','سريع','ونسه','طويل','سمين','ضعيف','شريف','شجاع','رحت','عدل','نشيط','شبعان','موعطشان','خوش ولد','اني','هادئ'}
 name = DevSOFI2[math.random(#DevSOFI2)]
@@ -4038,19 +4038,19 @@ name = string.gsub(name,'موعطشان','عطشان')
 name = string.gsub(name,'خوش ولد','موخوش ولد')
 name = string.gsub(name,'اني','مطي')
 name = string.gsub(name,'هادئ','عصبي')
-VirusTeam = '᥀︙ما هو عكس كلمة ↫ '..name
+VirusTeam = '☭︙ما هو عكس كلمة ↫ '..name
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 return false
 end end
 if text == DevSOFI:get(Virus..'SOFI:GameNum3'..msg.chat_id_) and not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then
 if not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then 
-VirusTeam = '᥀︙مبروك لقد ربحت في اللعبه \n᥀︙ارسل ↫ العكس للعب مره اخرى'
+VirusTeam = '☭︙مبروك لقد ربحت في اللعبه \n☭︙ارسل ↫ العكس للعب مره اخرى'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevSOFI:set(Virus..'SOFI:Games:Ids'..msg.chat_id_,true)
 end 
-if text == 'المختلف' and ChCheck(msg) or text == 'مختلف' and ChCheck(msg) or text == '↫ المختلف ᥀' and ChCheck(msg) then
+if text == 'المختلف' and ChCheck(msg) or text == 'مختلف' and ChCheck(msg) or text == '↫ المختلف ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 DevSOFI2 = {'😸','☠','🐼','🐇','🌑','🌚','⭐️','📥','⛈','🌥','⛄️','👨‍🔬','👨‍💻','👨‍🔧','👩‍🍳','🧚‍♀','🧚‍♂️','🧝‍♂','🙍‍♂','🧖‍♂','👬','👨‍👨‍👧','🕓','🕤','⌛️','📅','👩‍⚖️','👨‍🎨'};
 name = DevSOFI2[math.random(#DevSOFI2)]
@@ -4084,19 +4084,19 @@ name = string.gsub(name,'⌛️','⏳⏳⏳⏳⏳⌛️⏳⏳')
 name = string.gsub(name,'📅','📆📆📆📆📆📅📆📆')
 name = string.gsub(name,'👩‍⚖️','👨‍⚖️👨‍⚖️👨‍⚖️👨‍⚖️👨‍⚖️👩‍⚖️👨‍⚖️👨‍⚖️')
 name = string.gsub(name,'👨‍🎨','👩‍🎨👩‍🎨👨‍🎨👩‍🎨👩‍🎨👩‍🎨👩‍🎨👩‍🎨')
-VirusTeam = '᥀︙اول واحد يطلع المختلف يربح\n{'..name..'} '
+VirusTeam = '☭︙اول واحد يطلع المختلف يربح\n{'..name..'} '
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 return false
 end end
 if text == DevSOFI:get(Virus..'SOFI:GameNum4'..msg.chat_id_) and not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then
 if not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then 
-VirusTeam = '᥀︙مبروك لقد ربحت في اللعبه \n᥀︙ارسل ↫ المختلف للعب مره اخرى'
+VirusTeam = '☭︙مبروك لقد ربحت في اللعبه \n☭︙ارسل ↫ المختلف للعب مره اخرى'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevSOFI:set(Virus..'SOFI:Games:Ids'..msg.chat_id_,true)
 end  
-if text == 'امثله' and ChCheck(msg) or text == 'الامثله' and ChCheck(msg) or text == '↫ امثله ᥀' and ChCheck(msg) then
+if text == 'امثله' and ChCheck(msg) or text == 'الامثله' and ChCheck(msg) or text == '↫ امثله ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 DevSOFI2 = {
 'جوز','ضراطه','الحبل','الحافي','شقره','بيدك','سلايه','النخله','الخيل','حداد','المبلل','يركص','قرد','العنب','العمه','الخبز','بالحصاد','شهر','شكه','يكحله',
@@ -4124,7 +4124,7 @@ name = string.gsub(name,'شهر','امشي ___ ولا تعبر نهر')
 name = string.gsub(name,'شكه','يامن تعب يامن ___ يا من على الحاضر لكة')
 name = string.gsub(name,'القرد',' ___ بعين امه غزال')
 name = string.gsub(name,'يكحله','اجه ___ عماها')
-VirusTeam = '᥀︙اكمل المثال التالي ↫ ['..name..']'
+VirusTeam = '☭︙اكمل المثال التالي ↫ ['..name..']'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 return false
 end end
@@ -4132,12 +4132,12 @@ if text == DevSOFI:get(Virus..'SOFI:GameNum5'..msg.chat_id_) then
 if not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then 
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevSOFI:del(Virus..'SOFI:GameNum5'..msg.chat_id_)
-VirusTeam = '᥀︙مبروك لقد ربحت في اللعبه \n᥀︙ارسل ↫ امثله للعب مره اخرى'
+VirusTeam = '☭︙مبروك لقد ربحت في اللعبه \n☭︙ارسل ↫ امثله للعب مره اخرى'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 end
 DevSOFI:set(Virus..'SOFI:Games:Ids'..msg.chat_id_,true)
 end  
-if text == 'رياضيات' and ChCheck(msg) or text == 'الرياضيات' and ChCheck(msg) or text == '↫ رياضيات ᥀' and ChCheck(msg) then
+if text == 'رياضيات' and ChCheck(msg) or text == 'الرياضيات' and ChCheck(msg) or text == '↫ رياضيات ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 DevSOFI2 = {'9','46','2','9','5','4','25','10','17','15','39','5','16',};
 name = DevSOFI2[math.random(#DevSOFI2)]
@@ -4156,7 +4156,7 @@ name = string.gsub(name,'15','25 - 10 = ?')
 name = string.gsub(name,'39','44 - 5 = ?')
 name = string.gsub(name,'5','12 + 1 - 8 = ?')
 name = string.gsub(name,'16','16 + 16 - 16 = ?')
-VirusTeam = '᥀︙اكمل المعادله التاليه ↫ ⤈\n{'..name..'} '
+VirusTeam = '☭︙اكمل المعادله التاليه ↫ ⤈\n{'..name..'} '
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 return false
 end end
@@ -4164,12 +4164,12 @@ if text == DevSOFI:get(Virus..'SOFI:GameNum6'..msg.chat_id_) then
 if not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then 
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevSOFI:del(Virus..'SOFI:GameNum6'..msg.chat_id_)
-VirusTeam = '᥀︙مبروك لقد ربحت في اللعبه \n᥀︙ارسل ↫ رياضيات للعب مره اخرى'
+VirusTeam = '☭︙مبروك لقد ربحت في اللعبه \n☭︙ارسل ↫ رياضيات للعب مره اخرى'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 end
 DevSOFI:set(Virus..'SOFI:Games:Ids'..msg.chat_id_,true)
 end  
-if text == 'الانكليزي' and ChCheck(msg) or text == 'الانجليزيه' and ChCheck(msg) or text == 'انكليزيه' and ChCheck(msg) or text == '↫ انكليزي ᥀' and ChCheck(msg) then
+if text == 'الانكليزي' and ChCheck(msg) or text == 'الانجليزيه' and ChCheck(msg) or text == 'انكليزيه' and ChCheck(msg) or text == '↫ انكليزي ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 DevSOFI2 = {'معلومات','قنوات','مجموعات','كتاب','تفاحه','سدني','نقود','اعلم','ذئب','تمساح','ذكي','شاطئ','غبي',};
 name = DevSOFI2[math.random(#DevSOFI2)]
@@ -4187,7 +4187,7 @@ name = string.gsub(name,'تمساح','crocodile')
 name = string.gsub(name,'شاطئ','Beach')
 name = string.gsub(name,'غبي','Stupid')
 name = string.gsub(name,'صداقه','Friendchip')
-VirusTeam = '᥀︙ما معنى كلمة ↫ '..name
+VirusTeam = '☭︙ما معنى كلمة ↫ '..name
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 return false
 end end
@@ -4195,49 +4195,49 @@ if text == DevSOFI:get(Virus..'SOFI:GameNum7'..msg.chat_id_) then
 if not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then 
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevSOFI:del(Virus..'SOFI:GameNum7'..msg.chat_id_)
-VirusTeam = '᥀︙مبروك لقد ربحت في اللعبه \n᥀︙ارسل ↫ انكليزيه للعب مره اخرى'
+VirusTeam = '☭︙مبروك لقد ربحت في اللعبه \n☭︙ارسل ↫ انكليزيه للعب مره اخرى'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 end
 DevSOFI:set(Virus..'SOFI:Games:Ids'..msg.chat_id_,true)
 end  
 --     Source Virus     --
-if text == 'اسئله' and ChCheck(msg) or text == 'اختيارات' and ChCheck(msg) or text == 'الاسئله' and ChCheck(msg) or text == 'اساله' and ChCheck(msg) or text == '↫ اسئله ᥀' and ChCheck(msg) then
+if text == 'اسئله' and ChCheck(msg) or text == 'اختيارات' and ChCheck(msg) or text == 'الاسئله' and ChCheck(msg) or text == 'اساله' and ChCheck(msg) or text == '↫ اسئله ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 DevSOFI2 = {'النيل','14','الفم','11','30','بوتين','ستيف جوبر','باريس','10','النمل','حرف الواو','الشعر','سحاب','الاسم','ذهب','حرف الام','العزائم','انسات','المنجنيق','اسيا','6','الاسد','مهر','الدولفين','اوروبا','الزئبق','لندن','الانسان','طوكيو','خديجه',}
 name = DevSOFI2[math.random(#DevSOFI2)]
 DevSOFI:set(Virus..'SOFI:GameNum8'..msg.chat_id_,name)
 DevSOFI:del(Virus..'SOFI:Games:Ids'..msg.chat_id_)
-name = string.gsub(name,'النيل','᥀︙ماهو اطول نهر في العالم ؟\n1- النيل\n2- الفرات\n3- نهر الكونغو')
-name = string.gsub(name,'14','᥀︙ماعدد عظام الوجه ؟\n1- 15\n2- 13\n3- 14')
-name = string.gsub(name,'الفم','᥀︙كراسي بيضاء وجدران ورديه اذا اغلقته اصبح ظلام  فمن اكون ؟\n1- الفم\n2- الاذن\n3- الثلاجه')
-name = string.gsub(name,'11','᥀︙كم جزء يحتوي مسلسل وادي الذئاب ؟\n1- 7\n2- 15\n3- 11')
-name = string.gsub(name,'30','᥀︙كم جزء يحتوي القران الكريم ؟\n1- 60\n2- 70\n3- 30')
-name = string.gsub(name,'بوتين','᥀︙من هوه اغنى رئيس في العالم ؟\n1- ترامب\n2- اوباما\n3- بوتين')
-name = string.gsub(name,'ستيف جوبر','᥀︙من هوه مؤسس شركه ابل العالميه  ؟\n1- لاري بايج\n2- بيل جيتس\n3- ستيف جوبر')
+name = string.gsub(name,'النيل','☭︙ماهو اطول نهر في العالم ؟\n1- النيل\n2- الفرات\n3- نهر الكونغو')
+name = string.gsub(name,'14','☭︙ماعدد عظام الوجه ؟\n1- 15\n2- 13\n3- 14')
+name = string.gsub(name,'الفم','☭︙كراسي بيضاء وجدران ورديه اذا اغلقته اصبح ظلام  فمن اكون ؟\n1- الفم\n2- الاذن\n3- الثلاجه')
+name = string.gsub(name,'11','☭︙كم جزء يحتوي مسلسل وادي الذئاب ؟\n1- 7\n2- 15\n3- 11')
+name = string.gsub(name,'30','☭︙كم جزء يحتوي القران الكريم ؟\n1- 60\n2- 70\n3- 30')
+name = string.gsub(name,'بوتين','☭︙من هوه اغنى رئيس في العالم ؟\n1- ترامب\n2- اوباما\n3- بوتين')
+name = string.gsub(name,'ستيف جوبر','☭︙من هوه مؤسس شركه ابل العالميه  ؟\n1- لاري بايج\n2- بيل جيتس\n3- ستيف جوبر')
 name = string.gsub(name,'باريس','ماهي عاصمه فرنسا ؟\n1- باريس\n2- لوين\n3- موسكو')
-name = string.gsub(name,'10','᥀︙ماعدد دول العربيه التي توجد في افريقيا ؟\n1- 10\n2- 17\n3- 9')
-name = string.gsub(name,'النمل','᥀︙ماهو الحيوان الذي يحمل 50 فوق وزنه ؟\n1- الفيل\n2- النمل\n3- الثور')
-name = string.gsub(name,'حرف الواو','᥀︙ماذا يوجد بيني وبينك ؟\n1- الضل\n2- الاخلاق\n3- حرف الواو')
-name = string.gsub(name,'الشعر','᥀︙ماهو الشيء النبات ينبت للانسان بلا بذر ؟\n1- الاضافر\n2- الاسنان\n3- الشعر')
-name = string.gsub(name,'سحاب','᥀︙ما هو الشّيء الذي يستطيع المشي بدون أرجل والبكاء بدون أعين ؟\n1- سحاب\n2- بئر\n3- نهر')
-name = string.gsub(name,'الاسم','᥀︙ما الشيء الذي نمتلكه , لكنّ غيرنا يستعمله أكثر منّا ؟\n1- العمر\n2- ساعه\n3- الاسم')
-name = string.gsub(name,'ذهب','᥀︙اصفر اللون سارق عقول اهل الكون وحارمهم لذيذ النوم ؟\n1- نحاس\n2- الماس\n3- ذهب')
-name = string.gsub(name,'حرف الام','᥀︙في الليل ثلاثة لكنه في النهار واحده فما هو ؟\n1- حرف الباء\n2- حرف الام\n3- حرف الراء')
-name = string.gsub(name,'العزائم','᥀︙على قدر اصل العزم تأتي ؟\n1- العزائم\n2- المكارم\n3- المبائب')
-name = string.gsub(name,'انسات','᥀︙ماهي جمع كلمه انسه ؟\n1- سيدات\n2- انسات\n3- قوانص')
-name = string.gsub(name,'المنجنيق','᥀︙اله اتسعلمت قديما في الحروب ؟\n1- الصاروخ\n2- المسدس\n3- المنجنيق')
-name = string.gsub(name,'اسيا','᥀︙تقع لبنان في قاره ؟\n1- افريقيا\n2- اسيا\n3- امركيا الشماليه')
-name = string.gsub(name,'6','᥀︙كم صفرا للمليون ؟\n1- 4\n2- 3\n3- 6')
-name = string.gsub(name,'الاسد','᥀︙ماهو الحيوان الذي يلقب بملك الغابه ؟\n1- الفيل\n2- الاسد\n3- النمر')
-name = string.gsub(name,'مهر','᥀︙ما اسم صغير الحصان ؟\n1- مهر\n2- جرو\n3- عجل')
-name = string.gsub(name,'الدولفين','᥀︙ما الحيوان الذي ينام واحدى عينه مفتوحه ؟\n1- القرش\n2- الدولفين\n3- الثعلب\n')
-name = string.gsub(name,'اوروبا','᥀︙ماهي القاره التي تلقب بالقاره العجوز ؟\n1- اوروبا\n2- امريكا الشماليه\n3- افريقيا')
-name = string.gsub(name,'الزئبق','᥀︙ما اسم المعدن الموجود فيي الحاله السائله ؟\n1- النحاس\n2- الحديد\n3- الزئبق')
-name = string.gsub(name,'لندن','᥀︙ماهي عاصمه انجلترا ؟\n1- لندن\n2- لفرسول\n3- تركيا')
-name = string.gsub(name,'الانسان','᥀︙ماهو الشئ الذي برأسه سبع فتحات ؟\n1- الهاتف\n2- التلفاز\n3- الانسان')
-name = string.gsub(name,'طوكيو','᥀︙ماهي عاصمه اليابان ؟\n1- بانكول\n2- نيو دلهي\n3- طوكيو')
-name = string.gsub(name,'خديجه','᥀︙من هي زوجه الرسول الاكبر منه سنآ ؟\n1- حفضه\n2- زينب\n3- خديجه')
-VirusTeam = name..'\n᥀︙ارسل الجواب الصحيح فقط'
+name = string.gsub(name,'10','☭︙ماعدد دول العربيه التي توجد في افريقيا ؟\n1- 10\n2- 17\n3- 9')
+name = string.gsub(name,'النمل','☭︙ماهو الحيوان الذي يحمل 50 فوق وزنه ؟\n1- الفيل\n2- النمل\n3- الثور')
+name = string.gsub(name,'حرف الواو','☭︙ماذا يوجد بيني وبينك ؟\n1- الضل\n2- الاخلاق\n3- حرف الواو')
+name = string.gsub(name,'الشعر','☭︙ماهو الشيء النبات ينبت للانسان بلا بذر ؟\n1- الاضافر\n2- الاسنان\n3- الشعر')
+name = string.gsub(name,'سحاب','☭︙ما هو الشّيء الذي يستطيع المشي بدون أرجل والبكاء بدون أعين ؟\n1- سحاب\n2- بئر\n3- نهر')
+name = string.gsub(name,'الاسم','☭︙ما الشيء الذي نمتلكه , لكنّ غيرنا يستعمله أكثر منّا ؟\n1- العمر\n2- ساعه\n3- الاسم')
+name = string.gsub(name,'ذهب','☭︙اصفر اللون سارق عقول اهل الكون وحارمهم لذيذ النوم ؟\n1- نحاس\n2- الماس\n3- ذهب')
+name = string.gsub(name,'حرف الام','☭︙في الليل ثلاثة لكنه في النهار واحده فما هو ؟\n1- حرف الباء\n2- حرف الام\n3- حرف الراء')
+name = string.gsub(name,'العزائم','☭︙على قدر اصل العزم تأتي ؟\n1- العزائم\n2- المكارم\n3- المبائب')
+name = string.gsub(name,'انسات','☭︙ماهي جمع كلمه انسه ؟\n1- سيدات\n2- انسات\n3- قوانص')
+name = string.gsub(name,'المنجنيق','☭︙اله اتسعلمت قديما في الحروب ؟\n1- الصاروخ\n2- المسدس\n3- المنجنيق')
+name = string.gsub(name,'اسيا','☭︙تقع لبنان في قاره ؟\n1- افريقيا\n2- اسيا\n3- امركيا الشماليه')
+name = string.gsub(name,'6','☭︙كم صفرا للمليون ؟\n1- 4\n2- 3\n3- 6')
+name = string.gsub(name,'الاسد','☭︙ماهو الحيوان الذي يلقب بملك الغابه ؟\n1- الفيل\n2- الاسد\n3- النمر')
+name = string.gsub(name,'مهر','☭︙ما اسم صغير الحصان ؟\n1- مهر\n2- جرو\n3- عجل')
+name = string.gsub(name,'الدولفين','☭︙ما الحيوان الذي ينام واحدى عينه مفتوحه ؟\n1- القرش\n2- الدولفين\n3- الثعلب\n')
+name = string.gsub(name,'اوروبا','☭︙ماهي القاره التي تلقب بالقاره العجوز ؟\n1- اوروبا\n2- امريكا الشماليه\n3- افريقيا')
+name = string.gsub(name,'الزئبق','☭︙ما اسم المعدن الموجود فيي الحاله السائله ؟\n1- النحاس\n2- الحديد\n3- الزئبق')
+name = string.gsub(name,'لندن','☭︙ماهي عاصمه انجلترا ؟\n1- لندن\n2- لفرسول\n3- تركيا')
+name = string.gsub(name,'الانسان','☭︙ماهو الشئ الذي برأسه سبع فتحات ؟\n1- الهاتف\n2- التلفاز\n3- الانسان')
+name = string.gsub(name,'طوكيو','☭︙ماهي عاصمه اليابان ؟\n1- بانكول\n2- نيو دلهي\n3- طوكيو')
+name = string.gsub(name,'خديجه','☭︙من هي زوجه الرسول الاكبر منه سنآ ؟\n1- حفضه\n2- زينب\n3- خديجه')
+VirusTeam = name..'\n☭︙ارسل الجواب الصحيح فقط'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 return false
 end end
@@ -4245,7 +4245,7 @@ if text == DevSOFI:get(Virus..'SOFI:GameNum8'..msg.chat_id_) then
 if not DevSOFI:get(Virus..'SOFI:Games:Ids'..msg.chat_id_) then 
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevSOFI:del(Virus..'SOFI:GameNum8'..msg.chat_id_)
-VirusTeam = '᥀︙مبروك لقد ربحت في اللعبه \n᥀︙ارسل ↫ الاسئله للعب مره اخرى'
+VirusTeam = '☭︙مبروك لقد ربحت في اللعبه \n☭︙ارسل ↫ الاسئله للعب مره اخرى'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 end
 DevSOFI:set(Virus..'SOFI:Games:Ids'..msg.chat_id_,true)
@@ -4255,36 +4255,36 @@ if DevSOFI:get(Virus.."GAME:TKMEN"..msg.chat_id_.."" .. msg.sender_user_id_) the
 if text and text:match("^(%d+)$") then
 local NUM = text:match("^(%d+)$")
 if tonumber(NUM) > 20 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,"᥀︙عذرا لا يمكنك تخمين عدد اكبر من الـ20 خمن رقم ما بين الـ1 والـ20", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,"☭︙عذرا لا يمكنك تخمين عدد اكبر من الـ20 خمن رقم ما بين الـ1 والـ20", 1, 'md')
 return false  end 
 local GETNUM = DevSOFI:get(Virus.."GAMES:NUM"..msg.chat_id_)
 if tonumber(NUM) == tonumber(GETNUM) then
 DevSOFI:del(Virus..'Set:Num'..msg.chat_id_..msg.sender_user_id_)
 DevSOFI:del(Virus.."GAME:TKMEN"..msg.chat_id_.."" .. msg.sender_user_id_)   
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_,5)  
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙*التخمين الصحيح هو* ↫ '..NUM..'\n᥀︙*مبروك لقد ربحت وحصلت على 5 نقاط يمكنك استبدالها بالرسائل*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙*التخمين الصحيح هو* ↫ '..NUM..'\n☭︙*مبروك لقد ربحت وحصلت على 5 نقاط يمكنك استبدالها بالرسائل*', 1, 'md')
 elseif tonumber(NUM) ~= tonumber(GETNUM) then
 DevSOFI:incrby(Virus..'Set:Num'..msg.chat_id_..msg.sender_user_id_,1)
 if tonumber(DevSOFI:get(Virus..'Set:Num'..msg.chat_id_..msg.sender_user_id_)) >= 3 then
 DevSOFI:del(Virus..'Set:Num'..msg.chat_id_..msg.sender_user_id_)
 DevSOFI:del(Virus.."GAME:TKMEN"..msg.chat_id_.."" .. msg.sender_user_id_)   
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙*التخمين الصحيح هو* ↫ '..GETNUM..'\n᥀︙*للاسف لقد خسرت حاول مره اخرى لتخمين الرقم الصحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙*التخمين الصحيح هو* ↫ '..GETNUM..'\n☭︙*للاسف لقد خسرت حاول مره اخرى لتخمين الرقم الصحيح*', 1, 'md')
 else
 if tonumber(DevSOFI:get(Virus..'Set:Num'..msg.chat_id_..msg.sender_user_id_)) == 1 then
 SetNum = 'محاولتان فقط'
 elseif tonumber(DevSOFI:get(Virus..'Set:Num'..msg.chat_id_..msg.sender_user_id_)) == 2 then
 SetNum = 'محاوله واحده فقط'
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لقد خمنت الرقم الخطا وتبقى لديك '..SetNum..' ارسل رقم تخمنه مره اخرى للفوز', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لقد خمنت الرقم الخطا وتبقى لديك '..SetNum..' ارسل رقم تخمنه مره اخرى للفوز', 1, 'md')
 end
 end
 end
 end
-if text == 'خمن' and ChCheck(msg) or text == 'تخمين' and ChCheck(msg) or text == '↫ تخمين ᥀' and ChCheck(msg) then   
+if text == 'خمن' and ChCheck(msg) or text == 'تخمين' and ChCheck(msg) or text == '↫ تخمين ☭' and ChCheck(msg) then   
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 Num = math.random(1,20)
 DevSOFI:set(Virus.."GAMES:NUM"..msg.chat_id_,Num) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙اهلا بك عزيزي في لعبة التخمين ↫ ⤈\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙سيتم تخمين عدد ما بين الـ1 والـ20 اذا تعتقد انك تستطيع الفوز جرب واللعب الان .\n᥀︙ملاحظه لديك ثلاث محاولات فقط فكر قبل ارسال تخمينك !', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙اهلا بك عزيزي في لعبة التخمين ↫ ⤈\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙سيتم تخمين عدد ما بين الـ1 والـ20 اذا تعتقد انك تستطيع الفوز جرب واللعب الان .\n☭︙ملاحظه لديك ثلاث محاولات فقط فكر قبل ارسال تخمينك !', 1, 'md')
 DevSOFI:setex(Virus.."GAME:TKMEN"..msg.chat_id_.."" .. msg.sender_user_id_, 100, true)  
 return false  
 end
@@ -4295,16 +4295,16 @@ if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 DevSOFI:del(Virus.."SOFI:NumRolet"..msg.chat_id_..msg.sender_user_id_) 
 DevSOFI:del(Virus..'SOFI:ListRolet'..msg.chat_id_)  
 DevSOFI:setex(Virus.."SOFI:StartRolet"..msg.chat_id_..msg.sender_user_id_,3600,true)  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙حسنا لنلعب , ارسل عدد اللاعبين للروليت .', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙حسنا لنلعب , ارسل عدد اللاعبين للروليت .', 1, 'md')
 return false  
 end
 end
 if text and text:match("^(%d+)$") and DevSOFI:get(Virus.."SOFI:StartRolet"..msg.chat_id_..msg.sender_user_id_) then
 if text == "1" then
-Text = "᥀︙لا استطيع بدء اللعبه بلاعب واحد فقط"
+Text = "☭︙لا استطيع بدء اللعبه بلاعب واحد فقط"
 else
 DevSOFI:set(Virus.."SOFI:NumRolet"..msg.chat_id_..msg.sender_user_id_,text)  
-Text = '᥀︙تم بدء تسجيل اللسته يرجى ارسال المعرفات \n᥀︙الفائز يحصل على 5 نقاط عدد المطلوبين ↫ '..text..' لاعب'
+Text = '☭︙تم بدء تسجيل اللسته يرجى ارسال المعرفات \n☭︙الفائز يحصل على 5 نقاط عدد المطلوبين ↫ '..text..' لاعب'
 end
 DevSOFI:del(Virus.."SOFI:StartRolet"..msg.chat_id_..msg.sender_user_id_)
 send(msg.chat_id_,msg.id_,Text)
@@ -4312,12 +4312,12 @@ return false
 end
 if text and text:match('^(@[%a%d_]+)$') and DevSOFI:get(Virus.."SOFI:NumRolet"..msg.chat_id_..msg.sender_user_id_) then 
 if DevSOFI:sismember(Virus..'SOFI:ListRolet'..msg.chat_id_,text) then
-send(msg.chat_id_,msg.id_,'᥀︙المعرف ↫ ['..text..'] موجود اساسا')
+send(msg.chat_id_,msg.id_,'☭︙المعرف ↫ ['..text..'] موجود اساسا')
 return false
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = text},function(extra, res, success) 
 if res and res.message_ and res.message_ == "USERNAME_NOT_OCCUPIED" then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙المعرف غير صحيح يرجى ارسال معرف صحيح', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙المعرف غير صحيح يرجى ارسال معرف صحيح', 1, 'md')
 return false 
 end
 DevSOFI:sadd(Virus..'SOFI:ListRolet'..msg.chat_id_,text)
@@ -4327,13 +4327,13 @@ local CountUser = CountAdd - CountAll
 if tonumber(CountAll) == tonumber(CountAdd) then 
 DevSOFI:del(Virus.."SOFI:NumRolet"..msg.chat_id_..msg.sender_user_id_) 
 DevSOFI:setex(Virus.."SOFI:WittingStartRolet"..msg.chat_id_..msg.sender_user_id_,1400,true) 
-local Text = "᥀︙تم ادخال المعرف ↫ ["..text.."]\n᥀︙وتم اكتمال العدد الكلي هل انت مستعد ؟"
+local Text = "☭︙تم ادخال المعرف ↫ ["..text.."]\n☭︙وتم اكتمال العدد الكلي هل انت مستعد ؟"
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="نعم",callback_data="/YesRolet"},{text="لا",callback_data="/NoRolet"}},{{text="اللاعبين",callback_data="/ListRolet"}}} 
 Msg_id = msg.id_/2097152/0.5
 return https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end 
-local Text = "᥀︙تم ادخال المعرف ↫ ["..text.."] وتبقى ↫ "..CountUser.." لاعبين ليكتمل العدد ارسل المعرف الاخر"
+local Text = "☭︙تم ادخال المعرف ↫ ["..text.."] وتبقى ↫ "..CountUser.." لاعبين ليكتمل العدد ارسل المعرف الاخر"
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="الغاء",callback_data="/NoRolet"}}} 
 Msg_id = msg.id_/2097152/0.5
@@ -4341,7 +4341,7 @@ return https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?cha
 end,nil) 
 end
 --     Source Virus     --
-if text == 'كت تويت' and ChCheck(msg) or text == 'كت' and ChCheck(msg) or text == 'تويت' and ChCheck(msg) or text == '↫ كت ᥀' and ChCheck(msg) then
+if text == 'كت تويت' and ChCheck(msg) or text == 'كت' and ChCheck(msg) or text == 'تويت' and ChCheck(msg) or text == '↫ كت ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 local VirusTeam = {
 'آخر مرة زرت مدينة الملاهي؟','آخر مرة أكلت أكلتك المفضّلة؟','الوضع الحالي؟\n‏1. سهران\n‏2. ضايج\n‏3. أتأمل','آخر شيء ضاع منك؟','كلمة أخيرة لشاغل البال؟','طريقتك المعتادة في التخلّص من الطاقة السلبية؟','شهر من أشهر العام له ذكرى جميلة معك؟','كلمة غريبة من لهجتك ومعناها؟🤓','‏- شيء سمعته عالق في ذهنك هاليومين؟','متى تكره الشخص الذي أمامك حتى لو كنت مِن أشد معجبينه؟','‏- أبرز صفة حسنة في صديقك المقرب؟','هل تشعر أن هنالك مَن يُحبك؟','اذا اكتشفت أن أعز أصدقائك يضمر لك السوء، موقفك الصريح؟','أجمل شيء حصل معك خلال هاليوم؟','صِف شعورك وأنت تُحب شخص يُحب غيرك؟👀💔','كلمة لشخص غالي اشتقت إليه؟💕','آخر خبر سعيد، متى وصلك؟','أنا آسف على ....؟','أوصف نفسك بكلمة؟','صريح، مشتاق؟','‏- صريح، هل سبق وخذلت أحدهم ولو عن غير قصد؟','‏- ماذا ستختار من الكلمات لتعبر لنا عن حياتك التي عشتها الى الآن؟💭','‏- فنان/ة تود لو يدعوكَ على مائدة عشاء؟😁❤','‏- تخيّل شيء قد يحدث في المستقبل؟','‏- للشباب | آخر مرة وصلك غزل من فتاة؟🌚','شخص أو صاحب عوضك ونساك مُر الحياة ما اسمه ؟','| اذا شفت حد واعجبك وعندك الجرأه انك تروح وتتعرف عليه ، مقدمة الحديث شو راح تكون ؟.','كم مره تسبح باليوم','نسبة النعاس عندك حاليًا؟','لو فقط مسموح شخص واحد تتابعه فالسناب مين بيكون ؟','يهمك ملابسك تكون ماركة ؟','وش الشيء الي تطلع حرتك فيه و زعلت ؟','عندك أخوان او خوات من الرضاعة؟','عندك معجبين ولا محد درا عنك؟','أصعب صفة قد تتواجد في الرجل .؟','كم المده الي تخليك توقع بحب الشخص؟.','تحس انك مستعد للقاء الله ولا باقي.؟','متصالح مع نفسك؟.','يسكر على أصبعك الباب ولا تعض لسانك  بالغلط؟!','عندك غمازات؟.','‏ألوانك المفضّلة؟','ردة فعلك لما تنظلم من شخص ؟','وش الحب بنظرك؟','أكثر شيء تقدره في الصداقات؟','‏لوخيروك ⁞ الاكل لو النت ؟!','عاجبك وجودك في التلي ولا تتمنى تحذفة.؟','افضل هديه ممكن تناسبك؟','شعورك الحالي في جملة؟','أنا حزين جداً أجعلني أبتسم.؟','بماذا يتعافى المرء؟','تاك لشخص نفسيه؟','شاركنا بيت شعري حزين على ذوقك.؟','اغنية عندك بيها ذكريات؟','اشياء تفتخر انك م سويتها ؟','الصراحة وقاحة ولا صدق تعامل.؟','ايهم اصدق نظرة العين او نبرة الصوت ؟','‏قلّة المال لدى الرجل في هذا الزمن يعتبرها العديد كانها عيب، مع أم ضد؟','إيهما تُفضل حُب ناجح أم صداقة دائمة.؟','على نياتكُم تُرزقون تاك لشخص ينطبق علية هذا الشيء.؟','اكثر كلمة ترفع ضغطك ؟','من أصحاب الماضي والحنين ولا الصفحات المطوية.؟','من أصحاب النسيان او التجاوز رغم الذكرى.؟','غزل بلهجتك ؟','مصروفك كم؟.','للحتيت ⁞ ماذا تفضّلين أن تكون مهنة شريك حياتك المستقبلي.؟','يومك ضاع على؟','ما الذي اسعدك اليوم .؟','كيف تتعامل مع الشخص المُتطفل ( الفضولي ) ؟','أصعب صفة قد تتواجد في المرأة.؟','مع أو ضد لو كان خيراً لبقئ.؟','نصيحة لكل شخص يذكر أحد بغيابة بالسوء.؟','كل شيء يهون الا ؟','هل أنت من النوع الذي يواجه المشاكل أو من النوع الذي يهرب ؟','كلمه لشخص خانك!؟.','تحب تحتفظ بالذكريات ؟','شاركنا أقوى بيت شِعر من تأليفك؟','‏اسرع شيء يحسّن من مزاجك؟','كلمتك التسليكيه ؟','كم ساعات نومك؟.','عندك فوبيا او خوف شديد من شيء معين ؟','موهبة تفوز بمدح الناس لك.؟','قدوتك من الأجيال السابقة؟','شخص تتمنئ له الموت؟.','عادةً تُحب النقاش الطويل أم تحب الاختصار؟','تاك لشخص نيته زباله🌚؟','صوتك حلو ؟ .','كلمتين تكررها دايم؟!','افضل روايه قريتيها؟.','متى حدث التغيير الكبير والملحوظ في شخصيتك؟','أكثر اكلهه تحبها؟.','‏كلما ازدادت ثقافة المرء ازداد بؤسه','تتفق.؟','اغبى كذبه صدقتها بطفولتك؟.','كم المده الي تخليك توقع بحب الشخص؟.','تسامح شخص وجع قلبك ؟.','ردة فعلك لما تنظلم من شخص ؟','شيء يعدل نفسيتك بثواني.؟','‏تتوقع الإنسان يحس بقرب موته؟','وقت حزنك تلجأ لمن يخفف عنك.؟','‏أكثر شيء شخصي ضاع منك؟','تزعلك الدنيا ويرضيك ؟','ما الذي يشغل بالك في الفترة الحالية؟','نهارك يصير أجمل بوجود ..؟','حسيت انك ظلمت شخص.؟','صفة يطلقها عليك من حولك بكثرة؟','‏يوم لا يمكنك نسيانه؟','أكثر اكلهه تحبها؟.','اخر كلمة قالها لك حبيبك؟.','من الشخص الاقرب لقلبك؟.','كم المده الي تخليك توقع بحب الشخص؟.','ماهي الهدية التي تتمنى أن تنتظرك يومًا أمام باب منزلك؟','‏اسم او تاك لشخص لا ترتاح في يومك إلا إذا حاجيته؟','صديق أمك ولا أبوك. ؟','لماذا الأشياء التي نريدها بشغف تأتي متأخرة؟','‏تقبل بالعودة لشخص كسر قلبك مرتين؟','افضل هديه ممكن تناسبك؟','كلمة غريبة ومعناها؟','اذا اشتقت تكابر ولا تبادر ؟.','بامكانك تنزع شعور من قلبك للابد ، ايش هو؟.','لو بتغير اسمك ايش بيكون الجديد ؟','‏شخصية لا تستطيع تقبلها؟','ما هي طريقتك في الحصول على الراحة النفسية؟','‏ايموجي يوصف مزاجك حاليًا بدقة؟','تاريخ ميلادك؟','كيف تحد الدولة من الفقر المُتزايد.؟','‏شي مستحيل يتغير فيك؟','لو اخذوك لمستشفى المخابيل كيف تثبت انت صاحي؟','إيموجي يعبّر عن مزاجك الحالي؟','وقت حزنك تلجأ لمن يخفف عنك.؟','اعترف باي حاجه ؟','شاركني آخر صورة جميلة من كاميرا هاتفك.؟','متصالح مع نفسك؟.','لو عندك امنيه وبتحقق وش هي؟.','هل انت شخص مادي.؟','أخر اتصال جاك من مين ؟','تاك لصديقك المُقرب؟.','تحب العلاقات العاطفيه ولا الصداقه؟.','العين الي تستصغرك........؟','تجامل الناس ولا اللي بقلبك على لسانك؟','وقت حزنك تلجأ لمن يخفف عنك.؟','اكثر المتابعين عندك باي برنامج؟','صفه تتمناها بشريك حياتك؟.','من اصدق في الحب الولد ولا البنت؟.','يرد عليك متأخر على رسالة مهمة وبكل برود، موقفك؟','كلمة لشخص بعيد؟','رحتي لعرس وأكتشفتي العريس حبيبك شنو ردة فعلك.؟','تسامح شخص وجع قلبك ؟.','احقر موقف صار لك؟.','ماذا لو كانت مشاعر البشر مرئية ؟','وين نلقى السعاده برايك؟','قد تخيلت شي في بالك وصار ؟','صفة يطلقها عليك الشخص المفضّل؟','اخر خيانه؟.','تحب تحتفظ بالذكريات ؟','لو بتغير اسمك ايش بيكون الجديد ؟','الاعتذار أخلاق ولا ضعف.؟','هل أنت من النوع الذي يواجه المشاكل أو من النوع الذي يهرب ؟','‏ تكره أحد من قلبك ؟','تاك لشخص وكوله اعترف لك؟','مع أو ضد لو كان خيراً لبقئ.؟','‏هل لديك شخص لا تخفي عنه شيئًا؟','اغنيه تأثر بيك؟','المطوعة والعاقلة من شلتك.؟','مواصفات امير/ة احلامك؟.','‏كلمة لصديقك البعيد؟','تتابع انمي؟ إذا نعم ما أفضل انمي شاهدته؟','قرارتك راضي عنها ام لا ؟','تسامح شخص سبب في بكائك.؟','لو حصل واشتريت جزيرة، ماذا ستختار اسمًا لها.؟','اغنيتك المفضلة؟.','شاركنا اقوئ نكتة عندك.؟','ماذا لو عاد مُشتاقاً.؟','مسلسل كرتوني له ذكريات جميلة عندك؟','أخر اتصال جاك من مين ؟','حيوانك المفضل؟','اول ولد لك شنو رح تسميه ؟','سبب الرحيل.؟','قولها بلهجتك « لا أملك المال ».؟','نهارك يصير أجمل بوجود ..؟','‏لو خيروك، الزواج بمن تُحب او تاخذ مليون دولار؟','تاك لشخص سوالفه حلوه ؟','تصرف لا يُمكن أن تتحمله.؟','ماهي الاطباع فيك التي تحاول اخفائها عن الناس؟.','شيء عندك اهم من الناس؟','قد تخيلت شي في بالك وصار ؟','تمحي العشرة الطيبة عشان موقف ماعجبك أو سوء فهم.؟','جربت شعور احد يحبك بس انت متكدر تحبه؟','بنفسك تبوس شخص بهاي الحظه؟','إذا كانت الصراحة ستبعد عنك من تحب هل تمتلك الشجاعة للمصارحة ام لا .؟','أكمل الدعاء بما شئت ‏اللهم أرزقني ..؟','الصق اخر شيء نسخته .؟','‏تفضل جولة في الغابة أم جولة بحرية؟','‏تاك لشخص لديك لا تخفي عنه شي؟','كلمة غريبة ومعناها؟','‏اوقات لا تحب ان يكلمك فيها احد؟','تملك وسواس من شيء معين ؟','اشمر مقطع من اغنيه متطلع منراسك؟','هل تتأثرين بالكلام الرومانسي من الشباب؟','ما اول شيء يلفت انتباهك في الرجل؟','ماذا تفعلين اذا تعرضتِ للتحرش من قبل شخص ما..؟','اذا كنت شخصاً غني هل توافق على الزواج من فتاة فقيرة..؟','ما هو أكثر شئ لا تستطيع تحمله..؟','ما هي نقاط الضعف في شخصيتك..؟','هل توافق أن زوجتك تدفع الحساب في إحدي المطاعم وأنت موجود؟','ماذا تفعل لو أكتشفت ان زوجتك على علاقة بصديقك؟','ما هي أكثر صفة تكرهها في زوجتك..؟','اذا كان لديك فرصة للخروج مع من سوف تخرج ربعك او زوجتك..؟','ماذا تفعل عندما تري دموع زوجتك..؟','إلى أي الرجال تُريدين أن يكون انتماؤك؟','كم مرة خُدعت في أشخاصٍ، وثقتِ فيهم ثقةً عمياء؟','هل ما زال أصدقاء الطفولة أصدقاءً لك حتى الآن؟','هل ترغبين في أن يكون خطيبك وسيمًا؟','كم مرةٍ فعلت شيئًا لا ترغبين في الإفصاح عنه؟','هل استطعت أن تُحققي آمالك العلمية والعاطفية؟','أكثر شئ ندمت على فعله..؟','هل تشعرين أنك فتاة محظوظة..؟','هل علاقة الحب التي كانت في صغرك، مازالت مستمرة؟','ما هو أكثر شئ يفرحك في هذه الحياة..؟','كم مرة أردت شراء ملابس لأنها جميلة ولكنها لا تناسبك..؟','كم عدد المرات التي قمت فيها بإستبدال شئ اشتريته ولم يعجبك بعد ذلك.؟','كم مرة قمت بكسر الرجيم من أجل تناول طعامك المفضل..؟','هل تعرضت للظلم يوماً ما وعلى يد من..؟','هل كذبت على والديك من قبل..؟','هل خرجتي مع شخص تعرفتي عليه من خلال التليكرام من قبل..؟','هل لو تقدم شخص لاختك من أجل خطبتها وقامت برفضه تقبلين به..؟','لمن تقولين لا أستطيع العيش بدونك..؟','كم عدد المرات التي تعرضتِ فيها إلى أزمة نفسية وأردتِ الصراخ بأعلى صوتك..؟','ماذا تقول للبحر؟','أصعب صفة قد تتواجد في رجل؟','ما أجمل الحياة بدون ...؟','لماذا لم تتم خطبتك حتى الآن..؟','نسبة رضاك عن الأشخاص من حولك هالفترة ؟','ما السيء في هذه الحياة ؟','الفلوس او الحب ؟','أجمل شيء حصل معك خلال هذا الاسبوع ؟','سؤال ينرفزك ؟','كم في حسابك البنكي ؟','شي عندك اهم من الناس ؟','اول ولد او بنت الك شنو تسمي ؟','تفضّل النقاش الطويل او تحب الاختصار ؟','عادي تتزوج او تتزوجين من خارج العشيره ؟','كم مره حبيت ؟','تبادل الكراهية بالكراهية؟ ولا تحرجه بالطيب ؟','قلبي على قلبك مهما صار لمنو تكولها ؟','اكثر المتابعين عندك باي برنامج ؟','نسبة النعاس عندك حاليًا ؟','نسبه الندم عندك للي وثقت بيهم ؟','اول شخص تعرفت عليه بالتليكرام بعده موجود ؟','اذا فديوم شخص ضلمك شنو موقفك ؟','افضل عمر للزواج برئيك ؟','انت من النوع الي دائما ينغدر من اقرب الناس اله ؟','ماهو حيوانك المفضل ؟','تاريخ ميلادك ؟','لونك المفضل ؟','انت من النوع العاطفي والي ميكدر يكتم البداخله ؟','اذا فديوم شخص خانك ويريد يرجعلك تقبل ؟','شي بالحياه مخليك عايش لحد الان ؟','تحب النوم لو الشغل ؟','افضل مكان رحت عليه ؟','اختصر الماضي بكلمه وحده ؟','هل سبق وكنت مصر على أمر ما ومن ثم اكتشفت أنك كنت على خطأ ؟','اكثر كلمة ترفع ضغطك ؟','مع او ضد سب البنت للدفاع عن نفسها ؟','يهمك ظن الناس بيك لو لا؟','عبّر عن مودك بصوره ؟','اغلب وقتك ضايع في ؟','يوم متكدر تنساه ؟','تحس انك محظوظ بالاشخاص الي حولك ؟','تستغل وقت فراغك بشنو ؟','مع او ضد مقولة محد يدوم ل احد ؟','لو اخذوك مستشفى المجانين كيف تثبت لهم انك صاحي ؟','مغني تلاحظ أن صوته يعجب الجميع إلا أنت ؟','اخر خيانه ؟','تصرف ماتتحمله ؟','هل يمكنك الكذب والاستمرار بارتكاب الأخطاء كمحاولة منك لعدم الكشف أنك مخطئ ؟','الصق اخر شي نسخته ؟','عمرك انتقمت من أحد ؟','هل وصلك رسالة غير متوقعة من شخص وأثرت فيك ؟','‏-لو امتلكت العصا السحرية ليوم واحد ماذا ستفعل ؟','جابو طاري شخص تكره عندك تشاركهم ولا تمنعهم ؟','أمنية كنت تتمناها وحققتها ؟','هل التعود على شخص والتحدث معه بشكل يومي يعتبر نوع من أنواع الحب ؟','نسبة جمال صوتك ؟','صفة يطلقها عليك الشخص المفضل ؟','شنو هدفك بالمستقبل القريب ؟','تحب القرائه ؟','كليه تتمنى تنقبل بيها ؟',
@@ -4354,42 +4354,42 @@ return false
 end
 end
 --     Source Virus     --
-if text == 'الالعاب' and ChCheck(msg) or text == 'العاب' and ChCheck(msg) or text == 'اللعبه' and ChCheck(msg) or text == '↫ الالعاب ᥀' and ChCheck(msg) then
+if text == 'الالعاب' and ChCheck(msg) or text == 'العاب' and ChCheck(msg) or text == 'اللعبه' and ChCheck(msg) or text == '↫ الالعاب ☭' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Games'..msg.chat_id_) then
 Dev_SOFI(msg.chat_id_, msg.id_, 1,[[
-᥀︙قائمة العاب المجموعه ↫ ⤈
+☭︙قائمة العاب المجموعه ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙لعبة التخمين ↫ خمن
-᥀︙لعبة الامثله ↫ امثله
-᥀︙لعبة العكس ↫ العكس
-᥀︙لعبة الاسئله ↫ اسئله
-᥀︙لعبة الروليت ↫ روليت
-᥀︙لعبة الحزوره ↫ حزوره
-᥀︙لعبة الترتيب ↫ ترتيب
-᥀︙لعبة المعاني ↫ معاني
-᥀︙لعبة التويت ↫ كت تويت
-᥀︙لعبة المختلف ↫ المختلف
-᥀︙لعبة السمايلات ↫ سمايلات
-᥀︙لعبة المحيبس ↫ المحيبس
-᥀︙لعبة الرياضيات ↫ رياضيات
-᥀︙لعبة الانكليزيه ↫ انكليزيه
+☭︙لعبة التخمين ↫ خمن
+☭︙لعبة الامثله ↫ امثله
+☭︙لعبة العكس ↫ العكس
+☭︙لعبة الاسئله ↫ اسئله
+☭︙لعبة الروليت ↫ روليت
+☭︙لعبة الحزوره ↫ حزوره
+☭︙لعبة الترتيب ↫ ترتيب
+☭︙لعبة المعاني ↫ معاني
+☭︙لعبة التويت ↫ كت تويت
+☭︙لعبة المختلف ↫ المختلف
+☭︙لعبة السمايلات ↫ سمايلات
+☭︙لعبة المحيبس ↫ المحيبس
+☭︙لعبة الرياضيات ↫ رياضيات
+☭︙لعبة الانكليزيه ↫ انكليزيه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙نقاطي • بيع نقاطي
+☭︙نقاطي • بيع نقاطي
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]], 1, 'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙عذرا الالعاب معطله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙عذرا الالعاب معطله في المجموعه', 1, 'md')
 end
 end
 --     Source Virus     --
 if text == 'بيع نقاطي' and ChCheck(msg) then
 if tonumber((DevSOFI:get(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_) or 0)) == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لم تربح اي نقطه\n᥀︙ارسل ↫ الالعاب للعب', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لم تربح اي نقطه\n☭︙ارسل ↫ الالعاب للعب', 1, 'md')
 else
 DevSOFI0 = (DevSOFI:get(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_) * 50)
 DevSOFI:incrby(Virus..'SOFI:UsersMsgs'..msg.chat_id_..':'..msg.sender_user_id_,DevSOFI0)
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙تم بيع '..(DevSOFI:get(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_))..' من نقاطك\n᥀︙كل نقطه تساوي 50 رساله', 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙تم بيع '..(DevSOFI:get(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_))..' من نقاطك\n☭︙كل نقطه تساوي 50 رساله', 'md')
 DevSOFI:del(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_)
 end
 end
@@ -4417,19 +4417,19 @@ DevSOFI:sadd(Virus..'SOFI:SOFIConstructor:'..msg.chat_id_,Manager_id)
 end  
 end  
 if num == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لا يوجد ادمنيه ليتم رفعهم\n᥀︙تم رفع مالك المجموعه", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لا يوجد ادمنيه ليتم رفعهم\n☭︙تم رفع مالك المجموعه", 1, 'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم رفع '..num..' من الادمنيه \n᥀︙تم رفع مالك المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم رفع '..num..' من الادمنيه \n☭︙تم رفع مالك المجموعه', 1, 'md')
 end
 end,nil) 
 end
 --     Source Virus     --
 if text == 'غادر' and SudoBot(msg) and ChCheck(msg) then
 if DevSOFI:get(Virus.."SOFI:Left:Bot"..Virus) then
-Dev_SOFI(msg.chat_id_,msg.id_, 1, "᥀︙المغادره معطله من قبل المطور الاساسي", 1, 'md')
+Dev_SOFI(msg.chat_id_,msg.id_, 1, "☭︙المغادره معطله من قبل المطور الاساسي", 1, 'md')
 return false  
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم مغادرة المجموعه \n᥀︙تم حذف جميع بياناتها ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم مغادرة المجموعه \n☭︙تم حذف جميع بياناتها ', 1, 'md')
 ChatLeave(msg.chat_id_, Virus)
 DevSOFI:srem(Virus.."SOFI:Groups",msg.chat_id_)
 end
@@ -4443,7 +4443,7 @@ rtpa = 'الادمن'
 elseif da.status_.ID == "ChatMemberStatusMember" then
 rtpa = 'عضو'
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙موقعك ↫ '..rtpa, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙موقعك ↫ '..rtpa, 1, 'md')
 end,nil)
 end
 --     Source Virus     --
@@ -4455,62 +4455,62 @@ local cont = (tonumber(DevSOFI:get(Virus..'SOFI:ContactNumber'..msg.chat_id_..':
 local user_nkt = tonumber(DevSOFI:get(Virus..'SOFI:GamesNumber'..msg.chat_id_..msg.sender_user_id_) or 0)
 if result.username_ then username = '@'..result.username_ else username = 'لا يوجد' end
 if result.last_name_ then lastname = result.last_name_ else lastname = '' end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙اسمك ↫ ❨ ['..result.first_name_..'] ❩\n᥀︙معرفك ↫ ❨ ['..username..'] ❩\n᥀︙ايديك ↫ ❨ `'..result.id_..'` ❩\n᥀︙نقاطك ↫ ❨ '..user_nkt..' ❩\n᥀︙رسائلك ↫ ❨ '..user_msgs..' ❩\n᥀︙جهاتك ↫ ❨ '..cont..' ❩\n᥀︙تفاعلك ↫ '..formsgs(msguser)..'\n᥀︙رتبتك ↫ '..IdRank(msg.sender_user_id_, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙اسمك ↫ ❨ ['..result.first_name_..'] ❩\n☭︙معرفك ↫ ❨ ['..username..'] ❩\n☭︙ايديك ↫ ❨ `'..result.id_..'` ❩\n☭︙نقاطك ↫ ❨ '..user_nkt..' ❩\n☭︙رسائلك ↫ ❨ '..user_msgs..' ❩\n☭︙جهاتك ↫ ❨ '..cont..' ❩\n☭︙تفاعلك ↫ '..formsgs(msguser)..'\n☭︙رتبتك ↫ '..IdRank(msg.sender_user_id_, msg.chat_id_), 1, 'md')
 end
 getUser(msg.sender_user_id_,get_me)
 end
 end
 --     Source Virus     --
-if text == "تعيين قناة الاشتراك" or text == "تغيير قناة الاشتراك" or text == "تعيين الاشتراك الاجباري" or text == "وضع قناة الاشتراك" or text == "↫ تعيين قناة الاشتراك ᥀" then
+if text == "تعيين قناة الاشتراك" or text == "تغيير قناة الاشتراك" or text == "تعيين الاشتراك الاجباري" or text == "وضع قناة الاشتراك" or text == "↫ تعيين قناة الاشتراك ☭" then
 if not Sudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط ', 1, 'md')
 else
 DevSOFI:setex(Virus..'DevSOFI4'..msg.sender_user_id_,360,true)
-send(msg.chat_id_, msg.id_, '᥀︙ارسل لي معرف قناة الاشتراك الان')
+send(msg.chat_id_, msg.id_, '☭︙ارسل لي معرف قناة الاشتراك الان')
 end
 return false  
 end
-if text == "تفعيل الاشتراك الاجباري" or text == "↫  تفعيل الاشتراك الاجباري ᥀" then  
+if text == "تفعيل الاشتراك الاجباري" or text == "↫  تفعيل الاشتراك الاجباري ☭" then  
 if not Sudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط ', 1, 'md')
 else
 if DevSOFI:get(Virus..'SOFI:ChId') then
 local Check = https.request('https://api.telegram.org/bot'..TokenBot..'/getChat?chat_id='..DevSOFI:get(Virus.."SOFI:ChId"))
 local GetInfo = JSON.decode(Check)
-send(msg.chat_id_, msg.id_,"᥀︙الاشتراك الاجباري مفعل \n᥀︙على القناة ↫ [@"..GetInfo.result.username.."]")
+send(msg.chat_id_, msg.id_,"☭︙الاشتراك الاجباري مفعل \n☭︙على القناة ↫ [@"..GetInfo.result.username.."]")
 else
 DevSOFI:setex(Virus..'DevSOFI4'..msg.sender_user_id_,360,true)
-send(msg.chat_id_, msg.id_,"᥀︙لاتوجد قناة لتفعيل الاشتراك\n᥀︙ارسل لي معرف قناة الاشتراك الان")
+send(msg.chat_id_, msg.id_,"☭︙لاتوجد قناة لتفعيل الاشتراك\n☭︙ارسل لي معرف قناة الاشتراك الان")
 end
 end
 return false  
 end
-if text == "تعطيل الاشتراك الاجباري" or text == "↫  تعطيل الاشتراك الاجباري ᥀" then  
+if text == "تعطيل الاشتراك الاجباري" or text == "↫  تعطيل الاشتراك الاجباري ☭" then  
 if not Sudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط ', 1, 'md')
 else
 DevSOFI:del(Virus..'SOFI:ChId')
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الاشتراك الاجباري'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الاشتراك الاجباري'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end
 return false  
 end
-if text == "حذف قناة الاشتراك" or text == "حذف قناه الاشتراك" or text == "↫ حذف قناة الاشتراك ᥀" then
+if text == "حذف قناة الاشتراك" or text == "حذف قناه الاشتراك" or text == "↫ حذف قناة الاشتراك ☭" then
 if not SecondSudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط ', 1, 'md')
 else
 DevSOFI:del(Virus..'SOFI:ChId')
-Dev_SOFI(msg.chat_id_, msg.id_, 1,"᥀︙تم حذف قناة الاشتراك الاجباري", 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1,"☭︙تم حذف قناة الاشتراك الاجباري", 1, 'md') 
 end
 end
 if SecondSudo(msg) then
-if text == 'جلب قناة الاشتراك' or text == 'قناة الاشتراك' or text == 'الاشتراك الاجباري' or text == 'قناة الاشتراك الاجباري' or text == '↫ قناة الاشتراك ᥀' then
+if text == 'جلب قناة الاشتراك' or text == 'قناة الاشتراك' or text == 'الاشتراك الاجباري' or text == 'قناة الاشتراك الاجباري' or text == '↫ قناة الاشتراك ☭' then
 if DevSOFI:get(Virus..'SOFI:ChId') then
 local Check = https.request('https://api.telegram.org/bot'..TokenBot..'/getChat?chat_id='..DevSOFI:get(Virus.."SOFI:ChId"))
 local GetInfo = JSON.decode(Check)
-send(msg.chat_id_, msg.id_, "᥀︙قناة الاشتراك ↫ [@"..GetInfo.result.username.."]")
+send(msg.chat_id_, msg.id_, "☭︙قناة الاشتراك ↫ [@"..GetInfo.result.username.."]")
 else
-send(msg.chat_id_, msg.id_, "᥀︙لاتوجد قناة في الاشتراك الاجباري")
+send(msg.chat_id_, msg.id_, "☭︙لاتوجد قناة في الاشتراك الاجباري")
 end
 return false  
 end end
@@ -4519,7 +4519,7 @@ if SudoBot(msg) then
 if text == 'اذاعه للكل بالتوجيه' and tonumber(msg.reply_to_message_id_) > 0 then
 function VirusTeam(extra,result,success)
 if DevSOFI:get(Virus.."SOFI:Send:Bot"..Virus) and not SOFISudo(msg) then 
-send(msg.chat_id_, msg.id_,"᥀︙الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"☭︙الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
 local GpList = DevSOFI:smembers(Virus.."SOFI:Groups")
@@ -4530,7 +4530,7 @@ local PvList = DevSOFI:smembers(Virus.."SOFI:Users")
 for k,v in pairs(PvList) do
 tdcli_function({ID="ForwardMessages", chat_id_ = v, from_chat_id_ = msg.chat_id_, message_ids_ = {[0] = result.id_}, disable_notification_ = 0, from_background_ = 1},function(a,t) end,nil) 
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم اذاعة رسالتك بالتوجيه \n᥀︙‏في ↫ ❨ '..#GpList..' ❩ مجموعه \n᥀︙والى ↫ ❨ '..#PvList..' ❩ مشترك \n ✓', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم اذاعة رسالتك بالتوجيه \n☭︙‏في ↫ ❨ '..#GpList..' ❩ مجموعه \n☭︙والى ↫ ❨ '..#PvList..' ❩ مشترك \n ✓', 1, 'md')
 end
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),VirusTeam)
 end
@@ -4538,33 +4538,33 @@ end
 --     Source Virus     --
 if text == "مشاهده المنشور" and ChCheck(msg) or text == "مشاهدات المنشور" and ChCheck(msg) or text == "عدد المشاهدات" and ChCheck(msg) then
 DevSOFI:set(Virus..'SOFI:viewget'..msg.sender_user_id_,true)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙حسنا قم باعادة توجيه للمنشور الذي تريدني حساب مشاهداته', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙حسنا قم باعادة توجيه للمنشور الذي تريدني حساب مشاهداته', 1, 'md')
 end
 --     Source Virus     --
-if text == "سورس" and SourceCh(msg) or text == "السورس" and SourceCh(msg) or text == "يا سورس" and SourceCh(msg) or text == "↫  السورس ᥀" and SourceCh(msg) then
+if text == "سورس" and SourceCh(msg) or text == "السورس" and SourceCh(msg) or text == "يا سورس" and SourceCh(msg) or text == "↫  السورس ☭" and SourceCh(msg) then
 Text = [[
 Welcome To Source
-᥀︙[Virus Team](https://t.me/L9L9L)
+☭︙[Virus Team](https://t.me/V_IRUS1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ Source Channel',url="https://t.me/L9L9L"}},
-{{text = '᥀ Developer',url="t.me/tsttt"},{text = '᥀ Tws Virus',url="https://t.me/W555Bot"}},{{text= '᥀ Support Source .',url="https://t.me/joinchat/L980Ig8wQnAyN2Vi"}}
+{{text = '☭ Source Channel',url="https://t.me/V_IRUS1"}},
+{{text = '☭ Developer',url="t.me/OOO0OOQ"},{text = '☭ Tws Virus',url="https://t.me/CTY2bot"}}
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/X6UX6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/V_IRUS1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 --     Source Virus     --
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == "اطردني" and ChCheck(msg) or text == "ادفرني" and ChCheck(msg) then
 if DevSOFI:get(Virus.."SOFI:Kick:Me"..msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙عذرا هذه الخاصيه معطله ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙عذرا هذه الخاصيه معطله ', 1, 'md')
 return false
 end
 DevSOFI:set(Virus..'yes'..msg.sender_user_id_, 'delyes')
 DevSOFI:set(Virus..'no'..msg.sender_user_id_, 'delno')
-local Text = '᥀︙هل انت متأكد من المغادره'
+local Text = '☭︙هل انت متأكد من المغادره'
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="نعم",callback_data="/delyes"},{text="لا",callback_data="/delno"}}} 
 Msg_id = msg.id_/2097152/0.5
@@ -4573,23 +4573,23 @@ end
 --     Source Virus     --
 if text == 'تعطيل اطردني' and Manager(msg) and ChCheck(msg) then
 DevSOFI:set(Virus.."SOFI:Kick:Me"..msg.chat_id_, true)
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل امر اطردني'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل امر اطردني'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end
 if text == 'تفعيل اطردني' and Manager(msg) and ChCheck(msg) then
 DevSOFI:del(Virus.."SOFI:Kick:Me"..msg.chat_id_)
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل امر اطردني'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل امر اطردني'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end
 --     Source Virus     --
 if text == "نزلني" and ChCheck(msg) then
 if DevSOFI:get(Virus.."SOFI:Del:Me"..msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙عذرا هذه الخاصيه معطله ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙عذرا هذه الخاصيه معطله ', 1, 'md')
 return false
 end
 DevSOFI:set(Virus..'yesdel'..msg.sender_user_id_, 'delyes')
 DevSOFI:set(Virus..'nodel'..msg.sender_user_id_, 'delno')
-local Text = '᥀︙هل انت متأكد من تنزيلك'
+local Text = '☭︙هل انت متأكد من تنزيلك'
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="نعم",callback_data="/yesdel"},{text="لا",callback_data="/nodel"}}} 
 Msg_id = msg.id_/2097152/0.5
@@ -4598,22 +4598,22 @@ end
 --     Source Virus     --
 if text == 'تعطيل نزلني' and BasicConstructor(msg) and ChCheck(msg) then
 DevSOFI:set(Virus.."SOFI:Del:Me"..msg.chat_id_, true)
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل امر نزلني'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل امر نزلني'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end
 if text == 'تفعيل نزلني' and BasicConstructor(msg) and ChCheck(msg) then
 DevSOFI:del(Virus.."SOFI:Del:Me"..msg.chat_id_)
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل امر نزلني'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل امر نزلني'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end
 --     Source Virus     --
 if text and (text == 'تفعيل التاك' or text == 'تفعيل التاك للكل' or text == 'تفعيل تاك للكل') and Admin(msg) and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل امر تاك للكل'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل امر تاك للكل'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Lock:TagAll'..msg.chat_id_)
 end
 if text and (text == 'تعطيل التاك' or text == 'تعطيل التاك للكل' or text == 'تعطيل تاك للكل') and Admin(msg) and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل امر تاك للكل'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل امر تاك للكل'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Lock:TagAll'..msg.chat_id_,true)
 end
@@ -4621,7 +4621,7 @@ if Admin(msg) then
 if text == "تاك للكل" and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:TagAll'..msg.chat_id_) then
 function TagAll(dp1,dp2)
-local text = "᥀︙وينكم يالربع \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+local text = "☭︙وينكم يالربع \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 i = 0
 for k, v in pairs(dp2.members_) do
 i = i + 1
@@ -4641,7 +4641,7 @@ if text and text:match("^كللهم (.*)$") and ChCheck(msg) then
 local txt = {string.match(text, "^(كللهم) (.*)$")}
 if not DevSOFI:get(Virus..'SOFI:Lock:TagAll'..msg.chat_id_) then
 function TagAll(dp1,dp2)
-local text = "᥀︙"..txt[2].." \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+local text = "☭︙"..txt[2].." \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 i = 0
 for k, v in pairs(dp2.members_) do
 i = i + 1
@@ -4659,20 +4659,20 @@ end
 end
 --     Source Virus     --
 if Manager(msg) then
-if text == 'تفعيل ملف TagAll.lua' or text == 'تفعيل @all' or text == 'تفعيل all' or text == '↫ تفعيل all ᥀' then   
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل ملف تاك منفصل للأعضاء'
+if text == 'تفعيل ملف TagAll.lua' or text == 'تفعيل @all' or text == 'تفعيل all' or text == '↫ تفعيل all ☭' then   
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل ملف تاك منفصل للأعضاء'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus.."SOFI:Lock:TagAll")
 end
-if text == 'تعطيل ملف TagAll.lua' or text == 'تعطيل @all' or text == 'تعطيل all' or text == '↫ تعطيل all ᥀' then   
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل ملف تاك منفصل للأعضاء'
+if text == 'تعطيل ملف TagAll.lua' or text == 'تعطيل @all' or text == 'تعطيل all' or text == '↫ تعطيل all ☭' then   
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل ملف تاك منفصل للأعضاء'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus.."SOFI:Lock:TagAll",true) 
 end 
 if text and (text == "all" or text == "@all" or text == "#all") then
 if (text and not DevSOFI:get(Virus.."SOFI:Lock:TagAll")) then
 if DevSOFI:get(Virus.."SOFI:TagAll:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙انتظر دقيقه بعد ارسال الامر', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙انتظر دقيقه بعد ارسال الامر', 1, 'md')
 return false  
 end
 DevSOFI:setex(Virus..'SOFI:TagAll:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
@@ -4705,20 +4705,20 @@ end
 end
 --     Source Virus     --
 if Manager(msg) then
-if text == 'تفعيل @admin' or text == 'تفعيل admin' or text == '↫ تفعيل admin ᥀' then   
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل ملف تاك منفصل للمشرفين'
+if text == 'تفعيل @admin' or text == 'تفعيل admin' or text == '↫ تفعيل admin ☭' then   
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل ملف تاك منفصل للمشرفين'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus.."SOFI:Lock:TagAdmins")
 end
-if text == 'تعطيل @admin' or text == 'تعطيل admin' or text == '↫ تعطيل admin ᥀' then   
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل ملف تاك منفصل للمشرفين'
+if text == 'تعطيل @admin' or text == 'تعطيل admin' or text == '↫ تعطيل admin ☭' then   
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل ملف تاك منفصل للمشرفين'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus.."SOFI:Lock:TagAdmins",true) 
 end 
 if text == "admin" or text == "@admin" or text == "#admin" then
 if (text and not DevSOFI:get(Virus.."SOFI:Lock:TagAdmins")) then
 if DevSOFI:get(Virus.."SOFI:TagAdmins:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙انتظر دقيقه بعد ارسال الامر', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙انتظر دقيقه بعد ارسال الامر', 1, 'md')
 return false  
 end
 DevSOFI:setex(Virus..'SOFI:TagAdmins:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
@@ -4845,7 +4845,7 @@ local File = io.open('./'..Virus..'.json', "w")
 File:write(GetJson)
 File:close()
 local SOFI = 'https://api.telegram.org/bot' .. TokenBot .. '/sendDocument'
-local curl = 'curl "' .. SOFI .. '" -F "chat_id='..ViRUS..'" -F "document=@'..Virus..'.json' .. '" -F "caption=᥀︙نسخه تلقائيه تحتوي على ↫ '..#list..' مجموعه"'
+local curl = 'curl "' .. SOFI .. '" -F "chat_id='..ViRUS..'" -F "document=@'..Virus..'.json' .. '" -F "caption=☭︙نسخه تلقائيه تحتوي على ↫ '..#list..' مجموعه"'
 io.popen(curl)
 io.popen('fm -fr '..Virus..'.json')
 DevSOFI:set(Virus.."SOFI:AutoFile:Time",os.date("%x"))
@@ -4857,22 +4857,22 @@ end
 --     Source Virus     --
 if text == "رسائلي" and msg.reply_to_message_id_ == 0 and ChCheck(msg) then
 local user_msgs = DevSOFI:get(Virus..'SOFI:UsersMsgs'..msg.chat_id_..':'..msg.sender_user_id_)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙عدد رسائلك هنا ↫ *❨ "..user_msgs.." ❩*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙عدد رسائلك هنا ↫ *❨ "..user_msgs.." ❩*", 1, 'md')
 end
 if text == "التفاعل" and ChCheck(msg) then
 local EntryNumber = (DevSOFI:get(Virus..'SOFI:EntryNumber'..msg.chat_id_..':'..os.date('%d')) or 0)
 local ExitNumber = (DevSOFI:get(Virus..'SOFI:ExitNumber'..msg.chat_id_..':'..os.date('%d')) or 0)
 local MsgNumberDay = (DevSOFI:get(Virus..'SOFI:MsgNumberDay'..msg.chat_id_..':'..os.date('%d')) or 0)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙انضمام الاعضاء اليوم ↫ *"..EntryNumber.."*\n᥀︙مغادرة الاعضاء اليوم ↫ *"..ExitNumber.."*\n᥀︙عدد الرسائل اليوم ↫ *"..MsgNumberDay.."*\n᥀︙نسبة التفاعل اليوم ↫ *"..math.random(40,100).."%*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙انضمام الاعضاء اليوم ↫ *"..EntryNumber.."*\n☭︙مغادرة الاعضاء اليوم ↫ *"..ExitNumber.."*\n☭︙عدد الرسائل اليوم ↫ *"..MsgNumberDay.."*\n☭︙نسبة التفاعل اليوم ↫ *"..math.random(40,100).."%*", 1, 'md')
 end
 --     Source Virus     --
 if text == "تعطيل تفاعلي" and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل تفاعلي'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل تفاعلي'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:msg:SOFI'..msg.chat_id_) 
 end
 if text == "تفعيل تفاعلي" and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل تفاعلي'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل تفاعلي'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:msg:SOFI'..msg.chat_id_,true)  
 end
@@ -4884,25 +4884,25 @@ DevSOFI:setex(Virus..'SOFI:msg:SOFI'..msg.sender_user_id_..":"..msg.chat_id_,864
 end
 if text == "تفاعلي" and tonumber(msg.reply_to_message_id_) == 0 then    
 get_msg = DevSOFI:get(Virus.."SOFI:msg:SOFI"..msg.sender_user_id_..":"..msg.chat_id_) or 0
-send(msg.chat_id_, msg.id_,"᥀︙عدد رسائلك الكلي هو ↬\n"..get_msg.." من الرسائل")
+send(msg.chat_id_, msg.id_,"☭︙عدد رسائلك الكلي هو ↬\n"..get_msg.." من الرسائل")
 end  
 if text == "تفاعله" and tonumber(msg.reply_to_message_id_) > 0 then    
 if tonumber(msg.reply_to_message_id_) ~= 0 then 
 function prom_reply(extra, result, success) 
 get_msg = DevSOFI:get(Virus.."SOFI:msg:SOFI"..result.sender_user_id_..":"..msg.chat_id_) or 0
-send(msg.chat_id_, msg.id_,"᥀︙عدد رسائله الكلي هو ↬\n"..get_msg.." من الرسائل")
+send(msg.chat_id_, msg.id_,"☭︙عدد رسائله الكلي هو ↬\n"..get_msg.." من الرسائل")
 end  
 tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(msg.reply_to_message_id_)},prom_reply, nil)
 end
 end
 end
 --     Source Virus     --
-if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(DevSOFI:get(Virus..'SOFI:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙عدد جهاتك المضافه ↫ *❨ "..add.." ❩* ", 1, 'md') end
-if text == "تعديلاتي" or text == "سحكاتي" and ChCheck(msg) then local edit_msg = DevSOFI:get(Virus..'SOFI:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0  Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙عدد تعديلاتك ↫ *❨ "..edit_msg.." ❩* ", 1, 'md') end
-if text == "رتبتي" and ChCheck(msg) then Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙رتبتك ↫ '..IdRank(msg.sender_user_id_, msg.chat_id_), 1, 'html') end
-if text == "ايدي المجموعه" and ChCheck(msg) then Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ايدي المجموعه ↫ `"..msg.chat_id_.."`", 1, 'md') end
-if text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' or text == 'حذف سحكاتي' or text == 'حذف تعديلاتي' then DevSOFI:del(Virus..'SOFI:EditMsg'..msg.chat_id_..msg.sender_user_id_) Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حذف جميع تعديلاتك بنجاح' , 1, 'md') end
-if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'حذف جهاتي' or text == 'حذف اضافاتي' then DevSOFI:del(Virus..'SOFI:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_) Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حذف جميع جهاتك المضافه' , 1, 'md') end
+if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(DevSOFI:get(Virus..'SOFI:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙عدد جهاتك المضافه ↫ *❨ "..add.." ❩* ", 1, 'md') end
+if text == "تعديلاتي" or text == "سحكاتي" and ChCheck(msg) then local edit_msg = DevSOFI:get(Virus..'SOFI:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0  Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙عدد تعديلاتك ↫ *❨ "..edit_msg.." ❩* ", 1, 'md') end
+if text == "رتبتي" and ChCheck(msg) then Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙رتبتك ↫ '..IdRank(msg.sender_user_id_, msg.chat_id_), 1, 'html') end
+if text == "ايدي المجموعه" and ChCheck(msg) then Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ايدي المجموعه ↫ `"..msg.chat_id_.."`", 1, 'md') end
+if text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' or text == 'حذف سحكاتي' or text == 'حذف تعديلاتي' then DevSOFI:del(Virus..'SOFI:EditMsg'..msg.chat_id_..msg.sender_user_id_) Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حذف جميع تعديلاتك بنجاح' , 1, 'md') end
+if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'حذف جهاتي' or text == 'حذف اضافاتي' then DevSOFI:del(Virus..'SOFI:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_) Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حذف جميع جهاتك المضافه' , 1, 'md') end
 --     Source Virus     --
 if text and text:match('^هينه @(.*)') and ChCheck(msg) or text and text:match('^هينها @(.*)') and ChCheck(msg) then 
 if not DevSOFI:get(Virus..'SOFI:Lock:Stupid'..msg.chat_id_) then
@@ -4930,7 +4930,7 @@ Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 local VirusTeam = { "لكك جرجف @"..username.." احترم اسيادكك لا اكتلكك وازربب على كبركك،💩🖐🏿","هشش لكك فاشل @"..username.." لتضل تمسلت لا اخربط تضاريس وجهك جنه ابط عبده، 😖👌🏿","حبيبي @"..username.." راح احاول احترمكك هالمره بلكي تبطل حيونه، 🤔🔪","دمشي لك @"..username.." ينبوع الفشل مو زين ملفيك ونحجي وياك هي منبوذ 😏🖕🏿","ها الغليض التفس ابو راس المربع @"..username.." متعلملك جم حجايه وجاي تطكطكهن علينه دبطل😒🔪",}
 Dev_SOFI(msg.chat_id_, result.id_, 1,''..VirusTeam[math.random(#VirusTeam)], 1, 'html') 
 else  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو غير موجود في المجموعه', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو غير موجود في المجموعه', 1, 'md') 
 end 
 end 
 resolve_username(username,VirusTeam)
@@ -5030,7 +5030,7 @@ Dev_SOFI(msg.chat_id_, msg.id_, 1,VirusTeam, 1, 'md')
 local VirusTeam = { "تتعال ححب @"..username.." محتاجيك🙂🍭","تعال يولل @"..username.." استاذكك ايريدككك😒🔪","يمعوود @"..username.." تعاال يريدوكك🤕♥️","تعال لكك @"..username.." ديصيحوك😐🖤",}
 Dev_SOFI(msg.chat_id_, result.id_, 1,''..VirusTeam[math.random(#VirusTeam)], 1, 'html') 
 else  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العضو غير موجود في المجموعه', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العضو غير موجود في المجموعه', 1, 'md') 
 end 
 end 
 resolve_username(username,VirusTeam)
@@ -5041,7 +5041,7 @@ end
 if text == ("تنزيل الكل") and msg.reply_to_message_id_ ~= 0 and Manager(msg) and ChCheck(msg) then 
 function promote_by_reply(extra, result, success)
 if SudoId(result.sender_user_id_) == true then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لاتستطيع تنزيل المطور الاساسي", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لاتستطيع تنزيل المطور الاساسي", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SOFISudo:',result.sender_user_id_) then
@@ -5064,9 +5064,9 @@ if DevSOFI:sismember(Virus..'SOFI:Cleaner:'..msg.chat_id_, result.sender_user_id
 cleaner = 'المنظفين • ' else cleaner = ''
 end
 if RankChecking(result.sender_user_id_,msg.chat_id_) ~= false then
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله من ↫ ⤈\n~ ( "..SOFIsudo..secondsudo..sudobot..basicconstructor..constructor..manager..admins..vipmem..cleaner.." ) ~")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من ↫ ⤈\n~ ( "..SOFIsudo..secondsudo..sudobot..basicconstructor..constructor..manager..admins..vipmem..cleaner.." ) ~")  
 else 
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙لم تتم ترقيته مسبقا")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙لم تتم ترقيته مسبقا")  
 end
 if SOFIDelAll(msg.sender_user_id_,msg.chat_id_) == 'sudoid' then
 DevSOFI:srem(Virus..'SOFI:SOFISudo:', result.sender_user_id_)
@@ -5131,7 +5131,7 @@ local rem = {string.match(text, "^(تنزيل الكل) @(.*)$")}
 function remm(extra, result, success)
 if result.id_ then
 if SudoId(result.id_) == true then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لاتستطيع تنزيل المطور الاساسي", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لاتستطيع تنزيل المطور الاساسي", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SOFISudo:',result.id_) then
@@ -5154,9 +5154,9 @@ if DevSOFI:sismember(Virus..'SOFI:Cleaner:'..msg.chat_id_, result.id_) then
 cleaner = 'المنظفين • ' else cleaner = ''
 end
 if RankChecking(result.id_,msg.chat_id_) ~= false then
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم تنزيله من ↫ ⤈\n~ ( "..SOFIsudo..secondsudo..sudobot..basicconstructor..constructor..manager..admins..vipmem..cleaner.." ) ~")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم تنزيله من ↫ ⤈\n~ ( "..SOFIsudo..secondsudo..sudobot..basicconstructor..constructor..manager..admins..vipmem..cleaner.." ) ~")  
 else 
-ReplyStatus(msg,result.id_,"Reply","᥀︙لم تتم ترقيته مسبقا")  
+ReplyStatus(msg,result.id_,"Reply","☭︙لم تتم ترقيته مسبقا")  
 end 
 if SOFIDelAll(msg.sender_user_id_,msg.chat_id_) == 'sudoid' then
 DevSOFI:srem(Virus..'SOFI:SOFISudo:', result.id_)
@@ -5214,7 +5214,7 @@ DevSOFI:srem(Virus..'SOFI:Admins:'..msg.chat_id_, result.id_)
 DevSOFI:srem(Virus..'SOFI:VipMem:'..msg.chat_id_, result.id_)
 end
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المعرف غير صحيح*', 1, 'md')
 end
 end
 resolve_username(rem[2],remm)
@@ -5225,7 +5225,7 @@ if Sudo(msg) then
 if text ==('اضف مطور اساسي') or text ==('رفع مطور اساسي') and SourceCh(msg) then
 function sudo_reply(extra, result, success)
 DevSOFI:sadd(Virus..'SOFI:SOFISudo:',result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه في قائمة المطورين الاساسيين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه في قائمة المطورين الاساسيين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
 else
@@ -5236,23 +5236,23 @@ local username = text:match('^اضف مطور اساسي @(.*)') or text:match('
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:sadd(Virus..'SOFI:SOFISudo:',result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم رفعه في قائمة المطورين الاساسيين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم رفعه في قائمة المطورين الاساسيين")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and (text:match('^اضف مطور اساسي (%d+)') or text:match('^رفع مطور اساسي (%d+)')) and SourceCh(msg) then
 local user = text:match('اضف مطور اساسي (%d+)') or text:match('رفع مطور اساسي (%d+)')
 DevSOFI:sadd(Virus..'SOFI:SOFISudo:',user)
-ReplyStatus(msg,user,"Reply","᥀︙تم رفعه في قائمة المطورين الاساسيين")  
+ReplyStatus(msg,user,"Reply","☭︙تم رفعه في قائمة المطورين الاساسيين")  
 end
 --     Source Virus     --
 --     Rem SecondSudo     --
 if text ==('حذف مطور اساسي') or text ==('تنزيل مطور اساسي') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 DevSOFI:srem(Virus..'SOFI:SOFISudo:',result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله من قائمة المطورين الاساسيين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من قائمة المطورين الاساسيين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
 else
@@ -5263,16 +5263,16 @@ local username = text:match('^حذف مطور اساسي @(.*)') or text:match('
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:srem(Virus..'SOFI:SOFISudo:',result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم تنزيله من قائمة المطورين الاساسيين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم تنزيله من قائمة المطورين الاساسيين")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and (text:match('^حذف مطور اساسي (%d+)') or text:match('^تنزيل مطور اساسي (%d+)')) and SourceCh(msg) then
 local user = text:match('حذف مطور اساسي (%d+)') or text:match('تنزيل مطور اساسي (%d+)')
 DevSOFI:srem(Virus..'SOFI:SOFISudo:',user)
-ReplyStatus(msg,user,"Reply","᥀︙تم تنزيله من قائمة المطورين الاساسيين")  
+ReplyStatus(msg,user,"Reply","☭︙تم تنزيله من قائمة المطورين الاساسيين")  
 end end
 --     Source Virus     --
 --     Set SecondSudo     --
@@ -5280,7 +5280,7 @@ if SOFISudo(msg) then
 if text ==('اضف مطور ثانوي') or text ==('رفع مطور ثانوي') and SourceCh(msg) then
 function sudo_reply(extra, result, success)
 DevSOFI:sadd(Virus..'SOFI:SecondSudo:',result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه في قائمة المطورين الثانويين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه في قائمة المطورين الثانويين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),sudo_reply)
@@ -5290,23 +5290,23 @@ local username = text:match('^اضف مطور ثانوي @(.*)') or text:match('
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:sadd(Virus..'SOFI:SecondSudo:',result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم رفعه في قائمة المطورين الثانويين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم رفعه في قائمة المطورين الثانويين")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and (text:match('^اضف مطور ثانوي (%d+)') or text:match('^رفع مطور ثانوي (%d+)')) and SourceCh(msg) then
 local user = text:match('اضف مطور ثانوي (%d+)') or text:match('رفع مطور ثانوي (%d+)')
 DevSOFI:sadd(Virus..'SOFI:SecondSudo:',user)
-ReplyStatus(msg,user,"Reply","᥀︙تم رفعه في قائمة المطورين الثانويين")  
+ReplyStatus(msg,user,"Reply","☭︙تم رفعه في قائمة المطورين الثانويين")  
 end
 --     Source Virus     --
 --     Rem SecondSudo     --
 if text ==('حذف مطور ثانوي') or text ==('تنزيل مطور ثانوي') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 DevSOFI:srem(Virus..'SOFI:SecondSudo:',result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله من قائمة المطورين الثانويين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من قائمة المطورين الثانويين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5316,16 +5316,16 @@ local username = text:match('^حذف مطور ثانوي @(.*)') or text:match('
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:srem(Virus..'SOFI:SecondSudo:',result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم تنزيله من قائمة المطورين الثانويين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم تنزيله من قائمة المطورين الثانويين")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and (text:match('^حذف مطور ثانوي (%d+)') or text:match('^تنزيل مطور ثانوي (%d+)')) and SourceCh(msg) then
 local user = text:match('حذف مطور ثانوي (%d+)') or text:match('تنزيل مطور ثانوي (%d+)')
 DevSOFI:srem(Virus..'SOFI:SecondSudo:',user)
-ReplyStatus(msg,user,"Reply","᥀︙تم تنزيله من قائمة المطورين الثانويين")  
+ReplyStatus(msg,user,"Reply","☭︙تم تنزيله من قائمة المطورين الثانويين")  
 end end
 --     Source Virus     --
 --       Set SudoBot      --
@@ -5333,7 +5333,7 @@ if SecondSudo(msg) then
 if text ==('اضف مطور') or text ==('رفع مطور') and SourceCh(msg) then
 function sudo_reply(extra, result, success)
 DevSOFI:sadd(Virus..'SOFI:SudoBot:',result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه في قائمة المطورين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه في قائمة المطورين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),sudo_reply)
@@ -5343,23 +5343,23 @@ local username = text:match('^اضف مطور @(.*)') or text:match('^رفع م�
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:sadd(Virus..'SOFI:SudoBot:',result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم رفعه في قائمة المطورين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم رفعه في قائمة المطورين")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and (text:match('^اضف مطور (%d+)') or text:match('^رفع مطور (%d+)')) and SourceCh(msg) then
 local user = text:match('اضف مطور (%d+)') or text:match('رفع مطور (%d+)')
 DevSOFI:sadd(Virus..'SOFI:SudoBot:',user)
-ReplyStatus(msg,user,"Reply","᥀︙تم رفعه في قائمة المطورين")  
+ReplyStatus(msg,user,"Reply","☭︙تم رفعه في قائمة المطورين")  
 end
 --     Source Virus     --
 --       Rem SudoBot      --
 if text ==('حذف مطور') or text ==('تنزيل مطور') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 DevSOFI:srem(Virus..'SOFI:SudoBot:',result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله من قائمة المطورين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من قائمة المطورين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5369,16 +5369,16 @@ local username = text:match('^حذف مطور @(.*)') or text:match('^تنزيل
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:srem(Virus..'SOFI:SudoBot:',result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم تنزيله من قائمة المطورين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم تنزيله من قائمة المطورين")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and (text:match('^حذف مطور (%d+)') or text:match('^تنزيل مطور (%d+)')) and SourceCh(msg) then
 local user = text:match('حذف مطور (%d+)') or text:match('تنزيل مطور (%d+)')
 DevSOFI:srem(Virus..'SOFI:SudoBot:',user)
-ReplyStatus(msg,user,"Reply","᥀︙تم تنزيله من قائمة المطورين")  
+ReplyStatus(msg,user,"Reply","☭︙تم تنزيله من قائمة المطورين")  
 end end
 --     Source Virus     --
 --   Set SOFIConstructor   --
@@ -5387,7 +5387,7 @@ if SudoBot(msg) then
 if text ==('رفع مالك') and SourceCh(msg) then
 function raf_reply(extra, result, success)
 DevSOFI:sadd(Virus..'SOFI:Owner:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه مالك")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه مالك")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),raf_reply)
@@ -5397,16 +5397,16 @@ local username = text:match('^رفع مالك @(.*)')
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:sadd(Virus..'SOFI:Owner:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم رفعه مالك")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم رفعه مالك")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and text:match('^رفع مالك (%d+)') and SourceCh(msg) then
 local user = text:match('رفع مالك (%d+)')
 DevSOFI:sadd(Virus..'SOFI:Owner:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم رفعه مالك")  
+ReplyStatus(msg,user,"Reply","☭︙تم رفعه مالك")  
 end
 --     Source Virus     --
 --   Rem SOFIConstructor   --
@@ -5417,10 +5417,10 @@ local admins = data.members_
 for i=0 , #admins do
 if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 if tonumber(result.sender_user_id_) == tonumber(admins[i].user_id_) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا يمكن تنزيل المالك الاساسي', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا يمكن تنزيل المالك الاساسي', 1, 'md')
 else
 DevSOFI:srem(Virus..'SOFI:Owner:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله من المالكين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من المالكين")  
 end end end
 end,nil)
 end 
@@ -5437,14 +5437,14 @@ local admins = data.members_
 for i=0 , #admins do
 if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 if tonumber(result.id_) == tonumber(admins[i].user_id_) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا يمكن تنزيل المالك الاساسي', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا يمكن تنزيل المالك الاساسي', 1, 'md')
 else
 DevSOFI:srem(Virus..'SOFI:Owner:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم تنزيله من المالكين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم تنزيله من المالكين")  
 end end end
 end,nil)
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
@@ -5455,10 +5455,10 @@ local admins = data.members_
 for i=0 , #admins do
 if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 if tonumber(user) == tonumber(admins[i].user_id_) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا يمكن تنزيل المالك الاساسي', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا يمكن تنزيل المالك الاساسي', 1, 'md')
 else
 DevSOFI:srem(Virus..'SOFI:Owner:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم تنزيله من المالكين")  
+ReplyStatus(msg,user,"Reply","☭︙تم تنزيله من المالكين")  
 end end end
 end,nil)
 end end
@@ -5468,11 +5468,11 @@ if Owner(msg) then
 if text ==('رفع منشئ اساسي') and SourceCh(msg) then
 function raf_reply(extra, result, success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 DevSOFI:sadd(Virus..'SOFI:BasicConstructor:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه منشئ اساسي")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه منشئ اساسي")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),raf_reply)
@@ -5481,32 +5481,32 @@ if text and text:match('^رفع منشئ اساسي @(.*)') and SourceCh(msg) th
 local username = text:match('^رفع منشئ اساسي @(.*)')
 function promreply(extra,result,success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 if result.id_ then
 DevSOFI:sadd(Virus..'SOFI:BasicConstructor:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم رفعه منشئ اساسي")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم رفعه منشئ اساسي")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and text:match('^رفع منشئ اساسي (%d+)') and SourceCh(msg) then
 local user = text:match('رفع منشئ اساسي (%d+)')
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 DevSOFI:sadd(Virus..'SOFI:BasicConstructor:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم رفعه منشئ اساسي")  
+ReplyStatus(msg,user,"Reply","☭︙تم رفعه منشئ اساسي")  
 end
 --     Source Virus     --
 --  Rem BasicConstructor  --
 if text ==('تنزيل منشئ اساسي') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 DevSOFI:srem(Virus..'SOFI:BasicConstructor:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله منشئ اساسي")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله منشئ اساسي")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5516,19 +5516,19 @@ local username = text:match('^تنزيل منشئ اساسي @(.*)')
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:srem(Virus..'SOFI:BasicConstructor:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم تنزيله منشئ اساسي")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم تنزيله منشئ اساسي")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and text:match('^تنزيل منشئ اساسي (%d+)') and SourceCh(msg) then
 local user = text:match('تنزيل منشئ اساسي (%d+)')
 DevSOFI:srem(Virus..'SOFI:BasicConstructor:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم تنزيله منشئ اساسي")  
+ReplyStatus(msg,user,"Reply","☭︙تم تنزيله منشئ اساسي")  
 end end
 if text ==('رفع منشئ اساسي') and not SOFIConstructor(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙هذا الامر للمالكين والمطورين فقط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙هذا الامر للمالكين والمطورين فقط', 1, 'md')
 end
 --     Source Virus     --
 --    Set  Constructor    --
@@ -5536,11 +5536,11 @@ if BasicConstructor(msg) then
 if text ==('رفع منشئ') and SourceCh(msg) then
 function raf_reply(extra, result, success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 DevSOFI:sadd(Virus..'SOFI:Constructor:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه في قائمة المنشئين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه في قائمة المنشئين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),raf_reply)
@@ -5549,32 +5549,32 @@ if text and text:match('^رفع منشئ @(.*)') and SourceCh(msg) then
 local username = text:match('^رفع منشئ @(.*)')
 function promreply(extra,result,success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 if result.id_ then
 DevSOFI:sadd(Virus..'SOFI:Constructor:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم رفعه في قائمة المنشئين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم رفعه في قائمة المنشئين")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and text:match('^رفع منشئ (%d+)') and SourceCh(msg) then
 local user = text:match('رفع منشئ (%d+)')
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 DevSOFI:sadd(Virus..'SOFI:Constructor:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم رفعه في قائمة المنشئين")  
+ReplyStatus(msg,user,"Reply","☭︙تم رفعه في قائمة المنشئين")  
 end
 --     Source Virus     --
 --    Rem  Constructor    --
 if text ==('تنزيل منشئ') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 DevSOFI:srem(Virus..'SOFI:Constructor:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله من قائمة المنشئين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من قائمة المنشئين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5584,16 +5584,16 @@ local username = text:match('^تنزيل منشئ @(.*)')
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:srem(Virus..'SOFI:Constructor:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم تنزيله من قائمة المنشئين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم تنزيله من قائمة المنشئين")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and text:match('^تنزيل منشئ (%d+)') and SourceCh(msg) then
 local user = text:match('تنزيل منشئ (%d+)')
 DevSOFI:srem(Virus..'SOFI:Constructor:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم تنزيله من قائمة المنشئين")  
+ReplyStatus(msg,user,"Reply","☭︙تم تنزيله من قائمة المنشئين")  
 end 
 end
 --     Source Virus     --
@@ -5602,11 +5602,11 @@ if Constructor(msg) then
 if text ==('رفع مدير') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 DevSOFI:sadd(Virus..'SOFI:Managers:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه في قائمة المدراء")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه في قائمة المدراء")  
 end  
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5615,32 +5615,32 @@ if text and text:match('^رفع مدير @(.*)') and SourceCh(msg) then
 local username = text:match('^رفع مدير @(.*)')
 function promreply(extra,result,success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 if result.id_ then
 DevSOFI:sadd(Virus..'SOFI:Managers:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم رفعه في قائمة المدراء")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم رفعه في قائمة المدراء")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end 
 if text and text:match('^رفع مدير (%d+)') and SourceCh(msg) then
 local user = text:match('رفع مدير (%d+)')
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 DevSOFI:sadd(Virus..'SOFI:Managers:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم رفعه في قائمة المدراء")  
+ReplyStatus(msg,user,"Reply","☭︙تم رفعه في قائمة المدراء")  
 end
 --     Source Virus     --
 --       Rem Manager      --
 if text ==('تنزيل مدير') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 DevSOFI:srem(Virus..'SOFI:Managers:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله من قائمة المدراء")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من قائمة المدراء")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5650,27 +5650,27 @@ local username = text:match('^تنزيل مدير @(.*)')
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:srem(Virus..'SOFI:Managers:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم تنزيله من قائمة المدراء")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم تنزيله من قائمة المدراء")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and text:match('^تنزيل مدير (%d+)') and SourceCh(msg) then
 local user = text:match('تنزيل مدير (%d+)')
 DevSOFI:srem(Virus..'SOFI:Managers:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم تنزيله من قائمة المدراء")  
+ReplyStatus(msg,user,"Reply","☭︙تم تنزيله من قائمة المدراء")  
 end 
 --     Source Virus     --
 --       Set Cleaner      --
 if text ==('رفع منظف') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 DevSOFI:sadd(Virus..'SOFI:Cleaner:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه في قائمة المنظفين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه في قائمة المنظفين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5679,32 +5679,32 @@ if text and text:match('^رفع منظف @(.*)') and SourceCh(msg) then
 local username = text:match('^رفع منظف @(.*)')
 function promreply(extra,result,success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 if result.id_ then
 DevSOFI:sadd(Virus..'SOFI:Cleaner:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم رفعه في قائمة المنظفين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم رفعه في قائمة المنظفين")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and text:match('^رفع منظف (%d+)') and SourceCh(msg) then
 local user = text:match('رفع منظف (%d+)')
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 DevSOFI:sadd(Virus..'SOFI:Cleaner:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم رفعه في قائمة المنظفين")  
+ReplyStatus(msg,user,"Reply","☭︙تم رفعه في قائمة المنظفين")  
 end
 --     Source Virus     --
 --       Rem Cleaner      --
 if text ==('تنزيل منظف') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 DevSOFI:srem(Virus..'SOFI:Cleaner:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله من قائمة المنظفين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من قائمة المنظفين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5714,16 +5714,16 @@ local username = text:match('^تنزيل منظف @(.*)')
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:srem(Virus..'SOFI:Cleaner:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم تنزيله من قائمة المنظفين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم تنزيله من قائمة المنظفين")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and text:match('^تنزيل منظف (%d+)') and SourceCh(msg) then
 local user = text:match('تنزيل منظف (%d+)')
 DevSOFI:srem(Virus..'SOFI:Cleaner:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم تنزيله من قائمة المنظفين")  
+ReplyStatus(msg,user,"Reply","☭︙تم تنزيله من قائمة المنظفين")  
 end end
 --     Source Virus     --
 --       Set admin        --
@@ -5731,11 +5731,11 @@ if Manager(msg) then
 if text ==('رفع ادمن') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 DevSOFI:sadd(Virus..'SOFI:Admins:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه في قائمة الادمنيه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه في قائمة الادمنيه")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5744,32 +5744,32 @@ if text and text:match('^رفع ادمن @(.*)') and SourceCh(msg) then
 local username = text:match('^رفع ادمن @(.*)')
 function promreply(extra,result,success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 if result.id_ then
 DevSOFI:sadd(Virus..'SOFI:Admins:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم رفعه في قائمة الادمنيه")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم رفعه في قائمة الادمنيه")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and text:match('^رفع ادمن (%d+)') and SourceCh(msg) then
 local user = text:match('رفع ادمن (%d+)')
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 DevSOFI:sadd(Virus..'SOFI:Admins:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم رفعه في قائمة الادمنيه")  
+ReplyStatus(msg,user,"Reply","☭︙تم رفعه في قائمة الادمنيه")  
 end
 --     Source Virus     --
 --        Rem admin       --
 if text ==('تنزيل ادمن') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 DevSOFI:srem(Virus..'SOFI:Admins:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله من قائمة الادمنيه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من قائمة الادمنيه")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5779,16 +5779,16 @@ local username = text:match('^تنزيل ادمن @(.*)')
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:srem(Virus..'SOFI:Admins:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم تنزيله من قائمة الادمنيه")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم تنزيله من قائمة الادمنيه")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and text:match('^تنزيل ادمن (%d+)') and SourceCh(msg) then
 local user = text:match('تنزيل ادمن (%d+)')
 DevSOFI:srem(Virus..'SOFI:Admins:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم تنزيله من قائمة الادمنيه")  
+ReplyStatus(msg,user,"Reply","☭︙تم تنزيله من قائمة الادمنيه")  
 end end
 --     Source Virus     --
 --       Set Vipmem       --
@@ -5796,11 +5796,11 @@ if Admin(msg) then
 if text ==('رفع مميز') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 DevSOFI:sadd(Virus..'SOFI:VipMem:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه في قائمة المميزين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه في قائمة المميزين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5809,32 +5809,32 @@ if text and text:match('^رفع مميز @(.*)') and SourceCh(msg) then
 local username = text:match('^رفع مميز @(.*)')
 function promreply(extra,result,success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 if result.id_ then
 DevSOFI:sadd(Virus..'SOFI:VipMem:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم رفعه في قائمة المميزين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم رفعه في قائمة المميزين")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and text:match('^رفع مميز (%d+)') and SourceCh(msg) then
 local user = text:match('رفع مميز (%d+)')
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:ProSet"..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع رفع احد وذالك بسبب تعطيل الرفع', 1, 'md')
 return false
 end
 DevSOFI:sadd(Virus..'SOFI:VipMem:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم رفعه في قائمة المميزين")  
+ReplyStatus(msg,user,"Reply","☭︙تم رفعه في قائمة المميزين")  
 end
 --     Source Virus     --
 --       Rem Vipmem       --
 if text ==('تنزيل مميز') and SourceCh(msg) then
 function prom_reply(extra, result, success)
 DevSOFI:srem(Virus..'SOFI:VipMem:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله من قائمة المميزين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من قائمة المميزين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5844,16 +5844,16 @@ local username = text:match('^تنزيل مميز @(.*)')
 function promreply(extra,result,success)
 if result.id_ then
 DevSOFI:srem(Virus..'SOFI:VipMem:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم تنزيله من قائمة المميزين")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم تنزيله من قائمة المميزين")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,promreply)
 end
 if text and text:match('^تنزيل مميز (%d+)') and SourceCh(msg) then
 local user = text:match('تنزيل مميز (%d+)')
 DevSOFI:srem(Virus..'SOFI:VipMem:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","᥀︙تم تنزيله من قائمة المميزين")  
+ReplyStatus(msg,user,"Reply","☭︙تم تنزيله من قائمة المميزين")  
 end end 
 --     Source Virus     --
 if SOFIConstructor(msg) then
@@ -5863,9 +5863,9 @@ local Check = https.request('https://api.telegram.org/bot'..TokenBot..'/getChatM
 local GetInfo = JSON.decode(Check)
 if GetInfo.result.can_promote_members == true then 
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/promoteChatMember?chat_id="..msg.chat_id_.."&user_id=" ..result.sender_user_id_.."&can_change_info=True&can_delete_messages=True&can_invite_users=True&can_restrict_members=True&can_pin_messages=True&can_promote_members=false")
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه مشرف في المجموعه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه مشرف في المجموعه")  
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙ليست لدي صلاحية اضافة مشرفين جدد يرجى التحقق من الصلاحيات', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙ليست لدي صلاحية اضافة مشرفين جدد يرجى التحقق من الصلاحيات', 1, 'md')
 end
 end
 getMessage(msg.chat_id_, msg.reply_to_message_id_,promote_by_reply)
@@ -5876,9 +5876,9 @@ local Check = https.request('https://api.telegram.org/bot'..TokenBot..'/getChatM
 local GetInfo = JSON.decode(Check)
 if GetInfo.result.can_promote_members == true then 
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/promoteChatMember?chat_id="..msg.chat_id_.."&user_id=" ..result.sender_user_id_.."&can_change_info=false&can_delete_messages=false&can_invite_users=false&can_restrict_members=false&can_pin_messages=false&can_promote_members=false")
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله من مشرفين المجموعه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من مشرفين المجموعه")  
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙ليست لدي صلاحية اضافة مشرفين جدد يرجى التحقق من الصلاحيات', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙ليست لدي صلاحية اضافة مشرفين جدد يرجى التحقق من الصلاحيات', 1, 'md')
 end
 end
 getMessage(msg.chat_id_, msg.reply_to_message_id_,promote_by_reply)
@@ -5889,9 +5889,9 @@ local Check = https.request('https://api.telegram.org/bot'..TokenBot..'/getChatM
 local GetInfo = JSON.decode(Check)
 if GetInfo.result.can_promote_members == true then 
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/promoteChatMember?chat_id="..msg.chat_id_.."&user_id=" ..result.sender_user_id_.."&can_change_info=True&can_delete_messages=True&can_invite_users=True&can_restrict_members=True&can_pin_messages=True&can_promote_members=True")
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه مشرف في جميع الصلاحيات")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه مشرف في جميع الصلاحيات")  
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙ليست لدي صلاحية اضافة مشرفين جدد يرجى التحقق من الصلاحيات', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙ليست لدي صلاحية اضافة مشرفين جدد يرجى التحقق من الصلاحيات', 1, 'md')
 end
 end
 getMessage(msg.chat_id_, msg.reply_to_message_id_,promote_by_reply)
@@ -5903,10 +5903,10 @@ local Check = https.request('https://api.telegram.org/bot'..TokenBot..'/getChatM
 local GetInfo = JSON.decode(Check)
 if GetInfo.result.can_promote_members == true then 
 https.request("https://api.telegram.org/bot"..TokenBot.."/promoteChatMember?chat_id="..msg.chat_id_.."&user_id=" ..result.sender_user_id_.."&can_change_info=false&can_delete_messages=false&can_invite_users=True&can_restrict_members=false&can_pin_messages=True&can_promote_members=false")
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم اضافة ↫ "..SOFI.." كلقب له")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم اضافة ↫ "..SOFI.." كلقب له")  
 https.request("https://api.telegram.org/bot"..TokenBot.."/setChatAdministratorCustomTitle?chat_id="..msg.chat_id_.."&user_id=" ..result.sender_user_id_.."&custom_title="..SOFI)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙ليست لدي صلاحية اضافة مشرفين جدد يرجى التحقق من الصلاحيات', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙ليست لدي صلاحية اضافة مشرفين جدد يرجى التحقق من الصلاحيات', 1, 'md')
 end
 end
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
@@ -5917,9 +5917,9 @@ end
 if text == 'لقبه' and ChCheck(msg) then
 function ReplyGet(extra, result, success)
 if GetCustomTitle(msg.sender_user_id_,msg.chat_id_) == false then
-send(msg.chat_id_, msg.id_,'᥀︙ليس لديه لقب هنا') 
+send(msg.chat_id_, msg.id_,'☭︙ليس لديه لقب هنا') 
 else
-send(msg.chat_id_, msg.id_,'᥀︙لقبه ↫ '..GetCustomTitle(result.sender_user_id_,msg.chat_id_)) 
+send(msg.chat_id_, msg.id_,'☭︙لقبه ↫ '..GetCustomTitle(result.sender_user_id_,msg.chat_id_)) 
 end
 end
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
@@ -5928,9 +5928,9 @@ end
 end
 if text == 'لقبي' and ChCheck(msg) then
 if GetCustomTitle(msg.sender_user_id_,msg.chat_id_) == false then
-send(msg.chat_id_, msg.id_,'᥀︙ليس لديك لقب هنا') 
+send(msg.chat_id_, msg.id_,'☭︙ليس لديك لقب هنا') 
 else
-send(msg.chat_id_, msg.id_,'᥀︙لقبك ↫ '..GetCustomTitle(msg.sender_user_id_,msg.chat_id_)) 
+send(msg.chat_id_, msg.id_,'☭︙لقبك ↫ '..GetCustomTitle(msg.sender_user_id_,msg.chat_id_)) 
 end
 end
 if text == "راسلني" and ChCheck(msg) then
@@ -5955,7 +5955,7 @@ function ValidityUser(extra,result,success)
 if result.id_ then
 Validity(msg,result.id_) 
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,ValidityUser)
 end
@@ -5966,7 +5966,7 @@ end
 --     Source Virus     --
 if Admin(msg) then
 if msg.reply_to_message_id_ ~= 0 then
-if text and (text:match("^مسح$") or text:match("^حذف$") or text:match("^↫ اخفاء الكيبورد ᥀$")) and ChCheck(msg) then
+if text and (text:match("^مسح$") or text:match("^حذف$") or text:match("^↫ اخفاء الكيبورد ☭$")) and ChCheck(msg) then
 DeleteMessage(msg.chat_id_,{[0] = msg.reply_to_message_id_})
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 end end end
@@ -5974,33 +5974,33 @@ end end end
 if SOFIConstructor(msg) then
 if text == "تفعيل الحظر" and ChCheck(msg) and SourceCh(msg) or text == "تفعيل الطرد" and ChCheck(msg) and SourceCh(msg) then
 DevSOFI:del(Virus.."SOFI:Lock:KickBan"..msg.chat_id_)
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الطرد والحظر'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الطرد والحظر'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end
 if text == "تعطيل الحظر" and ChCheck(msg) and SourceCh(msg) or text == "تعطيل الطرد" and ChCheck(msg) and SourceCh(msg) then
 DevSOFI:set(Virus.."SOFI:Lock:KickBan"..msg.chat_id_,"true")
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الطرد والحظر'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الطرد والحظر'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end
 if text == "تفعيل الكتم" and ChCheck(msg) and SourceCh(msg) or text == "تفعيل التقييد" and ChCheck(msg) and SourceCh(msg) then
 DevSOFI:del(Virus.."SOFI:Lock:MuteTked"..msg.chat_id_)
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الكتم والتقيد'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الكتم والتقيد'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end
 if text == "تعطيل الكتم" and ChCheck(msg) and SourceCh(msg) or text == "تعطيل التقييد" and ChCheck(msg) and SourceCh(msg) then
 DevSOFI:set(Virus.."SOFI:Lock:MuteTked"..msg.chat_id_,"true")
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الكتم والتقيد'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الكتم والتقيد'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end
 end
 if SOFIConstructor(msg) then
 if text == "تفعيل الرفع" and ChCheck(msg) and SourceCh(msg) or text == "تفعيل الترقيه" and ChCheck(msg) and SourceCh(msg) then
 DevSOFI:del(Virus.."SOFI:Lock:ProSet"..msg.chat_id_)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم تعطيل رفع ↫ المنشئ الاساسي • المنشئ • المدير • الادمن • المميز', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم تعطيل رفع ↫ المنشئ الاساسي • المنشئ • المدير • الادمن • المميز', 1, 'md')
 end
 if text == "تعطيل الرفع" and ChCheck(msg) and SourceCh(msg) or text == "تعطيل الترقيه" and ChCheck(msg) and SourceCh(msg) then
 DevSOFI:set(Virus.."SOFI:Lock:ProSet"..msg.chat_id_,"true")
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم تعطيل رفع ↫ المنشئ الاساسي • المنشئ • المدير • الادمن • المميز', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم تعطيل رفع ↫ المنشئ الاساسي • المنشئ • المدير • الادمن • المميز', 1, 'md')
 end
 end
 --     Source Virus     --
@@ -6009,23 +6009,23 @@ if Admin(msg) then
 if text ==('طرد') and ChCheck(msg) and SourceCh(msg) then
 function KickReply(extra, result, success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:KickBan"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'᥀︙لقد تم تعطيل الطرد والحظر من قبل مالك المجموعه')
+send(msg.chat_id_, msg.id_,'☭︙لقد تم تعطيل الطرد والحظر من قبل مالك المجموعه')
 return false
 end
 if RankChecking(result.sender_user_id_, result.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع طرد ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع طرد ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md')
 else
 tdcli_function({ID="ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=result.sender_user_id_,status_={ID="ChatMemberStatusKicked"},},function(arg,dp) 
 if (dp and dp.code_ and dp.code_ == 400 and dp.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_,msg.id_,"᥀︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
+send(msg.chat_id_,msg.id_,"☭︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
 return false  
 end
 if dp and dp.code_ and dp.code_ == 400 and dp.message_ == "USER_ADMIN_INVALID" then 
-send(msg.chat_id_,msg.id_,"᥀︙لا استطيع طرد مشرفين المجموعه") 
+send(msg.chat_id_,msg.id_,"☭︙لا استطيع طرد مشرفين المجموعه") 
 return false  
 end
 ChatKick(result.chat_id_, result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم طرده من المجموعه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم طرده من المجموعه")  
 end,nil)
 end
 end 
@@ -6036,51 +6036,51 @@ if text and text:match('^طرد @(.*)') and ChCheck(msg) and SourceCh(msg) then
 local username = text:match('^طرد @(.*)')
 function KickUser(extra,result,success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:KickBan"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'᥀︙لقد تم تعطيل الطرد والحظر من قبل مالك المجموعه')
+send(msg.chat_id_, msg.id_,'☭︙لقد تم تعطيل الطرد والحظر من قبل مالك المجموعه')
 return false
 end
 if result.id_ then
 if RankChecking(result.id_, msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع طرد ↫ '..IdRank(result.id_, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع طرد ↫ '..IdRank(result.id_, msg.chat_id_), 1, 'md')
 else
 tdcli_function({ID="ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=result.id_,status_={ID="ChatMemberStatusKicked"},},function(arg,dp) 
 if (dp and dp.code_ and dp.code_ == 400 and dp.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_,msg.id_,"᥀︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
+send(msg.chat_id_,msg.id_,"☭︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
 return false  
 end
 if dp and dp.code_ and dp.code_ == 400 and dp.message_ == "USER_ADMIN_INVALID" then 
-send(msg.chat_id_,msg.id_,"᥀︙لا استطيع طرد مشرفين المجموعه") 
+send(msg.chat_id_,msg.id_,"☭︙لا استطيع طرد مشرفين المجموعه") 
 return false  
 end
 ChatKick(msg.chat_id_, result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم طرده من المجموعه")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم طرده من المجموعه")  
 end,nil)
 end
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,KickUser)
 end
 if text and text:match('^طرد (%d+)') and ChCheck(msg) and SourceCh(msg) then
 local user = text:match('طرد (%d+)')
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:KickBan"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'᥀︙لقد تم تعطيل الطرد والحظر من قبل مالك المجموعه')
+send(msg.chat_id_, msg.id_,'☭︙لقد تم تعطيل الطرد والحظر من قبل مالك المجموعه')
 return false
 end
 if RankChecking(user, msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع طرد ↫ '..IdRank(user, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع طرد ↫ '..IdRank(user, msg.chat_id_), 1, 'md')
 else
 tdcli_function({ID="ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=user,status_={ID="ChatMemberStatusKicked"},},function(arg,dp) 
 if (dp and dp.code_ and dp.code_ == 400 and dp.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_,msg.id_,"᥀︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
+send(msg.chat_id_,msg.id_,"☭︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
 return false  
 end
 if dp and dp.code_ and dp.code_ == 400 and dp.message_ == "USER_ADMIN_INVALID" then 
-send(msg.chat_id_,msg.id_,"᥀︙لا استطيع طرد مشرفين المجموعه") 
+send(msg.chat_id_,msg.id_,"☭︙لا استطيع طرد مشرفين المجموعه") 
 return false  
 end
 ChatKick(msg.chat_id_, user)
-ReplyStatus(msg,user,"Reply","᥀︙تم طرده من المجموعه")  
+ReplyStatus(msg,user,"Reply","☭︙تم طرده من المجموعه")  
 end,nil)
 end
 end
@@ -6091,24 +6091,24 @@ if Admin(msg) then
 if text ==('حضر') or text ==('حظر') and ChCheck(msg) and SourceCh(msg) then
 function BanReply(extra, result, success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:KickBan"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'᥀︙لقد تم تعطيل الطرد والحظر من قبل مالك المجموعه')
+send(msg.chat_id_, msg.id_,'☭︙لقد تم تعطيل الطرد والحظر من قبل مالك المجموعه')
 return false
 end
 if RankChecking(result.sender_user_id_, result.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع حظر ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع حظر ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md')
 else
 tdcli_function({ID="ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=result.sender_user_id_,status_={ID="ChatMemberStatusKicked"},},function(arg,dp) 
 if (dp and dp.code_ and dp.code_ == 400 and dp.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_,msg.id_,"᥀︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
+send(msg.chat_id_,msg.id_,"☭︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
 return false  
 end
 if dp and dp.code_ and dp.code_ == 400 and dp.message_ == "USER_ADMIN_INVALID" then 
-send(msg.chat_id_,msg.id_,"᥀︙لا استطيع حظر مشرفين المجموعه") 
+send(msg.chat_id_,msg.id_,"☭︙لا استطيع حظر مشرفين المجموعه") 
 return false  
 end
 ChatKick(result.chat_id_, result.sender_user_id_)
 DevSOFI:sadd(Virus..'SOFI:Ban:'..msg.chat_id_, result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم حظره من المجموعه") 
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم حظره من المجموعه") 
 end,nil) 
 end 
 end 
@@ -6119,53 +6119,53 @@ if text and (text:match('^حضر @(.*)') or text:match('^حظر @(.*)')) and ChC
 local username = text:match('^حضر @(.*)') or text:match('^حظر @(.*)')
 function BanUser(extra,result,success)
 if not Constructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:KickBan"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'᥀︙لقد تم تعطيل الطرد والحظر من قبل مالك المجموعه')
+send(msg.chat_id_, msg.id_,'☭︙لقد تم تعطيل الطرد والحظر من قبل مالك المجموعه')
 return false
 end
 if result.id_ then
 if RankChecking(result.id_, msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع حظر ↫ '..IdRank(result.id_, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع حظر ↫ '..IdRank(result.id_, msg.chat_id_), 1, 'md')
 else
 tdcli_function({ID="ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=result.id_,status_={ID="ChatMemberStatusKicked"},},function(arg,dp) 
 if (dp and dp.code_ and dp.code_ == 400 and dp.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_,msg.id_,"᥀︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
+send(msg.chat_id_,msg.id_,"☭︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
 return false  
 end
 if dp and dp.code_ and dp.code_ == 400 and dp.message_ == "USER_ADMIN_INVALID" then 
-send(msg.chat_id_,msg.id_,"᥀︙لا استطيع حظر مشرفين المجموعه") 
+send(msg.chat_id_,msg.id_,"☭︙لا استطيع حظر مشرفين المجموعه") 
 return false  
 end
 ChatKick(msg.chat_id_, result.id_)
 DevSOFI:sadd(Virus..'SOFI:Ban:'..msg.chat_id_, result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم حظره من المجموعه")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم حظره من المجموعه")  
 end,nil) 
 end
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,BanUser)
 end
 if text and (text:match('^حضر (%d+)') or text:match('^حظر (%d+)')) and ChCheck(msg) and SourceCh(msg) then
 local user = text:match('حضر (%d+)') or text:match('حظر (%d+)')
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:KickBan"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'᥀︙لقد تم تعطيل الطرد والحظر من قبل مالك المجموعه')
+send(msg.chat_id_, msg.id_,'☭︙لقد تم تعطيل الطرد والحظر من قبل مالك المجموعه')
 return false
 end
 if RankChecking(user, msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع حظر ↫ '..IdRank(user, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع حظر ↫ '..IdRank(user, msg.chat_id_), 1, 'md')
 else
 tdcli_function({ID="ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=user,status_={ID="ChatMemberStatusKicked"},},function(arg,dp) 
 if (dp and dp.code_ and dp.code_ == 400 and dp.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_,msg.id_,"᥀︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
+send(msg.chat_id_,msg.id_,"☭︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !") 
 return false  
 end
 if dp and dp.code_ and dp.code_ == 400 and dp.message_ == "USER_ADMIN_INVALID" then 
-send(msg.chat_id_,msg.id_,"᥀︙لا استطيع حظر مشرفين المجموعه") 
+send(msg.chat_id_,msg.id_,"☭︙لا استطيع حظر مشرفين المجموعه") 
 return false  
 end
 ChatKick(msg.chat_id_, user)
 DevSOFI:sadd(Virus..'SOFI:Ban:'..msg.chat_id_, user)
-ReplyStatus(msg,user,"Reply","᥀︙تم حظره من المجموعه")  
+ReplyStatus(msg,user,"Reply","☭︙تم حظره من المجموعه")  
 end,nil) 
 end
 end
@@ -6175,7 +6175,7 @@ if text ==('الغاء الحظر') or text ==('الغاء حظر') and ChCheck(
 function UnBanReply(extra, result, success)
 DevSOFI:srem(Virus..'SOFI:Ban:'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.sender_user_id_, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم الغاء حظره من المجموعه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم الغاء حظره من المجموعه")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),UnBanReply)
@@ -6186,9 +6186,9 @@ function UnBanUser(extra,result,success)
 if result.id_ then
 DevSOFI:srem(Virus..'SOFI:Ban:'..msg.chat_id_, result.id_)
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.id_, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم الغاء حظره من المجموعه")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم الغاء حظره من المجموعه")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,UnBanUser)
 end
@@ -6196,7 +6196,7 @@ if text and (text:match('^الغاء الحظر (%d+)') or text:match('^الغا
 local user = text:match('الغاء الحظر (%d+)') or text:match('الغاء حظر (%d+)')
 DevSOFI:srem(Virus..'SOFI:Ban:'..msg.chat_id_, user)
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = user, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
-ReplyStatus(msg,user,"Reply","᥀︙تم الغاء حظره من المجموعه")  
+ReplyStatus(msg,user,"Reply","☭︙تم الغاء حظره من المجموعه")  
 end 
 end 
 --     Source Virus     --
@@ -6205,17 +6205,17 @@ if Admin(msg) then
 if text ==('كتم') and ChCheck(msg) then
 function MuteReply(extra, result, success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:MuteTked"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'᥀︙لقد تم تعطيل الكتم والتقيد')
+send(msg.chat_id_, msg.id_,'☭︙لقد تم تعطيل الكتم والتقيد')
 return false
 end
 if RankChecking(result.sender_user_id_, result.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع كتم ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع كتم ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md')
 else
 if DevSOFI:sismember(Virus..'SOFI:Muted:'..msg.chat_id_, result.sender_user_id_) then
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙هو بالفعل مكتوم من المجموعه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙هو بالفعل مكتوم من المجموعه")  
 else
 DevSOFI:sadd(Virus..'SOFI:Muted:'..msg.chat_id_, result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم كتمه من المجموعه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم كتمه من المجموعه")  
 end 
 end
 end 
@@ -6226,39 +6226,39 @@ if text and text:match('^كتم @(.*)') and ChCheck(msg) then
 local username = text:match('^كتم @(.*)')
 function MuteUser(extra,result,success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:MuteTked"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'᥀︙لقد تم تعطيل الكتم والتقيد')
+send(msg.chat_id_, msg.id_,'☭︙لقد تم تعطيل الكتم والتقيد')
 return false
 end
 if result.id_ then
 if RankChecking(result.id_, msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع كتم ↫ '..IdRank(result.id_, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع كتم ↫ '..IdRank(result.id_, msg.chat_id_), 1, 'md')
 else
 if DevSOFI:sismember(Virus..'SOFI:Muted:'..msg.chat_id_, result.id_) then
-ReplyStatus(msg,result.id_,"Reply","᥀︙هو بالفعل مكتوم من المجموعه")  
+ReplyStatus(msg,result.id_,"Reply","☭︙هو بالفعل مكتوم من المجموعه")  
 else
 DevSOFI:sadd(Virus..'SOFI:Muted:'..msg.chat_id_, result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم كتمه من المجموعه")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم كتمه من المجموعه")  
 end
 end
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,MuteUser)
 end
 if text and text:match('^كتم (%d+)') and ChCheck(msg) then
 local user = text:match('كتم (%d+)')
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:MuteTked"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'᥀︙لقد تم تعطيل الكتم والتقيد')
+send(msg.chat_id_, msg.id_,'☭︙لقد تم تعطيل الكتم والتقيد')
 return false
 end
 if RankChecking(user, msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع كتم ↫ '..IdRank(user, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع كتم ↫ '..IdRank(user, msg.chat_id_), 1, 'md')
 else
 if DevSOFI:sismember(Virus..'SOFI:Muted:'..msg.chat_id_, user) then
-ReplyStatus(msg,user,"Reply","᥀︙هو بالفعل مكتوم من المجموعه")  
+ReplyStatus(msg,user,"Reply","☭︙هو بالفعل مكتوم من المجموعه")  
 else
 DevSOFI:sadd(Virus..'SOFI:Muted:'..msg.chat_id_, user)
-ReplyStatus(msg,user,"Reply","᥀︙تم كتمه من المجموعه")  
+ReplyStatus(msg,user,"Reply","☭︙تم كتمه من المجموعه")  
 end
 end
 end
@@ -6267,10 +6267,10 @@ end
 if text ==('الغاء الكتم') or text ==('الغاء كتم') and ChCheck(msg) then
 function UnMuteReply(extra, result, success)
 if not DevSOFI:sismember(Virus..'SOFI:Muted:'..msg.chat_id_, result.sender_user_id_) then
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙هو ليس مكتوم لالغاء كتمه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙هو ليس مكتوم لالغاء كتمه")  
 else
 DevSOFI:srem(Virus..'SOFI:Muted:'..msg.chat_id_, result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم الغاء كتمه من المجموعه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم الغاء كتمه من المجموعه")  
 end
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
@@ -6281,23 +6281,23 @@ local username = text:match('^الغاء الكتم @(.*)') or text:match('^ال
 function UnMuteUser(extra,result,success)
 if result.id_ then
 if not DevSOFI:sismember(Virus..'SOFI:Muted:'..msg.chat_id_, result.id_) then
-ReplyStatus(msg,result.id_,"Reply","᥀︙هو ليس مكتوم لالغاء كتمه")  
+ReplyStatus(msg,result.id_,"Reply","☭︙هو ليس مكتوم لالغاء كتمه")  
 else
 DevSOFI:srem(Virus..'SOFI:Muted:'..msg.chat_id_, result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم الغاء كتمه من المجموعه")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم الغاء كتمه من المجموعه")  
 end
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,UnMuteUser)
 end
 if text and (text:match('^الغاء الكتم (%d+)') or text:match('^الغاء كتم (%d+)')) and ChCheck(msg) then
 local user = text:match('الغاء الكتم (%d+)') or text:match('الغاء كتم (%d+)')
 if not DevSOFI:sismember(Virus..'SOFI:Muted:'..msg.chat_id_, user) then
-ReplyStatus(msg,user,"Reply","᥀︙هو ليس مكتوم لالغاء كتمه")  
+ReplyStatus(msg,user,"Reply","☭︙هو ليس مكتوم لالغاء كتمه")  
 else
 DevSOFI:srem(Virus..'SOFI:Muted:'..msg.chat_id_, user)
-ReplyStatus(msg,user,"Reply","᥀︙تم الغاء كتمه من المجموعه")  
+ReplyStatus(msg,user,"Reply","☭︙تم الغاء كتمه من المجموعه")  
 end
 end 
 end 
@@ -6307,15 +6307,15 @@ if Admin(msg) then
 if text ==('تقييد') or text ==('تقيد') and ChCheck(msg) then
 function TkeedReply(extra, result, success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:MuteTked"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'᥀︙لقد تم تعطيل الكتم والتقيد')
+send(msg.chat_id_, msg.id_,'☭︙لقد تم تعطيل الكتم والتقيد')
 return false
 end
 if RankChecking(result.sender_user_id_, result.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع تقيد ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع تقيد ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md')
 else
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..result.sender_user_id_)
 DevSOFI:sadd(Virus..'SOFI:Tkeed:'..msg.chat_id_, result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تقيده من المجموعه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تقيده من المجموعه")  
 end
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
@@ -6325,34 +6325,34 @@ if text and (text:match('^تقييد @(.*)') or text:match('^تقيد @(.*)')) a
 local username = text:match('^تقييد @(.*)') or text:match('^تقيد @(.*)')
 function TkeedUser(extra,result,success)
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:MuteTked"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'᥀︙لقد تم تعطيل الكتم والتقيد')
+send(msg.chat_id_, msg.id_,'☭︙لقد تم تعطيل الكتم والتقيد')
 return false
 end
 if result.id_ then
 if RankChecking(result.id_, msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع تقيد ↫ '..IdRank(result.id_, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع تقيد ↫ '..IdRank(result.id_, msg.chat_id_), 1, 'md')
 else
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..result.id_)
 DevSOFI:sadd(Virus..'SOFI:Tkeed:'..msg.chat_id_, result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم تقيده من المجموعه")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم تقيده من المجموعه")  
 end
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,TkeedUser)
 end
 if text and (text:match('^تقييد (%d+)') or text:match('^تقيد (%d+)')) and ChCheck(msg) then
 local user = text:match('تقييد (%d+)') or text:match('تقيد (%d+)')
 if not SOFIConstructor(msg) and DevSOFI:get(Virus.."SOFI:Lock:MuteTked"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'᥀︙لقد تم تعطيل الكتم والتقيد')
+send(msg.chat_id_, msg.id_,'☭︙لقد تم تعطيل الكتم والتقيد')
 return false
 end
 if RankChecking(user, msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع تقيد ↫ '..IdRank(user, msg.chat_id_), 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع تقيد ↫ '..IdRank(user, msg.chat_id_), 1, 'md')
 else
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..user)
 DevSOFI:sadd(Virus..'SOFI:Tkeed:'..msg.chat_id_, user)
-ReplyStatus(msg,user,"Reply","᥀︙تم تقيده من المجموعه")  
+ReplyStatus(msg,user,"Reply","☭︙تم تقيده من المجموعه")  
 end
 end
 --     Source Virus     --
@@ -6361,7 +6361,7 @@ if text ==('الغاء تقييد') or text ==('الغاء تقيد') and ChChec
 function UnTkeedReply(extra, result, success)
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..result.sender_user_id_.."&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
 DevSOFI:srem(Virus..'SOFI:Tkeed:'..msg.chat_id_, result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم الغاء تقيده من المجموعه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم الغاء تقيده من المجموعه")  
 end
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),UnTkeedReply)
@@ -6372,9 +6372,9 @@ function UnTkeedUser(extra,result,success)
 if result.id_ then
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..result.id_.."&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
 DevSOFI:srem(Virus..'SOFI:Tkeed:'..msg.chat_id_, result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم الغاء تقيده من المجموعه")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم الغاء تقيده من المجموعه")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,UnTkeedUser)
 end
@@ -6382,7 +6382,7 @@ if text and (text:match('^الغاء تقييد (%d+)') or text:match('^الغا
 local user = text:match('الغاء تقييد (%d+)') or text:match('الغاء تقيد (%d+)')
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..user.."&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
 DevSOFI:srem(Virus..'SOFI:Tkeed:'..msg.chat_id_, user)
-ReplyStatus(msg,user,"Reply","᥀︙تم الغاء تقيده من المجموعه")  
+ReplyStatus(msg,user,"Reply","☭︙تم الغاء تقيده من المجموعه")  
 end
 end 
 end
@@ -6392,24 +6392,24 @@ if SecondSudo(msg) then
 if text ==('حضر عام') or text ==('حظر عام') and ChCheck(msg) then
 function BanAllReply(extra, result, success)
 if tonumber(result.sender_user_id_) == tonumber(Virus) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع حظر البوت عام*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع حظر البوت عام*", 1, 'md')
 return false 
 end
 if SudoId(result.sender_user_id_) == true then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع حظر المطور الاساسي*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع حظر المطور الاساسي*", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SOFISudo:',result.sender_user_id_) and not Sudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع حظر المطور الاساسي*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع حظر المطور الاساسي*", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SecondSudo:',result.sender_user_id_) and not SOFISudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع حظر المطور الاساسي²*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع حظر المطور الاساسي²*", 1, 'md')
 return false 
 end
 ChatKick(result.chat_id_, result.sender_user_id_)
 DevSOFI:sadd(Virus..'SOFI:BanAll:', result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم حظره عام من المجموعات")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم حظره عام من المجموعات")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
 else
@@ -6419,74 +6419,74 @@ if text and (text:match('^حضر عام @(.*)') or text:match('^حظر عام @(
 local username = text:match('^حضر عام @(.*)') or text:match('^حظر عام @(.*)')
 function BanAllUser(extra,result,success)
 if tonumber(result.id_) == tonumber(Virus) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع حظر البوت عام*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع حظر البوت عام*", 1, 'md')
 return false 
 end
 if SudoId(result.id_) == true then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع حظر المطور الاساسي*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع حظر المطور الاساسي*", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SOFISudo:',result.id_) and not Sudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع حظر المطور الاساسي*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع حظر المطور الاساسي*", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SecondSudo:',result.id_) and not SOFISudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع حظر المطور الاساسي²*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع حظر المطور الاساسي²*", 1, 'md')
 return false 
 end
 if result.id_ then
 ChatKick(msg.chat_id_, result.id_)
 DevSOFI:sadd(Virus..'SOFI:BanAll:', result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم حظره عام من المجموعات")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم حظره عام من المجموعات")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,BanAllUser)
 end
 if text and (text:match('^حضر عام (%d+)') or text:match('^حظر عام (%d+)')) and ChCheck(msg) then
 local user = text:match('حضر عام (%d+)') or text:match('حظر عام (%d+)')
 if tonumber(user) == tonumber(Virus) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع حظر البوت عام*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع حظر البوت عام*", 1, 'md')
 return false 
 end
 if SudoId(tonumber(user)) == true then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع حظر المطور الاساسي*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع حظر المطور الاساسي*", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SOFISudo:',user) and not Sudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع حظر المطور الاساسي*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع حظر المطور الاساسي*", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SecondSudo:',user) and not SOFISudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع حظر المطور الاساسي²*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع حظر المطور الاساسي²*", 1, 'md')
 return false 
 end
 ChatKick(msg.chat_id_, user)
 DevSOFI:sadd(Virus..'SOFI:BanAll:', user)
-ReplyStatus(msg,user,"Reply","᥀︙تم حظره عام من المجموعات")  
+ReplyStatus(msg,user,"Reply","☭︙تم حظره عام من المجموعات")  
 end
 --     Source Virus     --
 --         MuteAll        --
 if text ==('كتم عام') and ChCheck(msg) then
 function MuteAllReply(extra, result, success)
 if tonumber(result.sender_user_id_) == tonumber(Virus) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع كتم البوت عام*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع كتم البوت عام*", 1, 'md')
 return false 
 end
 if SudoId(result.sender_user_id_) == true then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع كتم المطور الاساسي*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع كتم المطور الاساسي*", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SOFISudo:',result.sender_user_id_) and not Sudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع كتم المطور الاساسي*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع كتم المطور الاساسي*", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SecondSudo:',result.sender_user_id_) and not SOFISudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع كتم المطور الاساسي²*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع كتم المطور الاساسي²*", 1, 'md')
 return false 
 end
 DevSOFI:sadd(Virus..'SOFI:MuteAll:', result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم كتمه عام من المجموعات")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم كتمه عام من المجموعات")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
 else
@@ -6496,49 +6496,49 @@ if text and text:match('^كتم عام @(.*)') and ChCheck(msg) then
 local username = text:match('^كتم عام @(.*)')
 function MuteAllUser(extra,result,success)
 if tonumber(result.id_) == tonumber(Virus) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع كتم البوت عام*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع كتم البوت عام*", 1, 'md')
 return false 
 end
 if SudoId(result.id_) == true then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع كتم المطور الاساسي*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع كتم المطور الاساسي*", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SOFISudo:',result.id_) and not Sudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع كتم المطور الاساسي*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع كتم المطور الاساسي*", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SecondSudo:',result.id_) and not SOFISudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع كتم المطور الاساسي²*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع كتم المطور الاساسي²*", 1, 'md')
 return false 
 end
 if result.id_ then
 DevSOFI:sadd(Virus..'SOFI:MuteAll:', result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم كتمه عام من المجموعات")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم كتمه عام من المجموعات")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,MuteAllUser)
 end
 if text and text:match('^كتم عام (%d+)') and ChCheck(msg) then
 local user = text:match('كتم عام (%d+)')
 if tonumber(user) == tonumber(Virus) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع كتم البوت عام*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع كتم البوت عام*", 1, 'md')
 return false 
 end
 if SudoId(tonumber(user)) == true then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع كتم المطور الاساسي*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع كتم المطور الاساسي*", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SOFISudo:',user) and not Sudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع كتم المطور الاساسي*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع كتم المطور الاساسي*", 1, 'md')
 return false 
 end
 if DevSOFI:sismember(Virus..'SOFI:SecondSudo:',user) and not SOFISudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتستطيع كتم المطور الاساسي²*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتستطيع كتم المطور الاساسي²*", 1, 'md')
 return false 
 end
 DevSOFI:sadd(Virus..'SOFI:MuteAll:', user)
-ReplyStatus(msg,user,"Reply","᥀︙تم كتمه عام من المجموعات")  
+ReplyStatus(msg,user,"Reply","☭︙تم كتمه عام من المجموعات")  
 end
 --     Source Virus     --
 --         UnAll          --
@@ -6546,7 +6546,7 @@ if text ==('الغاء عام') or text ==('الغاء العام') and ChCheck(
 function UnAllReply(extra, result, success)
 DevSOFI:srem(Virus..'SOFI:BanAll:', result.sender_user_id_)
 DevSOFI:srem(Virus..'SOFI:MuteAll:', result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم الغاء (الحظر • الكتم) عام من المجموعات")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم الغاء (الحظر • الكتم) عام من المجموعات")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),UnAllReply)
@@ -6557,9 +6557,9 @@ function UnAllUser(extra,result,success)
 if result.id_ then
 DevSOFI:srem(Virus..'SOFI:BanAll:', result.id_)
 DevSOFI:srem(Virus..'SOFI:MuteAll:', result.id_)
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم الغاء (الحظر • الكتم) عام من المجموعات")  
+ReplyStatus(msg,result.id_,"Reply","☭︙تم الغاء (الحظر • الكتم) عام من المجموعات")  
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')
 end end 
 resolve_username(username,UnAllUser)
 end
@@ -6567,18 +6567,18 @@ if text and (text:match('^الغاء عام (%d+)') or text:match('^الغاء �
 local user = text:match('الغاء عام (%d+)') or text:match('الغاء العام (%d+)')
 DevSOFI:srem(Virus..'SOFI:BanAll:', user)
 DevSOFI:srem(Virus..'SOFI:MuteAll:', user)
-ReplyStatus(msg,user,"Reply","᥀︙تم الغاء (الحظر • الكتم) عام من المجموعات")  
+ReplyStatus(msg,user,"Reply","☭︙تم الغاء (الحظر • الكتم) عام من المجموعات")  
 end
 end
 end
 --     Source Virus     --
-if (text == "تغير المطور الاساسي" or text == "نقل ملكيه البوت" or text == "تغيير المطور الاساسي" or text == "↫ تغير المطور الاساسي ᥀") and msg.reply_to_message_id_ == 0 and Sudo(msg) and ChCheck(msg) then 
-send(msg.chat_id_, msg.id_,'᥀︙يجب التاكد ان المطور الجديد ارسل start لخاص البوت بعد ذلك يمكنك ارسال ايدي المطور')
+if (text == "تغير المطور الاساسي" or text == "نقل ملكيه البوت" or text == "تغيير المطور الاساسي" or text == "↫ تغير المطور الاساسي ☭") and msg.reply_to_message_id_ == 0 and Sudo(msg) and ChCheck(msg) then 
+send(msg.chat_id_, msg.id_,'☭︙يجب التاكد ان المطور الجديد ارسل start لخاص البوت بعد ذلك يمكنك ارسال ايدي المطور')
 DevSOFI:setex(Virus.."SOFI:EditDev"..msg.sender_user_id_,300,true)
 end
 if DevSOFI:get(Virus.."SOFI:EditDev"..msg.sender_user_id_) then
 if text and text:match("^الغاء$") then 
-send(msg.chat_id_, msg.id_,'᥀︙تم الغاء امر تغير المطور الاساسي')
+send(msg.chat_id_, msg.id_,'☭︙تم الغاء امر تغير المطور الاساسي')
 DevSOFI:del(Virus.."SOFI:EditDev"..msg.sender_user_id_)
 return false
 end
@@ -6587,14 +6587,14 @@ tdcli_function ({ID = "GetUser",user_id_ = text},function(arg,dp)
 if dp.first_name_ ~= false then
 DevSOFI:del(Virus.."SOFI:EditDev"..msg.sender_user_id_)
 DevSOFI:set(Virus.."SOFI:NewDev"..msg.sender_user_id_,dp.id_)
-if dp.username_ ~= false then DevUser = '\n᥀︙المعرف ↫ [@'..dp.username_..']' else DevUser = '' end
-local Text = '᥀︙الايدي ↫ '..dp.id_..DevUser..'\n᥀︙الاسم ↫ ['..dp.first_name_..'](tg://user?id='..dp.id_..')\n᥀︙تم حفظ المعلومات بنجاح\n᥀︙استخدم الازرار للتاكيد ↫ ⤈'
+if dp.username_ ~= false then DevUser = '\n☭︙المعرف ↫ [@'..dp.username_..']' else DevUser = '' end
+local Text = '☭︙الايدي ↫ '..dp.id_..DevUser..'\n☭︙الاسم ↫ ['..dp.first_name_..'](tg://user?id='..dp.id_..')\n☭︙تم حفظ المعلومات بنجاح\n☭︙استخدم الازرار للتاكيد ↫ ⤈'
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="نعم",callback_data="/setyes"},{text="لا",callback_data="/setno"}}} 
 Msg_id = msg.id_/2097152/0.5
 return https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-send(msg.chat_id_, msg.id_,"᥀︙المعلومات خاطئه قم بالتاكد واعد المحاوله")
+send(msg.chat_id_, msg.id_,"☭︙المعلومات خاطئه قم بالتاكد واعد المحاوله")
 DevSOFI:del(Virus.."SOFI:EditDev"..msg.sender_user_id_)
 end
 end,nil)
@@ -6606,9 +6606,9 @@ if msg.reply_to_message_id_ ~= 0 then
 if text and text:match("^رفع مطي$") and not DevSOFI:get(Virus..'SOFI:Lock:Stupid'..msg.chat_id_) and ChCheck(msg) then
 function donky_by_reply(extra, result, success)
 if DevSOFI:sismember(Virus..'User:Donky:'..msg.chat_id_, result.sender_user_id_) then
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙هو مطي شرفع منه بعد😹💔") 
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙هو مطي شرفع منه بعد😹💔") 
 else
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفعه في قائمة المطايه") 
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفعه في قائمة المطايه") 
 DevSOFI:sadd(Virus..'User:Donky:'..msg.chat_id_, result.sender_user_id_)
 end end
 getMessage(msg.chat_id_, msg.reply_to_message_id_,donky_by_reply)
@@ -6618,10 +6618,10 @@ if msg.reply_to_message_id_ ~= 0  then
 if text and text:match("^تنزيل مطي$") and not DevSOFI:get(Virus..'SOFI:Lock:Stupid'..msg.chat_id_) and ChCheck(msg) then
 function donky_by_reply(extra, result, success)
 if not DevSOFI:sismember(Virus..'User:Donky:'..msg.chat_id_, result.sender_user_id_) then
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙هو ليس مطي ليتم تنزيله") 
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙هو ليس مطي ليتم تنزيله") 
 else
 DevSOFI:srem(Virus..'User:Donky:'..msg.chat_id_, result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تنزيله من قائمة المطايه") 
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تنزيله من قائمة المطايه") 
 end end
 getMessage(msg.chat_id_, msg.reply_to_message_id_,donky_by_reply)
 end end
@@ -6633,10 +6633,10 @@ local mutept = text:match('^تقييد دقيقه (%d+)$') or text:match('^كت�
 local Minutes = string.gsub(mutept, 'm', '')
 local num1 = tonumber(Minutes) * 60 
 if RankChecking(result.sender_user_id_, msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع تقيد ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع تقيد ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md') 
 else 
 https.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..result.sender_user_id_..'&until_date='..tonumber(msg.date_+num1))
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تقيده لمدة ↫ "..mutept.." د") 
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تقيده لمدة ↫ "..mutept.." د") 
 DevSOFI:sadd(Virus..'SOFI:Tkeed:'..msg.chat_id_, result.sender_user_id_)
 end end 
 if tonumber(msg.reply_to_message_id_) == 0 then else
@@ -6648,10 +6648,10 @@ local mutept = text:match('^تقييد ساعه (%d+)$') or text:match('^كتم 
 local hour = string.gsub(mutept, 'h', '')
 local num1 = tonumber(hour) * 3600 
 if RankChecking(result.sender_user_id_, msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع تقيد ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع تقيد ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md') 
 else 
 https.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..result.sender_user_id_..'&until_date='..tonumber(msg.date_+num1))
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تقيده لمدة ↫ "..mutept.." س") 
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تقيده لمدة ↫ "..mutept.." س") 
 DevSOFI:sadd(Virus..'SOFI:Tkeed:'..msg.chat_id_, result.sender_user_id_)
 end end
 if tonumber(msg.reply_to_message_id_) == 0 then else
@@ -6663,10 +6663,10 @@ local mutept = text:match('^تقييد يوم (%d+)$') or text:match('^كتم ي
 local day = string.gsub(mutept, 'd', '')
 local num1 = tonumber(day) * 86400 
 if RankChecking(result.sender_user_id_, msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا تستطيع تقيد ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا تستطيع تقيد ↫ '..IdRank(result.sender_user_id_, msg.chat_id_), 1, 'md') 
 else 
 https.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..result.sender_user_id_..'&until_date='..tonumber(msg.date_+num1))
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم تقيده لمدة ↫ "..mutept.." ي") 
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم تقيده لمدة ↫ "..mutept.." ي") 
 DevSOFI:sadd(Virus..'SOFI:Tkeed:'..msg.chat_id_, result.sender_user_id_)
 end end
 if tonumber(msg.reply_to_message_id_) == 0 then else
@@ -6679,10 +6679,10 @@ if Constructor(msg) then
 TXT = text:match("^اضف رسائل (%d+)$")
 DevSOFI:set('VirusTeam:'..Virus..'id:user'..msg.chat_id_,TXT)  
 DevSOFI:setex('VirusTeam:'..Virus.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_, 300, true)  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل عدد الرسائل الان \n᥀︙ارسل الغاء لالغاء الامر ", 1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل عدد الرسائل الان \n☭︙ارسل الغاء لالغاء الامر ", 1, "md")
 Dev_SOFI(msg.chat_id_, msg.id_, 1,numd, 1, 'md') 
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙هذا الامر للمنشئين فقط', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙هذا الامر للمنشئين فقط', 1, 'md') 
 end 
 end 
 if text and text:match("^اضف رسائل (%d+)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
@@ -6690,7 +6690,7 @@ local Num = text:match("^اضف رسائل (%d+)$")
 function Reply(extra, result, success)
 DevSOFI:del(Virus..'SOFI:UsersMsgs'..msg.chat_id_..':'..result.sender_user_id_) 
 DevSOFI:incrby(Virus..'SOFI:UsersMsgs'..msg.chat_id_..':'..result.sender_user_id_,Num) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم اضافة "..Num..' رساله', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم اضافة "..Num..' رساله', 1, 'md') 
 end
 tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(msg.reply_to_message_id_)},Reply, nil)
 return false
@@ -6700,17 +6700,17 @@ if Constructor(msg) then
 TXT = text:match("^اضف نقاط (%d+)$")
 DevSOFI:set('VirusTeam:'..Virus..'ids:user'..msg.chat_id_,TXT)  
 DevSOFI:setex('VirusTeam:'..Virus.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_, 300, true)  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل عدد النقاط الان \n᥀︙ارسل الغاء لالغاء الامر ", 1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل عدد النقاط الان \n☭︙ارسل الغاء لالغاء الامر ", 1, "md")
 Dev_SOFI(msg.chat_id_, msg.id_, 1,numd, 1, 'md') 
 else 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙هذا الامر للمنشئين فقط', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙هذا الامر للمنشئين فقط', 1, 'md') 
 end 
 end 
 if text and text:match("^اضف نقاط (%d+)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
 local Num = text:match("^اضف نقاط (%d+)$")
 function Reply(extra, result, success)
 DevSOFI:incrby(Virus..'SOFI:GamesNumber'..msg.chat_id_..result.sender_user_id_,Num) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم اضافة "..Num..' نقطه', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم اضافة "..Num..' نقطه', 1, 'md') 
 end
 tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(msg.reply_to_message_id_)},Reply, nil)
 return false
@@ -6721,22 +6721,22 @@ if DevSOFI:get(Virus..'SOFI:Lock:CleanMusic'..msg.chat_id_) then if msg.content_
 if Manager(msg) and msg.reply_to_message_id_ ~= 0 then
 if text and text:match("^تثبيت$") and ChCheck(msg) then 
 if DevSOFI:sismember(Virus.."SOFI:Lock:Pinpin",msg.chat_id_) and not BasicConstructor(msg) then
-Dev_SOFI(msg.chat_id_,msg.id_, 1, "᥀︙التثبيت والغاء واعادة التثبيت تم قفله من قبل المنشئين الاساسيين", 1, 'md')
+Dev_SOFI(msg.chat_id_,msg.id_, 1, "☭︙التثبيت والغاء واعادة التثبيت تم قفله من قبل المنشئين الاساسيين", 1, 'md')
 return false  
 end
 tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100",""),message_id_ = msg.reply_to_message_id_,disable_notification_ = 1},function(arg,data) 
 if data.ID == "Ok" then
 DevSOFI:set(Virus..'SOFI:PinnedMsg'..msg.chat_id_,msg.reply_to_message_id_)
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تثبيت الرساله بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تثبيت الرساله بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 return false  
 end
 if data.code_ == 6 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙البوت ليس ادمن هنا !', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙البوت ليس ادمن هنا !', 1, 'md')
 return false  
 end
 if data.message_ == "CHAT_ADMIN_REQUIRED" then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙ليست لدي صلاحية التثبيت يرجى التحقق من الصلاحيات', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙ليست لدي صلاحية التثبيت يرجى التحقق من الصلاحيات', 1, 'md')
 return false  
 end
 end,nil)
@@ -6746,7 +6746,7 @@ end
 if Admin(msg) then
 if text == "المميزين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus..'SOFI:VipMem:'..msg.chat_id_)
-text = "᥀︙قائمة المميزين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المميزين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6755,7 +6755,7 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then 
-text = "᥀︙*لا يوجد مميزين*"
+text = "☭︙*لا يوجد مميزين*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end end 
@@ -6764,7 +6764,7 @@ if Manager(msg) then
 if text == "الادمنيه" and ChCheck(msg) or text == "الادمنية" and ChCheck(msg) then 
 local SOFI =  'SOFI:Admins:'..msg.chat_id_
 local List = DevSOFI:smembers(Virus..SOFI)
-text = "᥀︙قائمة الادمنيه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة الادمنيه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6773,7 +6773,7 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then
-text = "᥀︙*لا يوجد ادمنيه*"
+text = "☭︙*لا يوجد ادمنيه*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end end
@@ -6781,7 +6781,7 @@ end end
 if Constructor(msg) then
 if text == "المدراء" and ChCheck(msg) or text == "مدراء" and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus..'SOFI:Managers:'..msg.chat_id_)
-text = "᥀︙قائمة المدراء ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المدراء ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6790,13 +6790,13 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then 
-text = "᥀︙*لا يوجد مدراء*"
+text = "☭︙*لا يوجد مدراء*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 if text == "المنظفين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus..'SOFI:Cleaner:'..msg.chat_id_)
-text = "᥀︙قائمة المنظفين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المنظفين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6805,7 +6805,7 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then 
-text = "᥀︙*لا يوجد منظفين*"
+text = "☭︙*لا يوجد منظفين*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end end 
@@ -6813,7 +6813,7 @@ end end
 if BasicConstructor(msg) then
 if text == "المنشئين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus..'SOFI:Constructor:'..msg.chat_id_)
-text = "᥀︙قائمة المنشئين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المنشئين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6822,7 +6822,7 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then 
-text = "᥀︙*لا يوجد منشئين*"
+text = "☭︙*لا يوجد منشئين*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end end 
@@ -6830,7 +6830,7 @@ end end
 if Owner(msg) then
 if text == "المالكين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus..'SOFI:Owner:'..msg.chat_id_)
-text = "᥀︙قائمة المالكين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المالكين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6839,13 +6839,13 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then 
-text = "᥀︙*لا يوجد مالكين*"
+text = "☭︙*لا يوجد مالكين*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 if text == "المنشئين الاساسيين" and ChCheck(msg) or text == "منشئين اساسيين" and ChCheck(msg) or text == "المنشئين الاساسين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus..'SOFI:BasicConstructor:'..msg.chat_id_)
-text = "᥀︙قائمة المنشئين الاساسيين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المنشئين الاساسيين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6854,7 +6854,7 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then 
-text = "᥀︙*لا يوجد منشئين اساسيين*"
+text = "☭︙*لا يوجد منشئين اساسيين*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
@@ -6867,11 +6867,11 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 Manager_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = Manager_id},function(arg,dp) 
 if dp.first_name_ == false then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙حساب المنشئ محذوف", 1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "L9L9L")
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md")  
+local UserName = (dp.username_ or "V_IRUS1")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md")  
 end,nil)   
 end
 end
@@ -6881,7 +6881,7 @@ end
 if Admin(msg) then
 if text == "المكتومين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus..'SOFI:Muted:'..msg.chat_id_)
-text = "᥀︙قائمة المكتومين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المكتومين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6890,14 +6890,14 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then 
-text = "᥀︙*لا يوجد مكتومين*"
+text = "☭︙*لا يوجد مكتومين*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 --     Source Virus     --
 if text == "المقيدين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus..'SOFI:Tkeed:'..msg.chat_id_)
-text = "᥀︙قائمة المقيدين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المقيدين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6906,14 +6906,14 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then
-text = "᥀︙*لا يوجد مقيدين*"
+text = "☭︙*لا يوجد مقيدين*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 --     Source Virus     --
 if text == "المحظورين" and ChCheck(msg) or text == "المحضورين" and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus..'SOFI:Ban:'..msg.chat_id_)
-text = "᥀︙قائمة المحظورين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المحظورين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6922,14 +6922,14 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then 
-text = "᥀︙*لا يوجد محظورين*"
+text = "☭︙*لا يوجد محظورين*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 --     Source Virus     --
 if text == "المطايه" and ChCheck(msg) or text == "المطاية" and ChCheck(msg) then
 local List = DevSOFI:smembers(Virus..'User:Donky:'..msg.chat_id_)
-text = "᥀︙قائمة مطاية المجموعه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة مطاية المجموعه ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6938,27 +6938,27 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then
-text = "᥀︙*لا يوجد مطايه كلها اوادم*"
+text = "☭︙*لا يوجد مطايه كلها اوادم*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end
 --     Source Virus     --
 if text == "قائمه المنع" and ChCheck(msg) then
 local List = DevSOFI:hkeys(Virus..'SOFI:Filters:'..msg.chat_id_)
-text = "᥀︙قائمة المنع ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المنع ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k, v in pairs(List) do
 text = text..k..'~ ❨ '..v..' ❩\n'
 end
 if #List == 0 then
-text = "᥀︙لا توجد كلمات ممنوعه"
+text = "☭︙لا توجد كلمات ممنوعه"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end
 end 
 --     Source Virus     --
-if text == "المطورين الاساسيين" and ChCheck(msg) and SOFISudo(msg) or text == "الاساسيين" and SOFISudo(msg) and ChCheck(msg) or text == "↫ الاساسيين ᥀" and SOFISudo(msg) and ChCheck(msg) then 
+if text == "المطورين الاساسيين" and ChCheck(msg) and SOFISudo(msg) or text == "الاساسيين" and SOFISudo(msg) and ChCheck(msg) or text == "↫ الاساسيين ☭" and SOFISudo(msg) and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus..'SOFI:SOFISudo:')
-text = "᥀︙قائمة المطورين الاساسيين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المطورين الاساسيين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6967,14 +6967,14 @@ else
 text = text..""..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then
-text = "᥀︙*عذرا لم يتم رفع اي مطورين اساسيين*"
+text = "☭︙*عذرا لم يتم رفع اي مطورين اساسيين*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 --     Source Virus     --
-if text == "المطورين الثانويين" and SecondSudo(msg) and ChCheck(msg) or text == "الثانويين" and SecondSudo(msg) and ChCheck(msg) or text == "↫ الثانويين ᥀" and SecondSudo(msg) and ChCheck(msg) then 
+if text == "المطورين الثانويين" and SecondSudo(msg) and ChCheck(msg) or text == "الثانويين" and SecondSudo(msg) and ChCheck(msg) or text == "↫ الثانويين ☭" and SecondSudo(msg) and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus..'SOFI:SecondSudo:')
-text = "᥀︙قائمة المطورين الثانويين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المطورين الثانويين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -6983,17 +6983,17 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then
-text = "᥀︙*عذرا لم يتم رفع اي مطورين ثانويين*"
+text = "☭︙*عذرا لم يتم رفع اي مطورين ثانويين*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 --     Source Virus     --
 if SudoBot(msg) then
-if text == "قائمه العام" and ChCheck(msg) or text == "المحظورين عام" and ChCheck(msg) or text == "المكتومين عام" and ChCheck(msg) or text == "↫ قائمه العام ᥀" and ChCheck(msg) or text == "↫ قائمه العام ᥀" and ChCheck(msg) then 
+if text == "قائمه العام" and ChCheck(msg) or text == "المحظورين عام" and ChCheck(msg) or text == "المكتومين عام" and ChCheck(msg) or text == "↫ قائمه العام ☭" and ChCheck(msg) or text == "↫ قائمه العام ☭" and ChCheck(msg) then 
 local BanAll = DevSOFI:smembers(Virus..'SOFI:BanAll:')
 local MuteAll = DevSOFI:smembers(Virus..'SOFI:MuteAll:')
 if #BanAll ~= 0 then 
-text = "᥀︙قائمة المحظورين عام ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المحظورين عام ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(BanAll) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -7005,7 +7005,7 @@ else
 text = ""
 end
 if #MuteAll ~= 0 then 
-text = text.."᥀︙قائمة المكتومين عام ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = text.."☭︙قائمة المكتومين عام ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(MuteAll) do
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
 if username then
@@ -7019,14 +7019,14 @@ end
 if #BanAll ~= 0 or #MuteAll ~= 0 then 
 text = text
 else
-text = "᥀︙*لم يتم حظر او كتم اي عضو*"
+text = "☭︙*لم يتم حظر او كتم اي عضو*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 --     Source Virus     --
-if text == "المطورين" and ChCheck(msg) or text == "↫ المطورين ᥀" and ChCheck(msg) then 
+if text == "المطورين" and ChCheck(msg) or text == "↫ المطورين ☭" and ChCheck(msg) then 
 local List = DevSOFI:smembers(Virus..'SOFI:SudoBot:')
-text = "᥀︙قائمة المطورين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "☭︙قائمة المطورين ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local sudouser = DevSOFI:get(Virus..'SOFI:Sudos'..v) 
 local username = DevSOFI:get(Virus..'Save:UserName'..v)
@@ -7036,7 +7036,7 @@ else
 text = text..k.."~ : `"..v.."` ↬ Gps : "..(sudouser or 0).."\n"
 end end
 if #List == 0 then
-text = "᥀︙*عذرا لم يتم رفع اي مطورين*"
+text = "☭︙*عذرا لم يتم رفع اي مطورين*"
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end
@@ -7051,11 +7051,11 @@ end
 end
 tdcli_function ({ID = "GetUser",user_id_ = Manager_id},function(arg,dp) 
 if dp.first_name_ == false then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙حساب المنشئ محذوف", 1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "L9L9L")
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم رفع مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md") 
+local UserName = (dp.username_ or "V_IRUS1")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم رفع مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md") 
 DevSOFI:sadd(Virus.."SOFI:SOFIConstructor:"..msg.chat_id_,dp.id_)
 end,nil)   
 end,nil)   
@@ -7068,19 +7068,19 @@ function filter_by_reply(extra, result, success)
 if result.content_.sticker_ then
 local idsticker = result.content_.sticker_.sticker_.persistent_id_
 DevSOFI:sadd(Virus.."SOFI:FilterSteckr"..msg.chat_id_,idsticker)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم منع الملصق بنجاح لن يتم ارساله مجددا', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم منع الملصق بنجاح لن يتم ارساله مجددا', 1, 'md')
 return false
 end
 if result.content_.ID == "MessagePhoto" then
 local photo = result.content_.photo_.id_
 DevSOFI:sadd(Virus.."SOFI:FilterPhoto"..msg.chat_id_,photo)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم منع الصوره بنجاح لن يتم ارسالها مجددا', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم منع الصوره بنجاح لن يتم ارسالها مجددا', 1, 'md')
 return false
 end
 if result.content_.animation_ then
 local idanimation = result.content_.animation_.animation_.persistent_id_
 DevSOFI:sadd(Virus.."SOFI:FilterAnimation"..msg.chat_id_,idanimation)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم منع المتحركه بنجاح لن يتم ارسالها مجددا', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم منع المتحركه بنجاح لن يتم ارسالها مجددا', 1, 'md')
 return false
 end
 end
@@ -7092,19 +7092,19 @@ function unfilter_by_reply(extra, result, success)
 if result.content_.sticker_ then
 local idsticker = result.content_.sticker_.sticker_.persistent_id_
 DevSOFI:srem(Virus.."SOFI:FilterSteckr"..msg.chat_id_,idsticker)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء منع الملصق يمكنهم ارساله الان', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء منع الملصق يمكنهم ارساله الان', 1, 'md')
 return false
 end
 if result.content_.ID == "MessagePhoto" then
 local photo = result.content_.photo_.id_
 DevSOFI:srem(Virus.."SOFI:FilterPhoto"..msg.chat_id_,photo)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء منع الصوره يمكنهم ارسالها الان', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء منع الصوره يمكنهم ارسالها الان', 1, 'md')
 return false
 end
 if result.content_.animation_.animation_ then
 local idanimation = result.content_.animation_.animation_.persistent_id_
 DevSOFI:srem(Virus.."SOFI:FilterAnimation"..msg.chat_id_,idanimation)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء منع المتحركه يمكنهم ارسالها الان', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء منع المتحركه يمكنهم ارسالها الان', 1, 'md')
 return false
 end
 end
@@ -7113,12 +7113,12 @@ end
 end
 --     Source Virus     --
 if text and (text == "تفعيل تحويل الصيغ" or text == "تفعيل التحويل") and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل تحويل الصيغ'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل تحويل الصيغ'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Thwel:SOFI'..msg.chat_id_) 
 end
 if text and (text == "تعطيل تحويل الصيغ" or text == "تعطيل التحويل") and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل تحويل الصيغ'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل تحويل الصيغ'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Thwel:SOFI'..msg.chat_id_,true)  
 end
@@ -7134,13 +7134,13 @@ end
 if result.content_.sticker_ then 
 local SOFI = json:decode(https.request('https://api.telegram.org/bot'.. TokenBot..'/getfile?file_id='..result.content_.sticker_.sticker_.persistent_id_)) 
 download_to_file('https://api.telegram.org/file/bot'..TokenBot..'/'..SOFI.result.file_path,msg.sender_user_id_..'.jpg') 
-sendPhoto(msg.chat_id_, msg.id_, 0, 1,nil, './'..msg.sender_user_id_..'.jpg','᥀︙تم تحويل الملصق الى صوره')     
+sendPhoto(msg.chat_id_, msg.id_, 0, 1,nil, './'..msg.sender_user_id_..'.jpg','☭︙تم تحويل الملصق الى صوره')     
 os.execute('rm -rf ./'..msg.sender_user_id_..'.jpg') 
 end
 if result.content_.audio_ then 
 local SOFI = json:decode(https.request('https://api.telegram.org/bot'.. TokenBot..'/getfile?file_id='..result.content_.audio_.audio_.persistent_id_)) 
 download_to_file('https://api.telegram.org/file/bot'..TokenBot..'/'..SOFI.result.file_path,msg.sender_user_id_..'.ogg') 
-sendVoice(msg.chat_id_, msg.id_, 0, 1,nil, './'..msg.sender_user_id_..'.ogg',"᥀︙تم تحويل الـMp3 الى بصمه")
+sendVoice(msg.chat_id_, msg.id_, 0, 1,nil, './'..msg.sender_user_id_..'.ogg',"☭︙تم تحويل الـMp3 الى بصمه")
 os.execute('rm -rf ./'..msg.sender_user_id_..'.ogg') 
 end   
 if result.content_.voice_ then 
@@ -7173,28 +7173,28 @@ else
 Tkeed = false
 end
 if Tkeed ~= false then
-Tked = '\n᥀︙القيود ↫ '..Tkeed
+Tked = '\n☭︙القيود ↫ '..Tkeed
 else 
 Tked = '' 
 end
 if DevSOFI:sismember(Virus..'SOFI:SudoBot:',result.sender_user_id_) and SudoBot(msg) then
-sudobot = '\n᥀︙عدد الكروبات ↫ '..(DevSOFI:get(Virus..'SOFI:Sudos'..result.sender_user_id_) or 0)..'' 
+sudobot = '\n☭︙عدد الكروبات ↫ '..(DevSOFI:get(Virus..'SOFI:Sudos'..result.sender_user_id_) or 0)..'' 
 else 
 sudobot = '' 
 end
 if GetCustomTitle(result.sender_user_id_,msg.chat_id_) ~= false then
-CustomTitle = '\n᥀︙لقبه ↫ '..GetCustomTitle(result.sender_user_id_,msg.chat_id_)
+CustomTitle = '\n☭︙لقبه ↫ '..GetCustomTitle(result.sender_user_id_,msg.chat_id_)
 else 
 CustomTitle = '' 
 end
 if data.first_name_ == false then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙الحساب محذوف', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙الحساب محذوف', 1, 'md')
 return false  end
 if data.username_ == false then
-Text = '᥀︙اسمه ↫ ['..data.first_name_..'](tg://user?id='..result.sender_user_id_..')\n᥀︙ايديه ↫ ❨ `'..result.sender_user_id_..'` ❩\n᥀︙رتبته ↫ '..IdRank(result.sender_user_id_, msg.chat_id_)..sudobot..'\n᥀︙رسائله ↫ ❨ '..user_msgs..' ❩\n᥀︙تفاعله ↫ '..formsgs(user_msgs)..CustomTitle..'\n᥀︙نقاطه ↫ ❨ '..user_nkt..' ❩'..Tked
+Text = '☭︙اسمه ↫ ['..data.first_name_..'](tg://user?id='..result.sender_user_id_..')\n☭︙ايديه ↫ ❨ `'..result.sender_user_id_..'` ❩\n☭︙رتبته ↫ '..IdRank(result.sender_user_id_, msg.chat_id_)..sudobot..'\n☭︙رسائله ↫ ❨ '..user_msgs..' ❩\n☭︙تفاعله ↫ '..formsgs(user_msgs)..CustomTitle..'\n☭︙نقاطه ↫ ❨ '..user_nkt..' ❩'..Tked
 SendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙معرفه ↫ [@'..data.username_..']\n᥀︙ايديه ↫ ❨ `'..result.sender_user_id_..'` ❩\n᥀︙رتبته ↫ '..IdRank(result.sender_user_id_, msg.chat_id_)..sudobot..'\n᥀︙رسائله ↫ ❨ '..user_msgs..' ❩\n᥀︙تفاعله ↫ '..formsgs(user_msgs)..CustomTitle..'\n᥀︙نقاطه ↫ ❨ '..user_nkt..' ❩'..Tked, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙معرفه ↫ [@'..data.username_..']\n☭︙ايديه ↫ ❨ `'..result.sender_user_id_..'` ❩\n☭︙رتبته ↫ '..IdRank(result.sender_user_id_, msg.chat_id_)..sudobot..'\n☭︙رسائله ↫ ❨ '..user_msgs..' ❩\n☭︙تفاعله ↫ '..formsgs(user_msgs)..CustomTitle..'\n☭︙نقاطه ↫ ❨ '..user_nkt..' ❩'..Tked, 1, 'md')
 end
 end,nil)
 end 
@@ -7204,16 +7204,16 @@ if text and text:match('^كشف @(.*)') and ChCheck(msg) or text and text:match(
 local username = text:match('^كشف @(.*)') or text:match('^ايدي @(.*)')
 tdcli_function ({ID = "SearchPublicChat",username_ = username},function(extra, res, success) 
 if res and res.message_ and res.message_ == "USERNAME_NOT_OCCUPIED" then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙*المعرف غير صحيح*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙*المعرف غير صحيح*', 1, 'md')
 return false  end
 if res.type_.ID == "ChannelChatInfo" then 
 if res.type_.channel_.is_supergroup_ == false then
 local ch = 'قناة'
-local chn = '᥀︙نوع الحساب ↫ ❨ '..ch..' ❩\n᥀︙الايدي ↫ ❨ `'..res.id_..'` ❩\n᥀︙المعرف ↫ ❨ [@'..username..'] ❩\n᥀︙الاسم ↫ ❨ ['..res.title_..'] ❩'
+local chn = '☭︙نوع الحساب ↫ ❨ '..ch..' ❩\n☭︙الايدي ↫ ❨ `'..res.id_..'` ❩\n☭︙المعرف ↫ ❨ [@'..username..'] ❩\n☭︙الاسم ↫ ❨ ['..res.title_..'] ❩'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,chn, 1, 'md')
 else
 local gr = 'مجموعه'
-local grr = '᥀︙نوع الحساب ↫ ❨ '..gr..' ❩\n᥀︙الايدي ↫ ❨ '..res.id_..' ❩\n᥀︙المعرف ↫ ❨ [@'..username..'] ❩\n᥀︙الاسم ↫ ❨ ['..res.title_..'] ❩'
+local grr = '☭︙نوع الحساب ↫ ❨ '..gr..' ❩\n☭︙الايدي ↫ ❨ '..res.id_..' ❩\n☭︙المعرف ↫ ❨ [@'..username..'] ❩\n☭︙الاسم ↫ ❨ ['..res.title_..'] ❩'
 Dev_SOFI(msg.chat_id_, msg.id_, 1,grr, 1, 'md')
 end
 return false  end
@@ -7235,24 +7235,24 @@ else
 Tkeed = false
 end
 if Tkeed ~= false then
-Tked = '\n᥀︙القيود ↫ '..Tkeed
+Tked = '\n☭︙القيود ↫ '..Tkeed
 else 
 Tked = '' 
 end
 if DevSOFI:sismember(Virus..'SOFI:SudoBot:',res.id_) and SudoBot(msg) then
-sudobot = '\n᥀︙عدد الكروبات ↫ '..(DevSOFI:get(Virus..'SOFI:Sudos'..res.id_) or 0)..'' 
+sudobot = '\n☭︙عدد الكروبات ↫ '..(DevSOFI:get(Virus..'SOFI:Sudos'..res.id_) or 0)..'' 
 else 
 sudobot = '' 
 end
 if GetCustomTitle(res.id_,msg.chat_id_) ~= false then
-CustomTitle = '\n᥀︙لقبه ↫ '..GetCustomTitle(res.id_,msg.chat_id_)
+CustomTitle = '\n☭︙لقبه ↫ '..GetCustomTitle(res.id_,msg.chat_id_)
 else 
 CustomTitle = '' 
 end
 if data.first_name_ == false then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙الحساب محذوف', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙الحساب محذوف', 1, 'md')
 return false  end
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙معرفه ↫ [@'..data.username_..']\n᥀︙ايديه ↫ ❨ `'..res.id_..'` ❩\n᥀︙رتبته ↫ '..IdRank(res.id_, msg.chat_id_)..sudobot..'\n᥀︙رسائله ↫ ❨ '..user_msgs..' ❩\n᥀︙تفاعله ↫ '..formsgs(user_msgs)..CustomTitle..'\n᥀︙نقاطه ↫ ❨ '..user_nkt..' ❩'..Tked, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙معرفه ↫ [@'..data.username_..']\n☭︙ايديه ↫ ❨ `'..res.id_..'` ❩\n☭︙رتبته ↫ '..IdRank(res.id_, msg.chat_id_)..sudobot..'\n☭︙رسائله ↫ ❨ '..user_msgs..' ❩\n☭︙تفاعله ↫ '..formsgs(user_msgs)..CustomTitle..'\n☭︙نقاطه ↫ ❨ '..user_nkt..' ❩'..Tked, 1, 'md')
 end,nil)
 end 
 end,nil)
@@ -7262,7 +7262,7 @@ if text and text:match('كشف (%d+)') and ChCheck(msg) or text and text:match('
 local iduser = text:match('كشف (%d+)') or text:match('ايدي (%d+)')  
 tdcli_function ({ID = "GetUser",user_id_ = iduser},function(arg,data) 
 if data.message_ == "User not found" then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لم يتم التعرف على الحساب', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لم يتم التعرف على الحساب', 1, 'md')
 return false  
 end
 local user_msgs = DevSOFI:get(Virus..'SOFI:UsersMsgs'..msg.chat_id_..':'..iduser) or 0
@@ -7281,28 +7281,28 @@ else
 Tkeed = false
 end
 if Tkeed ~= false then
-Tked = '\n᥀︙القيود ↫ '..Tkeed
+Tked = '\n☭︙القيود ↫ '..Tkeed
 else 
 Tked = '' 
 end
 if DevSOFI:sismember(Virus..'SOFI:SudoBot:',iduser) and SudoBot(msg) then
-sudobot = '\n᥀︙عدد الكروبات ↫ '..(DevSOFI:get(Virus..'SOFI:Sudos'..iduser) or 0)..'' 
+sudobot = '\n☭︙عدد الكروبات ↫ '..(DevSOFI:get(Virus..'SOFI:Sudos'..iduser) or 0)..'' 
 else 
 sudobot = '' 
 end
 if GetCustomTitle(iduser,msg.chat_id_) ~= false then
-CustomTitle = '\n᥀︙لقبه ↫ '..GetCustomTitle(iduser,msg.chat_id_)
+CustomTitle = '\n☭︙لقبه ↫ '..GetCustomTitle(iduser,msg.chat_id_)
 else 
 CustomTitle = '' 
 end
 if data.first_name_ == false then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙الحساب محذوف', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙الحساب محذوف', 1, 'md')
 return false  end
 if data.username_ == false then
-Text = '᥀︙اسمه ↫ ['..data.first_name_..'](tg://user?id='..iduser..')\n᥀︙ايديه ↫ ❨ `'..iduser..'` ❩\n᥀︙رتبته ↫ '..IdRank(data.id_, msg.chat_id_)..sudobot..'\n᥀︙رسائله ↫ ❨ '..user_msgs..' ❩\n᥀︙تفاعله ↫ '..formsgs(user_msgs)..CustomTitle..'\n᥀︙نقاطه ↫ ❨ '..user_nkt..' ❩'..Tked
+Text = '☭︙اسمه ↫ ['..data.first_name_..'](tg://user?id='..iduser..')\n☭︙ايديه ↫ ❨ `'..iduser..'` ❩\n☭︙رتبته ↫ '..IdRank(data.id_, msg.chat_id_)..sudobot..'\n☭︙رسائله ↫ ❨ '..user_msgs..' ❩\n☭︙تفاعله ↫ '..formsgs(user_msgs)..CustomTitle..'\n☭︙نقاطه ↫ ❨ '..user_nkt..' ❩'..Tked
 SendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙معرفه ↫ [@'..data.username_..']\n᥀︙ايديه ↫ ❨ `'..iduser..'` ❩\n᥀︙رتبته ↫ '..IdRank(data.id_, msg.chat_id_)..sudobot..'\n᥀︙رسائله ↫ ❨ '..user_msgs..' ❩\n᥀︙تفاعله ↫ '..formsgs(user_msgs)..CustomTitle..'\n᥀︙نقاطه ↫ ❨ '..user_nkt..' ❩'..Tked, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙معرفه ↫ [@'..data.username_..']\n☭︙ايديه ↫ ❨ `'..iduser..'` ❩\n☭︙رتبته ↫ '..IdRank(data.id_, msg.chat_id_)..sudobot..'\n☭︙رسائله ↫ ❨ '..user_msgs..' ❩\n☭︙تفاعله ↫ '..formsgs(user_msgs)..CustomTitle..'\n☭︙نقاطه ↫ ❨ '..user_nkt..' ❩'..Tked, 1, 'md')
 end
 end,nil)
 return false 
@@ -7315,7 +7315,7 @@ if DevSOFI:sismember(Virus..'SOFI:Ban:'..msg.chat_id_,result.sender_user_id_) th
 if DevSOFI:sismember(Virus..'SOFI:BanAll:',result.sender_user_id_) then banall = 'محظور عام' else banall = 'غير محظور عام' end
 if DevSOFI:sismember(Virus..'SOFI:MuteAll:',result.sender_user_id_) then muteall = 'مكتوم عام' else muteall = 'غير مكتوم عام' end
 if DevSOFI:sismember(Virus..'SOFI:Tkeed:',result.sender_user_id_) then tkeed = 'مقيد' else tkeed = 'غير مقيد' end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الحظر العام ↫ '..banall..'\n᥀︙الكتم العام ↫ '..muteall..'\n᥀︙الحظر ↫ '..banned..'\n᥀︙الكتم ↫ '..muted..'\n᥀︙التقيد ↫ '..tkeed, 1, 'md')  
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الحظر العام ↫ '..banall..'\n☭︙الكتم العام ↫ '..muteall..'\n☭︙الحظر ↫ '..banned..'\n☭︙الكتم ↫ '..muted..'\n☭︙التقيد ↫ '..tkeed, 1, 'md')  
 end
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),kshf_by_reply) 
 end
@@ -7328,9 +7328,9 @@ if DevSOFI:sismember(Virus..'SOFI:Ban:'..msg.chat_id_,result.id_) then banned = 
 if DevSOFI:sismember(Virus..'SOFI:BanAll:',result.id_) then banall = 'محظور عام' else banall = 'غير محظور عام' end
 if DevSOFI:sismember(Virus..'SOFI:MuteAll:',result.id_) then muteall = 'مكتوم عام' else muteall = 'غير مكتوم عام' end
 if DevSOFI:sismember(Virus..'SOFI:Tkeed:',result.id_) then tkeed = 'مقيد' else tkeed = 'غير مقيد' end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الحظر العام ↫ '..banall..'\n᥀︙الكتم العام ↫ '..muteall..'\n᥀︙الحظر ↫ '..banned..'\n᥀︙الكتم ↫ '..muted..'\n᥀︙التقيد ↫ '..tkeed, 1, 'md')  
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الحظر العام ↫ '..banall..'\n☭︙الكتم العام ↫ '..muteall..'\n☭︙الحظر ↫ '..banned..'\n☭︙الكتم ↫ '..muted..'\n☭︙التقيد ↫ '..tkeed, 1, 'md')  
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')  
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')  
 end
 end
 resolve_username(username,kshf_by_username) 
@@ -7338,10 +7338,10 @@ end
 if text == 'رفع القيود' and tonumber(msg.reply_to_message_id_) > 0 and Admin(msg) and ChCheck(msg) then 
 function unbanreply(extra, result, success) 
 if tonumber(result.sender_user_id_) == tonumber(Virus) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙انا البوت وليس لدي قيود', 1, 'md')  
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙انا البوت وليس لدي قيود', 1, 'md')  
 return false  
 end 
-ReplyStatus(msg,result.sender_user_id_,"Reply","᥀︙تم رفع قيوده") 
+ReplyStatus(msg,result.sender_user_id_,"Reply","☭︙تم رفع قيوده") 
 if SecondSudo(msg) then
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id=" ..result.sender_user_id_.. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")  
 DevSOFI:srem(Virus..'SOFI:Tkeed:'..msg.chat_id_,result.sender_user_id_) DevSOFI:srem(Virus..'SOFI:Ban:'..msg.chat_id_,result.sender_user_id_) DevSOFI:srem(Virus..'SOFI:Muted:'..msg.chat_id_,result.sender_user_id_) DevSOFI:srem(Virus..'SOFI:BanAll:',result.sender_user_id_) DevSOFI:srem(Virus..'SOFI:MuteAll:',result.sender_user_id_)
@@ -7355,15 +7355,15 @@ end
 if text and text:match('^رفع القيود (%d+)') and Admin(msg) and ChCheck(msg) then 
 local user = text:match('رفع القيود (%d+)') 
 if tonumber(user) == tonumber(Virus) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙انا البوت وليس لدي قيود', 1, 'md')  
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙انا البوت وليس لدي قيود', 1, 'md')  
 return false  
 end 
 tdcli_function ({ID = "GetUser",user_id_ = user},function(arg,data) 
 if data and data.code_ and data.code_ == 6 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لم استطع استخراج المعلومات', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لم استطع استخراج المعلومات', 1, 'md') 
 return false  
 end
-ReplyStatus(msg,user,"Reply","᥀︙تم رفع قيوده") 
+ReplyStatus(msg,user,"Reply","☭︙تم رفع قيوده") 
 if SecondSudo(msg) then
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id=" ..user.. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")  
 DevSOFI:srem(Virus..'SOFI:Tkeed:'..msg.chat_id_,user) DevSOFI:srem(Virus..'SOFI:Ban:'..msg.chat_id_,user) DevSOFI:srem(Virus..'SOFI:Muted:'..msg.chat_id_,user) DevSOFI:srem(Virus..'SOFI:BanAll:',user) DevSOFI:srem(Virus..'SOFI:MuteAll:',user)
@@ -7377,23 +7377,23 @@ if text and text:match('^رفع القيود @(.*)') and Admin(msg) and ChCheck(
 local username = text:match('رفع القيود @(.*)')  
 function unbanusername(extra,result,success)  
 if result and result.message_ and result.message_ == "USERNAME_NOT_OCCUPIED" then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*المعرف غير صحيح*', 1, 'md')  
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*المعرف غير صحيح*', 1, 'md')  
 return false  
 end
 if result and result.type_ and result.type_.channel_ and result.type_.channel_.ID == "Channel" then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙هذا معرف قناة وليس معرف حساب', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙هذا معرف قناة وليس معرف حساب', 1, 'md') 
 return false  
 end
 if tonumber(result.id_) == tonumber(Virus) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙انا البوت وليس لدي قيود', 1, 'md')  
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙انا البوت وليس لدي قيود', 1, 'md')  
 return false  
 end 
 tdcli_function ({ID = "GetUser",user_id_ = result.id_},function(arg,data) 
 if data and data.code_ and data.code_ == 6 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لم استطع استخراج المعلومات', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لم استطع استخراج المعلومات', 1, 'md') 
 return false  
 end
-ReplyStatus(msg,result.id_,"Reply","᥀︙تم رفع قيوده") 
+ReplyStatus(msg,result.id_,"Reply","☭︙تم رفع قيوده") 
 if SecondSudo(msg) then
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id=" ..result.id_.. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")  
 DevSOFI:srem(Virus..'SOFI:Tkeed:'..msg.chat_id_,result.id_) DevSOFI:srem(Virus..'SOFI:Ban:'..msg.chat_id_,result.id_) DevSOFI:srem(Virus..'SOFI:Muted:'..msg.chat_id_,result.id_) DevSOFI:srem(Virus..'SOFI:BanAll:',result.id_) DevSOFI:srem(Virus..'SOFI:MuteAll:',result.id_)
@@ -7467,12 +7467,12 @@ local List = {
 .𖣂 𝙢𝙨𝙂𝙨 , #msgs
 ]],
 [[
-᥀︙𝐔𝐒𝐄𝐑 ↬ #username 
-᥀︙𝐈𝐃 ↬ #id
-᥀︙𝐒𝐓𝐀𝐒𝐓 ↬ #stast
-᥀︙𝐀𝐔𝐓𝐎 ↬ #cont 
-᥀︙𝐌𝐀𝐒𝐆 ↬ #msgs
-᥀︙𝐆𝐀𝐌𝐄 ↬ #game
+☭︙𝐔𝐒𝐄𝐑 ↬ #username 
+☭︙𝐈𝐃 ↬ #id
+☭︙𝐒𝐓𝐀𝐒𝐓 ↬ #stast
+☭︙𝐀𝐔𝐓𝐎 ↬ #cont 
+☭︙𝐌𝐀𝐒𝐆 ↬ #msgs
+☭︙𝐆𝐀𝐌𝐄 ↬ #game
 ]],
 [[
 ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇺🇸 ꙰
@@ -7492,50 +7492,50 @@ local List = {
 ]]}
 local Text_Rand = List[math.random(#List)]
 DevSOFI:set(Virus.."SOFI:GpIds:Text"..msg.chat_id_,Text_Rand)
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم تغير كليشة الايدي")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم تغير كليشة الايدي")  
 end
 --     Source Virus     --
 if SecondSudo(msg) then
 if text and text:match("^تعيين الايدي العام$") or text and text:match("^تعين الايدي العام$") or text and text:match("^تعيين كليشة الايدي$") then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙رجائا اتبع التعليمات للتعيين \n᥀︙لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙رجائا اتبع التعليمات للتعيين \n☭︙لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉', 1, 'md')
 DevSOFI:set("Virus:New:id:"..Virus..msg.sender_user_id_,'VirusTeam')
 return "VirusTeam"
 end
 if text and DevSOFI:get("Virus:New:id:"..Virus..msg.sender_user_id_) then 
 if text == 'الغاء' then   
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء حفظ كليشة الايدي', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء حفظ كليشة الايدي', 1, 'md')
 DevSOFI:del("Virus:New:id:"..Virus..msg.sender_user_id_)
 return false
 end
 DevSOFI:del("Virus:New:id:"..Virus..msg.sender_user_id_)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حفظ كليشة الايدي العامه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حفظ كليشة الايدي العامه', 1, 'md')
 DevSOFI:set(Virus.."SOFI:AllIds:Text",text)
 return false
 end
 if text and text:match("^حذف الايدي العام$") or text and text:match("^مسح الايدي العام$") or text and text:match("^حذف كليشة الايدي$") and ChCheck(msg) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف كليشة الايدي العامه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف كليشة الايدي العامه")  
 DevSOFI:del(Virus.."SOFI:AllIds:Text")
 end
 end
 --     Source Virus     --
 if text and text:match("^تعيين الايدي$") and ChCheck(msg) or text and text:match("^تعين الايدي$") and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙رجائا اتبع التعليمات للتعيين \n᥀︙لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙رجائا اتبع التعليمات للتعيين \n☭︙لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉', 1, 'md')
 DevSOFI:set("Virus:New:id:"..Virus..msg.chat_id_..msg.sender_user_id_,'VirusTeam')
 return "VirusTeam"
 end
 if text and Manager(msg) and DevSOFI:get("Virus:New:id:"..Virus..msg.chat_id_..msg.sender_user_id_) then 
 if text == 'الغاء' then   
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء حفظ كليشة الايدي', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء حفظ كليشة الايدي', 1, 'md')
 DevSOFI:del("Virus:New:id:"..Virus..msg.chat_id_..msg.sender_user_id_)
 return false
 end
 DevSOFI:del("Virus:New:id:"..Virus..msg.chat_id_..msg.sender_user_id_)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حفظ الكليشه الجديده', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حفظ الكليشه الجديده', 1, 'md')
 DevSOFI:set(Virus.."SOFI:GpIds:Text"..msg.chat_id_,text)
 return false
 end
 if text and text:match("^حذف الايدي$") and ChCheck(msg) or text and text:match("^مسح الايدي$") and ChCheck(msg) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف كليشة الايدي")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف كليشة الايدي")  
 DevSOFI:del(Virus.."SOFI:GpIds:Text"..msg.chat_id_)
 end
 end
@@ -7575,7 +7575,7 @@ newpicid = newpicid:gsub('#auto',(formsgs(msguser) or 'لا يوجد'))
 newpicid = newpicid:gsub('#stast',(IdRank(msg.sender_user_id_, msg.chat_id_) or 'لا يوجد'))
 newpicid = newpicid:gsub('#Description',(Description or 'لا يوجد'))
 else
-newpicid = "᥀︙"..Description.."\n᥀︙معرفك ↫ ❨ "..username.." ❩\n᥀︙ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n᥀︙رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n᥀︙رسائلك ↫ ❨ "..user_msgs.." ❩\n᥀︙سحكاتك ↫ ❨ "..edit_msg.." ❩\n᥀︙تفاعلك ↫ "..formsgs(msguser).."\n᥀︙نقاطك ↫ ❨ "..user_nkt.." ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+newpicid = "☭︙"..Description.."\n☭︙معرفك ↫ ❨ "..username.." ❩\n☭︙ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n☭︙رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n☭︙رسائلك ↫ ❨ "..user_msgs.." ❩\n☭︙سحكاتك ↫ ❨ "..edit_msg.." ❩\n☭︙تفاعلك ↫ "..formsgs(msguser).."\n☭︙نقاطك ↫ ❨ "..user_nkt.." ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 end 
 if not DevSOFI:get(Virus.."SOFI:GpIds:Text"..msg.chat_id_) then 
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, SOFI.photos_[0].sizes_[1].photo_.persistent_id_,newpicid,msg.id_,msg.id_.."")
@@ -7613,7 +7613,7 @@ newallid = newallid:gsub('#auto',(formsgs(msguser) or 'لا يوجد'))
 newallid = newallid:gsub('#stast',(IdRank(msg.sender_user_id_, msg.chat_id_) or 'لا يوجد'))
 newallid = newallid:gsub('#Description',(Description or 'لا يوجد'))
 else
-newallid = "᥀︙معرفك ↫ ❨ "..username.." ❩\n᥀︙ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n᥀︙رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n᥀︙رسائلك ↫ ❨ "..user_msgs.." ❩\n᥀︙سحكاتك ↫ ❨ "..edit_msg.." ❩\n᥀︙تفاعلك ↫ "..formsgs(msguser).."\n᥀︙نقاطك ↫ ❨ "..user_nkt.." ❩"
+newallid = "☭︙معرفك ↫ ❨ "..username.." ❩\n☭︙ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n☭︙رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n☭︙رسائلك ↫ ❨ "..user_msgs.." ❩\n☭︙سحكاتك ↫ ❨ "..edit_msg.." ❩\n☭︙تفاعلك ↫ "..formsgs(msguser).."\n☭︙نقاطك ↫ ❨ "..user_nkt.." ❩"
 end 
 if not DevSOFI:get(Virus.."SOFI:GpIds:Text"..msg.chat_id_) then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, newallid, 1, 'html')
@@ -7636,7 +7636,7 @@ Dev_SOFI(msg.chat_id_, msg.id_, 1, new_id, 1, 'html')
 end
 end
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙عذرا الايدي معطل ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙عذرا الايدي معطل ', 1, 'md')
 end
 else
 if DevSOFI:get(Virus.."SOFI:AllIds:Text") then
@@ -7655,16 +7655,16 @@ notpicid = notpicid:gsub('#auto',(formsgs(msguser) or 'لا يوجد'))
 notpicid = notpicid:gsub('#stast',(IdRank(msg.sender_user_id_, msg.chat_id_) or 'لا يوجد'))
 notpicid = notpicid:gsub('#Description',(Description or 'لا يوجد'))
 else
-notpicid = "᥀︙لا استطيع عرض صورتك لانك قمت بحظر البوت او انك لاتمتلك صوره في بروفايلك\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙معرفك ↫ ❨ "..username.." ❩\n᥀︙ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n᥀︙رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n᥀︙رسائلك ↫ ❨ "..user_msgs.." ❩\n᥀︙سحكاتك ↫ ❨ "..edit_msg.." ❩\n᥀︙تفاعلك ↫ "..formsgs(msguser).."\n᥀︙نقاطك ↫ ❨ "..user_nkt.." ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+notpicid = "☭︙لا استطيع عرض صورتك لانك قمت بحظر البوت او انك لاتمتلك صوره في بروفايلك\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙معرفك ↫ ❨ "..username.." ❩\n☭︙ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n☭︙رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n☭︙رسائلك ↫ ❨ "..user_msgs.." ❩\n☭︙سحكاتك ↫ ❨ "..edit_msg.." ❩\n☭︙تفاعلك ↫ "..formsgs(msguser).."\n☭︙نقاطك ↫ ❨ "..user_nkt.." ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 end 
 if not DevSOFI:get(Virus..'SOFI:Lock:Id'..msg.chat_id_) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Id:Photo'..msg.chat_id_) then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, notpicid, 1, 'html')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙معرفك ↫ ❨ "..username.." ❩\n᥀︙ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n᥀︙رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n᥀︙رسائلك ↫ ❨ "..user_msgs.." ❩\n᥀︙سحكاتك ↫ ❨ "..edit_msg.." ❩\n᥀︙رسائلك ↫ ❨ "..user_msgs.." ❩\n᥀︙تفاعلك ↫ "..formsgs(msguser).."\n᥀︙نقاطك ↫ ❨ "..user_nkt.." ❩", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙معرفك ↫ ❨ "..username.." ❩\n☭︙ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n☭︙رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n☭︙رسائلك ↫ ❨ "..user_msgs.." ❩\n☭︙سحكاتك ↫ ❨ "..edit_msg.." ❩\n☭︙رسائلك ↫ ❨ "..user_msgs.." ❩\n☭︙تفاعلك ↫ "..formsgs(msguser).."\n☭︙نقاطك ↫ ❨ "..user_nkt.." ❩", 1, 'md')
 end
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙عذرا الايدي معطل', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙عذرا الايدي معطل', 1, 'md')
 end end end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
 end
@@ -7678,97 +7678,97 @@ if text and text:match("^قفل (.*)$") and ChCheck(msg) then
 local LockText = {string.match(text, "^(قفل) (.*)$")}
 if LockText[2] == "التعديل" then
 if not DevSOFI:get(Virus..'SOFI:Lock:EditMsgs'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل التعديل")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل التعديل")  
 DevSOFI:set(Virus..'SOFI:Lock:EditMsgs'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙التعديل بالفعل مقفل في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙التعديل بالفعل مقفل في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "التعديل الميديا" or LockText[2] == "تعديل الميديا" then
 if not DevSOFI:get(Virus..'SOFI:Lock:EditMsgs'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل تعديل الميديا")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل تعديل الميديا")  
 DevSOFI:set(Virus..'SOFI:Lock:EditMsgs'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تعديل الميديا بالفعل مقفل في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تعديل الميديا بالفعل مقفل في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الفارسيه" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Farsi'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الفارسيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الفارسيه")  
 DevSOFI:set(Virus..'SOFI:Lock:Farsi'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الفارسيه بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الفارسيه بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الفشار" then
 if DevSOFI:get(Virus..'SOFI:Lock:Fshar'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الفشار")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الفشار")  
 DevSOFI:del(Virus..'SOFI:Lock:Fshar'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الفشار بالفعل مقفل في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الفشار بالفعل مقفل في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الطائفيه" then
 if DevSOFI:get(Virus..'SOFI:Lock:Taf'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الطائفيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الطائفيه")  
 DevSOFI:del(Virus..'SOFI:Lock:Taf'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الطائفيه بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الطائفيه بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الكفر" then
 if DevSOFI:get(Virus..'SOFI:Lock:Kfr'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الكفر")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الكفر")  
 DevSOFI:del(Virus..'SOFI:Lock:Kfr'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الكفر بالفعل مقفل في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الكفر بالفعل مقفل في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الفارسيه بالطرد" then
 if not DevSOFI:get(Virus..'SOFI:Lock:FarsiBan'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الفارسيه بالطرد")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الفارسيه بالطرد")  
 DevSOFI:set(Virus..'SOFI:Lock:FarsiBan'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الفارسيه بالطرد بالفعل مقفله ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الفارسيه بالطرد بالفعل مقفله ', 1, 'md')
 end
 end
 if LockText[2] == "البوتات" or LockText[2] == "البوتات بالحذف" then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل البوتات بالحذف")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل البوتات بالحذف")  
 DevSOFI:set(Virus.."SOFI:Lock:Bots"..msg.chat_id_,"del")  
 end
 if LockText[2] == "البوتات بالطرد" then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل البوتات بالطرد")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل البوتات بالطرد")  
 DevSOFI:set(Virus.."SOFI:Lock:Bots"..msg.chat_id_,"kick")  
 end
 if LockText[2] == "البوتات بالتقييد" or LockText[2] == "البوتات بالتقيد" then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل البوتات بالتقيد")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل البوتات بالتقيد")  
 DevSOFI:set(Virus.."SOFI:Lock:Bots"..msg.chat_id_,"ked")  
 end
 if LockText[2] == "التكرار" or LockText[2] == "التكرار بالحذف" then 
 DevSOFI:hset(Virus.."SOFI:Spam:Group:User"..msg.chat_id_ ,"Spam:User","del")  
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل التكرار بالحذف")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل التكرار بالحذف")  
 end
 if LockText[2] == "التكرار بالطرد" then 
 DevSOFI:hset(Virus.."SOFI:Spam:Group:User"..msg.chat_id_ ,"Spam:User","kick")  
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل التكرار بالطرد")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل التكرار بالطرد")  
 end
 if LockText[2] == "التكرار بالتقيد" or LockText[2] == "التكرار بالتقييد" then 
 DevSOFI:hset(Virus.."SOFI:Spam:Group:User"..msg.chat_id_ ,"Spam:User","keed")  
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل التكرار بالتقيد")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل التكرار بالتقيد")  
 end
 if LockText[2] == "التكرار بالكتم" then 
 DevSOFI:hset(Virus.."SOFI:Spam:Group:User"..msg.chat_id_ ,"Spam:User","mute")  
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل التكرار بالكتم")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل التكرار بالكتم")  
 end
 if BasicConstructor(msg) then
 if LockText[2] == "التثبيت" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Pin'..msg.chat_id_) then
 tdcli_function ({ ID = "GetChannelFull",  channel_id_ = msg.chat_id_:gsub("-100","") }, function(arg,data)  DevSOFI:set(Virus.."SOFI:PinnedMsg"..msg.chat_id_,data.pinned_message_id_)  end,nil)
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل التثبيت")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل التثبيت")  
 DevSOFI:set(Virus..'SOFI:Lock:Pin'..msg.chat_id_,true)
 DevSOFI:sadd(Virus.."SOFI:Lock:Pinpin",msg.chat_id_) 
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙التثبيت بالفعل مقفل في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙التثبيت بالفعل مقفل في المجموعه', 1, 'md')
 end end end
 end
 end
@@ -7778,56 +7778,56 @@ if Admin(msg) then
 if text and (text:match("^ضع تكرار (%d+)$") or text:match("^وضع تكرار (%d+)$")) then   
 local TextSpam = text:match("ضع تكرار (%d+)$") or text:match("وضع تكرار (%d+)$")
 if tonumber(TextSpam) < 2 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙قم بتحديد عدد اكبر من 2 للتكرار', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙قم بتحديد عدد اكبر من 2 للتكرار', 1, 'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم وضع عدد التكرار ↫ '..TextSpam, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم وضع عدد التكرار ↫ '..TextSpam, 1, 'md')
 DevSOFI:hset(Virus.."SOFI:Spam:Group:User"..msg.chat_id_ ,"Num:Spam" ,TextSpam) 
 end
 end
 if text and (text:match("^ضع زمن التكرار (%d+)$") or text:match("^وضع زمن التكرار (%d+)$")) then  
 local TextSpam = text:match("ضع زمن التكرار (%d+)$") or text:match("وضع زمن التكرار (%d+)$")
 DevSOFI:hset(Virus.."SOFI:Spam:Group:User"..msg.chat_id_ ,"Num:Spam:Time" ,TextSpam) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم وضع زمن التكرار ↫ '..TextSpam, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم وضع زمن التكرار ↫ '..TextSpam, 1, 'md')
 end
 --     Source Virus     --
 if Manager(msg) then
 if text and text == 'تفعيل الايدي بالصوره' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Id:Photo'..msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الايدي بالصوره بالتاكيد مفعل', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الايدي بالصوره بالتاكيد مفعل', 1, 'md')
 else
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الايدي بالصوره'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الايدي بالصوره'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Lock:Id:Photo'..msg.chat_id_)
 end end
 if text and text == 'تعطيل الايدي بالصوره' and ChCheck(msg) then
 if DevSOFI:get(Virus..'SOFI:Lock:Id:Photo'..msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الايدي بالصوره بالتاكيد معطل', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الايدي بالصوره بالتاكيد معطل', 1, 'md')
 else
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الايدي بالصوره'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الايدي بالصوره'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Lock:Id:Photo'..msg.chat_id_,true)
 end end 
 
 if text and text == 'تفعيل الايدي' and ChCheck(msg) then
 if not DevSOFI:get(Virus..'SOFI:Lock:Id'..msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الايدي بالتاكيد مفعل ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الايدي بالتاكيد مفعل ', 1, 'md')
 else
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الايدي بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الايدي بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Lock:Id'..msg.chat_id_)
 end end 
 if text and text == 'تعطيل الايدي' and ChCheck(msg) then
 if DevSOFI:get(Virus..'SOFI:Lock:Id'..msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الايدي بالتاكيد معطل ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الايدي بالتاكيد معطل ', 1, 'md')
 else
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الايدي بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الايدي بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Lock:Id'..msg.chat_id_,true)
 end end
 end
 --     Source Virus     --
 if text == 'ضع رابط' and ChCheck(msg) or text == 'وضع رابط' and ChCheck(msg) or text == 'ضع الرابط' and ChCheck(msg) or text == 'وضع الرابط' and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ارسل رابط المجموعه او رابط قناة المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ارسل رابط المجموعه او رابط قناة المجموعه', 1, 'md')
 DevSOFI:setex(Virus.."SOFI:Set:Groups:Links"..msg.chat_id_..msg.sender_user_id_,300,true) 
 end
 if text == 'انشاء رابط' and ChCheck(msg) or text == 'انشاء الرابط' and ChCheck(msg) then
@@ -7836,12 +7836,12 @@ if not DevSOFI:get(Virus.."SOFI:Groups:Links"..msg.chat_id_)  then
 if LinkGp.ok == true then 
 LinkGroup = LinkGp.result
 DevSOFI:set(Virus.."SOFI:Groups:Links"..msg.chat_id_,LinkGroup) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم انشاء رابط جديد ارسل ↫ الرابط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم انشاء رابط جديد ارسل ↫ الرابط', 1, 'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ليست لدي صلاحية دعوة المستخدمين عبر الرابط يرجى التحقق من الصلاحيات', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ليست لدي صلاحية دعوة المستخدمين عبر الرابط يرجى التحقق من الصلاحيات', 1, 'md')
 end
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ارسل رابط المجموعه او رابط قناة المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ارسل رابط المجموعه او رابط قناة المجموعه', 1, 'md')
 DevSOFI:setex(Virus.."SOFI:Set:Groups:Links"..msg.chat_id_..msg.sender_user_id_,300,true) 
 end
 end
@@ -7849,33 +7849,33 @@ end
 --     Source Virus     --
 if Admin(msg) then
 if text and text:match("^تفعيل الترحيب$") and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الترحيب بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الترحيب بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus.."SOFI:Lock:Welcome"..msg.chat_id_,true)
 end
 if text and text:match("^تعطيل الترحيب$") and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الترحيب بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الترحيب بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus.."SOFI:Lock:Welcome"..msg.chat_id_)
 end
 if DevSOFI:get(Virus..'SOFI:setwelcome'..msg.chat_id_..':'..msg.sender_user_id_) then 
 if text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء حفظ كليشة الترحيب', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء حفظ كليشة الترحيب', 1, 'md')
 DevSOFI:del(Virus..'SOFI:setwelcome'..msg.chat_id_..':'..msg.sender_user_id_)
 return false  
 end 
 DevSOFI:del(Virus..'SOFI:setwelcome'..msg.chat_id_..':'..msg.sender_user_id_)
 Welcomes = text:gsub('"',"") Welcomes = text:gsub("'","") Welcomes = text:gsub(",","") Welcomes = text:gsub("*","") Welcomes = text:gsub(";","") Welcomes = text:gsub("`","") Welcomes = text:gsub("{","") Welcomes = text:gsub("}","") 
 DevSOFI:set(Virus..'SOFI:Groups:Welcomes'..msg.chat_id_,Welcomes)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حفظ كليشة الترحيب', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حفظ كليشة الترحيب', 1, 'md')
 return false   
 end
 if text and text:match("^ضع ترحيب$") and ChCheck(msg) or text and text:match("^وضع ترحيب$") and ChCheck(msg) or text and text:match("^اضف ترحيب$") and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ارسل لي الترحيب الان\n᥀︙تستطيع اضافة مايلي ↫ ⤈\n᥀︙دالة عرض الاسم ↫ firstname\n᥀︙دالة عرض المعرف ↫ username', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ارسل لي الترحيب الان\n☭︙تستطيع اضافة مايلي ↫ ⤈\n☭︙دالة عرض الاسم ↫ firstname\n☭︙دالة عرض المعرف ↫ username', 1, 'md')
 DevSOFI:set(Virus..'SOFI:setwelcome'..msg.chat_id_..':'..msg.sender_user_id_,true)
 end
 if text and text:match("^حذف الترحيب$") and ChCheck(msg) or text and text:match("^حذف ترحيب$") and ChCheck(msg) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف الترحيب")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف الترحيب")  
 DevSOFI:del(Virus..'SOFI:Groups:Welcomes'..msg.chat_id_)
 end
 if text and text:match("^جلب الترحيب$") and ChCheck(msg) or text and text:match("^جلب ترحيب$") and ChCheck(msg) or text and text:match("^الترحيب$") and ChCheck(msg) then
@@ -7883,90 +7883,90 @@ local Welcomes = DevSOFI:get(Virus..'SOFI:Groups:Welcomes'..msg.chat_id_)
 if Welcomes then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, Welcomes, 1, 'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لم يتم وضع الترحيب \n᥀︙ارسل ↫ ضع ترحيب للحفظ ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لم يتم وضع الترحيب \n☭︙ارسل ↫ ضع ترحيب للحفظ ', 1, 'md')
 end
 end
 --     Source Virus     --
 if DevSOFI:get(Virus..'SOFI:SetDescription'..msg.chat_id_..':'..msg.sender_user_id_) then  
 if text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء حفظ الوصف", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء حفظ الوصف", 1, 'md')
 DevSOFI:del(Virus..'SOFI:SetDescription'..msg.chat_id_..':'..msg.sender_user_id_)
 return false  
 end 
 DevSOFI:del(Virus..'SOFI:SetDescription'..msg.chat_id_..':'..msg.sender_user_id_)
 https.request('https://api.telegram.org/bot'..TokenBot..'/setChatDescription?chat_id='..msg.chat_id_..'&description='..text) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم تغيير وصف المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم تغيير وصف المجموعه', 1, 'md')
 return false  
 end 
 if text and text:match("^ضع وصف$") and ChCheck(msg) or text and text:match("^وضع وصف$") and ChCheck(msg) then  
 DevSOFI:set(Virus..'SOFI:SetDescription'..msg.chat_id_..':'..msg.sender_user_id_,true)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ارسل لي الوصف الان', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ارسل لي الوصف الان', 1, 'md')
 end
 --     Source Virus     --
 if text and text == "منع" and msg.reply_to_message_id_ == 0 and ChCheck(msg) then       
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل لي الكلمه الان", 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل لي الكلمه الان", 1, 'md') 
 DevSOFI:set(Virus.."SOFI:SetFilters"..msg.sender_user_id_..msg.chat_id_,"add")  
 return false  
 end    
 if DevSOFI:get(Virus.."SOFI:SetFilters"..msg.sender_user_id_..msg.chat_id_) == "add" then
 if text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء امر المنع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء امر المنع', 1, 'md')
 DevSOFI:del(Virus.."SOFI:SetFilters"..msg.sender_user_id_..msg.chat_id_)  
 return false  
 end   
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم منع الكلمه ↫ "..text, 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم منع الكلمه ↫ "..text, 1, 'html')
 DevSOFI:del(Virus.."SOFI:SetFilters"..msg.sender_user_id_..msg.chat_id_)  
 DevSOFI:hset(Virus..'SOFI:Filters:'..msg.chat_id_, text,'newword')
 return false
 end
 if text and text == "الغاء منع" and msg.reply_to_message_id_ == 0 and ChCheck(msg) then       
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل لي الكلمه الان", 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل لي الكلمه الان", 1, 'md') 
 DevSOFI:set(Virus.."SOFI:SetFilters"..msg.sender_user_id_..msg.chat_id_,"del")  
 return false  
 end    
 if DevSOFI:get(Virus.."SOFI:SetFilters"..msg.sender_user_id_..msg.chat_id_) == "del" then   
 if text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء امر الغاء المنع', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء امر الغاء المنع', 1, 'md')
 DevSOFI:del(Virus.."SOFI:SetFilters"..msg.sender_user_id_..msg.chat_id_)  
 return false  
 end   
 if not DevSOFI:hget(Virus..'SOFI:Filters:'..msg.chat_id_, text) then  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙الكلمه ↫ "..text.." غير ممنوعه", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙الكلمه ↫ "..text.." غير ممنوعه", 1, 'html')
 DevSOFI:del(Virus.."SOFI:SetFilters"..msg.sender_user_id_..msg.chat_id_)  
 else
 DevSOFI:hdel(Virus..'SOFI:Filters:'..msg.chat_id_, text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙الكلمه ↫ "..text.." تم الغاء منعها", 1, 'html')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙الكلمه ↫ "..text.." تم الغاء منعها", 1, 'html')
 DevSOFI:del(Virus.."SOFI:SetFilters"..msg.sender_user_id_..msg.chat_id_)  
 end
 return false
 end
 --     Source Virus     --
 if SudoBot(msg) then
-if text and text == "الاحصائيات" and ChCheck(msg) or text and text == "↫  الاحصائيات ᥀" and ChCheck(msg) then
+if text and text == "الاحصائيات" and ChCheck(msg) or text and text == "↫  الاحصائيات ☭" and ChCheck(msg) then
 local gps = DevSOFI:scard(Virus.."SOFI:Groups") local users = DevSOFI:scard(Virus.."SOFI:Users") 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙احصائيات البوت ↫ ⤈\n᥀︙عدد المشتركين ↫ ❨ '..users..' ❩\n᥀︙عدد المجموعات ↫ ❨ '..gps..' ❩', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙احصائيات البوت ↫ ⤈\n☭︙عدد المشتركين ↫ ❨ '..users..' ❩\n☭︙عدد المجموعات ↫ ❨ '..gps..' ❩', 1, 'md')
 end
-if text and text == "المشتركين" and ChCheck(msg) or text and text == "↫ المشتركين ᥀" and ChCheck(msg) then
+if text and text == "المشتركين" and ChCheck(msg) or text and text == "↫ المشتركين ☭" and ChCheck(msg) then
 local users = DevSOFI:scard(Virus.."SOFI:Users")
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙عدد المشتركين ↫ ❨ '..users..' ❩', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙عدد المشتركين ↫ ❨ '..users..' ❩', 1, 'md')
 end
-if text and text == "المجموعات" and ChCheck(msg) or text and text == "↫ المجموعات ᥀" and ChCheck(msg) then
+if text and text == "المجموعات" and ChCheck(msg) or text and text == "↫ المجموعات ☭" and ChCheck(msg) then
 local gps = DevSOFI:scard(Virus.."SOFI:Groups")
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙عدد المجموعات ↫ ❨ '..gps..' ❩', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙عدد المجموعات ↫ ❨ '..gps..' ❩', 1, 'md')
 end
 end
 --     Source Virus     --
-if text and text == "المجموعات" and ChCheck(msg) or text and text == "↫ المجموعات ᥀" and ChCheck(msg) then
+if text and text == "المجموعات" and ChCheck(msg) or text and text == "↫ المجموعات ☭" and ChCheck(msg) then
 if not SudoBot(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطورين فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطورين فقط ', 1, 'md')
 else
 local list = DevSOFI:smembers(Virus.."SOFI:Groups")
-local t = '᥀︙مجموعات البوت ↫ ⤈ \n'
+local t = '☭︙مجموعات البوت ↫ ⤈ \n'
 for k,v in pairs(list) do
 t = t..k.."~ : `"..v.."`\n" 
 end
 if #list == 0 then
-t = '᥀︙لا يوجد مجموعات مفعله'
+t = '☭︙لا يوجد مجموعات مفعله'
 end
 Dev_SOFI(msg.chat_id_, msg.id_, 1,t, 1, 'md')
 end end
@@ -7975,7 +7975,7 @@ if text and text:match('^تنظيف (%d+)$') or text and text:match('^مسح (%d
 if not DevSOFI:get(Virus..'Delete:Time'..msg.chat_id_..':'..msg.sender_user_id_) then  
 local Number = tonumber(text:match('^تنظيف (%d+)$') or text:match('^مسح (%d+)$')) 
 if Number > 5000 then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لاتستطيع تنظيف اكثر من 5000 رساله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لاتستطيع تنظيف اكثر من 5000 رساله', 1, 'md')
 return false  
 end  
 local Message = msg.id_
@@ -7983,11 +7983,11 @@ for i=1,tonumber(Number) do
 DeleteMessage(msg.chat_id_,{[0]=Message})
 Message = Message - 1048576 
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم تنظيف *'..Number..'* من الرسائل', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم تنظيف *'..Number..'* من الرسائل', 1, 'md')
 DevSOFI:setex(Virus..'Delete:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
 end 
 end
-if text == "تنظيف المشتركين" and SecondSudo(msg) and ChCheck(msg) or text == "↫ تنظيف المشتركين ᥀" and SecondSudo(msg) and ChCheck(msg) then 
+if text == "تنظيف المشتركين" and SecondSudo(msg) and ChCheck(msg) or text == "↫ تنظيف المشتركين ☭" and SecondSudo(msg) and ChCheck(msg) then 
 local pv = DevSOFI:smembers(Virus.."SOFI:Users")
 local sendok = 0
 for i = 1, #pv do
@@ -8002,10 +8002,10 @@ sendok = sendok + 1
 end
 if #pv == i then 
 if sendok == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙*لا يوجد مشتركين وهميين*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙*لا يوجد مشتركين وهميين*', 1, 'md')
 else
 local ok = #pv - sendok
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙عدد المشتركين الان ↫ { '..#pv..' }\n᥀︙تم حذف ↫ { '..sendok..' } من المشتركين\n᥀︙العدد الحقيقي الان  ↫ ( '..ok..' ) \n', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙عدد المشتركين الان ↫ { '..#pv..' }\n☭︙تم حذف ↫ { '..sendok..' } من المشتركين\n☭︙العدد الحقيقي الان  ↫ ( '..ok..' ) \n', 1, 'md')
 end
 end
 end,nil)
@@ -8014,7 +8014,7 @@ end
 return false
 end
 --     Source Virus     --
-if text == "تنظيف الكروبات" and SecondSudo(msg) and ChCheck(msg) or text == "تنظيف المجموعات" and SecondSudo(msg) and ChCheck(msg) or text == "↫ تنظيف المجموعات ᥀" and SecondSudo(msg) and ChCheck(msg) then 
+if text == "تنظيف الكروبات" and SecondSudo(msg) and ChCheck(msg) or text == "تنظيف المجموعات" and SecondSudo(msg) and ChCheck(msg) or text == "↫ تنظيف المجموعات ☭" and SecondSudo(msg) and ChCheck(msg) then 
 local group = DevSOFI:smembers(Virus.."SOFI:Groups")
 local w = 0
 local q = 0
@@ -8039,21 +8039,21 @@ w = w + 1
 end
 if #group == i then 
 if (w + q) == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙*لاتوجد مجموعات وهميه*', 1, 'md')   
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙*لاتوجد مجموعات وهميه*', 1, 'md')   
 else
 local Virusgp2 = (w + q)
 local Virusgp3 = #group - Virusgp2
 if q == 0 then
 Virusgp2 = ''
 else
-Virusgp2 = '\n᥀︙تم حذف ↫ { '..q..' } مجموعه من البوت'
+Virusgp2 = '\n☭︙تم حذف ↫ { '..q..' } مجموعه من البوت'
 end
 if w == 0 then
 Virusgp1 = ''
 else
-Virusgp1 = '\n᥀︙تم حذف ↫ { '..w..' } مجموعه بسبب تنزيل البوت الى عضو'
+Virusgp1 = '\n☭︙تم حذف ↫ { '..w..' } مجموعه بسبب تنزيل البوت الى عضو'
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙عدد الكروبات الان ↫ { '..#group..' }'..Virusgp1..Virusgp2..'\n᥀︙العدد الحقيقي الان  ↫ ( '..Virusgp3..' ) \n ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙عدد الكروبات الان ↫ { '..#group..' }'..Virusgp1..Virusgp2..'\n☭︙العدد الحقيقي الان  ↫ ( '..Virusgp3..' ) \n ', 1, 'md')
 end end
 end,nil)
 end
@@ -8062,21 +8062,21 @@ end
 end
 --     Source Virus     --
 if text and (text == "تفعيل التلقائي" or text == "تفعيل المسح التلقائي" or text == "تفعيل الحذف التلقائي") and Constructor(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل ميزة الحذف التلقائي للميديا'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل ميزة الحذف التلقائي للميديا'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Lock:CleanNum'..msg.chat_id_,true)  
 end
 if text and (text == "تعطيل التلقائي" or text == "تعطيل المسح التلقائي" or text == "تعطيل الحذف التلقائي") and Constructor(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الحذف التلقائي للميديا'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الحذف التلقائي للميديا'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Lock:CleanNum'..msg.chat_id_) 
 end
 if text and (text:match("^تعين عدد المسح (%d+)$") or text:match("^تعيين عدد المسح (%d+)$") or text:match("^تعين عدد الحذف (%d+)$") or text:match("^تعيين عدد الحذف (%d+)$") or text:match("^عدد المسح (%d+)$")) and Constructor(msg) and ChCheck(msg) then
 local Num = text:match("تعين عدد المسح (%d+)$") or text:match("تعيين عدد المسح (%d+)$") or text:match("تعين عدد الحذف (%d+)$") or text:match("تعيين عدد الحذف (%d+)$") or text:match("عدد المسح (%d+)$")
 if tonumber(Num) < 10 or tonumber(Num) > 1000 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙قم بتحديد عدد اكبر من 10 واصغر من 1000 للحذف التلقائي', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙قم بتحديد عدد اكبر من 10 واصغر من 1000 للحذف التلقائي', 1, 'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم وضع ↫ *'..Num..'* من الميديا للحذف التلقائي', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم وضع ↫ *'..Num..'* من الميديا للحذف التلقائي', 1, 'md')
 DevSOFI:set(Virus..'SOFI:CleanNum'..msg.chat_id_,Num) 
 end end 
 if msg and DevSOFI:get(Virus..'SOFI:Lock:CleanNum'..msg.chat_id_) then
@@ -8089,7 +8089,7 @@ Del = (Del + 1)
 local Message = v
 DeleteMessage(msg.chat_id_,{[0]=Message})
 end
-SendText(msg.chat_id_,"᥀︙تم حذف "..Del.." من الميديا تلقائيا",0,'md') 
+SendText(msg.chat_id_,"☭︙تم حذف "..Del.." من الميديا تلقائيا",0,'md') 
 DevSOFI:del(Virus.."SOFI:cleanernum"..msg.chat_id_)
 end 
 end
@@ -8098,20 +8098,20 @@ if DevSOFI:get(Virus..'SOFI:Lock:CleanNum'..msg.chat_id_) then
 if text == "التلقائي" and ChCheck(msg) or text == "عدد التلقائي" and ChCheck(msg) then 
 local M = DevSOFI:scard(Virus.."SOFI:cleanernum"..msg.chat_id_)
 if M ~= 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙عدد الميديا ↫ "..M.."\n᥀︙الحذف التلقائي ↫ "..(DevSOFI:get(Virus..'SOFI:CleanNum'..msg.chat_id_) or 200), 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙عدد الميديا ↫ "..M.."\n☭︙الحذف التلقائي ↫ "..(DevSOFI:get(Virus..'SOFI:CleanNum'..msg.chat_id_) or 200), 1, 'md') 
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لاتوجد ميديا هنا", 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لاتوجد ميديا هنا", 1, 'md') 
 end end
 end
 end
 --     Source Virus     --
 if text == "تفعيل امسح" and Constructor(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل امسح بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل امسح بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Lock:Clean'..msg.chat_id_,true)  
 end
 if text == "تعطيل امسح" and Constructor(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل امسح بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل امسح بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Lock:Clean'..msg.chat_id_) 
 end
@@ -8120,9 +8120,9 @@ if DevSOFI:get(Virus..'SOFI:Lock:Clean'..msg.chat_id_) then
 if text == "الميديا" and ChCheck(msg) or text == "عدد الميديا" and ChCheck(msg) then 
 local M = DevSOFI:scard(Virus.."SOFI:cleaner"..msg.chat_id_)
 if M ~= 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙عدد الميديا ↫ "..M, 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙عدد الميديا ↫ "..M, 1, 'md') 
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لاتوجد ميديا هنا", 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لاتوجد ميديا هنا", 1, 'md') 
 end end
 if text == "امسح" and ChCheck(msg) or text == "احذف" and ChCheck(msg) or text == "تنظيف ميديا" and ChCheck(msg) or text == "تنظيف الميديا" and ChCheck(msg) then
 local List = DevSOFI:smembers(Virus.."SOFI:cleaner"..msg.chat_id_)
@@ -8133,21 +8133,21 @@ local Message = v
 DeleteMessage(msg.chat_id_,{[0]=Message})
 end
 if Del ~= 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حذف "..Del.." من الميديا", 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حذف "..Del.." من الميديا", 1, 'md') 
 DevSOFI:del(Virus.."SOFI:cleaner"..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لاتوجد ميديا هنا", 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لاتوجد ميديا هنا", 1, 'md') 
 end end 
 end
 end
 --     Source Virus     --
 if text == "تفعيل مسح الاغاني" and Constructor(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل مسح الاغاني بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل مسح الاغاني بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Lock:CleanMusic'..msg.chat_id_,true)  
 end
 if text == "تعطيل مسح الاغاني" and Constructor(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل مسح الاغاني بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل مسح الاغاني بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Lock:CleanMusic'..msg.chat_id_) 
 end
@@ -8156,9 +8156,9 @@ if DevSOFI:get(Virus..'SOFI:Lock:CleanMusic'..msg.chat_id_) then
 if text == "الاغاني" and ChCheck(msg) or text == "عدد الاغاني" and ChCheck(msg) then 
 local M = DevSOFI:scard(Virus.."SOFI:cleanermusic"..msg.chat_id_)
 if M ~= 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙عدد الاغاني ↫ "..M, 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙عدد الاغاني ↫ "..M, 1, 'md') 
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لاتوجد اغاني هنا", 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لاتوجد اغاني هنا", 1, 'md') 
 end end
 if text == "مسح الاغاني" or text == "تنظيف الاغاني" or text == "حذف الاغاني" then
 local List = DevSOFI:smembers(Virus.."SOFI:cleanermusic"..msg.chat_id_)
@@ -8169,10 +8169,10 @@ local Message = v
 DeleteMessage(msg.chat_id_,{[0]=Message})
 end
 if Del ~= 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حذف "..Del.." من الاغاني", 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حذف "..Del.." من الاغاني", 1, 'md') 
 DevSOFI:del(Virus.."SOFI:cleanermusic"..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لاتوجد اغاني هنا", 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لاتوجد اغاني هنا", 1, 'md') 
 end end end end
 --     Source Virus     --
 if Admin(msg) then
@@ -8194,7 +8194,7 @@ end
 end
 DeleteMessage(msg.chat_id_,SOFI_Del2)
 end,nil)  
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم تنظيف 100 من الرسائل المعدله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم تنظيف 100 من الرسائل المعدله', 1, 'md')
 end
 --     Source Virus     --
 if ChatType == 'sp' or ChatType == 'gp'  then
@@ -8203,79 +8203,79 @@ if text and text:match("^فتح (.*)$") and ChCheck(msg) then
 local UnLockText = {string.match(text, "^(فتح) (.*)$")}
 if UnLockText[2] == "التعديل" then
 if DevSOFI:get(Virus..'SOFI:Lock:EditMsgs'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح التعديل")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح التعديل")  
 DevSOFI:del(Virus..'SOFI:Lock:EditMsgs'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙التعديل بالفعل مفتوح في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙التعديل بالفعل مفتوح في المجموعه', 1, 'md')
 end
 end
 if SOFIConstructor(msg) then
 if UnLockText[2] == "التعديل الميديا" or UnLockText[2] == "تعديل الميديا" then
 if DevSOFI:get(Virus..'SOFI:Lock:EditMsgs'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح تعديل الميديا")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح تعديل الميديا")  
 DevSOFI:del(Virus..'SOFI:Lock:EditMsgs'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تعديل الميديا بالفعل مفتوح في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تعديل الميديا بالفعل مفتوح في المجموعه', 1, 'md')
 end
 end
 end
 if UnLockText[2] == "الفارسيه" then
 if DevSOFI:get(Virus..'SOFI:Lock:Farsi'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الفارسيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الفارسيه")  
 DevSOFI:del(Virus..'SOFI:Lock:Farsi'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الفارسيه بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الفارسيه بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الفشار" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Fshar'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الفشار")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الفشار")  
 DevSOFI:set(Virus..'SOFI:Lock:Fshar'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الفشار بالفعل مفتوح في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الفشار بالفعل مفتوح في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الطائفيه" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Taf'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الطائفيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الطائفيه")  
 DevSOFI:set(Virus..'SOFI:Lock:Taf'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الطائفيه بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الطائفيه بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الكفر" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Kfr'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الكفر")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الكفر")  
 DevSOFI:set(Virus..'SOFI:Lock:Kfr'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الكفر بالفعل مفتوح في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الكفر بالفعل مفتوح في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الفارسيه بالطرد" then
 if DevSOFI:get(Virus..'SOFI:Lock:FarsiBan'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الفارسيه بالطرد")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الفارسيه بالطرد")  
 DevSOFI:del(Virus..'SOFI:Lock:FarsiBan'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الفارسيه بالطرد بالفعل مفتوحه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الفارسيه بالطرد بالفعل مفتوحه', 1, 'md')
 end
 end
 if SOFIConstructor(msg) then
 if UnLockText[2] == "البوتات" or UnLockText[2] == "البوتات بالطرد" or UnLockText[2] == "البوتات بالتقييد" or UnLockText[2] == "البوتات بالتقيد" then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح البوتات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح البوتات")  
 DevSOFI:del(Virus.."SOFI:Lock:Bots"..msg.chat_id_)  
 end end
 if UnLockText[2] == "التكرار" then 
 DevSOFI:hdel(Virus.."SOFI:Spam:Group:User"..msg.chat_id_ ,"Spam:User")  
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح التكرار")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح التكرار")  
 end
 if BasicConstructor(msg) then
 if UnLockText[2] == "التثبيت" then
 if DevSOFI:get(Virus..'SOFI:Lock:Pin'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح التثبيت")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح التثبيت")  
 DevSOFI:del(Virus..'SOFI:Lock:Pin'..msg.chat_id_)
 DevSOFI:srem(Virus.."SOFI:Lock:Pinpin",msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙التثبيت بالفعل مفتوح في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙التثبيت بالفعل مفتوح في المجموعه', 1, 'md')
 end end end
 end
 end
@@ -8285,178 +8285,178 @@ if text and text:match("^قفل (.*)$") and ChCheck(msg) then
 local LockText = {string.match(text, "^(قفل) (.*)$")}
 if LockText[2] == "الدردشه" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Text'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الدردشه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الدردشه")  
 DevSOFI:set(Virus..'SOFI:Lock:Text'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الدردشه بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الدردشه بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الاونلاين" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Inline'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الاونلاين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الاونلاين")  
 DevSOFI:set(Virus..'SOFI:Lock:Inline'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الاونلاين بالفعل مقفل في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الاونلاين بالفعل مقفل في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الصور" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Photo'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الصور")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الصور")  
 DevSOFI:set(Virus..'SOFI:Lock:Photo'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الصور بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الصور بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الكلايش" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Spam'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الكلايش")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الكلايش")  
 DevSOFI:set(Virus..'SOFI:Lock:Spam'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الكلايش بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الكلايش بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الدخول" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Join'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الدخول")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الدخول")  
 DevSOFI:set(Virus..'SOFI:Lock:Join'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الدخول بالفعل مقفل في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الدخول بالفعل مقفل في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الفيديو" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Videos'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الفيديو")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الفيديو")  
 DevSOFI:set(Virus..'SOFI:Lock:Videos'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الفيديو بالفعل مقفل في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الفيديو بالفعل مقفل في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "المتحركه" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Gifs'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل المتحركه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل المتحركه")  
 DevSOFI:set(Virus..'SOFI:Lock:Gifs'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المتحركه بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المتحركه بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الاغاني" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Music'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الاغاني")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الاغاني")  
 DevSOFI:set(Virus..'SOFI:Lock:Music'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الاغاني بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الاغاني بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الصوت" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Voice'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الصوت")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الصوت")  
 DevSOFI:set(Virus..'SOFI:Lock:Voice'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الصوت بالفعل مقفل في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الصوت بالفعل مقفل في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الروابط" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Links'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الروابط")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الروابط")  
 DevSOFI:set(Virus..'SOFI:Lock:Links'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الروابط بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الروابط بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "المواقع" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Location'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل المواقع")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل المواقع")  
 DevSOFI:set(Virus..'SOFI:Lock:Location'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المواقع بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المواقع بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "المعرف" or LockText[2] == "المعرفات" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Tags'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل المعرفات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل المعرفات")  
 DevSOFI:set(Virus..'SOFI:Lock:Tags'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المعرفات بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المعرفات بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الملفات" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Document'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الملفات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الملفات")  
 DevSOFI:set(Virus..'SOFI:Lock:Document'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الملفات بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الملفات بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الهاشتاك" or LockText[2] == "التاك" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Hashtak'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الهاشتاك")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الهاشتاك")  
 DevSOFI:set(Virus..'SOFI:Lock:Hashtak'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الهاشتاك بالفعل مقفل في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الهاشتاك بالفعل مقفل في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الجهات" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Contact'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الجهات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الجهات")  
 DevSOFI:set(Virus..'SOFI:Lock:Contact'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '️᥀︙الجهات بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '️☭︙الجهات بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الشبكات" then
 if not DevSOFI:get(Virus..'SOFI:Lock:WebLinks'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الشبكات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الشبكات")  
 DevSOFI:set(Virus..'SOFI:Lock:WebLinks'..msg.chat_id_,true) 
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الشبكات بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الشبكات بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "العربيه" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Arabic'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل العربيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل العربيه")  
 DevSOFI:set(Virus..'SOFI:Lock:Arabic'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العربيه بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العربيه بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الانكليزيه" then
 if not DevSOFI:get(Virus..'SOFI:Lock:English'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الانكليزيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الانكليزيه")  
 DevSOFI:set(Virus..'SOFI:Lock:English'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الانكليزيه بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الانكليزيه بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الملصقات" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Stickers'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الملصقات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الملصقات")  
 DevSOFI:set(Virus..'SOFI:Lock:Stickers'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الملصقات بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الملصقات بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الماركداون" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Markdown'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الماركداون")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الماركداون")  
 DevSOFI:set(Virus..'SOFI:Lock:Markdown'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الماركداون بالفعل مقفل في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الماركداون بالفعل مقفل في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "الاشعارات" then
 if not DevSOFI:get(Virus..'SOFI:Lock:TagServr'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل الاشعارات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل الاشعارات")  
 DevSOFI:set(Virus..'SOFI:Lock:TagServr'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الاشعارات بالفعل مقفله في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الاشعارات بالفعل مقفله في المجموعه', 1, 'md')
 end
 end
 if LockText[2] == "التوجيه" then
 if not DevSOFI:get(Virus..'SOFI:Lock:Forwards'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل التوجيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل التوجيه")  
 DevSOFI:set(Virus..'SOFI:Lock:Forwards'..msg.chat_id_,true)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙التوجيه بالفعل مقفل في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙التوجيه بالفعل مقفل في المجموعه', 1, 'md')
 end
 end
 end
@@ -8467,178 +8467,178 @@ if text and text:match("^فتح (.*)$") and ChCheck(msg) then
 local UnLockText = {string.match(text, "^(فتح) (.*)$")}
 if UnLockText[2] == "الدردشه" then
 if DevSOFI:get(Virus..'SOFI:Lock:Text'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الدردشه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الدردشه")  
 DevSOFI:del(Virus..'SOFI:Lock:Text'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الدردشه بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الدردشه بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الصور" then
 if DevSOFI:get(Virus..'SOFI:Lock:Photo'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الصور")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الصور")  
 DevSOFI:del(Virus..'SOFI:Lock:Photo'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الصور بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الصور بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الكلايش" then
 if DevSOFI:get(Virus..'SOFI:Lock:Spam'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الكلايش")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الكلايش")  
 DevSOFI:del(Virus..'SOFI:Lock:Spam'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الكلايش بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الكلايش بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الدخول" then
 if DevSOFI:get(Virus..'SOFI:Lock:Join'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الدخول")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الدخول")  
 DevSOFI:del(Virus..'SOFI:Lock:Join'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الدخول بالفعل مفتوح في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الدخول بالفعل مفتوح في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الفيديو" then
 if DevSOFI:get(Virus..'SOFI:Lock:Videos'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الفيديو")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الفيديو")  
 DevSOFI:del(Virus..'SOFI:Lock:Videos'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الفيديو بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الفيديو بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الملفات" then
 if DevSOFI:get(Virus..'SOFI:Lock:Document'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الملفات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الملفات")  
 DevSOFI:del(Virus..'SOFI:Lock:Document'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الملفات بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الملفات بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الاونلاين" then
 if DevSOFI:get(Virus..'SOFI:Lock:Inline'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الاونلاين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الاونلاين")  
 DevSOFI:del(Virus..'SOFI:Lock:Inline'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الاونلاين بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الاونلاين بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الماركداون" then
 if DevSOFI:get(Virus..'SOFI:Lock:Markdown'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الماركداون")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الماركداون")  
 DevSOFI:del(Virus..'SOFI:Lock:Markdown'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الماركداون بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الماركداون بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "المتحركه" then
 if DevSOFI:get(Virus..'SOFI:Lock:Gifs'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح المتحركه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح المتحركه")  
 DevSOFI:del(Virus..'SOFI:Lock:Gifs'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المتحركه بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المتحركه بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الاغاني" then
 if DevSOFI:get(Virus..'SOFI:Lock:Music'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الاغاني")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الاغاني")  
 DevSOFI:del(Virus..'SOFI:Lock:Music'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الاغاني بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الاغاني بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الصوت" then
 if DevSOFI:get(Virus..'SOFI:Lock:Voice'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الصوت")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الصوت")  
 DevSOFI:del(Virus..'SOFI:Lock:Voice'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الصوت بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الصوت بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الروابط" then
 if DevSOFI:get(Virus..'SOFI:Lock:Links'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الروابط")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الروابط")  
 DevSOFI:del(Virus..'SOFI:Lock:Links'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الروابط بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الروابط بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "المواقع" then
 if DevSOFI:get(Virus..'SOFI:Lock:Location'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح المواقع")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح المواقع")  
 DevSOFI:del(Virus..'SOFI:Lock:Location'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المواقع بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المواقع بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "المعرف" or UnLockText[2] == "المعرفات" then
 if DevSOFI:get(Virus..'SOFI:Lock:Tags'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح المعرفات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح المعرفات")  
 DevSOFI:del(Virus..'SOFI:Lock:Tags'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المعرفات بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المعرفات بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الهاشتاك" or UnLockText[2] == "التاك" then
 if DevSOFI:get(Virus..'SOFI:Lock:Hashtak'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الهاشتاك")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الهاشتاك")  
 DevSOFI:del(Virus..'SOFI:Lock:Hashtak'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الهاشتاك بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الهاشتاك بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الجهات" then
 if DevSOFI:get(Virus..'SOFI:Lock:Contact'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الجهات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الجهات")  
 DevSOFI:del(Virus..'SOFI:Lock:Contact'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الجهات بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الجهات بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الشبكات" then
 if DevSOFI:get(Virus..'SOFI:Lock:WebLinks'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الشبكات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الشبكات")  
 DevSOFI:del(Virus..'SOFI:Lock:WebLinks'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الشبكات بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الشبكات بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "العربيه" then
 if DevSOFI:get(Virus..'SOFI:Lock:Arabic'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح العربيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح العربيه")  
 DevSOFI:del(Virus..'SOFI:Lock:Arabic'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙العربيه بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙العربيه بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الانكليزيه" then
 if DevSOFI:get(Virus..'SOFI:Lock:English'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الانكليزيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الانكليزيه")  
 DevSOFI:del(Virus..'SOFI:Lock:English'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الانكليزيه بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الانكليزيه بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الاشعارات" then
 if DevSOFI:get(Virus..'SOFI:Lock:TagServr'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الاشعارات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الاشعارات")  
 DevSOFI:del(Virus..'SOFI:Lock:TagServr'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الاشعارات بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الاشعارات بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "الملصقات" then
 if DevSOFI:get(Virus..'SOFI:Lock:Stickers'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح الملصقات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح الملصقات")  
 DevSOFI:del(Virus..'SOFI:Lock:Stickers'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙الملصقات بالفعل مفتوحه في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙الملصقات بالفعل مفتوحه في المجموعه', 1, 'md')
 end
 end
 if UnLockText[2] == "التوجيه" then
 if DevSOFI:get(Virus..'SOFI:Lock:Forwards'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح التوجيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح التوجيه")  
 DevSOFI:del(Virus..'SOFI:Lock:Forwards'..msg.chat_id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙التوجيه بالفعل مفتوح في المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙التوجيه بالفعل مفتوح في المجموعه', 1, 'md')
 end
 end
 end
@@ -8646,32 +8646,32 @@ end
 --     Source Virus     --
 if text and text:match("^قفل التفليش$") or text and text:match("^تفعيل الحمايه القصوى$") and ChCheck(msg) then
 if not Constructor(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمنشئين فقط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمنشئين فقط', 1, 'md')
 else
 DevSOFI:set(Virus.."SOFI:Lock:Bots"..msg.chat_id_,"del") DevSOFI:hset(Virus.."SOFI:Spam:Group:User"..msg.chat_id_ ,"Spam:User","keed") 
 LockList ={'SOFI:Lock:Links','SOFI:Lock:Contact','SOFI:Lock:Forwards','SOFI:Lock:Videos','SOFI:Lock:Gifs','SOFI:Lock:EditMsgs','SOFI:Lock:Stickers','SOFI:Lock:Farsi','SOFI:Lock:Spam','SOFI:Lock:WebLinks','SOFI:Lock:Photo'}
 for i,Lock in pairs(LockList) do
 DevSOFI:set(Virus..Lock..msg.chat_id_,true)
 end
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل التفليش")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل التفليش")  
 end
 end
 if text and text:match("^فتح التفليش$") and ChCheck(msg) then
 if not Constructor(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمنشئين فقط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمنشئين فقط', 1, 'md')
 else
 DevSOFI:hdel(Virus.."SOFI:Spam:Group:User"..msg.chat_id_ ,"Spam:User") 
 UnLockList ={'SOFI:Lock:Links','SOFI:Lock:Contact','SOFI:Lock:Forwards','SOFI:Lock:Videos','SOFI:Lock:Gifs','SOFI:Lock:EditMsgs','SOFI:Lock:Stickers','SOFI:Lock:Farsi','SOFI:Lock:Spam','SOFI:Lock:WebLinks','SOFI:Lock:Photo'}
 for i,UnLock in pairs(UnLockList) do
 DevSOFI:del(Virus..UnLock..msg.chat_id_)
 end
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح التفليش")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح التفليش")  
 end
 end
 --     Source Virus     --
 if text and text:match("^قفل الكل$") and ChCheck(msg) then
 if not Constructor(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمنشئين فقط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمنشئين فقط', 1, 'md')
 else
 DevSOFI:del(Virus..'SOFI:Lock:Fshar'..msg.chat_id_) DevSOFI:del(Virus..'SOFI:Lock:Taf'..msg.chat_id_) DevSOFI:del(Virus..'SOFI:Lock:Kfr'..msg.chat_id_) 
 DevSOFI:set(Virus.."SOFI:Lock:Bots"..msg.chat_id_,"del") DevSOFI:hset(Virus.."SOFI:Spam:Group:User"..msg.chat_id_ ,"Spam:User","keed") 
@@ -8679,19 +8679,19 @@ LockList ={'SOFI:Lock:EditMsgs','SOFI:Lock:Farsi','SOFI:Lock:TagServr','SOFI:Loc
 for i,Lock in pairs(LockList) do
 DevSOFI:set(Virus..Lock..msg.chat_id_,true)
 end
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم قفل جميع الاوامر")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم قفل جميع الاوامر")  
 end
 end
 if text and text:match("^فتح الكل$") and ChCheck(msg) then
 if not Constructor(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمنشئين فقط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمنشئين فقط', 1, 'md')
 else
 DevSOFI:set(Virus..'SOFI:Lock:Fshar'..msg.chat_id_,true) DevSOFI:set(Virus..'SOFI:Lock:Taf'..msg.chat_id_,true) DevSOFI:set(Virus..'SOFI:Lock:Kfr'..msg.chat_id_,true) DevSOFI:hdel(Virus.."SOFI:Spam:Group:User"..msg.chat_id_ ,"Spam:User") 
 UnLockList ={'SOFI:Lock:EditMsgs','SOFI:Lock:Text','SOFI:Lock:Arabic','SOFI:Lock:English','SOFI:Lock:Join','SOFI:Lock:Bots','SOFI:Lock:Farsi','SOFI:Lock:FarsiBan','SOFI:Lock:TagServr','SOFI:Lock:Inline','SOFI:Lock:Photo','SOFI:Lock:Spam','SOFI:Lock:Videos','SOFI:Lock:Gifs','SOFI:Lock:Music','SOFI:Lock:Voice','SOFI:Lock:Links','SOFI:Lock:Location','SOFI:Lock:Tags','SOFI:Lock:Stickers','SOFI:Lock:Markdown','SOFI:Lock:Forwards','SOFI:Lock:Document','SOFI:Lock:Contact','SOFI:Lock:Hashtak','SOFI:Lock:WebLinks'}
 for i,UnLock in pairs(UnLockList) do
 DevSOFI:del(Virus..UnLock..msg.chat_id_)
 end
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم فتح جميع الاوامر")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم فتح جميع الاوامر")  
 end
 end
 --     Source Virus     --
@@ -8699,10 +8699,10 @@ if Admin(msg) then
 if text and (text:match("^ضع سبام (%d+)$") or text:match("^وضع سبام (%d+)$")) then
 local SetSpam = text:match("ضع سبام (%d+)$") or text:match("وضع سبام (%d+)$")
 if tonumber(SetSpam) < 40 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙اختر عدد اكبر من 40 حرف ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙اختر عدد اكبر من 40 حرف ', 1, 'md')
 else
 DevSOFI:set(Virus..'SOFI:Spam:Text'..msg.chat_id_,SetSpam)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم وضع عدد السبام ↫'..SetSpam, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم وضع عدد السبام ↫'..SetSpam, 1, 'md')
 end
 end
 end
@@ -8718,50 +8718,50 @@ if GetInfo.result.can_invite_users == true then INV = '✔️' else INV = '✖�
 if GetInfo.result.can_pin_messages == true then PIN = '✔️' else PIN = '✖️' end
 if GetInfo.result.can_restrict_members == true then BAN = '✔️' else BAN = '✖️' end
 if GetInfo.result.can_promote_members == true then VIP = '✔️' else VIP = '✖️' end 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙صلاحيات البوت هي ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙حذف الرسائل ↫ '..DEL..'\n᥀︙دعوة المستخدمين ↫ '..INV..'\n᥀︙حظر المستخدمين ↫ '..BAN..'\n᥀︙تثبيت الرسائل ↫ '..PIN..'\n᥀︙تغيير المعلومات ↫ '..EDT..'\n᥀︙اضافة مشرفين ↫ '..VIP..'\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙صلاحيات البوت هي ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙حذف الرسائل ↫ '..DEL..'\n☭︙دعوة المستخدمين ↫ '..INV..'\n☭︙حظر المستخدمين ↫ '..BAN..'\n☭︙تثبيت الرسائل ↫ '..PIN..'\n☭︙تغيير المعلومات ↫ '..EDT..'\n☭︙اضافة مشرفين ↫ '..VIP..'\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉', 1, 'md')
 end end
 if text and text:match("^تغير رد المطور (.*)$") and ChCheck(msg) then
 local Text = text:match("^تغير رد المطور (.*)$") 
 DevSOFI:set(Virus.."SOFI:SudoBot:Rd"..msg.chat_id_,Text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم تغير رد المطور الى ↫ "..Text, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم تغير رد المطور الى ↫ "..Text, 1, 'md')
 end
 if text and text:match("^تغير رد منشئ الاساسي (.*)$") and ChCheck(msg) then
 local Text = text:match("^تغير رد منشئ الاساسي (.*)$") 
 DevSOFI:set(Virus.."SOFI:BasicConstructor:Rd"..msg.chat_id_,Text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم تغير رد المنشئ الاساسي الى ↫ "..Text, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم تغير رد المنشئ الاساسي الى ↫ "..Text, 1, 'md')
 end
 if text and text:match("^تغير رد المنشئ (.*)$") and ChCheck(msg) then
 local Text = text:match("^تغير رد المنشئ (.*)$") 
 DevSOFI:set(Virus.."SOFI:Constructor:Rd"..msg.chat_id_,Text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم تغير رد المنشئ الى ↫ "..Text, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم تغير رد المنشئ الى ↫ "..Text, 1, 'md')
 end
 if text and text:match("^تغير رد المدير (.*)$") and ChCheck(msg) then
 local Text = text:match("^تغير رد المدير (.*)$") 
 DevSOFI:set(Virus.."SOFI:Managers:Rd"..msg.chat_id_,Text) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم تغير رد المدير الى ↫ "..Text, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم تغير رد المدير الى ↫ "..Text, 1, 'md')
 end
 if text and text:match("^تغير رد الادمن (.*)$") and ChCheck(msg) then
 local Text = text:match("^تغير رد الادمن (.*)$") 
 DevSOFI:set(Virus.."SOFI:Admins:Rd"..msg.chat_id_,Text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم تغير رد الادمن الى ↫ "..Text, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم تغير رد الادمن الى ↫ "..Text, 1, 'md')
 end
 if text and text:match("^تغير رد المميز (.*)$") and ChCheck(msg) then
 local Text = text:match("^تغير رد المميز (.*)$") 
 DevSOFI:set(Virus.."SOFI:VipMem:Rd"..msg.chat_id_,Text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم تغير رد المميز الى ↫ "..Text, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم تغير رد المميز الى ↫ "..Text, 1, 'md')
 end
 if text and text:match("^تغير رد المنظف (.*)$") and ChCheck(msg) then
 local Text = text:match("^تغير رد المنظف (.*)$") 
 DevSOFI:set(Virus.."SOFI:Cleaner:Rd"..msg.chat_id_,Text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم تغير رد المنظف الى ↫ "..Text, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم تغير رد المنظف الى ↫ "..Text, 1, 'md')
 end
 if text and text:match("^تغير رد العضو (.*)$") and ChCheck(msg) then
 local Text = text:match("^تغير رد العضو (.*)$") 
 DevSOFI:set(Virus.."SOFI:mem:Rd"..msg.chat_id_,Text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم تغير رد العضو الى ↫ "..Text, 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم تغير رد العضو الى ↫ "..Text, 1, 'md')
 end
 if text == "حذف ردود الرتب" or text == "مسح ردود الرتب" and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حذف جميع ردود الرتب", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حذف جميع ردود الرتب", 1, 'md')
 DevSOFI:del(Virus.."SOFI:mem:Rd"..msg.chat_id_)
 DevSOFI:del(Virus.."SOFI:Cleaner:Rd"..msg.chat_id_)
 DevSOFI:del(Virus.."SOFI:VipMem:Rd"..msg.chat_id_)
@@ -8776,7 +8776,7 @@ end
 if text == "كشف البوتات" and ChCheck(msg) then 
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(extra,result,success)
 local admins = result.members_  
-text = '᥀︙*قائمة البوتات* ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
+text = '☭︙*قائمة البوتات* ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
 local n = 0
 local t = 0
 for i=0 , #admins do 
@@ -8791,11 +8791,11 @@ ab = ' ✯'
 end
 text = text.."~ [@"..data.username_..']'..ab.."\n"
 if #admins == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتوجد بوتات هنا*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتوجد بوتات هنا*", 1, 'md')
 return false end
 if #admins == i then 
-local a = '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙*عدد البوتات هنا* ↫ '..n..'\n'
-local f = '᥀︙*عدد البوتات المرفوعه* ↫ '..t..'\n᥀︙*ملاحضه علامة الـ*✯ *تعني ان البوت ادمن في هذه المجموعه*'
+local a = '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙*عدد البوتات هنا* ↫ '..n..'\n'
+local f = '☭︙*عدد البوتات المرفوعه* ↫ '..t..'\n☭︙*ملاحضه علامة الـ*✯ *تعني ان البوت ادمن في هذه المجموعه*'
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text..a..f, 1, 'md')
 end
 end,nil)
@@ -8817,9 +8817,9 @@ end
 c = c + 1
 end     
 if (c - x) == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*لاتوجد بوتات هنا*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*لاتوجد بوتات هنا*", 1, 'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙*عدد البوتات هنا* ↫ "..c.."\n᥀︙*عدد البوتات المرفوعه* ↫ "..x.."\n᥀︙*تم طرد* ↫ "..(c - x).." *من البوتات*", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙*عدد البوتات هنا* ↫ "..c.."\n☭︙*عدد البوتات المرفوعه* ↫ "..x.."\n☭︙*تم طرد* ↫ "..(c - x).." *من البوتات*", 1, 'md')
 end 
 end,nil)  
 end 
@@ -8833,77 +8833,77 @@ local txtss = {string.match(text, "^(مسح) (.*)$")}
 if Sudo(msg) then
 if txts[2] == 'الاساسيين' or txtss[2] == 'الاساسيين' or txts[2] == 'المطورين الاساسيين' or txtss[2] == 'المطورين الاساسيين' then
 DevSOFI:del(Virus..'SOFI:SOFISudo:')
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المطورين الاساسيين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المطورين الاساسيين")  
 end
 end
 if SOFISudo(msg) then
 if txts[2] == 'الثانويين' or txtss[2] == 'الثانويين' or txts[2] == 'المطورين الثانويين' or txtss[2] == 'المطورين الثانويين' then
 DevSOFI:del(Virus..'SOFI:SecondSudo:')
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المطورين الثانويين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المطورين الثانويين")  
 end
 end
 if SecondSudo(msg) then 
 if txts[2] == 'المطورين' or txtss[2] == 'المطورين' then
 DevSOFI:del(Virus..'SOFI:SudoBot:')
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المطورين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المطورين")  
 end
 if txts[2] == 'قائمه العام' or txtss[2] == 'قائمه العام' then
 DevSOFI:del(Virus..'SOFI:BanAll:')
 DevSOFI:del(Virus..'SOFI:MuteAll:')
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف قائمة العام")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف قائمة العام")  
 end
 end
 if SudoBot(msg) then
 if txts[2] == 'المالكين' or txtss[2] == 'المالكين' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المالكين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المالكين")  
 DevSOFI:del(Virus..'SOFI:Owner:'..msg.chat_id_)
 end
 end
 if Owner(msg) then
 if txts[2] == 'المنشئين الاساسيين' or txtss[2] == 'المنشئين الاساسيين' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المنشئين الاساسيين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المنشئين الاساسيين")  
 DevSOFI:del(Virus..'SOFI:BasicConstructor:'..msg.chat_id_)
 end
 end
 if BasicConstructor(msg) then
 if txts[2] == 'المنشئين' or txtss[2] == 'المنشئين' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المنشئين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المنشئين")  
 DevSOFI:del(Virus..'SOFI:Constructor:'..msg.chat_id_)
 end end
 if Constructor(msg) then
 if txts[2] == 'المدراء' or txtss[2] == 'المدراء' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المدراء")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المدراء")  
 DevSOFI:del(Virus..'SOFI:Managers:'..msg.chat_id_)
 end 
 if txts[2] == 'المنظفين' or txtss[2] == 'المنظفين' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المنظفين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المنظفين")  
 DevSOFI:del(Virus..'SOFI:Cleaner:'..msg.chat_id_)
 end end
 if Manager(msg) then
 if txts[2] == 'الادمنيه' or txtss[2] == 'الادمنيه' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف الادمنيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف الادمنيه")  
 DevSOFI:del(Virus..'SOFI:Admins:'..msg.chat_id_)
 end
 end
 if txts[2] == 'قوانين' or txtss[2] == 'قوانين' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف القوانين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف القوانين")  
 DevSOFI:del(Virus..'SOFI:rules'..msg.chat_id_)
 end
 if txts[2] == 'المطايه' or txtss[2] == 'المطايه' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المطايه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المطايه")  
 DevSOFI:del(Virus..'User:Donky:'..msg.chat_id_)
 end
 if txts[2] == 'الرابط' or txtss[2] == 'الرابط' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف رابط المجموعه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف رابط المجموعه")  
 DevSOFI:del(Virus.."SOFI:Groups:Links"..msg.chat_id_)
 end
 if txts[2] == 'المميزين' or txtss[2] == 'المميزين' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المميزين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المميزين")  
 DevSOFI:del(Virus..'SOFI:VipMem:'..msg.chat_id_)
 end
 if txts[2] == 'المكتومين' or txtss[2] == 'المكتومين' then
 DevSOFI:del(Virus..'SOFI:Muted:'..msg.chat_id_)
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المكتومين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المكتومين")  
 end
 if txts[2] == 'المقيدين' or txtss[2] == 'المقيدين' then     
 local List = DevSOFI:smembers(Virus..'SOFI:Tkeed:'..msg.chat_id_)
@@ -8911,11 +8911,11 @@ for k,v in pairs(List) do
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..v.."&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True") 
 DevSOFI:srem(Virus..'SOFI:Tkeed:'..msg.chat_id_, v)
 end 
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المقيدين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المقيدين")  
 end
 if SOFIConstructor(msg) then
 if txts[2] == 'قائمه المنع' or txtss[2] == 'قائمه المنع' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف قائمة المنع")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف قائمة المنع")  
 DevSOFI:del(Virus..'SOFI:Filters:'..msg.chat_id_)
 DevSOFI:del(Virus..'SOFI:Filters:'..msg.chat_id_)
 DevSOFI:del(Virus.."SOFI:FilterAnimation"..msg.chat_id_)
@@ -8923,7 +8923,7 @@ DevSOFI:del(Virus.."SOFI:FilterPhoto"..msg.chat_id_)
 DevSOFI:del(Virus.."SOFI:FilterSteckr"..msg.chat_id_)
 end
 if txts[2] == 'قوائم المنع' or txtss[2] == 'قوائم المنع' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف قوائم المنع")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف قوائم المنع")  
 DevSOFI:del(Virus..'SOFI:Filters:'..msg.chat_id_)
 DevSOFI:del(Virus.."SOFI:FilterAnimation"..msg.chat_id_)
 DevSOFI:del(Virus.."SOFI:FilterPhoto"..msg.chat_id_)
@@ -8931,15 +8931,15 @@ DevSOFI:del(Virus.."SOFI:FilterSteckr"..msg.chat_id_)
 end
 if txts[2] == 'قائمه منع المتحركات' or txtss[2] == 'قائمه منع المتحركات' then     
 DevSOFI:del(Virus.."SOFI:FilterAnimation"..msg.chat_id_)
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف قائمة منع المتحركات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف قائمة منع المتحركات")  
 end
 if txts[2] == 'قائمه منع الصور' or txtss[2] == 'قائمه منع الصور' then     
 DevSOFI:del(Virus.."SOFI:FilterPhoto"..msg.chat_id_)
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف قائمة منع الصور")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف قائمة منع الصور")  
 end
 if txts[2] == 'قائمه منع الملصقات' or txtss[2] == 'قائمه منع الملصقات' then     
 DevSOFI:del(Virus.."SOFI:FilterSteckr"..msg.chat_id_)
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف قائمة منع الملصقات")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف قائمة منع الملصقات")  
 end
 end
 end
@@ -8947,15 +8947,15 @@ end
 --     Source Virus     --
 if text and text:match("^حذف القوائم$") and ChCheck(msg) or text and text:match("^مسح القوائم$") and ChCheck(msg) then
 if not BasicConstructor(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمنشئ الاساسي فقط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمنشئ الاساسي فقط', 1, 'md')
 else
 DevSOFI:del(Virus..'SOFI:Ban:'..msg.chat_id_) DevSOFI:del(Virus..'SOFI:Admins:'..msg.chat_id_) DevSOFI:del(Virus..'User:Donky:'..msg.chat_id_) DevSOFI:del(Virus..'SOFI:VipMem:'..msg.chat_id_) DevSOFI:del(Virus..'SOFI:Filters:'..msg.chat_id_) DevSOFI:del(Virus..'SOFI:Muted:'..msg.chat_id_)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حذف ↫ ❨ قائمة المنع • المحظورين • المكتومين • الادمنيه • المميزين • المطايه ❩ بنجاح \n ✓", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حذف ↫ ❨ قائمة المنع • المحظورين • المكتومين • الادمنيه • المميزين • المطايه ❩ بنجاح \n ✓", 1, 'md')
 end end
 --     Source Virus     --
 if text and text:match("^حذف جميع الرتب$") and ChCheck(msg) or text and text:match("^مسح جميع الرتب$") and ChCheck(msg) or text and text:match("^تنزيل جميع الرتب$") and ChCheck(msg) then
 if not SOFIConstructor(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمالكين فقط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمالكين فقط', 1, 'md')
 else
 local basicconstructor = DevSOFI:smembers(Virus..'SOFI:BasicConstructor:'..msg.chat_id_)
 local constructor = DevSOFI:smembers(Virus..'SOFI:Constructor:'..msg.chat_id_)
@@ -8976,9 +8976,9 @@ DevSOFI:del(Virus..'SOFI:Managers:'..msg.chat_id_)
 DevSOFI:del(Virus..'SOFI:Admins:'..msg.chat_id_)
 DevSOFI:del(Virus..'SOFI:VipMem:'..msg.chat_id_)
 DevSOFI:del(Virus..'User:Donky:'..msg.chat_id_)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حذف جميع الرتب التاليه ↫ ❨ "..basicconstructort..constructort..Managerst..adminst..vipmemt..donkyt.." ❩ بنجاح \n ✓", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حذف جميع الرتب التاليه ↫ ❨ "..basicconstructort..constructort..Managerst..adminst..vipmemt..donkyt.." ❩ بنجاح \n ✓", 1, 'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لاتوجد رتب هنا", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لاتوجد رتب هنا", 1, 'md')
 end 
 end 
 end
@@ -9044,40 +9044,40 @@ if DevSOFI:get(Virus..'SOFI:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوح
 if DevSOFI:get(Virus..'SOFI:Lock:Farsi'..msg.chat_id_) then lock_farsi = 'مقفله' else lock_farsi = 'مفتوحه' end
 local Flood_Num = DevSOFI:hget(Virus.."SOFI:Spam:Group:User"..msg.chat_id_,"Num:Spam") or 5
 --     Source Virus     --
-local TXTE = "᥀︙اعدادات المجموعه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
-.."᥀︙الروابط ↫ "..mute_links.."\n"
-.."᥀︙المعرف ↫ "..lock_tag.."\n"
-.."᥀︙البوتات ↫ "..lock_bots.."\n"
-.."᥀︙المتحركه ↫ "..mute_gifs.."\n"
-.."᥀︙الملصقات ↫ "..lock_sticker.."\n"
-.."᥀︙الملفات ↫ "..lock_file.."\n"
-.."᥀︙الصور ↫ "..mute_photo.."\n"
-.."᥀︙الفيديو ↫ "..mute_video.."\n"
-.."᥀︙الاونلاين ↫ "..mute_in.."\n"
-.."᥀︙الدردشه ↫ "..mute_text.."\n"
-.."᥀︙التوجيه ↫ "..lock_forward.."\n"
-.."᥀︙الاغاني ↫ "..mute_music.."\n"
-.."᥀︙الصوت ↫ "..mute_voice.."\n"
-.."᥀︙الجهات ↫ "..lock_contact.."\n"
-.."᥀︙الماركداون ↫ "..markdown.."\n"
-.."᥀︙الهاشتاك ↫ "..lock_htag.."\n"
-.."᥀︙التعديل ↫ "..mute_edit.."\n"
-.."᥀︙التثبيت ↫ "..lock_pin.."\n"
-.."᥀︙الاشعارات ↫ "..lock_tgservice.."\n"
-.."᥀︙الكلايش ↫ "..lock_spam.."\n"
-.."᥀︙الدخول ↫ "..lock_Join.."\n"
-.."᥀︙الشبكات ↫ "..lock_wp.."\n"
-.."᥀︙المواقع ↫ "..lock_location.."\n"
-.."᥀︙الفشار ↫ "..lock_fshar.."\n"
-.."᥀︙الكفر ↫ "..lock_kaf.."\n"
-.."᥀︙الطائفيه ↫ "..lock_taf.."\n"
-.."᥀︙العربيه ↫ "..lock_arabic.."\n"
-.."᥀︙الانكليزيه ↫ "..lock_english.."\n"
-.."᥀︙الفارسيه ↫ "..lock_farsi.."\n"
-.."᥀︙التكرار ↫ "..flood.."\n"
-.."᥀︙عدد التكرار ↫ "..Flood_Num.."\n"
-.."᥀︙عدد السبام ↫ "..spam_c.."\n"
-.."┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙[Source Channel](https://t.me/L9L9L)\n"
+local TXTE = "☭︙اعدادات المجموعه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+.."☭︙الروابط ↫ "..mute_links.."\n"
+.."☭︙المعرف ↫ "..lock_tag.."\n"
+.."☭︙البوتات ↫ "..lock_bots.."\n"
+.."☭︙المتحركه ↫ "..mute_gifs.."\n"
+.."☭︙الملصقات ↫ "..lock_sticker.."\n"
+.."☭︙الملفات ↫ "..lock_file.."\n"
+.."☭︙الصور ↫ "..mute_photo.."\n"
+.."☭︙الفيديو ↫ "..mute_video.."\n"
+.."☭︙الاونلاين ↫ "..mute_in.."\n"
+.."☭︙الدردشه ↫ "..mute_text.."\n"
+.."☭︙التوجيه ↫ "..lock_forward.."\n"
+.."☭︙الاغاني ↫ "..mute_music.."\n"
+.."☭︙الصوت ↫ "..mute_voice.."\n"
+.."☭︙الجهات ↫ "..lock_contact.."\n"
+.."☭︙الماركداون ↫ "..markdown.."\n"
+.."☭︙الهاشتاك ↫ "..lock_htag.."\n"
+.."☭︙التعديل ↫ "..mute_edit.."\n"
+.."☭︙التثبيت ↫ "..lock_pin.."\n"
+.."☭︙الاشعارات ↫ "..lock_tgservice.."\n"
+.."☭︙الكلايش ↫ "..lock_spam.."\n"
+.."☭︙الدخول ↫ "..lock_Join.."\n"
+.."☭︙الشبكات ↫ "..lock_wp.."\n"
+.."☭︙المواقع ↫ "..lock_location.."\n"
+.."☭︙الفشار ↫ "..lock_fshar.."\n"
+.."☭︙الكفر ↫ "..lock_kaf.."\n"
+.."☭︙الطائفيه ↫ "..lock_taf.."\n"
+.."☭︙العربيه ↫ "..lock_arabic.."\n"
+.."☭︙الانكليزيه ↫ "..lock_english.."\n"
+.."☭︙الفارسيه ↫ "..lock_farsi.."\n"
+.."☭︙التكرار ↫ "..flood.."\n"
+.."☭︙عدد التكرار ↫ "..Flood_Num.."\n"
+.."☭︙عدد السبام ↫ "..spam_c.."\n"
+.."┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙[Source Channel](https://t.me/V_IRUS1)\n"
 Dev_SOFI(msg.chat_id_, msg.id_, 1, TXTE, 1, 'md')
 end
 end
@@ -9088,12 +9088,12 @@ Dev_SOFI(msg.chat_id_,0, 1, txt[2], 1, 'md')
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 end
 if text == "تفعيل انطق" and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل ميزة انطق'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل ميزة انطق'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Antk:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل انطق" and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل ميزة انطق'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل ميزة انطق'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Antk:SOFI'..msg.chat_id_,true)  
 end
@@ -9109,17 +9109,17 @@ end
 --     Source Virus     --
 if DevSOFI:get(Virus..'SOFI:setrules'..msg.chat_id_..':'..msg.sender_user_id_) then 
 if text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء حفظ قوانين المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء حفظ قوانين المجموعه', 1, 'md')
 DevSOFI:del(Virus..'SOFI:setrules'..msg.chat_id_..':'..msg.sender_user_id_)
 return false  
 end 
 DevSOFI:del(Virus..'SOFI:setrules'..msg.chat_id_..':'..msg.sender_user_id_)
 DevSOFI:set(Virus..'SOFI:rules'..msg.chat_id_,text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حفظ قوانين المجموعه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حفظ قوانين المجموعه', 1, 'md')
 return false   
 end
 if text and text:match("^ضع قوانين$") and ChCheck(msg) or text and text:match("^وضع قوانين$") and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ارسل لي القوانين الان', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ارسل لي القوانين الان', 1, 'md')
 DevSOFI:set(Virus..'SOFI:setrules'..msg.chat_id_..':'..msg.sender_user_id_,true)
 end
 end
@@ -9131,33 +9131,33 @@ end
 if text == 'رقمي' and ChCheck(msg) then
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(extra,result,success)
 if result.phone_number_  then
-MyNumber = "᥀︙رقمك ↫ +"..result.phone_number_
+MyNumber = "☭︙رقمك ↫ +"..result.phone_number_
 else
-MyNumber = "᥀︙رقمك موضوع لجهات اتصالك فقط"
+MyNumber = "☭︙رقمك موضوع لجهات اتصالك فقط"
 end
 send(msg.chat_id_, msg.id_,MyNumber)
 end,nil)
 end
 --     Source Virus     --
 if text == "تفعيل الزخرفه" and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الزخرفه بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الزخرفه بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Zrf:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل الزخرفه" and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الزخرفه بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الزخرفه بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Zrf:SOFI'..msg.chat_id_,true)  
 end
 if DevSOFI:get(Virus..'Zrf:SOFI'..msg.chat_id_..msg.sender_user_id_) then 
 if text and text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء امر الزخرفه', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء امر الزخرفه', 1, 'md')
 DevSOFI:del(Virus..'Zrf:SOFI'..msg.chat_id_..msg.sender_user_id_)
 return false  
 end 
 UrlZrf = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(text)) 
 Zrf = JSON.decode(UrlZrf) 
-t = "᥀︙قائمة الزخرفه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+t = "☭︙قائمة الزخرفه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 i = 0
 for k,v in pairs(Zrf.ok) do
 i = i + 1
@@ -9170,7 +9170,7 @@ end
 if not DevSOFI:get(Virus..'SOFI:Zrf:SOFI'..msg.chat_id_) then
 if text == 'زخرفه' and ChCheck(msg) or text == 'الزخرفه' and ChCheck(msg) then  
 DevSOFI:setex(Virus.."Zrf:SOFI"..msg.chat_id_..msg.sender_user_id_,300,true)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ارسل لي الكلمه لزخرفتها \nيمكنك الزخرفة باللغه { en } ~ { ar } ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ارسل لي الكلمه لزخرفتها \nيمكنك الزخرفة باللغه { en } ~ { ar } ', 1, 'md')
 end
 end
 if not DevSOFI:get(Virus..'SOFI:Zrf:SOFI'..msg.chat_id_) then
@@ -9178,7 +9178,7 @@ if text and text:match("^زخرفه (.*)$") and ChCheck(msg) or text and text:ma
 local TextZrf = text:match("^زخرفه (.*)$") or text:match("^زخرف (.*)$") 
 UrlZrf = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(TextZrf)) 
 Zrf = JSON.decode(UrlZrf) 
-t = "᥀︙قائمة الزخرفه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+t = "☭︙قائمة الزخرفه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 i = 0
 for k,v in pairs(Zrf.ok) do
 i = i + 1
@@ -9189,12 +9189,12 @@ end
 end
 --     Source Virus     --
 if text == "تفعيل الابراج" and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الابراج بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الابراج بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Brg:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل الابراج" and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الابراج بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الابراج بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Brg:SOFI'..msg.chat_id_,true)  
 end
@@ -9209,142 +9209,142 @@ end
 end
 --     Source Virus     --
 if text and (text == "تفعيل اوامر النسب" or text == "تفعيل نسبه الحب" or text == "تفعيل نسبه الكره" or text == "تفعيل نسبه الرجوله" or text == "تفعيل نسبه الانوثه" or text == "تفعيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل اوامر النسب'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل اوامر النسب'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Nsba:SOFI'..msg.chat_id_) 
 end
 if text and (text == "تعطيل اوامر النسب" or text == "تعطيل نسبه الحب" or text == "تعطيل نسبه الكره" or text == "تعطيل نسبه الرجوله" or text == "تعطيل نسبه الانوثه" or text == "تعطيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل اوامر النسب'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل اوامر النسب'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Nsba:SOFI'..msg.chat_id_,true)  
 end
 if not DevSOFI:get(Virus..'SOFI:Nsba:SOFI'..msg.chat_id_) then
 if text == "نسبه الحب" and ChCheck(msg) or text == "نسبة الحب" and ChCheck(msg) then
 DevSOFI:set(Virus..'LoveNsba:SOFI'..msg.chat_id_..msg.sender_user_id_,true) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙قم بارسل اسمين لحساب نسبة الحب بينهما كمثال ↫ جاك و روز', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙قم بارسل اسمين لحساب نسبة الحب بينهما كمثال ↫ جاك و روز', 1, 'md')
 end
 end
 if text and text ~= "نسبه الحب" and text ~= "نسبة الحب" and DevSOFI:get(Virus..'LoveNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء امر نسبة الحب ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء امر نسبة الحب ', 1, 'md')
 DevSOFI:del(Virus..'LoveNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end 
 SOFI = math.random(0,100);
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙نسبة الحب بين '..text..' هي : '..SOFI..'%', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙نسبة الحب بين '..text..' هي : '..SOFI..'%', 1, 'md')
 DevSOFI:del(Virus..'LoveNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end
 if not DevSOFI:get(Virus..'SOFI:Nsba:SOFI'..msg.chat_id_) then
-if text == "نسبه الخيانه" and ChCheck(msg) or text == "نسبة الخيانه" and ChCheck(msg) or text == "↫ نسبه الخيانه ᥀" and ChCheck(msg) then
+if text == "نسبه الخيانه" and ChCheck(msg) or text == "نسبة الخيانه" and ChCheck(msg) or text == "↫ نسبه الخيانه ☭" and ChCheck(msg) then
 DevSOFI:set(Virus..'RyNsba:SOFI'..msg.chat_id_..msg.sender_user_id_,true)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙قم بارسل اسمين لحساب نسبة الخيانه بينهما كمثال ↫ جاك و روز', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙قم بارسل اسمين لحساب نسبة الخيانه بينهما كمثال ↫ جاك و روز', 1, 'md')
 end
 end
-if text and text ~= "نسبه الخيانه" and text ~= "نسبة الخيانه" and text ~= "↫ نسبه الخيانه ᥀" and DevSOFI:get(Virus..'RyNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
+if text and text ~= "نسبه الخيانه" and text ~= "نسبة الخيانه" and text ~= "↫ نسبه الخيانه ☭" and DevSOFI:get(Virus..'RyNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء امر نسبة الخيانه ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء امر نسبة الخيانه ', 1, 'md')
 DevSOFI:del(Virus..'RyNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end 
 SOFI = math.random(0,100);
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙نسبة الخيانه بين '..text..' هي : '..SOFI..'%', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙نسبة الخيانه بين '..text..' هي : '..SOFI..'%', 1, 'md')
 DevSOFI:del(Virus..'RyNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end
 if not DevSOFI:get(Virus..'SOFI:Nsba:SOFI'..msg.chat_id_) then
-if text and (text == "نسبه الجمال" or text == "نسبة الجمال" or text == "↫ نسبه الجمال ᥀") and ChCheck(msg) then
+if text and (text == "نسبه الجمال" or text == "نسبة الجمال" or text == "↫ نسبه الجمال ☭") and ChCheck(msg) then
 DevSOFI:set(Virus..'JNsba:SOFI'..msg.chat_id_..msg.sender_user_id_,true) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙قم بارسل اسم الشخص لقياس نسبة جماله كمثال ↫ جاك او روز', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙قم بارسل اسم الشخص لقياس نسبة جماله كمثال ↫ جاك او روز', 1, 'md')
 end
 end
-if text and text ~= "نسبه الجمال" and text ~= "نسبة الجمال" and text ~= "↫ نسبه الجمال ᥀" and DevSOFI:get(Virus..'JNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
+if text and text ~= "نسبه الجمال" and text ~= "نسبة الجمال" and text ~= "↫ نسبه الجمال ☭" and DevSOFI:get(Virus..'JNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء امر نسبة الجمال ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء امر نسبة الجمال ', 1, 'md')
 DevSOFI:del(Virus..'JNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end 
 SOFI = math.random(0,100);
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙نسبة جمال '..text..' هي : '..SOFI..'%', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙نسبة جمال '..text..' هي : '..SOFI..'%', 1, 'md')
 DevSOFI:del(Virus..'JNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end
 if not DevSOFI:get(Virus..'SOFI:Nsba:SOFI'..msg.chat_id_) then
-if text == "نسبه الكره" and ChCheck(msg) or text == "نسبة الكره" and ChCheck(msg) or text == "↫ نسبه الكره ᥀" and ChCheck(msg) then
+if text == "نسبه الكره" and ChCheck(msg) or text == "نسبة الكره" and ChCheck(msg) or text == "↫ نسبه الكره ☭" and ChCheck(msg) then
 DevSOFI:set(Virus..'HataNsba:SOFI'..msg.chat_id_..msg.sender_user_id_,true) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙قم بارسل اسمين لحساب نسبة الكره بينهما كمثال ↫ جاك و روز', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙قم بارسل اسمين لحساب نسبة الكره بينهما كمثال ↫ جاك و روز', 1, 'md')
 end
 end
-if text and text ~= "نسبه الكره" and text ~= "نسبة الكره" and text ~= "↫ نسبه الكره ᥀" and DevSOFI:get(Virus..'HataNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
+if text and text ~= "نسبه الكره" and text ~= "نسبة الكره" and text ~= "↫ نسبه الكره ☭" and DevSOFI:get(Virus..'HataNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء امر نسبة الكره ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء امر نسبة الكره ', 1, 'md')
 DevSOFI:del(Virus..'HataNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end 
 SOFI = math.random(0,100);
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙نسبة الكره بين '..text..' هي : '..SOFI..'%', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙نسبة الكره بين '..text..' هي : '..SOFI..'%', 1, 'md')
 DevSOFI:del(Virus..'HataNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end
 if not DevSOFI:get(Virus..'SOFI:Nsba:SOFI'..msg.chat_id_) then
-if text and (text == "نسبه الرجوله" or text == "نسبة الرجوله" or text == "نسبه رجوله" or text == "نسبة رجوله" or text == "↫ نسبه الرجوله ᥀") and ChCheck(msg) then
+if text and (text == "نسبه الرجوله" or text == "نسبة الرجوله" or text == "نسبه رجوله" or text == "نسبة رجوله" or text == "↫ نسبه الرجوله ☭") and ChCheck(msg) then
 DevSOFI:set(Virus..'RjolaNsba:SOFI'..msg.chat_id_..msg.sender_user_id_,true) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙قم بارسل اسم الشخص لقياس نسبة رجولته كمثال ↫ جاك', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙قم بارسل اسم الشخص لقياس نسبة رجولته كمثال ↫ جاك', 1, 'md')
 end
 end
-if text and text ~= "نسبه الرجوله" and text ~= "نسبة الرجوله" and text ~= "نسبه رجوله" and text ~= "نسبة رجوله" and text ~= "↫ نسبه الرجوله ᥀" and DevSOFI:get(Virus..'RjolaNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
+if text and text ~= "نسبه الرجوله" and text ~= "نسبة الرجوله" and text ~= "نسبه رجوله" and text ~= "نسبة رجوله" and text ~= "↫ نسبه الرجوله ☭" and DevSOFI:get(Virus..'RjolaNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء امر نسبة الرجوله ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء امر نسبة الرجوله ', 1, 'md')
 DevSOFI:del(Virus..'RjolaNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end 
 SOFI = math.random(0,100);
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙نسبة رجولة '..text..' هي : '..SOFI..'%', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙نسبة رجولة '..text..' هي : '..SOFI..'%', 1, 'md')
 DevSOFI:del(Virus..'RjolaNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end
 if not DevSOFI:get(Virus..'SOFI:Nsba:SOFI'..msg.chat_id_) then
-if text and (text == "نسبه الانوثه" or text == "نسبة الانوثه" or text == "نسبه انوثه" or text == "نسبة انوثه" or text == "↫ نسبه الانوثه ᥀") and ChCheck(msg) then
+if text and (text == "نسبه الانوثه" or text == "نسبة الانوثه" or text == "نسبه انوثه" or text == "نسبة انوثه" or text == "↫ نسبه الانوثه ☭") and ChCheck(msg) then
 DevSOFI:set(Virus..'AnothaNsba:SOFI'..msg.chat_id_..msg.sender_user_id_,true) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙قم بارسل اسم الشخص لقياس نسبة انوثته كمثال ↫ روز', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙قم بارسل اسم الشخص لقياس نسبة انوثته كمثال ↫ روز', 1, 'md')
 end
 end
-if text and text ~= "نسبه الانوثه" and text ~= "نسبة الانوثه" and text ~= "نسبه انوثه" and text ~= "نسبة انوثه" and text ~= "↫ نسبه الانوثه ᥀" and DevSOFI:get(Virus..'AnothaNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
+if text and text ~= "نسبه الانوثه" and text ~= "نسبة الانوثه" and text ~= "نسبه انوثه" and text ~= "نسبة انوثه" and text ~= "↫ نسبه الانوثه ☭" and DevSOFI:get(Virus..'AnothaNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء امر نسبة الانوثه ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء امر نسبة الانوثه ', 1, 'md')
 DevSOFI:del(Virus..'AnothaNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end 
 SOFI = math.random(0,100);
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙نسبة انوثة '..text..' هي : '..SOFI..'%', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙نسبة انوثة '..text..' هي : '..SOFI..'%', 1, 'md')
 DevSOFI:del(Virus..'AnothaNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end
 if not DevSOFI:get(Virus..'SOFI:Nsba:SOFI'..msg.chat_id_) then
-if text and (text == "نسبه الغباء" or text == "نسبة الغباء" or text == "↫ نسبه الغباء ᥀") and ChCheck(msg) then
+if text and (text == "نسبه الغباء" or text == "نسبة الغباء" or text == "↫ نسبه الغباء ☭") and ChCheck(msg) then
 DevSOFI:set(Virus..'StupidNsba:SOFI'..msg.chat_id_..msg.sender_user_id_,true) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙قم بارسل اسم الشخص لقياس نسبة غبائه كمثال ↫ جاك او روز', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙قم بارسل اسم الشخص لقياس نسبة غبائه كمثال ↫ جاك او روز', 1, 'md')
 end
 end
-if text and text ~= "نسبه الغباء" and text ~= "نسبة الغباء" and text ~= "↫ نسبه الغباء ᥀" and DevSOFI:get(Virus..'StupidNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
+if text and text ~= "نسبه الغباء" and text ~= "نسبة الغباء" and text ~= "↫ نسبه الغباء ☭" and DevSOFI:get(Virus..'StupidNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم الغاء امر نسبة الغباء ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم الغاء امر نسبة الغباء ', 1, 'md')
 DevSOFI:del(Virus..'StupidNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end 
 SOFI = math.random(0,100);
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙نسبة غباء '..text..' هي : '..SOFI..'%', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙نسبة غباء '..text..' هي : '..SOFI..'%', 1, 'md')
 DevSOFI:del(Virus..'StupidNsba:SOFI'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end
 --     Source Virus     --
 if text == "تفعيل حساب العمر" and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل حساب العمر'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل حساب العمر'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Age:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل حساب العمر" and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل حساب العمر'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل حساب العمر'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Age:SOFI'..msg.chat_id_,true)  
 end
@@ -9359,12 +9359,12 @@ end
 end
 --     Source Virus     --
 if text == "تفعيل معاني الاسماء" and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل معاني الاسماء'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل معاني الاسماء'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Mean:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل معاني الاسماء" and Manager(msg) and ChCheck(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل معاني الاسماء'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل معاني الاسماء'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Mean:SOFI'..msg.chat_id_,true)  
 end
@@ -9379,189 +9379,189 @@ end
 end
 --     Source Virus     --
 if text == "تفعيل متحركه" and Manager(msg) and SourceCh(msg) or text == "تفعيل المتحركه" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل المتحركه'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل المتحركه'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:gif:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل متحركه" and Manager(msg) and SourceCh(msg) or text == "تعطيل المتحركه" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل المتحركه'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل المتحركه'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:gif:SOFI'..msg.chat_id_,true)  
 end
-if text and (text == "متحركه" or text == "↫ متحركه ᥀") and not DevSOFI:get(Virus..'SOFI:gif:SOFI'..msg.chat_id_) and SourceCh(msg) then
+if text and (text == "متحركه" or text == "↫ متحركه ☭") and not DevSOFI:get(Virus..'SOFI:gif:SOFI'..msg.chat_id_) and SourceCh(msg) then
 SOFI = math.random(2,1075); 
-local Text ='*᥀︙تم اختيار المتحركه لك*'
+local Text ='*☭︙تم اختيار المتحركه لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '᥀ Virus Team .',url="t.me/L9L9L"}},
+{{text = '☭ Virus Team .',url="t.me/V_IRUS1"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/GifVirus/'..SOFI..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --     Source Virus     --
 if text == "تفعيل ميمز" and Manager(msg) and SourceCh(msg) or text == "تفعيل الميمز" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الميمز'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الميمز'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:memz:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل ميمز" and Manager(msg) and SourceCh(msg) or text == "تعطيل الميمز" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الميمز'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الميمز'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:memz:SOFI'..msg.chat_id_,true)  
 end
-if text and (text == "ميمز" or text == "↫ ميمز ᥀") and not DevSOFI:get(Virus..'SOFI:memz:SOFI'..msg.chat_id_) and SourceCh(msg) then
+if text and (text == "ميمز" or text == "↫ ميمز ☭") and not DevSOFI:get(Virus..'SOFI:memz:SOFI'..msg.chat_id_) and SourceCh(msg) then
 SOFI = math.random(2,1201); 
-local Text ='*᥀︙تم اختيار مقطع الميمز لك*'
+local Text ='*☭︙تم اختيار مقطع الميمز لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '᥀ Virus Team .',url="t.me/L9L9L"}},
+{{text = '☭ Virus Team .',url="t.me/V_IRUS1"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/MemzVirus/'..SOFI..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --     Source Virus     --
 if text == "تفعيل غنيلي" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل غنيلي'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل غنيلي'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Audios:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل غنيلي" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل غنيلي'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل غنيلي'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Audios:SOFI'..msg.chat_id_,true)  
 end
-if text and (text == "غنيلي" or text == "↫ غنيلي ᥀") and not DevSOFI:get(Virus..'SOFI:Audios:SOFI'..msg.chat_id_) and SourceCh(msg) then
+if text and (text == "غنيلي" or text == "↫ غنيلي ☭") and not DevSOFI:get(Virus..'SOFI:Audios:SOFI'..msg.chat_id_) and SourceCh(msg) then
 SOFI = math.random(4,2824); 
-local Text ='*᥀︙تم اختيار المقطع الصوتي لك*'
+local Text ='*☭︙تم اختيار المقطع الصوتي لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '᥀ Virus Team .',url="t.me/L9L9L"}},
+{{text = '☭ Virus Team .',url="t.me/V_IRUS1"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/AudiosVirus/'..SOFI..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --     Source Virus     --
 if text == "تفعيل الاغاني" and Manager(msg) and SourceCh(msg) or text == "تفعيل اغنيه" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الاغاني'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الاغاني'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:mp3:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل الاغاني" and Manager(msg) and SourceCh(msg) or text == "تعطيل اغنيه" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الاغاني'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الاغاني'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:mp3:SOFI'..msg.chat_id_,true)  
 end
-if text and (text == "اغنيه" or text == "↫ اغنيه ᥀" or text == "اغاني") and not DevSOFI:get(Virus..'SOFI:mp3:SOFI'..msg.chat_id_) and SourceCh(msg) then
+if text and (text == "اغنيه" or text == "↫ اغنيه ☭" or text == "اغاني") and not DevSOFI:get(Virus..'SOFI:mp3:SOFI'..msg.chat_id_) and SourceCh(msg) then
 SOFI = math.random(2,1167); 
-local Text ='*᥀︙تم اختيار الاغنيه لك*'
+local Text ='*☭︙تم اختيار الاغنيه لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '᥀ Virus Team .',url="t.me/L9L9L"}},
+{{text = '☭ Virus Team .',url="t.me/V_IRUS1"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/VirusMp3/'..SOFI..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --     Source Virus     --
 if text == "تفعيل ريمكس" and Manager(msg) and SourceCh(msg) or text == "تفعيل الريمكس" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الريمكس'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الريمكس'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Remix:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل ريمكس" and Manager(msg) and SourceCh(msg) or text == "تعطيل الريمكس" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الريمكس'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الريمكس'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Remix:SOFI'..msg.chat_id_,true)  
 end
-if text and (text == "ريمكس" or text == "↫ ريمكس ᥀") and not DevSOFI:get(Virus..'SOFI:Remix:SOFI'..msg.chat_id_) and SourceCh(msg) then
+if text and (text == "ريمكس" or text == "↫ ريمكس ☭") and not DevSOFI:get(Virus..'SOFI:Remix:SOFI'..msg.chat_id_) and SourceCh(msg) then
 SOFI = math.random(2,612); 
-local Text ='*᥀︙تم اختيار الريمكس لك*'
+local Text ='*☭︙تم اختيار الريمكس لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '᥀ Virus Team .',url="t.me/L9L9L"}},
+{{text = '☭ Virus Team .',url="t.me/V_IRUS1"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/RemixVirus/'..SOFI..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --     Source Virus     --
 if text == "تفعيل صوره" and Manager(msg) and SourceCh(msg) or text == "تفعيل الصوره" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الصوره'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الصوره'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Photo:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل صوره" and Manager(msg) and SourceCh(msg) or text == "تعطيل الصوره" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الصوره'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الصوره'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Photo:SOFI'..msg.chat_id_,true)  
 end
-if text and (text == "صوره" or text == "↫ صوره ᥀") and not DevSOFI:get(Virus..'SOFI:Photo:SOFI'..msg.chat_id_) and SourceCh(msg) then
+if text and (text == "صوره" or text == "↫ صوره ☭") and not DevSOFI:get(Virus..'SOFI:Photo:SOFI'..msg.chat_id_) and SourceCh(msg) then
 SOFI = math.random(4,1171); 
-local Text ='*᥀︙تم اختيار الصوره لك*'
+local Text ='*☭︙تم اختيار الصوره لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '᥀ Virus Team .',url="t.me/L9L9L"}},
+{{text = '☭ Virus Team .',url="t.me/V_IRUS1"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/PhotosVirus/'..SOFI..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --     Source Virus     --
 if text == "تفعيل انمي" and Manager(msg) and SourceCh(msg) or text == "تفعيل الانمي" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الانمي'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الانمي'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Anime:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل انمي" and Manager(msg) and SourceCh(msg) or text == "تعطيل الانمي" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الانمي'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الانمي'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Anime:SOFI'..msg.chat_id_,true)  
 end
-if text and (text == "انمي" or text == "↫ انمي ᥀") and not DevSOFI:get(Virus..'SOFI:Anime:SOFI'..msg.chat_id_) and SourceCh(msg) then
+if text and (text == "انمي" or text == "↫ انمي ☭") and not DevSOFI:get(Virus..'SOFI:Anime:SOFI'..msg.chat_id_) and SourceCh(msg) then
 SOFI = math.random(3,1002); 
-local Text ='*᥀︙تم اختيار صورة الانمي لك*'
+local Text ='*☭︙تم اختيار صورة الانمي لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '᥀ Virus Team .',url="t.me/L9L9L"}},
+{{text = '☭ Virus Team .',url="t.me/V_IRUS1"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AnimeVirus/'..SOFI..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --     Source Virus     --
 if text == "تفعيل فلم" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الافلام'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الافلام'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Movies:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل فلم" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الافلام'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الافلام'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Movies:SOFI'..msg.chat_id_,true)  
 end
-if text and (text == "فلم" or text == "↫ فلم ᥀") and not DevSOFI:get(Virus..'SOFI:Movies:SOFI'..msg.chat_id_) and ChCheck(msg) then
+if text and (text == "فلم" or text == "↫ فلم ☭") and not DevSOFI:get(Virus..'SOFI:Movies:SOFI'..msg.chat_id_) and ChCheck(msg) then
 SOFI = math.random(45,125); 
-local Text ='*᥀︙تم اختيار الفلم لك*'
+local Text ='*☭︙تم اختيار الفلم لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '᥀ Virus Team .',url="t.me/L9L9L"}},
+{{text = '☭ Virus Team .',url="t.me/V_IRUS1"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MoviesVirus/'..SOFI..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --     Source Virus     --
 if text == "تفعيل مسلسل" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل المسلسلات'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل المسلسلات'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Series:SOFI'..msg.chat_id_) 
 end
 if text == "تعطيل مسلسل" and Manager(msg) and SourceCh(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل المسلسلات'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل المسلسلات'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Series:SOFI'..msg.chat_id_,true)  
 end
-if text and (text == "مسلسل" or text == "↫ مسلسل ᥀") and not DevSOFI:get(Virus..'SOFI:Series:SOFI'..msg.chat_id_) and SourceCh(msg) then
+if text and (text == "مسلسل" or text == "↫ مسلسل ☭") and not DevSOFI:get(Virus..'SOFI:Series:SOFI'..msg.chat_id_) and SourceCh(msg) then
 SOFI = math.random(2,54); 
-local Text ='*᥀︙تم اختيار المسلسل لك*'
+local Text ='*☭︙تم اختيار المسلسل لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '᥀ Virus Team .',url="t.me/L9L9L"}},
+{{text = '☭ Virus Team .',url="t.me/V_IRUS1"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SeriesVirus/'..SOFI..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -9569,96 +9569,96 @@ end
 --     Source Virus     --
 if Admin(msg) then
 if DevSOFI:get(Virus..'SOFI:LockSettings'..msg.chat_id_) then 
-if text == "الروابط" then if DevSOFI:get(Virus..'SOFI:Lock:Links'..msg.chat_id_) then mute_links = 'مقفله' else mute_links = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙الروابط ↫ "..mute_links.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "المعرف" or text == "المعرفات" then if DevSOFI:get(Virus..'SOFI:Lock:Tags'..msg.chat_id_) then lock_tag = 'مقفوله' else lock_tag = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙المعرف ↫ "..lock_tag.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "المتحركه" or text == "الملصقات المتحركه" then if DevSOFI:get(Virus..'SOFI:Lock:Gifs'..msg.chat_id_) then mute_gifs = 'مقفوله' else mute_gifs = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙المتحركه ↫ "..mute_gifs.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الملصقات" then if DevSOFI:get(Virus..'SOFI:Lock:Stickers'..msg.chat_id_) then lock_sticker = 'مقفوله' else lock_sticker = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙الملصقات ↫ "..lock_sticker.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الصور" then if DevSOFI:get(Virus..'SOFI:Lock:Photo'..msg.chat_id_) then mute_photo = 'مقفوله' else mute_photo = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙الصور ↫ "..mute_photo.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الفيديو" or text == "الفيديوهات" then if DevSOFI:get(Virus..'SOFI:Lock:Videos'..msg.chat_id_) then mute_video = 'مقفوله' else mute_video = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙الفيديو ↫ "..mute_video.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الاونلاين" then if DevSOFI:get(Virus..'SOFI:Lock:Inline'..msg.chat_id_) then mute_in = 'مقفل' else mute_in = 'مفتوح' end local VirusTeam = "\n" .."᥀︙الاونلاين ↫ "..mute_in.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الدردشه" then if DevSOFI:get(Virus..'SOFI:Lock:Text'..msg.chat_id_) then mute_text = 'مقفله' else mute_text = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙الدردشه ↫ "..mute_text.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "التوجيه" or text == "اعاده التوجيه" then if DevSOFI:get(Virus..'SOFI:Lock:Forwards'..msg.chat_id_) then lock_forward = 'مقفل' else lock_forward = 'مفتوح' end local VirusTeam = "\n" .."᥀︙التوجيه ↫ "..lock_forward.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الاغاني" then if DevSOFI:get(Virus..'SOFI:Lock:Music'..msg.chat_id_) then mute_music = 'مقفوله' else mute_music = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙الاغاني ↫ "..mute_music.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الصوت" or text == "الصوتيات" then if DevSOFI:get(Virus..'SOFI:Lock:Voice'..msg.chat_id_) then mute_voice = 'مقفول' else mute_voice = 'مفتوح' end local VirusTeam = "\n" .."᥀︙الصوت ↫ "..mute_voice.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الجهات" or text == "جهات الاتصال" then if DevSOFI:get(Virus..'SOFI:Lock:Contact'..msg.chat_id_) then lock_contact = 'مقفوله' else lock_contact = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙الجهات ↫ "..lock_contact.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الماركداون" then if DevSOFI:get(Virus..'SOFI:Lock:Markdown'..msg.chat_id_) then markdown = 'مقفل' else markdown = 'مفتوح' end local VirusTeam = "\n" .."᥀︙الماركداون ↫ "..markdown.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الهاشتاك" then if DevSOFI:get(Virus..'SOFI:Lock:Hashtak'..msg.chat_id_) then lock_htag = 'مقفل' else lock_htag = 'مفتوح' end local VirusTeam = "\n" .."᥀︙الهاشتاك ↫ "..lock_htag.."\n"Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "التعديل" then if DevSOFI:get(Virus..'SOFI:Lock:EditMsgs'..msg.chat_id_) then mute_edit = 'مقفل' else mute_edit = 'مفتوح' end local VirusTeam = "\n" .."᥀︙التعديل ↫ "..mute_edit.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "التثبيت" then if DevSOFI:get(Virus..'SOFI:Lock:Pin'..msg.chat_id_) then lock_pin = 'مقفل' else lock_pin = 'مفتوح' end local VirusTeam = "\n" .."᥀︙التثبيت ↫ "..lock_pin.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الاشعارات" then if DevSOFI:get(Virus..'SOFI:Lock:TagServr'..msg.chat_id_) then lock_tgservice = 'مقفوله' else lock_tgservice = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙الاشعارات ↫ "..lock_tgservice.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الكلايش" then if DevSOFI:get(Virus..'SOFI:Lock:Spam'..msg.chat_id_) then lock_spam = 'مقفوله' else lock_spam = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙الكلايش ↫ "..lock_spam.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الدخول" then if DevSOFI:get(Virus..'SOFI:Lock:Join'..msg.chat_id_) then lock_Join = 'مقفول' else lock_Join = 'مفتوح' end local VirusTeam = "\n" .."᥀︙الدخول ↫ "..lock_Join.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الشبكات" then if DevSOFI:get(Virus..'SOFI:Lock:WebLinks'..msg.chat_id_) then lock_wp = 'مقفوله' else lock_wp = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙الشبكات ↫ "..lock_wp.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "المواقع" then if DevSOFI:get(Virus..'SOFI:Lock:Location'..msg.chat_id_) then lock_location = 'مقفوله' else lock_location = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙المواقع ↫ "..lock_location.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "العربيه" then if DevSOFI:get(Virus..'SOFI:Lock:Arabic'..msg.chat_id_) then lock_arabic = 'مقفوله' else lock_arabic = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙العربيه ↫ "..lock_arabic.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الانكليزيه" then if DevSOFI:get(Virus..'SOFI:Lock:English'..msg.chat_id_) then lock_english = 'مقفوله' else lock_english = 'مفتوحه' end local VirusTeam = "\n" .."᥀︙الانكليزيه ↫ "..lock_english.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الكفر" then if DevSOFI:get(Virus..'SOFI:Lock:Kfr'..msg.chat_id_) then lock_kaf = 'مفتوح' else lock_kaf = 'مقفل' end local VirusTeam = "\n" .."᥀︙الكفر ↫ "..lock_kaf.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الفشار" then if DevSOFI:get(Virus..'SOFI:Lock:Fshar'..msg.chat_id_) then lock_fshar = 'مفتوح' else lock_fshar = 'مقفل' end local VirusTeam = "\n" .."᥀︙الفشار ↫ "..lock_fshar.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
-if text == "الطائفيه" then if DevSOFI:get(Virus..'SOFI:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحه' else lock_taf = 'مقفله' end local VirusTeam = "\n" .."᥀︙الطائفيه ↫ "..lock_taf.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الروابط" then if DevSOFI:get(Virus..'SOFI:Lock:Links'..msg.chat_id_) then mute_links = 'مقفله' else mute_links = 'مفتوحه' end local VirusTeam = "\n" .."☭︙الروابط ↫ "..mute_links.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "المعرف" or text == "المعرفات" then if DevSOFI:get(Virus..'SOFI:Lock:Tags'..msg.chat_id_) then lock_tag = 'مقفوله' else lock_tag = 'مفتوحه' end local VirusTeam = "\n" .."☭︙المعرف ↫ "..lock_tag.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "المتحركه" or text == "الملصقات المتحركه" then if DevSOFI:get(Virus..'SOFI:Lock:Gifs'..msg.chat_id_) then mute_gifs = 'مقفوله' else mute_gifs = 'مفتوحه' end local VirusTeam = "\n" .."☭︙المتحركه ↫ "..mute_gifs.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الملصقات" then if DevSOFI:get(Virus..'SOFI:Lock:Stickers'..msg.chat_id_) then lock_sticker = 'مقفوله' else lock_sticker = 'مفتوحه' end local VirusTeam = "\n" .."☭︙الملصقات ↫ "..lock_sticker.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الصور" then if DevSOFI:get(Virus..'SOFI:Lock:Photo'..msg.chat_id_) then mute_photo = 'مقفوله' else mute_photo = 'مفتوحه' end local VirusTeam = "\n" .."☭︙الصور ↫ "..mute_photo.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الفيديو" or text == "الفيديوهات" then if DevSOFI:get(Virus..'SOFI:Lock:Videos'..msg.chat_id_) then mute_video = 'مقفوله' else mute_video = 'مفتوحه' end local VirusTeam = "\n" .."☭︙الفيديو ↫ "..mute_video.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الاونلاين" then if DevSOFI:get(Virus..'SOFI:Lock:Inline'..msg.chat_id_) then mute_in = 'مقفل' else mute_in = 'مفتوح' end local VirusTeam = "\n" .."☭︙الاونلاين ↫ "..mute_in.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الدردشه" then if DevSOFI:get(Virus..'SOFI:Lock:Text'..msg.chat_id_) then mute_text = 'مقفله' else mute_text = 'مفتوحه' end local VirusTeam = "\n" .."☭︙الدردشه ↫ "..mute_text.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "التوجيه" or text == "اعاده التوجيه" then if DevSOFI:get(Virus..'SOFI:Lock:Forwards'..msg.chat_id_) then lock_forward = 'مقفل' else lock_forward = 'مفتوح' end local VirusTeam = "\n" .."☭︙التوجيه ↫ "..lock_forward.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الاغاني" then if DevSOFI:get(Virus..'SOFI:Lock:Music'..msg.chat_id_) then mute_music = 'مقفوله' else mute_music = 'مفتوحه' end local VirusTeam = "\n" .."☭︙الاغاني ↫ "..mute_music.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الصوت" or text == "الصوتيات" then if DevSOFI:get(Virus..'SOFI:Lock:Voice'..msg.chat_id_) then mute_voice = 'مقفول' else mute_voice = 'مفتوح' end local VirusTeam = "\n" .."☭︙الصوت ↫ "..mute_voice.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الجهات" or text == "جهات الاتصال" then if DevSOFI:get(Virus..'SOFI:Lock:Contact'..msg.chat_id_) then lock_contact = 'مقفوله' else lock_contact = 'مفتوحه' end local VirusTeam = "\n" .."☭︙الجهات ↫ "..lock_contact.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الماركداون" then if DevSOFI:get(Virus..'SOFI:Lock:Markdown'..msg.chat_id_) then markdown = 'مقفل' else markdown = 'مفتوح' end local VirusTeam = "\n" .."☭︙الماركداون ↫ "..markdown.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الهاشتاك" then if DevSOFI:get(Virus..'SOFI:Lock:Hashtak'..msg.chat_id_) then lock_htag = 'مقفل' else lock_htag = 'مفتوح' end local VirusTeam = "\n" .."☭︙الهاشتاك ↫ "..lock_htag.."\n"Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "التعديل" then if DevSOFI:get(Virus..'SOFI:Lock:EditMsgs'..msg.chat_id_) then mute_edit = 'مقفل' else mute_edit = 'مفتوح' end local VirusTeam = "\n" .."☭︙التعديل ↫ "..mute_edit.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "التثبيت" then if DevSOFI:get(Virus..'SOFI:Lock:Pin'..msg.chat_id_) then lock_pin = 'مقفل' else lock_pin = 'مفتوح' end local VirusTeam = "\n" .."☭︙التثبيت ↫ "..lock_pin.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الاشعارات" then if DevSOFI:get(Virus..'SOFI:Lock:TagServr'..msg.chat_id_) then lock_tgservice = 'مقفوله' else lock_tgservice = 'مفتوحه' end local VirusTeam = "\n" .."☭︙الاشعارات ↫ "..lock_tgservice.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الكلايش" then if DevSOFI:get(Virus..'SOFI:Lock:Spam'..msg.chat_id_) then lock_spam = 'مقفوله' else lock_spam = 'مفتوحه' end local VirusTeam = "\n" .."☭︙الكلايش ↫ "..lock_spam.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الدخول" then if DevSOFI:get(Virus..'SOFI:Lock:Join'..msg.chat_id_) then lock_Join = 'مقفول' else lock_Join = 'مفتوح' end local VirusTeam = "\n" .."☭︙الدخول ↫ "..lock_Join.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الشبكات" then if DevSOFI:get(Virus..'SOFI:Lock:WebLinks'..msg.chat_id_) then lock_wp = 'مقفوله' else lock_wp = 'مفتوحه' end local VirusTeam = "\n" .."☭︙الشبكات ↫ "..lock_wp.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "المواقع" then if DevSOFI:get(Virus..'SOFI:Lock:Location'..msg.chat_id_) then lock_location = 'مقفوله' else lock_location = 'مفتوحه' end local VirusTeam = "\n" .."☭︙المواقع ↫ "..lock_location.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "العربيه" then if DevSOFI:get(Virus..'SOFI:Lock:Arabic'..msg.chat_id_) then lock_arabic = 'مقفوله' else lock_arabic = 'مفتوحه' end local VirusTeam = "\n" .."☭︙العربيه ↫ "..lock_arabic.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الانكليزيه" then if DevSOFI:get(Virus..'SOFI:Lock:English'..msg.chat_id_) then lock_english = 'مقفوله' else lock_english = 'مفتوحه' end local VirusTeam = "\n" .."☭︙الانكليزيه ↫ "..lock_english.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الكفر" then if DevSOFI:get(Virus..'SOFI:Lock:Kfr'..msg.chat_id_) then lock_kaf = 'مفتوح' else lock_kaf = 'مقفل' end local VirusTeam = "\n" .."☭︙الكفر ↫ "..lock_kaf.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الفشار" then if DevSOFI:get(Virus..'SOFI:Lock:Fshar'..msg.chat_id_) then lock_fshar = 'مفتوح' else lock_fshar = 'مقفل' end local VirusTeam = "\n" .."☭︙الفشار ↫ "..lock_fshar.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
+if text == "الطائفيه" then if DevSOFI:get(Virus..'SOFI:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحه' else lock_taf = 'مقفله' end local VirusTeam = "\n" .."☭︙الطائفيه ↫ "..lock_taf.."\n" Dev_SOFI(msg.chat_id_, msg.id_, 1, VirusTeam, 1, 'md') end
 end
 --     Source Virus     --
 if text == 'تفعيل كشف الاعدادات' and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل كشف الاعدادات'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل كشف الاعدادات'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:LockSettings'..msg.chat_id_,true)  
 end
 if text == 'تعطيل كشف الاعدادات' and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل كشف الاعدادات'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل كشف الاعدادات'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:LockSettings'..msg.chat_id_) 
 end
 --     Source Virus     --
 if text and (text == 'تعطيل التحقق' or text == 'قفل التحقق' or text == 'تعطيل تنبيه الدخول') and Manager(msg) and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل التحقق بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل التحقق بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Lock:Robot'..msg.chat_id_)
 end
 if text and (text == 'تفعيل التحقق' or text == 'فتح التحقق' or text == 'تفعيل تنبيه الدخول') and Manager(msg) and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل التحقق بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل التحقق بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Lock:Robot'..msg.chat_id_,true)
 end
 --     Source Virus     --
 if text == 'تفعيل ردود المدير' and Manager(msg) and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل ردود المدير'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل ردود المدير'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Lock:GpRed'..msg.chat_id_)
 end
 if text == 'تعطيل ردود المدير' and Manager(msg) and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل ردود المدير'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل ردود المدير'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Lock:GpRed'..msg.chat_id_,true)
 end
 --     Source Virus     --
 if text == 'تفعيل ردود المطور' and Manager(msg) and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل ردود المطور'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل ردود المطور'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Lock:AllRed'..msg.chat_id_)
 end
 if text == 'تعطيل ردود المطور' and Manager(msg) and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل ردود المطور'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل ردود المطور'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Lock:AllRed'..msg.chat_id_,true)
 end
 --     Source Virus     --
 if SOFISudo(msg) then
-if text == 'تفعيل المغادره' or text == '↫ تفعيل المغادره ᥀' and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل المغادره بنجاح'
+if text == 'تفعيل المغادره' or text == '↫ تفعيل المغادره ☭' and ChCheck(msg) then 
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل المغادره بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus.."SOFI:Left:Bot"..Virus)
 end
-if text == 'تعطيل المغادره' or text == '↫ تعطيل المغادره ᥀' and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل المغادره بنجاح'
+if text == 'تعطيل المغادره' or text == '↫ تعطيل المغادره ☭' and ChCheck(msg) then 
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل المغادره بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus.."SOFI:Left:Bot"..Virus,true) 
 end 
-if text == 'تفعيل الاذاعه' or text == '↫ تفعيل الاذاعه ᥀' and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الاذاعه بنجاح'
+if text == 'تفعيل الاذاعه' or text == '↫ تفعيل الاذاعه ☭' and ChCheck(msg) then 
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الاذاعه بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus.."SOFI:Send:Bot"..Virus)
 end
-if text == 'تعطيل الاذاعه' or text == '↫ تعطيل الاذاعه ᥀' and ChCheck(msg) then 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الاذاعه بنجاح'
+if text == 'تعطيل الاذاعه' or text == '↫ تعطيل الاذاعه ☭' and ChCheck(msg) then 
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الاذاعه بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus.."SOFI:Send:Bot"..Virus,true) 
 end
@@ -9668,13 +9668,13 @@ if text and text:match("^ضع اسم (.*)$") and Manager(msg) and ChCheck(msg) t
 local txt = {string.match(text, "^(ضع اسم) (.*)$")}
 tdcli_function ({ ID = "ChangeChatTitle",chat_id_ = msg.chat_id_,title_ = txt[2] },function(arg,data) 
 if data.message_ == "Channel chat title can be changed by administrators only" then
-send(msg.chat_id_,msg.id_,"᥀︙البوت ليس ادمن يرجى ترقيتي !")  
+send(msg.chat_id_,msg.id_,"☭︙البوت ليس ادمن يرجى ترقيتي !")  
 return false  
 end 
 if data.message_ == "CHAT_ADMIN_REQUIRED" then
-send(msg.chat_id_,msg.id_,"᥀︙ليست لدي صلاحية تغير معلومات المجموعه يرجى التحقق من الصلاحيات")  
+send(msg.chat_id_,msg.id_,"☭︙ليست لدي صلاحية تغير معلومات المجموعه يرجى التحقق من الصلاحيات")  
 else
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تغير اسم المجموعه'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تغير اسم المجموعه'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end
 end,nil) 
@@ -9689,14 +9689,14 @@ photo_id = msg.content_.photo_.sizes_[0].photo_.persistent_id_
 end
 tdcli_function ({ID = "ChangeChatPhoto",chat_id_ = msg.chat_id_,photo_ = getInputFile(photo_id) }, function(arg,data)   
 if data.code_ == 3 then
-send(msg.chat_id_, msg.id_,"᥀︙عذرا البوت ليس ادمن يرجى ترقيتي والمحاوله لاحقا") 
+send(msg.chat_id_, msg.id_,"☭︙عذرا البوت ليس ادمن يرجى ترقيتي والمحاوله لاحقا") 
 DevSOFI:del(Virus..'SOFI:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id_)
 return false  end
 if data.message_ == "CHAT_ADMIN_REQUIRED" then 
-send(msg.chat_id_, msg.id_,"᥀︙ليست لدي صلاحية تغير معلومات المجموعه يرجى التحقق من الصلاحيات") 
+send(msg.chat_id_, msg.id_,"☭︙ليست لدي صلاحية تغير معلومات المجموعه يرجى التحقق من الصلاحيات") 
 DevSOFI:del(Virus..'SOFI:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id_)
 else
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تغير صورة المجموعه'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تغير صورة المجموعه'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end
 end,nil) 
@@ -9704,35 +9704,35 @@ DevSOFI:del(Virus..'SOFI:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id_)
 end 
 end
 if text and text:match("^ضع صوره$") and ChCheck(msg) or text and text:match("^وضع صوره$") and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_,msg.id_, 1, '᥀︙ارسل صورة المجموعه الان', 1, 'md')
+Dev_SOFI(msg.chat_id_,msg.id_, 1, '☭︙ارسل صورة المجموعه الان', 1, 'md')
 DevSOFI:set(Virus..'SOFI:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id_,true)
 end
 --     Source Virus     --
 if text and text:match("^حذف الصوره$") and ChCheck(msg) or text and text:match("^مسح الصوره$") and ChCheck(msg) then
 https.request("https://api.telegram.org/bot"..TokenBot.."/deleteChatPhoto?chat_id="..msg.chat_id_) 
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف صورة المجموعه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف صورة المجموعه")  
 return false  
 end
 --     Source Virus     --
 if Manager(msg) then
 if text and text:match("^الغاء تثبيت$") and ChCheck(msg) or text and text:match("^الغاء التثبيت$") and ChCheck(msg) then
 if DevSOFI:sismember(Virus.."SOFI:Lock:Pinpin",msg.chat_id_) and not BasicConstructor(msg) then
-Dev_SOFI(msg.chat_id_,msg.id_, 1, "᥀︙التثبيت والغاء واعادة التثبيت تم قفله من قبل المنشئين الاساسيين", 1, 'md')
+Dev_SOFI(msg.chat_id_,msg.id_, 1, "☭︙التثبيت والغاء واعادة التثبيت تم قفله من قبل المنشئين الاساسيين", 1, 'md')
 return false  
 end
 tdcli_function({ID="UnpinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
 if data.ID == "Ok" then
 DevSOFI:del(Virus..'SOFI:PinnedMsg'..msg.chat_id_)
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم الغاء تثبيت الرساله'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم الغاء تثبيت الرساله'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 return false  
 end
 if data.code_ == 6 then
-send(msg.chat_id_,msg.id_,"᥀︙انا لست ادمن هنا يرجى ترقيتي ادمن ثم اعد المحاوله")  
+send(msg.chat_id_,msg.id_,"☭︙انا لست ادمن هنا يرجى ترقيتي ادمن ثم اعد المحاوله")  
 return false  
 end
 if data.message_ == "CHAT_ADMIN_REQUIRED" then
-send(msg.chat_id_,msg.id_,"᥀︙ليست لدي صلاحية التثبيت يرجى التحقق من الصلاحيات")  
+send(msg.chat_id_,msg.id_,"☭︙ليست لدي صلاحية التثبيت يرجى التحقق من الصلاحيات")  
 return false  
 end
 end,nil)
@@ -9740,23 +9740,23 @@ end
 --     Source Virus     --
 if text and text:match("^الغاء تثبيت الكل$") and ChCheck(msg) then  
 if DevSOFI:sismember(Virus.."SOFI:Lock:Pinpin",msg.chat_id_) and not BasicConstructor(msg) then
-Dev_SOFI(msg.chat_id_,msg.id_, 1, "᥀︙التثبيت والغاء واعادة التثبيت تم قفله من قبل المنشئين الاساسيين", 1, 'md')
+Dev_SOFI(msg.chat_id_,msg.id_, 1, "☭︙التثبيت والغاء واعادة التثبيت تم قفله من قبل المنشئين الاساسيين", 1, 'md')
 return false  
 end
 tdcli_function({ID="UnpinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
 if data.ID == "Ok" then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم الغاء تثبيت الكل'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم الغاء تثبيت الكل'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 https.request('https://api.telegram.org/bot'..TokenBot..'/unpinAllChatMessages?chat_id='..msg.chat_id_)
 DevSOFI:del(Virus.."SOFI:PinnedMsg"..msg.chat_id_)
 return false  
 end
 if data.code_ == 6 then
-send(msg.chat_id_,msg.id_,"᥀︙انا لست ادمن هنا يرجى ترقيتي ادمن ثم اعد المحاوله")  
+send(msg.chat_id_,msg.id_,"☭︙انا لست ادمن هنا يرجى ترقيتي ادمن ثم اعد المحاوله")  
 return false  
 end
 if data.message_ == "CHAT_ADMIN_REQUIRED" then
-send(msg.chat_id_,msg.id_,"᥀︙ليست لدي صلاحية التثبيت يرجى التحقق من الصلاحيات")  
+send(msg.chat_id_,msg.id_,"☭︙ليست لدي صلاحية التثبيت يرجى التحقق من الصلاحيات")  
 return false  
 end
 end,nil)
@@ -9764,13 +9764,13 @@ end
 --     Source Virus     --
 if text and text:match("^اعاده تثبيت$") and ChCheck(msg) or text and text:match("^اعاده التثبيت$") and ChCheck(msg) or text and text:match("^اعادة التثبيت$") and ChCheck(msg) then
 if DevSOFI:sismember(Virus.."SOFI:Lock:Pinpin",msg.chat_id_) and not BasicConstructor(msg) then
-Dev_SOFI(msg.chat_id_,msg.id_, 1, "᥀︙التثبيت والغاء واعادة التثبيت تم قفله من قبل المنشئين الاساسيين", 1, 'md')
+Dev_SOFI(msg.chat_id_,msg.id_, 1, "☭︙التثبيت والغاء واعادة التثبيت تم قفله من قبل المنشئين الاساسيين", 1, 'md')
 return false  
 end
 local PinId = DevSOFI:get(Virus..'SOFI:PinnedMsg'..msg.chat_id_)
 if PinId then
 Pin(msg.chat_id_,PinId,0)
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم اعادة تثبيت الرساله'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم اعادة تثبيت الرساله'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end end
 end
@@ -9784,14 +9784,14 @@ ChatKick(msg.chat_id_, data.id_)
 end
 end,nil)
 end
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم طرد المحذوفين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم طرد المحذوفين")  
 end,nil)
 end
 --     Source Virus     --
 if text and text:match("^مسح المحظورين$") or text and text:match("^حذف المحظورين$") and ChCheck(msg) or text and text:match("^مسح المطرودين$") or text and text:match("^حذف المطرودين$") and ChCheck(msg) then
 local function RemoveBlockList(extra, result)
 if tonumber(result.total_count_) == 0 then 
-Dev_SOFI(msg.chat_id_, msg.id_, 0,'᥀︙*لا يوجد محظورين*', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 0,'☭︙*لا يوجد محظورين*', 1, 'md')
 DevSOFI:del(Virus..'SOFI:Ban:'..msg.chat_id_)
 else
 local x = 0
@@ -9800,7 +9800,7 @@ tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_i
 DevSOFI:del(Virus..'SOFI:Ban:'..msg.chat_id_)
 x = x + 1
 end
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف المحظورين")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف المحظورين")  
 end
 end
 tdcli_function({ID="GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersKicked"},offset_ = 0,limit_ = 200}, RemoveBlockList, {chat_id_ = msg.chat_id_, msg_id_ = msg.id_})    
@@ -9811,7 +9811,7 @@ if text and text:match("^معلومات المجموعه$") and ChCheck(msg) or 
 local Muted = DevSOFI:scard(Virus.."SOFI:Muted:"..msg.chat_id_) or "0"
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,dp) 
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المجموعه ↫ ❨ '..dp.title_..' ❩\n᥀︙الايدي ↫ ❨ '..msg.chat_id_..' ❩\n᥀︙عدد الاعضاء ↫ ❨ *'..data.member_count_..'* ❩\n᥀︙عدد الادمنيه ↫ ❨ *'..data.administrator_count_..'* ❩\n᥀︙عدد المطرودين ↫ ❨ *'..data.kicked_count_..'* ❩\n᥀︙عدد المكتومين ↫ ❨ *'..Muted..'* ❩\n᥀︙عدد رسائل المجموعه ↫ ❨ *'..(msg.id_/2097152/0.5)..'* ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المجموعه ↫ ❨ '..dp.title_..' ❩\n☭︙الايدي ↫ ❨ '..msg.chat_id_..' ❩\n☭︙عدد الاعضاء ↫ ❨ *'..data.member_count_..'* ❩\n☭︙عدد الادمنيه ↫ ❨ *'..data.administrator_count_..'* ❩\n☭︙عدد المطرودين ↫ ❨ *'..data.kicked_count_..'* ❩\n☭︙عدد المكتومين ↫ ❨ *'..Muted..'* ❩\n☭︙عدد رسائل المجموعه ↫ ❨ *'..(msg.id_/2097152/0.5)..'* ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n', 1, 'md') 
 end,nil)
 end,nil)
 end
@@ -9819,7 +9819,7 @@ end
 if text and text:match('^كشف (-%d+)') and ChCheck(msg) then
 local ChatId = text:match('كشف (-%d+)') 
 if not SudoBot(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطورين فقط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطورين فقط', 1, 'md')
 else
 local ConstructorList = DevSOFI:scard(Virus.."SOFI:Constructor:"..ChatId) or 0
 local BanedList = DevSOFI:scard(Virus.."SOFI:Ban:"..ChatId) or 0
@@ -9829,7 +9829,7 @@ local TkeedList = DevSOFI:scard(Virus.."SOFI:SOFI:Tkeed:"..ChatId) or 0
 local AdminsList = DevSOFI:scard(Virus.."SOFI:Admins:"..ChatId) or 0
 local VipList = DevSOFI:scard(Virus.."SOFI:VipMem:"..ChatId) or 0
 local LinkGp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..ChatId))
-if LinkGp.ok == true then LinkGroup = LinkGp.result else LinkGroup = 't.me/L9L9L' end
+if LinkGp.ok == true then LinkGroup = LinkGp.result else LinkGroup = 't.me/V_IRUS1' end
 tdcli_function({ID ="GetChat",chat_id_=ChatId},function(arg,dp)
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = ChatId:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
 if dp.id_ then
@@ -9839,16 +9839,16 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 Manager_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = Manager_id},function(arg,SOFI) 
 if SOFI.first_name_ ~= false then
-ConstructorSOFI = "["..SOFI.first_name_.."](T.me/"..(SOFI.username_ or "L9L9L")..")"
+ConstructorSOFI = "["..SOFI.first_name_.."](T.me/"..(SOFI.username_ or "V_IRUS1")..")"
 else 
 ConstructorSOFI = "حساب محذوف"
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙المجموعه ↫ ["..dp.title_.."]("..LinkGroup..")\n᥀︙الايدي ↫ ( `"..ChatId.."` )\n᥀︙المنشئ ↫ "..ConstructorSOFI.."\n᥀︙عدد المدراء ↫ ( *"..ManagerList.."* )\n᥀︙عدد المنشئين ↫ ( *"..ConstructorList.."* )\n᥀︙عدد الادمنيه ↫ ( *"..AdminsList.."* )\n᥀︙عدد المميزين ↫ ( *"..VipList.."* )\n᥀︙عدد المحظورين ↫ ( *"..BanedList.."* )\n᥀︙عدد المقيدين ↫ ( *"..TkeedList.."* )\n᥀︙عدد المكتومين ↫ ( *"..MutedList.."* )", 1,"md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙المجموعه ↫ ["..dp.title_.."]("..LinkGroup..")\n☭︙الايدي ↫ ( `"..ChatId.."` )\n☭︙المنشئ ↫ "..ConstructorSOFI.."\n☭︙عدد المدراء ↫ ( *"..ManagerList.."* )\n☭︙عدد المنشئين ↫ ( *"..ConstructorList.."* )\n☭︙عدد الادمنيه ↫ ( *"..AdminsList.."* )\n☭︙عدد المميزين ↫ ( *"..VipList.."* )\n☭︙عدد المحظورين ↫ ( *"..BanedList.."* )\n☭︙عدد المقيدين ↫ ( *"..TkeedList.."* )\n☭︙عدد المكتومين ↫ ( *"..MutedList.."* )", 1,"md")
 end,nil)
 end
 end
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لم تتم اضافتي بها لاقوم بكشفها", 1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لم تتم اضافتي بها لاقوم بكشفها", 1, "md")
 end
 end,nil)
 end,nil)
@@ -9858,16 +9858,16 @@ end
 if text and text:match("^غادر (-%d+)$") and ChCheck(msg) then
 local Text = { string.match(text, "^(غادر) (-%d+)$")}
 if not SecondSudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط', 1, 'md')
 else 
 tdcli_function({ID ="GetChat",chat_id_=Text[2]},function(arg,dp) 
 if dp.id_ then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙المجموعه ↫ ["..dp.title_.."]\n᥀︙تمت المغادره منها بنجاح", 1, "md")
-Dev_SOFI(Text[2], 0, 1, "᥀︙بامر المطور تم مغادرة هذه المجموعه ", 1, "md")  
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙المجموعه ↫ ["..dp.title_.."]\n☭︙تمت المغادره منها بنجاح", 1, "md")
+Dev_SOFI(Text[2], 0, 1, "☭︙بامر المطور تم مغادرة هذه المجموعه ", 1, "md")  
 ChatLeave(dp.id_, Virus)
 DevSOFI:srem(Virus.."SOFI:Groups", dp.id_)
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لم تتم اضافتي بها لاقوم بمغادرتها", 1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لم تتم اضافتي بها لاقوم بمغادرتها", 1, "md")
 end 
 end,nil)
 end 
@@ -9876,61 +9876,61 @@ end
 if text and text:match("^تعين عدد الاعضاء (%d+)$") and SecondSudo(msg) or text and text:match("^تعيين عدد الاعضاء (%d+)$") and SecondSudo(msg) then
 local Num = text:match("تعين عدد الاعضاء (%d+)$") or text:match("تعيين عدد الاعضاء (%d+)$")
 DevSOFI:set(Virus..'SOFI:Num:Add:Bot',Num) 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم وضع عدد الاعضاء ↫ *'..Num..'* عضو', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم وضع عدد الاعضاء ↫ *'..Num..'* عضو', 1, 'md')
 end
 --     Source Virus     --
-if text == 'تفعيل البوت الخدمي' and ChCheck(msg) or text == '↫ تفعيل البوت الخدمي ᥀' and ChCheck(msg) then 
+if text == 'تفعيل البوت الخدمي' and ChCheck(msg) or text == '↫ تفعيل البوت الخدمي ☭' and ChCheck(msg) then 
 if not SOFISudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط', 1, 'md')
 else 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل البوت الخدمي'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل البوت الخدمي'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Lock:FreeBot'..Virus) 
 end 
 end
-if text == 'تعطيل البوت الخدمي' and ChCheck(msg) or text == '↫ تعطيل البوت الخدمي ᥀' and ChCheck(msg) then 
+if text == 'تعطيل البوت الخدمي' and ChCheck(msg) or text == '↫ تعطيل البوت الخدمي ☭' and ChCheck(msg) then 
 if not SOFISudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط', 1, 'md')
 else 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل البوت الخدمي'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل البوت الخدمي'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Lock:FreeBot'..Virus,true) 
 end 
 end
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'تعطيل صورتي' and Manager(msg) and ChCheck(msg) then   
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل صورتي بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل صورتي بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Photo:Profile'..msg.chat_id_) 
 end
 if text == 'تفعيل صورتي' and Manager(msg) and ChCheck(msg) then  
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل صورتي بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل صورتي بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Photo:Profile'..msg.chat_id_,true)  
 end
 if text == 'تفعيل الالعاب' and Manager(msg) and ChCheck(msg) or text == 'تفعيل اللعبه' and Manager(msg) and ChCheck(msg) then   
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الالعاب بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الالعاب بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Lock:Games'..msg.chat_id_) 
 end
 if text == 'تعطيل الالعاب' and Manager(msg) and ChCheck(msg) or text == 'تعطيل اللعبه' and Manager(msg) and ChCheck(msg) then  
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الالعاب بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الالعاب بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Lock:Games'..msg.chat_id_,true)  
 end
 if text == 'تفعيل الالعاب المتطوره' and Manager(msg) and ChCheck(msg) or text == 'تفعيل الالعاب الاحترافيه' and Manager(msg) and ChCheck(msg) then   
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الالعاب المتطوره بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الالعاب المتطوره بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus..'SOFI:Lock:Gamesinline'..msg.chat_id_) 
 end
 if text == 'تعطيل الالعاب المتطوره' and Manager(msg) and ChCheck(msg) or text == 'تعطيل الالعاب الاحترافيه' and Manager(msg) and ChCheck(msg) then  
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الالعاب المتطوره بنجاح'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الالعاب المتطوره بنجاح'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus..'SOFI:Lock:Gamesinline'..msg.chat_id_,true)  
 end
 if text == "تفعيل الرابط" and ChCheck(msg) or text == "تفعيل جلب الرابط" and ChCheck(msg) then 
 if Admin(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل جلب رابط المجموعه'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل جلب رابط المجموعه'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus.."SOFI:Lock:GpLinks"..msg.chat_id_)
 return false  
@@ -9938,7 +9938,7 @@ end
 end
 if text == "تعطيل الرابط" and ChCheck(msg) or text == "تعطيل جلب الرابط" and ChCheck(msg) then 
 if Admin(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل جلب رابط المجموعه'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل جلب رابط المجموعه'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus.."SOFI:Lock:GpLinks"..msg.chat_id_,"ok")
 return false  
@@ -9946,7 +9946,7 @@ end
 end
 if text == "تعطيل الرابط انلاين" and ChCheck(msg) or text == "تعطيل جلب الرابط انلاين" and ChCheck(msg) then 
 if Admin(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل جلب رابط انلاين المجموعه'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل جلب رابط انلاين المجموعه'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus.."SOFI:Lock:GpLinksinline"..msg.chat_id_,"ok")
 return false  
@@ -9954,7 +9954,7 @@ end
 end
 if text == "تفعيل الرابط انلاين" and ChCheck(msg) or text == "تفعيل جلب الرابط انلاين" and ChCheck(msg) then 
 if Admin(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل جلب رابط انلاين المجموعه'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل جلب رابط انلاين المجموعه'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus.."SOFI:Lock:GpLinksinline"..msg.chat_id_)
 return false  
@@ -9962,9 +9962,9 @@ end
 end
 if text and (text == "تفعيل حذف الردود" or text == "تفعيل مسح الردود") and ChCheck(msg) then 
 if not SOFIConstructor(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لمالك المجموعه او اعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لمالك المجموعه او اعلى فقط ', 1, 'md')
 else
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل حذف ردود المدير'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل حذف ردود المدير'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus.."SOFI:Lock:GpRd"..msg.chat_id_)
 return false  
@@ -9972,9 +9972,9 @@ end
 end
 if text and (text == "تعطيل حذف الردود" or text == "تعطيل مسح الردود") and ChCheck(msg) then 
 if not SOFIConstructor(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لمالك المجموعه او اعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لمالك المجموعه او اعلى فقط ', 1, 'md')
 else
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل حذف ردود المدير'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل حذف ردود المدير'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus.."SOFI:Lock:GpRd"..msg.chat_id_,true)
 return false  
@@ -9982,9 +9982,9 @@ end
 end
 if text and (text == "تفعيل اضف رد" or text == "تفعيل اضافه رد" or text == "تفعيل حذف رد" or text == "تفعيل حذف رد عام" or text == "تفعيل اضف رد عام") and ChCheck(msg) then 
 if not SOFIConstructor(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لمالك المجموعه او اعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لمالك المجموعه او اعلى فقط ', 1, 'md')
 else
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل اضف رد'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل اضف رد'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus.."SOFI:Lock:Rd"..msg.chat_id_)
 return false  
@@ -9992,9 +9992,9 @@ end
 end
 if text and (text == "تعطيل اضف رد" or text == "تعطيل اضافه رد" or text == "تعطيل حذف رد" or text == "تعطيل حذف رد عام" or text == "تعطيل اضف رد عام") and ChCheck(msg) then 
 if not SOFIConstructor(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لمالك المجموعه او اعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لمالك المجموعه او اعلى فقط ', 1, 'md')
 else
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل اضف رد'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل اضف رد'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus.."SOFI:Lock:Rd"..msg.chat_id_,true)
 return false  
@@ -10002,7 +10002,7 @@ end
 end
 if text == "تعطيل الكيبورد" and ChCheck(msg) then 
 if SOFIConstructor(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تعطيل الكيبورد المجموعه'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تعطيل الكيبورد المجموعه'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:set(Virus.."SOFI:Lock:Key"..msg.chat_id_,"ok")
 return false  
@@ -10010,7 +10010,7 @@ end
 end
 if text == "تفعيل الكيبورد" and ChCheck(msg) then 
 if SOFIConstructor(msg) then
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم تفعيل الكيبورد المجموعه'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم تفعيل الكيبورد المجموعه'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 DevSOFI:del(Virus.."SOFI:Lock:Key"..msg.chat_id_)
 return false  
@@ -10019,16 +10019,16 @@ end
 --     Source Virus     --
 if text and text:match('^تفعيل$') and SudoBot(msg) and ChCheck(msg) then
 if ChatType ~= 'sp' then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المجموعه عاديه وليست خارقه لا تستطيع تفعيلي يرجى ان تضع سجل رسائل المجموعه ضاهر وليس مخفي ومن بعدها يمكنك رفعي ادمن ثم تفعيلي', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المجموعه عاديه وليست خارقه لا تستطيع تفعيلي يرجى ان تضع سجل رسائل المجموعه ضاهر وليس مخفي ومن بعدها يمكنك رفعي ادمن ثم تفعيلي', 1, 'md')
 return false
 end
 if msg.can_be_deleted_ == false then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙البوت ليس ادمن يرجى ترقيتي !', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙البوت ليس ادمن يرجى ترقيتي !', 1, 'md')
 return false  
 end
 tdcli_function ({ ID = "GetChannelFull", channel_id_ = msg.chat_id_:gsub("-100","")}, function(arg,data)  
 if tonumber(data.member_count_) < tonumber(DevSOFI:get(Virus..'SOFI:Num:Add:Bot') or 0) and not SecondSudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙عدد اعضاء المجموعه اقل من ↫ *'..(DevSOFI:get(Virus..'SOFI:Num:Add:Bot') or 0)..'* عضو', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙عدد اعضاء المجموعه اقل من ↫ *'..(DevSOFI:get(Virus..'SOFI:Num:Add:Bot') or 0)..'* عضو', 1, 'md')
 return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -10059,9 +10059,9 @@ end
 end
 end,nil)
 if DevSOFI:sismember(Virus..'SOFI:Groups',msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المجموعه بالتاكيد مفعله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المجموعه بالتاكيد مفعله', 1, 'md')
 else
-ReplyStatus(msg,result.id_,"ReplyBy","᥀︙تم تفعيل المجموعه "..dp.title_)  
+ReplyStatus(msg,result.id_,"ReplyBy","☭︙تم تفعيل المجموعه "..dp.title_)  
 DevSOFI:sadd(Virus.."SOFI:Groups",msg.chat_id_)
 if not DevSOFI:get(Virus..'SOFI:SudosGp'..msg.sender_user_id_..msg.chat_id_) and not SecondSudo(msg) then 
 DevSOFI:incrby(Virus..'SOFI:Sudos'..msg.sender_user_id_,1)
@@ -10091,7 +10091,7 @@ LinkGroup = 'لا يوجد'
 end
 DevSOFI:set(Virus.."SOFI:Groups:Links"..msg.chat_id_,LinkGroup) 
 if not Sudo(msg) then
-SendText(ViRUS,"᥀︙تم تفعيل مجموعه جديده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙بواسطة ↫ "..Name.."\n᥀︙اسم المجموعه ↫ ["..NameChat.."]\n᥀︙عدد اعضاء المجموعه ↫ ❨ *"..NumMem.."* ❩\n᥀︙ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n᥀︙رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙الوقت ↫ "..os.date("%I:%M%p").."\n᥀︙التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(ViRUS,"☭︙تم تفعيل مجموعه جديده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙بواسطة ↫ "..Name.."\n☭︙اسم المجموعه ↫ ["..NameChat.."]\n☭︙عدد اعضاء المجموعه ↫ ❨ *"..NumMem.."* ❩\n☭︙ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n☭︙رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙الوقت ↫ "..os.date("%I:%M%p").."\n☭︙التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end
 end,nil)
@@ -10102,9 +10102,9 @@ if text == 'تعطيل' and SudoBot(msg) and ChCheck(msg) then
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,dp) 
 if not DevSOFI:sismember(Virus..'SOFI:Groups',msg.chat_id_) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙المجموعه بالتاكيد معطله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙المجموعه بالتاكيد معطله', 1, 'md')
 else
-ReplyStatus(msg,result.id_,"ReplyBy","᥀︙تم تعطيل المجموعه "..dp.title_)  
+ReplyStatus(msg,result.id_,"ReplyBy","☭︙تم تعطيل المجموعه "..dp.title_)  
 DevSOFI:srem(Virus.."SOFI:Groups",msg.chat_id_)
 local Name1 = result.first_name_
 local Name1 = Name1:gsub('"',"") 
@@ -10129,7 +10129,7 @@ LinkGroup = 'لا يوجد'
 end
 DevSOFI:set(Virus.."SOFI:Groups:Links"..msg.chat_id_,LinkGroup) 
 if not Sudo(msg) then
-SendText(ViRUS,"᥀︙تم تعطيل مجموعه جديده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙بواسطة ↫ "..Name.."\n᥀︙اسم المجموعه ↫ ["..NameChat.."]\n᥀︙ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n᥀︙رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙الوقت ↫ "..os.date("%I:%M%p").."\n᥀︙التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(ViRUS,"☭︙تم تعطيل مجموعه جديده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙بواسطة ↫ "..Name.."\n☭︙اسم المجموعه ↫ ["..NameChat.."]\n☭︙ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n☭︙رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙الوقت ↫ "..os.date("%I:%M%p").."\n☭︙التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end
 end,nil)
@@ -10158,32 +10158,32 @@ local NameChat = NameChat:gsub("}","")
 local LinkGp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_))
 if LinkGp.ok == true then 
 LinkGroup = LinkGp.result
-LinkGroup = "᥀︙رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩"
+LinkGroup = "☭︙رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩"
 else
-LinkGroup = '᥀︙ليست لدي صلاحية الدعوه لهذه المجموعه !'
+LinkGroup = '☭︙ليست لدي صلاحية الدعوه لهذه المجموعه !'
 end
 if not Sudo(msg) then
-SendText(ViRUS,"᥀︙هناك من بحاجه الى مساعده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙الشخص ↫ "..Name.."\n᥀︙اسم المجموعه ↫ ["..NameChat.."]\n᥀︙ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n"..LinkGroup.."\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙الوقت ↫ "..os.date("%I:%M%p").."\n᥀︙التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(ViRUS,"☭︙هناك من بحاجه الى مساعده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙الشخص ↫ "..Name.."\n☭︙اسم المجموعه ↫ ["..NameChat.."]\n☭︙ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n"..LinkGroup.."\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙الوقت ↫ "..os.date("%I:%M%p").."\n☭︙التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end,nil)
 end,nil)
 end
 --     Source Virus     --
-if text == 'روابط الكروبات' or text == 'روابط المجموعات' or text == '↫ روابط المجموعات ᥀' then
+if text == 'روابط الكروبات' or text == 'روابط المجموعات' or text == '↫ روابط المجموعات ☭' then
 if not SOFISudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط ', 1, 'md')
 else
 local List = DevSOFI:smembers(Virus.."SOFI:Groups")
 if #List == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لا توجد مجموعات مفعله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لا توجد مجموعات مفعله', 1, 'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙جاري ارسال نسخه تحتوي على ↫ '..#List..' مجموعه', 1, 'md')
-local Text = "᥀︙Source Virus\n᥀︙File Bot Groups\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙جاري ارسال نسخه تحتوي على ↫ '..#List..' مجموعه', 1, 'md')
+local Text = "☭︙Source Virus\n☭︙File Bot Groups\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(List) do
 local GroupsManagers = DevSOFI:scard(Virus.."SOFI:Managers:"..v) or 0
 local GroupsAdmins = DevSOFI:scard(Virus.."SOFI:Admins:"..v) or 0
 local Groupslink = DevSOFI:get(Virus.."SOFI:Groups:Links" ..v)
-Text = Text..k.." ↬ ⤈ \n᥀︙Group ID ↬ "..v.."\n᥀︙Group Link ↬ "..(Groupslink or "Not Found").."\n᥀︙Group Managers ↬ "..GroupsManagers.."\n᥀︙Group Admins ↬ "..GroupsAdmins.."\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Text = Text..k.." ↬ ⤈ \n☭︙Group ID ↬ "..v.."\n☭︙Group Link ↬ "..(Groupslink or "Not Found").."\n☭︙Group Managers ↬ "..GroupsManagers.."\n☭︙Group Admins ↬ "..GroupsAdmins.."\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 end
 local File = io.open('GroupsBot.txt', 'w')
 File:write(Text)
@@ -10194,19 +10194,19 @@ end
 end
 end
 --     Source Virus     --
-if text == "اذاعه خاص" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) or text == "↫ اذاعه خاص ᥀" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) then 
+if text == "اذاعه خاص" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) or text == "↫ اذاعه خاص ☭" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) then 
 if DevSOFI:get(Virus.."SOFI:Send:Bot"..Virus) and not SOFISudo(msg) then 
-send(msg.chat_id_, msg.id_,"᥀︙الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"☭︙الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
 DevSOFI:setex(Virus.."SOFI:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n᥀︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n☭︙للخروج ارسل ↫ ( الغاء ) \n ✓'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevSOFI:get(Virus.."SOFI:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_) then 
 if text == 'الغاء' then   
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء امر الاذاعه بنجاح", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء امر الاذاعه بنجاح", 1, 'md')
 DevSOFI:del(Virus.."SOFI:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_) 
 return false
 end 
@@ -10257,23 +10257,23 @@ SOFIText = "الملصق"
 sendSticker(v, 0, 0, 1, nil, msg.content_.sticker_.sticker_.persistent_id_)   
 end 
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم اذاعة "..SOFIText.." بنجاح \n᥀︙‏الى ↫ ❨ "..#List.." ❩ مشترك \n ✓", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم اذاعة "..SOFIText.." بنجاح \n☭︙‏الى ↫ ❨ "..#List.." ❩ مشترك \n ✓", 1, 'md')
 DevSOFI:del(Virus.."SOFI:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_) 
 end
 --     Source Virus     --
-if text == "اذاعه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) or text == "↫ اذاعه عام ᥀" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) then 
+if text == "اذاعه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) or text == "↫ اذاعه عام ☭" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) then 
 if DevSOFI:get(Virus.."SOFI:Send:Bot"..Virus) and not SOFISudo(msg) then 
-send(msg.chat_id_, msg.id_,"᥀︙الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"☭︙الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
 DevSOFI:setex(Virus.."SOFI:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n᥀︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n☭︙للخروج ارسل ↫ ( الغاء ) \n ✓'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevSOFI:get(Virus.."SOFI:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_) then 
 if text == 'الغاء' then   
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء امر الاذاعه بنجاح", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء امر الاذاعه بنجاح", 1, 'md')
 DevSOFI:del(Virus.."SOFI:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_) 
 return false
 end 
@@ -10324,23 +10324,23 @@ SOFIText = "الملصق"
 sendSticker(v, 0, 0, 1, nil, msg.content_.sticker_.sticker_.persistent_id_)   
 end 
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم اذاعة "..SOFIText.." بنجاح \n᥀︙‏في ↫ ❨ "..#List.." ❩ مجموعه \n ✓", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم اذاعة "..SOFIText.." بنجاح \n☭︙‏في ↫ ❨ "..#List.." ❩ مجموعه \n ✓", 1, 'md')
 DevSOFI:del(Virus.."SOFI:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_) 
 end
 --     Source Virus     --
-if text == "اذاعه بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) or text == "↫ اذاعه عام بالتوجيه ᥀" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) then 
+if text == "اذاعه بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) or text == "↫ اذاعه عام بالتوجيه ☭" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) then 
 if DevSOFI:get(Virus.."SOFI:Send:Bot"..Virus) and not SOFISudo(msg) then 
-send(msg.chat_id_, msg.id_,"᥀︙الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"☭︙الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
 DevSOFI:setex(Virus.."SOFI:Send:FwdGp"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙ارسل الرساله الان لتوجيها \n᥀︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙ارسل الرساله الان لتوجيها \n☭︙للخروج ارسل ↫ ( الغاء ) \n ✓'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevSOFI:get(Virus.."SOFI:Send:FwdGp"..msg.chat_id_..":" .. msg.sender_user_id_) then 
 if text == 'الغاء' then   
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء امر الاذاعه بنجاح", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء امر الاذاعه بنجاح", 1, 'md')
 DevSOFI:del(Virus.."SOFI:Send:FwdGp"..msg.chat_id_..":" .. msg.sender_user_id_) 
 return false  
 end 
@@ -10348,23 +10348,23 @@ local List = DevSOFI:smembers(Virus..'SOFI:Groups')
 for k,v in pairs(List) do  
 tdcli_function({ID="ForwardMessages", chat_id_ = v, from_chat_id_ = msg.chat_id_, message_ids_ = {[0] = msg.id_}, disable_notification_ = 0, from_background_ = 1},function(a,t) end,nil) 
 end   
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم اذاعة رسالتك بالتوجيه \n᥀︙‏في ↫ ❨ "..#List.." ❩ مجموعه \n ✓", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم اذاعة رسالتك بالتوجيه \n☭︙‏في ↫ ❨ "..#List.." ❩ مجموعه \n ✓", 1, 'md')
 DevSOFI:del(Virus.."SOFI:Send:FwdGp"..msg.chat_id_..":" .. msg.sender_user_id_) 
 end
 --     Source Virus     --
-if text == "اذاعه خاص بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) or text == "↫ اذاعه خاص بالتوجيه ᥀" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) then 
+if text == "اذاعه خاص بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) or text == "↫ اذاعه خاص بالتوجيه ☭" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) then 
 if DevSOFI:get(Virus.."SOFI:Send:Bot"..Virus) and not SOFISudo(msg) then 
-send(msg.chat_id_, msg.id_,"᥀︙الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"☭︙الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
 DevSOFI:setex(Virus.."SOFI:Send:FwdPv"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙ارسل الرساله الان لتوجيها \n᥀︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙ارسل الرساله الان لتوجيها \n☭︙للخروج ارسل ↫ ( الغاء ) \n ✓'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevSOFI:get(Virus.."SOFI:Send:FwdPv"..msg.chat_id_..":" .. msg.sender_user_id_) then 
 if text == 'الغاء' then   
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء امر الاذاعه بنجاح", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء امر الاذاعه بنجاح", 1, 'md')
 DevSOFI:del(Virus.."SOFI:Send:FwdPv"..msg.chat_id_..":" .. msg.sender_user_id_) 
 return false  
 end 
@@ -10372,23 +10372,23 @@ local List = DevSOFI:smembers(Virus..'SOFI:Users')
 for k,v in pairs(List) do  
 tdcli_function({ID="ForwardMessages", chat_id_ = v, from_chat_id_ = msg.chat_id_, message_ids_ = {[0] = msg.id_}, disable_notification_ = 0, from_background_ = 1},function(a,t) end,nil) 
 end   
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم اذاعة رسالتك بالتوجيه \n᥀︙‏الى ↫ ❨ "..#List.." ❩ مشترك \n ✓", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم اذاعة رسالتك بالتوجيه \n☭︙‏الى ↫ ❨ "..#List.." ❩ مشترك \n ✓", 1, 'md')
 DevSOFI:del(Virus.."SOFI:Send:FwdPv"..msg.chat_id_..":" .. msg.sender_user_id_) 
 end
 --     Source Virus     --
-if text == "اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) or text == "↫ اذاعه بالتثبيت ᥀" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) then 
+if text == "اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) or text == "↫ اذاعه بالتثبيت ☭" and msg.reply_to_message_id_ == 0 and SudoBot(msg) and ChCheck(msg) then 
 if DevSOFI:get(Virus.."SOFI:Send:Bot"..Virus) and not SOFISudo(msg) then 
-send(msg.chat_id_, msg.id_,"᥀︙الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"☭︙الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
 DevSOFI:setex(Virus.."SOFI:Send:Gp:Pin"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n᥀︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n☭︙للخروج ارسل ↫ ( الغاء ) \n ✓'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevSOFI:get(Virus.."SOFI:Send:Gp:Pin"..msg.chat_id_..":" .. msg.sender_user_id_) then 
 if text == "الغاء" then   
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء امر الاذاعه بنجاح", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء امر الاذاعه بنجاح", 1, 'md')
 DevSOFI:del(Virus.."SOFI:Send:Gp:Pin"..msg.chat_id_..":" .. msg.sender_user_id_) 
 return false
 end 
@@ -10447,84 +10447,84 @@ sendSticker(v, 0, 0, 1, nil, msg.content_.sticker_.sticker_.persistent_id_)
 DevSOFI:set(Virus..'SOFI:PinnedMsgs'..v,msg.content_.sticker_.sticker_.persistent_id_) 
 end 
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم اذاعة "..SOFIText.." بالتثبيت \n᥀︙‏في ↫ ❨ "..#List.." ❩ مجموعه \n ✓", 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم اذاعة "..SOFIText.." بالتثبيت \n☭︙‏في ↫ ❨ "..#List.." ❩ مجموعه \n ✓", 1, 'md')
 DevSOFI:del(Virus.."SOFI:Send:Gp:Pin"..msg.chat_id_..":" .. msg.sender_user_id_) 
 return false
 end
 --     Source Virus     --
 if text and (text == 'حذف رد من متعدد' or text == 'مسح رد من متعدد') and ChCheck(msg) then
 if not Bot(msg) and DevSOFI:get(Virus..'SOFI:Lock:Rd'..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع حذف رد وذالك بسبب تعطيله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع حذف رد وذالك بسبب تعطيله', 1, 'md')
 return false
 end
 if not Manager(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمدير واعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمدير واعلى فقط ', 1, 'md')
 else
 local List = DevSOFI:smembers(Virus..'SOFI:Manager:GpRedod'..msg.chat_id_)
 if #List == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لا توجد ردود متعدده مضافه" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لا توجد ردود متعدده مضافه" ,  1, "md")
 return false
 end end
 DevSOFI:set(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_,'DelGpRedRedod')
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙حسنا ارسل كلمة الرد اولا" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙حسنا ارسل كلمة الرد اولا" ,  1, "md")
 return false
 end
 if text and text:match("^(.*)$") then
 local DelGpRedRedod = DevSOFI:get(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 if DelGpRedRedod == 'DelGpRedRedod' then
 if text == "الغاء" then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء الامر" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء الامر" ,  1, "md")
 DevSOFI:del(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 return false
 end
 if not DevSOFI:sismember(Virus..'SOFI:Manager:GpRedod'..msg.chat_id_,text) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لايوجد رد متعدد لهذه الكلمه ↫ "..text ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لايوجد رد متعدد لهذه الكلمه ↫ "..text ,  1, "md")
 return false
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙قم بارسال الرد المتعدد الذي تريد حذفه من الكلمه ↫ "..text ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙قم بارسال الرد المتعدد الذي تريد حذفه من الكلمه ↫ "..text ,  1, "md")
 DevSOFI:set(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_,'DelGpRedRedods')
 DevSOFI:set(Virus..'SOFI:Add:GpTexts'..msg.sender_user_id_..msg.chat_id_,text)
 return false
 end end
 if text and (text == 'حذف رد متعدد' or text == 'مسح رد متعدد') and ChCheck(msg) then
 if not Bot(msg) and DevSOFI:get(Virus..'SOFI:Lock:Rd'..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع حذف رد وذالك بسبب تعطيله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع حذف رد وذالك بسبب تعطيله', 1, 'md')
 return false
 end
 if not Manager(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمدير واعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمدير واعلى فقط ', 1, 'md')
 else
 local List = DevSOFI:smembers(Virus..'SOFI:Manager:GpRedod'..msg.chat_id_)
 if #List == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لا توجد ردود متعدده مضافه" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لا توجد ردود متعدده مضافه" ,  1, "md")
 return false
 end end
 DevSOFI:set(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_,'DelGpRedod')
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙حسنا ارسل الكلمه لحذفها" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙حسنا ارسل الكلمه لحذفها" ,  1, "md")
 return false
 end
 if text == 'اضف رد متعدد' and ChCheck(msg) then
 if not Bot(msg) and DevSOFI:get(Virus..'SOFI:Lock:Rd'..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع اضافه رد وذالك بسبب تعطيله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع اضافه رد وذالك بسبب تعطيله', 1, 'md')
 return false
 end
 if not Manager(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمدير واعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمدير واعلى فقط ', 1, 'md')
 else
 DevSOFI:set(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_,'SetGpRedod')
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙حسنا ارسل الكلمه الان" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙حسنا ارسل الكلمه الان" ,  1, "md")
 return false
 end end
 if text and text:match("^(.*)$") then
 local SetGpRedod = DevSOFI:get(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 if SetGpRedod == 'SetGpRedod' then
 if text == "الغاء" then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء الامر" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء الامر" ,  1, "md")
 DevSOFI:del(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 return false
 end
 if DevSOFI:sismember(Virus..'SOFI:Manager:GpRedod'..msg.chat_id_,text) then
-local SOFI = "᥀︙لاتستطيع اضافة رد بالتاكيد مضاف في القائمه قم بحذفه اولا !"
+local SOFI = "☭︙لاتستطيع اضافة رد بالتاكيد مضاف في القائمه قم بحذفه اولا !"
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="حذف الرد ↫ "..text,callback_data="/DelRed:"..msg.sender_user_id_..text}}} 
 Msg_id = msg.id_/2097152/0.5
@@ -10532,7 +10532,7 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='.
 DevSOFI:del(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 return false
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ الامر ارسل الرد الاول\n᥀︙للخروج ارسل ↫ ( الغاء )" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ الامر ارسل الرد الاول\n☭︙للخروج ارسل ↫ ( الغاء )" ,  1, "md")
 DevSOFI:set(Virus..'SOFI:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_,'SaveGpRedod')
 DevSOFI:set(Virus..'SOFI:Add:GpTexts'..msg.sender_user_id_..msg.chat_id_,text)
 DevSOFI:sadd(Virus..'SOFI:Manager:GpRedod'..msg.chat_id_,text)
@@ -10541,42 +10541,42 @@ end end
 --     Source Virus     --
 if text and (text == 'حذف رد' or text == 'مسح رد') and ChCheck(msg) then
 if not Bot(msg) and DevSOFI:get(Virus..'SOFI:Lock:Rd'..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع حذف رد وذالك بسبب تعطيله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع حذف رد وذالك بسبب تعطيله', 1, 'md')
 return false
 end
 if not Manager(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمدير واعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمدير واعلى فقط ', 1, 'md')
 else
 local List = DevSOFI:smembers(Virus..'SOFI:Manager:GpRed'..msg.chat_id_)
 if #List == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لا توجد ردود مضافه" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لا توجد ردود مضافه" ,  1, "md")
 return false
 end end
 DevSOFI:set(Virus..'SOFI:Add:GpRed'..msg.sender_user_id_..msg.chat_id_,'DelGpRed')
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙حسنا ارسل الكلمه لحذفها " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙حسنا ارسل الكلمه لحذفها " ,  1, "md")
 return false
 end
 if text and (text == 'اضف رد' or text == 'اضافه رد' or text == 'اضافة رد') and ChCheck(msg) then
 if not Bot(msg) and DevSOFI:get(Virus..'SOFI:Lock:Rd'..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع اضافه رد وذالك بسبب تعطيله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع اضافه رد وذالك بسبب تعطيله', 1, 'md')
 return false
 end
 if not Manager(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمدير واعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمدير واعلى فقط ', 1, 'md')
 else
 DevSOFI:set(Virus..'SOFI:Add:GpRed'..msg.sender_user_id_..msg.chat_id_,'SetGpRed')
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙حسنا ارسل الكلمه الان " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙حسنا ارسل الكلمه الان " ,  1, "md")
 return false
 end end
 if text and text:match("^(.*)$") then
 local SetGpRed = DevSOFI:get(Virus..'SOFI:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
 if SetGpRed == 'SetGpRed' then
 if text == "الغاء" then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء الامر" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء الامر" ,  1, "md")
 DevSOFI:del(Virus..'SOFI:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
 return false
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل لي الرد سواء كان ↫ ⤈\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n᥀︙يمكنك اضافة الى النص ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙للخروج ارسل ↫ ( الغاء )\n ✓" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل لي الرد سواء كان ↫ ⤈\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n☭︙يمكنك اضافة الى النص ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙للخروج ارسل ↫ ( الغاء )\n ✓" ,  1, "md")
 DevSOFI:set(Virus..'SOFI:Add:GpRed'..msg.sender_user_id_..msg.chat_id_,'SaveGpRed')
 DevSOFI:set(Virus..'SOFI:Add:GpText'..msg.sender_user_id_..msg.chat_id_,text)
 DevSOFI:sadd(Virus..'SOFI:Manager:GpRed'..msg.chat_id_,text)
@@ -10584,44 +10584,44 @@ DevSOFI:set(Virus..'DelManagerRep'..msg.chat_id_,text)
 return false
 end end
 --     Source Virus     --
-if text and (text == 'حذف رد عام' or text == '↫ حذف رد عام ᥀' or text == 'مسح رد عام' or text == 'حذف رد للكل' or text == 'مسح رد للكل' or text == 'مسح رد مطور' or text == 'حذف رد مطور') and ChCheck(msg) then
+if text and (text == 'حذف رد عام' or text == '↫ حذف رد عام ☭' or text == 'مسح رد عام' or text == 'حذف رد للكل' or text == 'مسح رد للكل' or text == 'مسح رد مطور' or text == 'حذف رد مطور') and ChCheck(msg) then
 if not Bot(msg) and DevSOFI:get(Virus..'SOFI:Lock:Rd'..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع حذف رد وذالك بسبب تعطيله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع حذف رد وذالك بسبب تعطيله', 1, 'md')
 return false
 end
 if not SecondSudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الثانوي واعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الثانوي واعلى فقط ', 1, 'md')
 else
 local List = DevSOFI:smembers(Virus.."SOFI:Sudo:AllRed")
 if #List == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لا توجد ردود مضافه" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لا توجد ردود مضافه" ,  1, "md")
 return false
 end end
 DevSOFI:set(Virus.."SOFI:Add:AllRed"..msg.sender_user_id_,'DelAllRed')
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙حسنا ارسل الكلمه لحذفها " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙حسنا ارسل الكلمه لحذفها " ,  1, "md")
 return false
 end
-if text and (text == 'اضف رد عام' or text == '↫ اضف رد عام ᥀' or text == 'اضف رد للكل' or text == 'اضف رد مطور') and ChCheck(msg) then
+if text and (text == 'اضف رد عام' or text == '↫ اضف رد عام ☭' or text == 'اضف رد للكل' or text == 'اضف رد مطور') and ChCheck(msg) then
 if not Bot(msg) and DevSOFI:get(Virus..'SOFI:Lock:Rd'..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع اضافه رد وذالك بسبب تعطيله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع اضافه رد وذالك بسبب تعطيله', 1, 'md')
 return false
 end
 if not SecondSudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الثانوي واعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الثانوي واعلى فقط ', 1, 'md')
 else
 DevSOFI:set(Virus.."SOFI:Add:AllRed"..msg.sender_user_id_,'SetAllRed')
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙حسنا ارسل الكلمه الان " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙حسنا ارسل الكلمه الان " ,  1, "md")
 return false
 end end
 if text and text:match("^(.*)$") then
 local SetAllRed = DevSOFI:get(Virus.."SOFI:Add:AllRed"..msg.sender_user_id_)
 if SetAllRed == 'SetAllRed' then
 if text == "الغاء" then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء الامر" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء الامر" ,  1, "md")
 DevSOFI:del(Virus..'SOFI:Add:AllRed'..msg.sender_user_id_)
 return false
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل لي الرد سواء كان ↫ ⤈\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n᥀︙يمكنك اضافة الى النص ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙للخروج ارسل ↫ ( الغاء )\n ✓" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل لي الرد سواء كان ↫ ⤈\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n☭︙يمكنك اضافة الى النص ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙للخروج ارسل ↫ ( الغاء )\n ✓" ,  1, "md")
 DevSOFI:set(Virus.."SOFI:Add:AllRed"..msg.sender_user_id_,'SaveAllRed')
 DevSOFI:set(Virus.."SOFI:Add:AllText"..msg.sender_user_id_, text)
 DevSOFI:sadd(Virus.."SOFI:Sudo:AllRed",text)
@@ -10631,35 +10631,35 @@ end end
 --     Source Virus     --
 if text == 'الردود المتعدده' and Manager(msg) and ChCheck(msg) then
 if not Manager(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمدير واعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمدير واعلى فقط ', 1, 'md')
 else
 local redod = DevSOFI:smembers(Virus..'SOFI:Manager:GpRedod'..msg.chat_id_)
-MsgRep = '᥀︙قائمة الردود المتعدده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
+MsgRep = '☭︙قائمة الردود المتعدده ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
 for k,v in pairs(redod) do
 MsgRep = MsgRep..k..'~ (`'..v..'`) • {*العدد ↫ '..#DevSOFI:smembers(Virus..'SOFI:Text:GpTexts'..v..msg.chat_id_)..'*}\n' 
 end
 if #redod == 0 then
-MsgRep = '᥀︙لا توجد ردود متعدده مضافه'
+MsgRep = '☭︙لا توجد ردود متعدده مضافه'
 end
 send(msg.chat_id_,msg.id_,MsgRep)
 end
 if text and (text == 'حذف الردود المتعدده' or text == 'مسح الردود المتعدده') and ChCheck(msg) then
 if not Bot(msg) and DevSOFI:get(Virus..'SOFI:Lock:GpRd'..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع حذف ردود المتعدده وذالك بسبب تعطيله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع حذف ردود المتعدده وذالك بسبب تعطيله', 1, 'md')
 return false
 end
 if not Manager(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمدير او اعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمدير او اعلى فقط ', 1, 'md')
 else
 local redod = DevSOFI:smembers(Virus..'SOFI:Manager:GpRedod'..msg.chat_id_)
 if #redod == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لا توجد ردود متعدده مضافه" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لا توجد ردود متعدده مضافه" ,  1, "md")
 else
 for k,v in pairs(redod) do
 DevSOFI:del(Virus..'SOFI:Text:GpTexts'..v..msg.chat_id_)
 DevSOFI:del(Virus..'SOFI:Manager:GpRedod'..msg.chat_id_)
 end
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف الردود المتعدده")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف الردود المتعدده")  
 return false
 end
 end
@@ -10668,7 +10668,7 @@ end
 --     Source Virus     --
 if text == 'الردود' and Manager(msg) and ChCheck(msg) or text == 'ردود المدير' and Manager(msg) and ChCheck(msg) then
 local redod = DevSOFI:smembers(Virus..'SOFI:Manager:GpRed'..msg.chat_id_)
-MsgRep = '᥀︙ردود المدير ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
+MsgRep = '☭︙ردود المدير ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
 for k,v in pairs(redod) do
 if DevSOFI:get(Virus.."SOFI:Gif:GpRed"..v..msg.chat_id_) then
 dp = 'متحركه 🎭'
@@ -10690,21 +10690,21 @@ end
 MsgRep = MsgRep..k..'~ (`'..v..'`) ↫ {*'..dp..'*}\n' 
 end
 if #redod == 0 then
-MsgRep = '᥀︙لا توجد ردود مضافه'
+MsgRep = '☭︙لا توجد ردود مضافه'
 end
 send(msg.chat_id_,msg.id_,MsgRep)
 end
 if text and (text =='حذف الردود' or text == 'مسح الردود' or text == 'حذف ردود المدير' or text == 'مسح ردود المدير') and ChCheck(msg) then
 if not Bot(msg) and DevSOFI:get(Virus..'SOFI:Lock:GpRd'..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع حذف ردود المدير وذالك بسبب تعطيله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع حذف ردود المدير وذالك بسبب تعطيله', 1, 'md')
 return false
 end
 if not Manager(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمدير او اعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمدير او اعلى فقط ', 1, 'md')
 else
 local redod = DevSOFI:smembers(Virus..'SOFI:Manager:GpRed'..msg.chat_id_)
 if #redod == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لا توجد ردود مضافه" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لا توجد ردود مضافه" ,  1, "md")
 else
 for k,v in pairs(redod) do
 DevSOFI:del(Virus..'SOFI:Gif:GpRed'..v..msg.chat_id_)
@@ -10717,15 +10717,15 @@ DevSOFI:del(Virus..'SOFI:File:GpRed'..v..msg.chat_id_)
 DevSOFI:del(Virus..'SOFI:Text:GpRed'..v..msg.chat_id_)
 DevSOFI:del(Virus..'SOFI:Manager:GpRed'..msg.chat_id_)
 end
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف ردود المدير")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف ردود المدير")  
 return false
 end
 end
 end
 --     Source Virus     --
-if  text == "ردود المطور" and SecondSudo(msg) or text == "الردود العام" and SecondSudo(msg) or text == "ردود العام" and SecondSudo(msg) or text == "↫ الردود العام ᥀" and SecondSudo(msg) then
+if  text == "ردود المطور" and SecondSudo(msg) or text == "الردود العام" and SecondSudo(msg) or text == "ردود العام" and SecondSudo(msg) or text == "↫ الردود العام ☭" and SecondSudo(msg) then
 local redod = DevSOFI:smembers(Virus.."SOFI:Sudo:AllRed")
-MsgRep = '᥀︙ردود المطور ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
+MsgRep = '☭︙ردود المطور ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
 for k,v in pairs(redod) do
 if DevSOFI:get(Virus.."SOFI:Gif:AllRed"..v) then
 dp = 'متحركه 🎭'
@@ -10747,21 +10747,21 @@ end
 MsgRep = MsgRep..k..'~ (`'..v..'`) ↫ {*'..dp..'*}\n' 
 end
 if #redod == 0 then
-MsgRep = '᥀︙لا توجد ردود مضافه'
+MsgRep = '☭︙لا توجد ردود مضافه'
 end
 send(msg.chat_id_,msg.id_,MsgRep)
 end
-if text and (text == "حذف ردود المطور" or text == "حذف ردود العام" or text == "مسح ردود المطور" or text == "↫ مسح ردود العام ᥀") then
+if text and (text == "حذف ردود المطور" or text == "حذف ردود العام" or text == "مسح ردود المطور" or text == "↫ مسح ردود العام ☭") then
 if not Bot(msg) and DevSOFI:get(Virus..'SOFI:Lock:GpRd'..msg.chat_id_) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1,'᥀︙لاتستطيع حذف ردود المدير وذالك بسبب تعطيله', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1,'☭︙لاتستطيع حذف ردود المدير وذالك بسبب تعطيله', 1, 'md')
 return false
 end
 if not SecondSudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الثانوي او اعلى فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الثانوي او اعلى فقط ', 1, 'md')
 else
 local redod = DevSOFI:smembers(Virus.."SOFI:Sudo:AllRed")
 if #redod == 0 then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙لا توجد ردود مضافه" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙لا توجد ردود مضافه" ,  1, "md")
 else
 for k,v in pairs(redod) do
 DevSOFI:del(Virus.."SOFI:Add:AllRed"..v)
@@ -10775,7 +10775,7 @@ DevSOFI:del(Virus.."SOFI:File:AllRed"..v)
 DevSOFI:del(Virus.."SOFI:Text:AllRed"..v)
 DevSOFI:del(Virus.."SOFI:Sudo:AllRed")
 end
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","᥀︙تم حذف ردود المطور")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","☭︙تم حذف ردود المطور")  
 return false
 end
 end 
@@ -10783,19 +10783,19 @@ end
 --     Source Virus     --
 if text and text == "تغيير اسم البوت" and ChCheck(msg) or text and text == "وضع اسم البوت" and ChCheck(msg) or text and text == "تغير اسم البوت" and ChCheck(msg) then
 if not SecondSudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط ', 1, 'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل لي اسم البوت الان" ,  1, "md") 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل لي اسم البوت الان" ,  1, "md") 
 DevSOFI:set(Virus..'SOFI:NameBot'..msg.sender_user_id_, 'msg')
 return false 
 end
 end
 if text and text == 'حذف اسم البوت' and ChCheck(msg) or text == 'مسح اسم البوت' and ChCheck(msg) then
 if not SecondSudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط ', 1, 'md')
 else
 DevSOFI:del(Virus..'SOFI:NameBot')
-local VirusTeam = '᥀︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n᥀︙تم حذف اسم البوت'
+local VirusTeam = '☭︙اهلا عزيزي ↫ '..SOFIRank(msg)..' \n☭︙تم حذف اسم البوت'
 SOFImoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VirusTeam, 14, string.len(msg.sender_user_id_))
 end end 
 --     Source Virus     --
@@ -10804,10 +10804,10 @@ HelpList ={'SOFI:Help','SOFI:Help1','SOFI:Help2','SOFI:Help3','SOFI:Help4','SOFI
 for i,Help in pairs(HelpList) do
 DevSOFI:del(Virus..Help) 
 end
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم استعادة الكلايش الاصليه" ,  1, "md") 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم استعادة الكلايش الاصليه" ,  1, "md") 
 end
 if text == "تعيين الاوامر" and SecondSudo(msg) and ChCheck(msg) or text == "تعيين امر الاوامر" and SecondSudo(msg) and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل كليشة (الاوامر) الان " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل كليشة (الاوامر) الان " ,  1, "md")
 DevSOFI:set(Virus..'SOFI:Help0'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
@@ -10816,22 +10816,22 @@ if VirusTeam == 'msg' then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevSOFI:del(Virus..'SOFI:Help0'..msg.sender_user_id_)
 DevSOFI:set(Virus..'SOFI:Help', text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ الكليشه الجديده " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ الكليشه الجديده " ,  1, "md")
 return false end
 end
 if text == "الاوامر" and ChCheck(msg) or text == "اوامر" and ChCheck(msg) or text == "مساعده" and ChCheck(msg) then
 local Help = DevSOFI:get(Virus..'SOFI:Help')
 local Text = [[
-᥀︙اهلا بك في قائمة الاوامر ↫ ⤈ 
+☭︙اهلا بك في قائمة الاوامر ↫ ⤈ 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙م1 ↫ اوامر الحمايه
-᥀︙م2 ↫ اوامر الادمنيه
-᥀︙م3 ↫ اوامر المدراء
-᥀︙م4 ↫ اوامر المنشئين
-᥀︙م5 ↫ اوامر المطورين
-᥀︙م6 ↫ اوامر الاعضاء
+☭︙م1 ↫ اوامر الحمايه
+☭︙م2 ↫ اوامر الادمنيه
+☭︙م3 ↫ اوامر المدراء
+☭︙م4 ↫ اوامر المنشئين
+☭︙م5 ↫ اوامر المطورين
+☭︙م6 ↫ اوامر الاعضاء
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..msg.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..msg.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..msg.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
@@ -10839,7 +10839,7 @@ Msg_id = msg.id_/2097152/0.5
 return https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(Help or Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == "تعيين امر م1" and SecondSudo(msg) and ChCheck(msg) or text == "تعيين امر م١" and SecondSudo(msg) and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل كليشة (م1) الان " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل كليشة (م1) الان " ,  1, "md")
 DevSOFI:set(Virus..'SOFI:Help01'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
@@ -10848,66 +10848,66 @@ if VirusTeam == 'msg' then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevSOFI:del(Virus..'SOFI:Help01'..msg.sender_user_id_)
 DevSOFI:set(Virus..'SOFI:Help1', text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ الكليشه الجديده " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ الكليشه الجديده " ,  1, "md")
 return false end
 end
 if text == "م1" or text == "م١" or text == "اوامر1" or text == "اوامر١" then
 if not Admin(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙هذا الامر يخص الرتب الاعلى فقط\n᥀︙ارسل ↫ (م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙هذا الامر يخص الرتب الاعلى فقط\n☭︙ارسل ↫ (م6) لعرض اوامر الاعضاء', 1, 'md')
 else
 local Help = DevSOFI:get(Virus..'SOFI:Help1')
 local Text = [[
-᥀︙اوامر حماية المجموعه ↫ ⤈
+☭︙اوامر حماية المجموعه ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙قفل • فتح ↫ الروابط
-᥀︙قفل • فتح ↫ المعرفات
-᥀︙قفل • فتح ↫ البوتات
-᥀︙قفل • فتح ↫ المتحركه
-᥀︙قفل • فتح ↫ الملصقات
-᥀︙قفل • فتح ↫ الملفات
-᥀︙قفل • فتح ↫ الصور
-᥀︙قفل • فتح ↫ الفيديو
-᥀︙قفل • فتح ↫ الاونلاين
-᥀︙قفل • فتح ↫ الدردشه
-᥀︙قفل • فتح ↫ التوجيه
-᥀︙قفل • فتح ↫ الاغاني
-᥀︙قفل • فتح ↫ الصوت
-᥀︙قفل • فتح ↫ الجهات
-᥀︙قفل • فتح ↫ الماركداون
-᥀︙قفل • فتح ↫ التكرار
-᥀︙قفل • فتح ↫ الهاشتاك
-᥀︙قفل • فتح ↫ التعديل
-᥀︙قفل • فتح ↫ التثبيت
-᥀︙قفل • فتح ↫ الاشعارات
-᥀︙قفل • فتح ↫ الكلايش
-᥀︙قفل • فتح ↫ الدخول
-᥀︙قفل • فتح ↫ الشبكات
-᥀︙قفل • فتح ↫ المواقع
-᥀︙قفل • فتح ↫ الفشار
-᥀︙قفل • فتح ↫ الكفر
-᥀︙قفل • فتح ↫ الطائفيه
-᥀︙قفل • فتح ↫ الكل
-᥀︙قفل • فتح ↫ العربيه
-᥀︙قفل • فتح ↫ الانكليزيه
-᥀︙قفل • فتح ↫ الفارسيه
-᥀︙قفل • فتح ↫ التفليش
+☭︙قفل • فتح ↫ الروابط
+☭︙قفل • فتح ↫ المعرفات
+☭︙قفل • فتح ↫ البوتات
+☭︙قفل • فتح ↫ المتحركه
+☭︙قفل • فتح ↫ الملصقات
+☭︙قفل • فتح ↫ الملفات
+☭︙قفل • فتح ↫ الصور
+☭︙قفل • فتح ↫ الفيديو
+☭︙قفل • فتح ↫ الاونلاين
+☭︙قفل • فتح ↫ الدردشه
+☭︙قفل • فتح ↫ التوجيه
+☭︙قفل • فتح ↫ الاغاني
+☭︙قفل • فتح ↫ الصوت
+☭︙قفل • فتح ↫ الجهات
+☭︙قفل • فتح ↫ الماركداون
+☭︙قفل • فتح ↫ التكرار
+☭︙قفل • فتح ↫ الهاشتاك
+☭︙قفل • فتح ↫ التعديل
+☭︙قفل • فتح ↫ التثبيت
+☭︙قفل • فتح ↫ الاشعارات
+☭︙قفل • فتح ↫ الكلايش
+☭︙قفل • فتح ↫ الدخول
+☭︙قفل • فتح ↫ الشبكات
+☭︙قفل • فتح ↫ المواقع
+☭︙قفل • فتح ↫ الفشار
+☭︙قفل • فتح ↫ الكفر
+☭︙قفل • فتح ↫ الطائفيه
+☭︙قفل • فتح ↫ الكل
+☭︙قفل • فتح ↫ العربيه
+☭︙قفل • فتح ↫ الانكليزيه
+☭︙قفل • فتح ↫ الفارسيه
+☭︙قفل • فتح ↫ التفليش
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙اوامر حمايه اخرى ↫ ⤈
+☭︙اوامر حمايه اخرى ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙قفل • فتح + الامر ↫ ⤈
-᥀︙التكرار بالطرد
-᥀︙التكرار بالكتم
-᥀︙التكرار بالتقيد
-᥀︙الفارسيه بالطرد
-᥀︙البوتات بالطرد
-᥀︙البوتات بالتقيد
+☭︙قفل • فتح + الامر ↫ ⤈
+☭︙التكرار بالطرد
+☭︙التكرار بالكتم
+☭︙التكرار بالتقيد
+☭︙الفارسيه بالطرد
+☭︙البوتات بالطرد
+☭︙البوتات بالتقيد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
 if text == "تعيين امر م2" and SecondSudo(msg) and ChCheck(msg) or text == "تعيين امر م٢" and SecondSudo(msg) and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل كليشة (م2) الان " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل كليشة (م2) الان " ,  1, "md")
 DevSOFI:set(Virus..'SOFI:Help21'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
@@ -10916,73 +10916,73 @@ if VirusTeam == 'msg' then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevSOFI:del(Virus..'SOFI:Help21'..msg.sender_user_id_)
 DevSOFI:set(Virus..'SOFI:Help2', text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ الكليشه الجديده " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ الكليشه الجديده " ,  1, "md")
 return false end
 end
 if text == "م2" and ChCheck(msg) or text == "م٢" and ChCheck(msg) or text == "اوامر2" and ChCheck(msg) or text == "اوامر٢" and ChCheck(msg) then
 if not Admin(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙هذا الامر يخص الرتب الاعلى فقط\n᥀︙ارسل ↫ (م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙هذا الامر يخص الرتب الاعلى فقط\n☭︙ارسل ↫ (م6) لعرض اوامر الاعضاء', 1, 'md')
 else
 local Help = DevSOFI:get(Virus..'SOFI:Help2')
 local Text = [[
-᥀︙اوامر الادمنيه ↫ ⤈
+☭︙اوامر الادمنيه ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙الاعدادت
-᥀︙تاك للكل 
-᥀︙انشاء رابط
-᥀︙ضع وصف
-᥀︙ضع رابط
-᥀︙ضع صوره
-᥀︙حذف الرابط
-᥀︙كشف البوتات
-᥀︙طرد البوتات
-᥀︙تنظيف + العدد
-᥀︙تنظيف التعديل
-᥀︙كللهم + الكلمه
-᥀︙اسم البوت + الامر
-᥀︙ضع • حذف ↫ ترحيب
-᥀︙ضع • حذف ↫ قوانين
-᥀︙اضف • حذف ↫ صلاحيه
-᥀︙الصلاحيات • حذف الصلاحيات
+☭︙الاعدادت
+☭︙تاك للكل 
+☭︙انشاء رابط
+☭︙ضع وصف
+☭︙ضع رابط
+☭︙ضع صوره
+☭︙حذف الرابط
+☭︙كشف البوتات
+☭︙طرد البوتات
+☭︙تنظيف + العدد
+☭︙تنظيف التعديل
+☭︙كللهم + الكلمه
+☭︙اسم البوت + الامر
+☭︙ضع • حذف ↫ ترحيب
+☭︙ضع • حذف ↫ قوانين
+☭︙اضف • حذف ↫ صلاحيه
+☭︙الصلاحيات • حذف الصلاحيات
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙ضع سبام + العدد
-᥀︙ضع تكرار + العدد
+☭︙ضع سبام + العدد
+☭︙ضع تكرار + العدد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙رفع مميز • تنزيل مميز
-᥀︙المميزين • حذف المميزين
-᥀︙كشف القيود • رفع القيود
+☭︙رفع مميز • تنزيل مميز
+☭︙المميزين • حذف المميزين
+☭︙كشف القيود • رفع القيود
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙حذف • مسح + بالرد
-᥀︙منع • الغاء منع
-᥀︙قائمه المنع
-᥀︙حذف قائمه المنع
+☭︙حذف • مسح + بالرد
+☭︙منع • الغاء منع
+☭︙قائمه المنع
+☭︙حذف قائمه المنع
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تفعيل • تعطيل ↫ الرابط
-᥀︙تفعيل • تعطيل ↫ الالعاب
-᥀︙تفعيل • تعطيل ↫ الترحيب
-᥀︙تفعيل • تعطيل ↫ التاك للكل
-᥀︙تفعيل • تعطيل ↫ كشف الاعدادات
+☭︙تفعيل • تعطيل ↫ الرابط
+☭︙تفعيل • تعطيل ↫ الالعاب
+☭︙تفعيل • تعطيل ↫ الترحيب
+☭︙تفعيل • تعطيل ↫ التاك للكل
+☭︙تفعيل • تعطيل ↫ كشف الاعدادات
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙طرد المحذوفين
-᥀︙طرد ↫ بالرد • بالمعرف • بالايدي
-᥀︙كتم • الغاء كتم
-᥀︙تقيد • الغاء تقيد
-᥀︙حظر • الغاء حظر
-᥀︙المكتومين • حذف المكتومين
-᥀︙المقيدين • حذف المقيدين
-᥀︙المحظورين • حذف المحظورين
+☭︙طرد المحذوفين
+☭︙طرد ↫ بالرد • بالمعرف • بالايدي
+☭︙كتم • الغاء كتم
+☭︙تقيد • الغاء تقيد
+☭︙حظر • الغاء حظر
+☭︙المكتومين • حذف المكتومين
+☭︙المقيدين • حذف المقيدين
+☭︙المحظورين • حذف المحظورين
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تقييد دقيقه + عدد الدقائق
-᥀︙تقييد ساعه + عدد الساعات
-᥀︙تقييد يوم + عدد الايام
-᥀︙الغاء تقييد ↫ لالغاء التقييد بالوقت
+☭︙تقييد دقيقه + عدد الدقائق
+☭︙تقييد ساعه + عدد الساعات
+☭︙تقييد يوم + عدد الايام
+☭︙الغاء تقييد ↫ لالغاء التقييد بالوقت
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
 if text == "تعيين امر م3" and SecondSudo(msg) and ChCheck(msg) or text == "تعيين امر م٣" and SecondSudo(msg) and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل كليشة (م3) الان " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل كليشة (م3) الان " ,  1, "md")
 DevSOFI:set(Virus..'SOFI:Help31'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
@@ -10991,63 +10991,63 @@ if VirusTeam == 'msg' then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevSOFI:del(Virus..'SOFI:Help31'..msg.sender_user_id_)
 DevSOFI:set(Virus..'SOFI:Help3', text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ الكليشه الجديده " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ الكليشه الجديده " ,  1, "md")
 return false end
 end
 if text == "م3" and ChCheck(msg) or text == "م٣" and ChCheck(msg) or text == "اوامر3" and ChCheck(msg) or text == "اوامر٣" and ChCheck(msg) then
 if not Admin(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙هذا الامر يخص الرتب الاعلى فقط\n᥀︙ارسل ↫ (م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙هذا الامر يخص الرتب الاعلى فقط\n☭︙ارسل ↫ (م6) لعرض اوامر الاعضاء', 1, 'md')
 else
 local Help = DevSOFI:get(Virus..'SOFI:Help3')
 local Text = [[
-᥀︙اوامر المدراء ↫ ⤈
+☭︙اوامر المدراء ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙فحص البوت
-᥀︙ضع اسم + الاسم
-᥀︙اضف • حذف ↫ رد
-᥀︙ردود المدير
-᥀︙حذف ردود المدير
-᥀︙اضف • حذف ↫ رد متعدد
-᥀︙حذف رد من متعدد
-᥀︙الردود المتعدده
-᥀︙حذف الردود المتعدده
-᥀︙حذف قوائم المنع
-᥀︙منع ↫ بالرد على ( ملصق • صوره • متحركه )
-᥀︙حذف قائمه منع + ↫ ⤈
+☭︙فحص البوت
+☭︙ضع اسم + الاسم
+☭︙اضف • حذف ↫ رد
+☭︙ردود المدير
+☭︙حذف ردود المدير
+☭︙اضف • حذف ↫ رد متعدد
+☭︙حذف رد من متعدد
+☭︙الردود المتعدده
+☭︙حذف الردود المتعدده
+☭︙حذف قوائم المنع
+☭︙منع ↫ بالرد على ( ملصق • صوره • متحركه )
+☭︙حذف قائمه منع + ↫ ⤈
 ( الصور • المتحركات • الملصقات )
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تنزيل الكل
-᥀︙رفع ادمن • تنزيل ادمن
-᥀︙الادمنيه • حذف الادمنيه
+☭︙تنزيل الكل
+☭︙رفع ادمن • تنزيل ادمن
+☭︙الادمنيه • حذف الادمنيه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تثبيت
-᥀︙الغاء التثبيت
-᥀︙اعاده التثبيت
-᥀︙الغاء تثبيت الكل
+☭︙تثبيت
+☭︙الغاء التثبيت
+☭︙اعاده التثبيت
+☭︙الغاء تثبيت الكل
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تغير رد + اسم الرتبه + النص ↫ ⤈
-᥀︙المطور • منشئ الاساسي
-᥀︙المنشئ • المدير • الادمن
-᥀︙المميز • المنظف • العضو
-᥀︙حذف ردود الرتب
+☭︙تغير رد + اسم الرتبه + النص ↫ ⤈
+☭︙المطور • منشئ الاساسي
+☭︙المنشئ • المدير • الادمن
+☭︙المميز • المنظف • العضو
+☭︙حذف ردود الرتب
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تغيير الايدي ↫ لتغيير الكليشه
-᥀︙تعيين الايدي ↫ لتعيين الكليشه
-᥀︙حذف الايدي ↫ لحذف الكليشه
+☭︙تغيير الايدي ↫ لتغيير الكليشه
+☭︙تعيين الايدي ↫ لتعيين الكليشه
+☭︙حذف الايدي ↫ لحذف الكليشه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تفعيل • تعطيل + الامر ↫ ⤈
-᥀︙اطردني • الايدي بالصوره • الابراج
-᥀︙معاني الاسماء • اوامر النسب • انطق
-᥀︙الايدي • تحويل الصيغ • اوامر التحشيش
-᥀︙ردود المدير • ردود المطور • التحقق
-᥀︙ضافني • حساب العمر • الزخرفه
+☭︙تفعيل • تعطيل + الامر ↫ ⤈
+☭︙اطردني • الايدي بالصوره • الابراج
+☭︙معاني الاسماء • اوامر النسب • انطق
+☭︙الايدي • تحويل الصيغ • اوامر التحشيش
+☭︙ردود المدير • ردود المطور • التحقق
+☭︙ضافني • حساب العمر • الزخرفه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
 if text == "تعيين امر م4" and ChCheck(msg) and SecondSudo(msg) or text == "تعيين امر م٤" and SecondSudo(msg) and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل كليشة (م4) الان " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل كليشة (م4) الان " ,  1, "md")
 DevSOFI:set(Virus..'SOFI:Help41'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
@@ -11056,57 +11056,57 @@ if VirusTeam == 'msg' then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevSOFI:del(Virus..'SOFI:Help41'..msg.sender_user_id_)
 DevSOFI:set(Virus..'SOFI:Help4', text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ الكليشه الجديده" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ الكليشه الجديده" ,  1, "md")
 return false end
 end
 if text == "م٤" and ChCheck(msg) or text == "م4" and ChCheck(msg) or text == "اوامر4" and ChCheck(msg) or text == "اوامر٤" and ChCheck(msg) then
 if not Admin(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙هذا الامر يخص الرتب الاعلى فقط\n᥀︙ارسل ↫ (م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙هذا الامر يخص الرتب الاعلى فقط\n☭︙ارسل ↫ (م6) لعرض اوامر الاعضاء', 1, 'md')
 else
 local Help = DevSOFI:get(Virus..'SOFI:Help4')
 local Text = [[
-᥀︙اوامر المنشئين ↫ ⤈
+☭︙اوامر المنشئين ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تنزيل الكل
-᥀︙الميديا • امسح
-᥀︙تعين عدد الحذف
-᥀︙ترتيب الاوامر
-᥀︙اضف • حذف ↫ امر
-᥀︙حذف الاوامر المضافه
-᥀︙الاوامر المضافه
-᥀︙اضف نقاط ↫ بالرد • بالايدي
-᥀︙اضف رسائل ↫ بالرد • بالايدي
-᥀︙رفع منظف • تنزيل منظف
-᥀︙المنظفين • حذف المنظفين
-᥀︙رفع مدير • تنزيل مدير
-᥀︙المدراء • حذف المدراء
-᥀︙تفعيل • تعطيل + الامر ↫ ⤈
-᥀︙نزلني • امسح
-᥀︙الحظر • الكتم
+☭︙تنزيل الكل
+☭︙الميديا • امسح
+☭︙تعين عدد الحذف
+☭︙ترتيب الاوامر
+☭︙اضف • حذف ↫ امر
+☭︙حذف الاوامر المضافه
+☭︙الاوامر المضافه
+☭︙اضف نقاط ↫ بالرد • بالايدي
+☭︙اضف رسائل ↫ بالرد • بالايدي
+☭︙رفع منظف • تنزيل منظف
+☭︙المنظفين • حذف المنظفين
+☭︙رفع مدير • تنزيل مدير
+☭︙المدراء • حذف المدراء
+☭︙تفعيل • تعطيل + الامر ↫ ⤈
+☭︙نزلني • امسح
+☭︙الحظر • الكتم
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙اوامر المنشئين الاساسيين ↫ ⤈
+☭︙اوامر المنشئين الاساسيين ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙وضع لقب + اللقب
-᥀︙تفعيل • تعطيل ↫ الرفع
-᥀︙رفع منشئ • تنزيل منشئ
-᥀︙المنشئين • حذف المنشئين
-᥀︙رفع • تنزيل ↫ مشرف
-᥀︙رفع بكل الصلاحيات
-᥀︙حذف القوائم
+☭︙وضع لقب + اللقب
+☭︙تفعيل • تعطيل ↫ الرفع
+☭︙رفع منشئ • تنزيل منشئ
+☭︙المنشئين • حذف المنشئين
+☭︙رفع • تنزيل ↫ مشرف
+☭︙رفع بكل الصلاحيات
+☭︙حذف القوائم
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙اوامر المالكين ↫ ⤈
+☭︙اوامر المالكين ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙رفع • تنزيل ↫ منشئ اساسي
-᥀︙حذف المنشئين الاساسيين 
-᥀︙المنشئين الاساسيين 
-᥀︙حذف جميع الرتب
+☭︙رفع • تنزيل ↫ منشئ اساسي
+☭︙حذف المنشئين الاساسيين 
+☭︙المنشئين الاساسيين 
+☭︙حذف جميع الرتب
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
 if text == "تعيين امر م5" and SecondSudo(msg) and ChCheck(msg) or text == "تعيين امر م٥" and SecondSudo(msg) and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل كليشة (م5) الان " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل كليشة (م5) الان " ,  1, "md")
 DevSOFI:set(Virus..'SOFI:Help51'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
@@ -11115,82 +11115,82 @@ if VirusTeam == 'msg' then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevSOFI:del(Virus..'SOFI:Help51'..msg.sender_user_id_)
 DevSOFI:set(Virus..'SOFI:Help5', text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ الكليشه الجديده " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ الكليشه الجديده " ,  1, "md")
 return false end
 end
 if text == "م٥" and ChCheck(msg) or text == "م5" and ChCheck(msg) or text == "اوامر5" and ChCheck(msg) or text == "اوامر٥" and ChCheck(msg) then
 if not SudoBot(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙هذا الامر للمطورين فقط', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙هذا الامر للمطورين فقط', 1, 'md')
 else
 local Help = DevSOFI:get(Virus..'SOFI:Help5')
 local Text = [[
-᥀︙اوامر المطورين ↫ ⤈
+☭︙اوامر المطورين ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙الكروبات
-᥀︙المطورين
-᥀︙المشتركين
-᥀︙الاحصائيات
-᥀︙المجموعات
-᥀︙اسم البوت + غادر
-᥀︙اسم البوت + تعطيل
-᥀︙كشف + -ايدي المجموعه
-᥀︙رفع مالك • تنزيل مالك
-᥀︙المالكين • حذف المالكين
+☭︙الكروبات
+☭︙المطورين
+☭︙المشتركين
+☭︙الاحصائيات
+☭︙المجموعات
+☭︙اسم البوت + غادر
+☭︙اسم البوت + تعطيل
+☭︙كشف + -ايدي المجموعه
+☭︙رفع مالك • تنزيل مالك
+☭︙المالكين • حذف المالكين
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙رفع • تنزيل ↫ مدير عام
-᥀︙حذف • المدراء العامين 
-᥀︙رفع • تنزيل ↫ ادمن عام
-᥀︙حذف • الادمنيه العامين 
-᥀︙رفع • تنزيل ↫ مميز عام
-᥀︙حذف • المميزين عام 
+☭︙رفع • تنزيل ↫ مدير عام
+☭︙حذف • المدراء العامين 
+☭︙رفع • تنزيل ↫ ادمن عام
+☭︙حذف • الادمنيه العامين 
+☭︙رفع • تنزيل ↫ مميز عام
+☭︙حذف • المميزين عام 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙اوامر المطور الاساسي ↫ ⤈
+☭︙اوامر المطور الاساسي ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تحديث
-᥀︙السيرفر
-᥀︙روابط الكروبات
-᥀︙تحديث السورس
-᥀︙تنظيف الكروبات
-᥀︙تنظيف المشتركين
-᥀︙حذف جميع الملفات
-᥀︙تعيين الايدي العام
-᥀︙تغير المطور الاساسي
-᥀︙حذف معلومات الترحيب
-᥀︙تغير معلومات الترحيب
-᥀︙غادر + -ايدي المجموعه
-᥀︙تعيين عدد الاعضاء + العدد
-᥀︙حظر عام • الغاء العام
-᥀︙كتم عام • الغاء العام
-᥀︙قائمه العام • حذف قائمه العام
-᥀︙وضع • حذف ↫ اسم البوت
-᥀︙اضف • حذف ↫ رد عام
-᥀︙ردود المطور • حذف ردود المطور
-᥀︙تعيين • حذف • جلب ↫ رد الخاص
-᥀︙جلب نسخه الكروبات
-᥀︙رفع النسخه + بالرد على الملف
-᥀︙تعيين • حذف ↫ قناة الاشتراك
-᥀︙جلب كليشه الاشتراك
-᥀︙تغيير • حذف ↫ كليشه الاشتراك
-᥀︙رفع • تنزيل ↫ مطور
-᥀︙المطورين • حذف المطورين
-᥀︙رفع • تنزيل ↫ مطور ثانوي
-᥀︙الثانويين • حذف الثانويين
-᥀︙تعيين • حذف ↫ كليشة الايدي
-᥀︙اذاعه للكل بالتوجيه ↫ بالرد
+☭︙تحديث
+☭︙السيرفر
+☭︙روابط الكروبات
+☭︙تحديث السورس
+☭︙تنظيف الكروبات
+☭︙تنظيف المشتركين
+☭︙حذف جميع الملفات
+☭︙تعيين الايدي العام
+☭︙تغير المطور الاساسي
+☭︙حذف معلومات الترحيب
+☭︙تغير معلومات الترحيب
+☭︙غادر + -ايدي المجموعه
+☭︙تعيين عدد الاعضاء + العدد
+☭︙حظر عام • الغاء العام
+☭︙كتم عام • الغاء العام
+☭︙قائمه العام • حذف قائمه العام
+☭︙وضع • حذف ↫ اسم البوت
+☭︙اضف • حذف ↫ رد عام
+☭︙ردود المطور • حذف ردود المطور
+☭︙تعيين • حذف • جلب ↫ رد الخاص
+☭︙جلب نسخه الكروبات
+☭︙رفع النسخه + بالرد على الملف
+☭︙تعيين • حذف ↫ قناة الاشتراك
+☭︙جلب كليشه الاشتراك
+☭︙تغيير • حذف ↫ كليشه الاشتراك
+☭︙رفع • تنزيل ↫ مطور
+☭︙المطورين • حذف المطورين
+☭︙رفع • تنزيل ↫ مطور ثانوي
+☭︙الثانويين • حذف الثانويين
+☭︙تعيين • حذف ↫ كليشة الايدي
+☭︙اذاعه للكل بالتوجيه ↫ بالرد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙تفعيل ملف + اسم الملف
-᥀︙تعطيل ملف + اسم الملف
-᥀︙تفعيل • تعطيل + الامر ↫ ⤈
-᥀︙الاذاعه • الاشتراك الاجباري
-᥀︙ترحيب البوت • المغادره
-᥀︙البوت الخدمي • التواصل
+☭︙تفعيل ملف + اسم الملف
+☭︙تعطيل ملف + اسم الملف
+☭︙تفعيل • تعطيل + الامر ↫ ⤈
+☭︙الاذاعه • الاشتراك الاجباري
+☭︙ترحيب البوت • المغادره
+☭︙البوت الخدمي • التواصل
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
 if text == "تعيين امر م6" and SecondSudo(msg) and ChCheck(msg) or text == "تعيين امر م٦" and SecondSudo(msg) and ChCheck(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل كليشة (م6) الان " ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل كليشة (م6) الان " ,  1, "md")
 DevSOFI:set(Virus..'SOFI:Help61'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
@@ -11199,61 +11199,61 @@ if VirusTeam == 'msg' then
 Dev_SOFI(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevSOFI:del(Virus..'SOFI:Help61'..msg.sender_user_id_)
 DevSOFI:set(Virus..'SOFI:Help6', text)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ الكليشه الجديده" ,  1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ الكليشه الجديده" ,  1, "md")
 return false end
 end
 if text == "م٦" and ChCheck(msg) or text == "م6" and ChCheck(msg) or text == "اوامر6" and ChCheck(msg) or text == "اوامر٦" and ChCheck(msg) then
 local Help = DevSOFI:get(Virus..'SOFI:Help6')
 local Text = [[
-᥀︙اوامر الاعضاء ↫ ⤈
+☭︙اوامر الاعضاء ↫ ⤈
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙السورس • موقعي • رتبتي • معلوماتي 
-᥀︙رقمي • لقبي • نبذتي • صلاحياتي • غنيلي
-᥀︙رسائلي • حذف رسائلي • اسمي • معرفي 
-᥀︙ايدي •ايديي • جهاتي • راسلني • الالعاب 
-᥀︙نقاطي • بيع نقاطي • القوانين • زخرفه 
-᥀︙رابط الحذف • نزلني • اطردني • المطور 
-᥀︙منو ضافني • مشاهدات المنشور • الرابط 
-᥀︙ايدي المجموعه • معلومات المجموعه 
-᥀︙نسبه الحب • نسبه الكره • نسبه الغباء 
-᥀︙نسبه الرجوله • نسبه الانوثه • التفاعل
+☭︙السورس • موقعي • رتبتي • معلوماتي 
+☭︙رقمي • لقبي • نبذتي • صلاحياتي • غنيلي
+☭︙رسائلي • حذف رسائلي • اسمي • معرفي 
+☭︙ايدي •ايديي • جهاتي • راسلني • الالعاب 
+☭︙نقاطي • بيع نقاطي • القوانين • زخرفه 
+☭︙رابط الحذف • نزلني • اطردني • المطور 
+☭︙منو ضافني • مشاهدات المنشور • الرابط 
+☭︙ايدي المجموعه • معلومات المجموعه 
+☭︙نسبه الحب • نسبه الكره • نسبه الغباء 
+☭︙نسبه الرجوله • نسبه الانوثه • التفاعل
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙لقبه + بالرد
-᥀︙كول + الكلمه
-᥀︙زخرفه + اسمك
-᥀︙برج + نوع البرج
-᥀︙معنى اسم + الاسم
-᥀︙بوسه • بوسها ↫ بالرد
-᥀︙احسب + تاريخ ميلادك
-᥀︙تفاعلي • تفاعله ↫ بالرد
-᥀︙صلاحياته ↫ بالرد • بالمعرف • بالايدي
-᥀︙ايدي • كشف  ↫ بالرد • بالمعرف • بالايدي
-᥀︙تحويل + بالرد ↫ صوره • ملصق • صوت • بصمه
-᥀︙انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
+☭︙لقبه + بالرد
+☭︙كول + الكلمه
+☭︙زخرفه + اسمك
+☭︙برج + نوع البرج
+☭︙معنى اسم + الاسم
+☭︙بوسه • بوسها ↫ بالرد
+☭︙احسب + تاريخ ميلادك
+☭︙تفاعلي • تفاعله ↫ بالرد
+☭︙صلاحياته ↫ بالرد • بالمعرف • بالايدي
+☭︙ايدي • كشف  ↫ بالرد • بالمعرف • بالايدي
+☭︙تحويل + بالرد ↫ صوره • ملصق • صوت • بصمه
+☭︙انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-᥀︙[Source Channel](https://t.me/L9L9L)
+☭︙[Source Channel](https://t.me/V_IRUS1)
 ]]
 Dev_SOFI(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end
 --     Source Virus     --
 if SecondSudo(msg) then
-if text == "تحديث السورس" and SourceCh(msg) or text == "تحديث سورس" and SourceCh(msg) or text == "↫ تحديث السورس ᥀" and SourceCh(msg) then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙جاري تحديث سورس فايروس', 1, 'md') 
+if text == "تحديث السورس" and SourceCh(msg) or text == "تحديث سورس" and SourceCh(msg) or text == "↫ تحديث السورس ☭" and SourceCh(msg) then 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙جاري تحديث سورس فايروس', 1, 'md') 
 os.execute('rm -rf Virus.lua') 
-os.execute('wget https://raw.githubusercontent.com/VirusTeam8/Virus/master/Virus.lua') 
+os.execute('wget https://raw.githubusercontent.com/SRC-ViRUS/Virus/main/Virus.lua') 
 dofile('Virus.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم التحديث الى الاصدار الجديد', 1, 'md') 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم التحديث الى الاصدار الجديد', 1, 'md') 
 end
-if text == 'تحديث' and SourceCh(msg) or text == 'تحديث البوت' and SourceCh(msg) or text == '↫ تحديث ᥀' and SourceCh(msg) then  
+if text == 'تحديث' and SourceCh(msg) or text == 'تحديث البوت' and SourceCh(msg) or text == '↫ تحديث ☭' and SourceCh(msg) then  
 dofile('Virus.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n        ( تم تحديث ملفات البوت )        \n\27[0;34;49m\n") 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم تحديث ملفات البوت", 1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم تحديث ملفات البوت", 1, "md")
 end
 --     Source Virus     --
-if text == 'نقل الاحصائيات' and ChCheck(msg) or text == '↫ نقل الاحصائيات ᥀' and ChCheck(msg) then
+if text == 'نقل الاحصائيات' and ChCheck(msg) or text == '↫ نقل الاحصائيات ☭' and ChCheck(msg) then
 local Users = DevSOFI:smembers(Virus.."User_Bot")
 local Groups = DevSOFI:smembers(Virus..'Chek:Groups')
 local Sudos = DevSOFI:smembers(Virus.."Sudo:User")
@@ -11303,28 +11303,28 @@ for i,Lock in pairs(LockList) do
 DevSOFI:set(Virus..Lock..Groups[i],true)
 end
 end
-send(msg.chat_id_, msg.id_,'᥀︙تم نقل ↫ '..#Groups..' مجموعه\n᥀︙تم نقل ↫ '..#Users..' مشترك\n᥀︙من التحديث القديم الى التحديث الجديد')
+send(msg.chat_id_, msg.id_,'☭︙تم نقل ↫ '..#Groups..' مجموعه\n☭︙تم نقل ↫ '..#Users..' مشترك\n☭︙من التحديث القديم الى التحديث الجديد')
 end
 end
 --     Source Virus     --
 if text and (text == 'حذف معلومات الترحيب' or text == 'مسح معلومات الترحيب') and SecondSudo(msg) and ChCheck(msg) then    
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم حذف معلومات الترحيب', 1, 'md')   
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم حذف معلومات الترحيب', 1, 'md')   
 DevSOFI:del(Virus..'SOFI:Text:BotWelcome')
 DevSOFI:del(Virus..'SOFI:Photo:BotWelcome')
 return false
 end 
-if text and (text == 'تفعيل ترحيب البوت' or text == 'تفعيل معلومات الترحيب' or text == '↫ تفعيل ترحيب البوت ᥀') and SecondSudo(msg) and ChCheck(msg) then    
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم تفعيل الترحيب عند اضافة البوت في المجموعه', 1, 'md')   
+if text and (text == 'تفعيل ترحيب البوت' or text == 'تفعيل معلومات الترحيب' or text == '↫ تفعيل ترحيب البوت ☭') and SecondSudo(msg) and ChCheck(msg) then    
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم تفعيل الترحيب عند اضافة البوت في المجموعه', 1, 'md')   
 DevSOFI:del(Virus..'SOFI:Lock:BotWelcome')
 return false
 end 
-if text and (text == 'تعطيل ترحيب البوت' or text == 'تعطيل معلومات الترحيب' or text == '↫ تعطيل ترحيب البوت ᥀') and SecondSudo(msg) and ChCheck(msg) then    
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم تعطيل الترحيب عند اضافة البوت في المجموعه', 1, 'md')   
+if text and (text == 'تعطيل ترحيب البوت' or text == 'تعطيل معلومات الترحيب' or text == '↫ تعطيل ترحيب البوت ☭') and SecondSudo(msg) and ChCheck(msg) then    
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم تعطيل الترحيب عند اضافة البوت في المجموعه', 1, 'md')   
 DevSOFI:set(Virus..'SOFI:Lock:BotWelcome',true)
 return false
 end 
-if text and (text == 'تغير معلومات الترحيب' or text == 'تغيير معلومات الترحيب' or text == '↫ تغير معلومات الترحيب ᥀') and SecondSudo(msg) and ChCheck(msg) then    
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙ارسل لي نص الترحيب', 1, 'md') 
+if text and (text == 'تغير معلومات الترحيب' or text == 'تغيير معلومات الترحيب' or text == '↫ تغير معلومات الترحيب ☭') and SecondSudo(msg) and ChCheck(msg) then    
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙ارسل لي نص الترحيب', 1, 'md') 
 DevSOFI:del(Virus..'SOFI:Text:BotWelcome')
 DevSOFI:del(Virus..'SOFI:Photo:BotWelcome')
 DevSOFI:set(Virus.."SOFI:Set:BotWelcome"..msg.sender_user_id_,"Text") 
@@ -11332,74 +11332,74 @@ return false
 end 
 if text and DevSOFI:get(Virus.."SOFI:Set:BotWelcome"..msg.sender_user_id_) == 'Text' then 
 if text and text:match("^الغاء$") then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء الامر", 1, "md") 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء الامر", 1, "md") 
 DevSOFI:del(Virus.."SOFI:Set:BotWelcome"..msg.sender_user_id_)   
 return false
 end 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ النص ارسل لي صورة الترحيب\n᥀︙ارسل ↫ الغاء لحفظ النص فقط", 1, 'md')   
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ النص ارسل لي صورة الترحيب\n☭︙ارسل ↫ الغاء لحفظ النص فقط", 1, 'md')   
 DevSOFI:set(Virus.."SOFI:Text:BotWelcome",text) 
 DevSOFI:set(Virus.."SOFI:Set:BotWelcome"..msg.sender_user_id_,"Photo") 
 return false 
 end 
 if DevSOFI:get(Virus.."SOFI:Set:BotWelcome"..msg.sender_user_id_) == 'Photo' then 
 if text and text:match("^الغاء$") then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ النص والغاء حفظ صورة الترحيب", 1, "md") 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ النص والغاء حفظ صورة الترحيب", 1, "md") 
 DevSOFI:del(Virus.."SOFI:Set:BotWelcome"..msg.sender_user_id_)    
 return false
 end 
 if msg.content_.photo_ and msg.content_.photo_.sizes_[1] then   
 DevSOFI:set(Virus.."SOFI:Photo:BotWelcome",msg.content_.photo_.sizes_[1].photo_.persistent_id_)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حفظ النص وصورة الترحيب", 1, 'md')   
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حفظ النص وصورة الترحيب", 1, 'md')   
 DevSOFI:del(Virus.."SOFI:Set:BotWelcome"..msg.sender_user_id_)   
 end
 return false
 end
 --     Source Virus     --
-if text and text:match("^ضع كليشه المطور$") or text and text:match("^وضع كليشه المطور$") or text and text:match("^تغيير كليشه المطور$") or text and text:match("^↫ تغيير كليشه المطور ᥀$") and ChCheck(msg) then
+if text and text:match("^ضع كليشه المطور$") or text and text:match("^وضع كليشه المطور$") or text and text:match("^تغيير كليشه المطور$") or text and text:match("^↫ تغيير كليشه المطور ☭$") and ChCheck(msg) then
 if not Sudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط ', 1, 'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙ارسل كليشة المطور الان ", 1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙ارسل كليشة المطور الان ", 1, "md")
 DevSOFI:setex(Virus.."SOFI:DevText"..msg.chat_id_..":" .. msg.sender_user_id_, 300, true)
 end end
 if text and text:match("^مسح كليشه المطور$") or text and text:match("^حذف كليشه المطور$") then
 if not SecondSudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط ', 1, 'md')
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم حذف كليشة المطور", 1, "md")
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم حذف كليشة المطور", 1, "md")
 DevSOFI:del(Virus.."DevText")
 end end
 --     Source Virus     --
 if DevSOFI:get(Virus.."textch:user"..msg.chat_id_.."" .. msg.sender_user_id_) then 
 if text and text:match("^الغاء$") then 
-Dev_SOFI(msg.chat_id_, msg.id_, 1, "᥀︙تم الغاء الامر", 1, "md") 
+Dev_SOFI(msg.chat_id_, msg.id_, 1, "☭︙تم الغاء الامر", 1, "md") 
 DevSOFI:del(Virus.."textch:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 return false  end 
 DevSOFI:del(Virus.."textch:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 local texxt = string.match(text, "(.*)") 
 DevSOFI:set(Virus..'SOFI:ChText',texxt)
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙تم تغيير كليشة الاشتراك الاجباري', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙تم تغيير كليشة الاشتراك الاجباري', 1, 'md')
 end
-if text and text:match("^↫ تغير كليشه الاشتراك ᥀$") and Sudo(msg)  or text and text:match("^تغيير كليشه الاشتراك$") and Sudo(msg) then  
+if text and text:match("^↫ تغير كليشه الاشتراك ☭$") and Sudo(msg)  or text and text:match("^تغيير كليشه الاشتراك$") and Sudo(msg) then  
 DevSOFI:setex(Virus.."textch:user"..msg.chat_id_.."" .. msg.sender_user_id_, 300, true)   
-local text = '᥀︙حسنا ارسل كليشة الاشتراك الجديده'  
+local text = '☭︙حسنا ارسل كليشة الاشتراك الجديده'  
 Dev_SOFI(msg.chat_id_, msg.id_, 1,text, 1, 'md') 
 end
-if text == "حذف كليشه الاشتراك الاجباري" or text == "↫ حذف كليشه الاشتراك ᥀" then  
+if text == "حذف كليشه الاشتراك الاجباري" or text == "↫ حذف كليشه الاشتراك ☭" then  
 if not Sudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط ', 1, 'md')
 else
 DevSOFI:del(Virus..'SOFI:ChText')
-textt = "᥀︙تم حذف كليشة الاشتراك الاجباري"
+textt = "☭︙تم حذف كليشة الاشتراك الاجباري"
 Dev_SOFI(msg.chat_id_, msg.id_, 1,textt, 1, 'md') 
 end end
-if text == 'كليشه الاشتراك' or text == 'جلب كليشه الاشتراك' or text == '↫ كليشه الاشتراك ᥀' then
+if text == 'كليشه الاشتراك' or text == 'جلب كليشه الاشتراك' or text == '↫ كليشه الاشتراك ☭' then
 if not SecondSudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط ', 1, 'md')
 else
 local chtext = DevSOFI:get(Virus.."SOFI:ChText")
 if chtext then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙كليشة الاشتراك ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n['..chtext..']', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙كليشة الاشتراك ↫ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n['..chtext..']', 1, 'md')
 else
 if DevSOFI:get(Virus.."SOFI:ChId") then
 local Check = https.request('https://api.telegram.org/bot'..TokenBot..'/getChat?chat_id='..DevSOFI:get(Virus.."SOFI:ChId"))
@@ -11409,44 +11409,44 @@ User = "https://t.me/"..GetInfo.result.username
 else
 User = GetInfo.result.invite_link
 end
-Text = "*᥀︙عذرا لاتستطيع استخدام البوت !\n᥀︙عليك الاشتراك في القناة اولا :*"
+Text = "*☭︙عذرا لاتستطيع استخدام البوت !\n☭︙عليك الاشتراك في القناة اولا :*"
 keyboard = {} 
 keyboard.inline_keyboard = {{{text=GetInfo.result.title,url=User}}} 
 Msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙لم يتم تعيين قناة الاشتراك الاجباري \n᥀︙ارسل ↫ تعيين قناة الاشتراك للتعيين ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙لم يتم تعيين قناة الاشتراك الاجباري \n☭︙ارسل ↫ تعيين قناة الاشتراك للتعيين ', 1, 'md')
 end end end end
 --     Source Virus     --
-if text == 'القناة' and SourceCh(msg) or text == 'قناة السورس' and SourceCh(msg) or text == 'قناه السورس' and SourceCh(msg) or text == 'قنات السورس' and SourceCh(msg) or text == '↫ قناة السورس ᥀' and SourceCh(msg) then 
+if text == 'القناة' and SourceCh(msg) or text == 'قناة السورس' and SourceCh(msg) or text == 'قناه السورس' and SourceCh(msg) or text == 'قنات السورس' and SourceCh(msg) or text == '↫ قناة السورس ☭' and SourceCh(msg) then 
 Text = [[
-᥀︙[قناة السورس](https://t.me/L9L9L)
+☭︙[قناة السورس](https://t.me/V_IRUS1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ قناة السورس',url="t.me/L9L9L"}},
+{{text = '☭ قناة السورس',url="t.me/V_IRUS1"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/L9L9L&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/V_IRUS1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 --     Source Virus     --
-if text == "مبرمج السورس" and SourceCh(msg) or text == "مطور السورس" and SourceCh(msg) or text == "وين المبرمج" and SourceCh(msg) or text == "المبرمج" and SourceCh(msg) or text == "↫ مبرمج السورس ᥀" and SourceCh(msg) then 
+if text == "مبرمج السورس" and SourceCh(msg) or text == "مطور السورس" and SourceCh(msg) or text == "وين المبرمج" and SourceCh(msg) or text == "المبرمج" and SourceCh(msg) or text == "↫ مبرمج السورس ☭" and SourceCh(msg) then 
 Text = [[
-᥀︙[مبرمج السورس](https://t.me/tsttt)
+☭︙[مبرمج السورس](https://t.me/OOO0OOQ)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ مبرمج السورس',url="t.me/tsttt"}},
+{{text = '☭ مبرمج السورس',url="t.me/OOO0OOQ"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/FFFGF&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 --     Source Virus     --
-if text == 'معلومات السيرفر' or text == 'السيرفر' or text == '↫ السيرفر ᥀' then 
+if text == 'معلومات السيرفر' or text == 'السيرفر' or text == '↫ السيرفر ☭' then 
 if not SOFISudo(msg) then
-Dev_SOFI(msg.chat_id_, msg.id_, 1, '᥀︙للمطور الاساسي فقط ', 1, 'md')
+Dev_SOFI(msg.chat_id_, msg.id_, 1, '☭︙للمطور الاساسي فقط ', 1, 'md')
 else
 Dev_SOFI(msg.chat_id_, msg.id_, 1, io.popen([[
 LinuxVersion=`lsb_release -ds`
@@ -11454,12 +11454,12 @@ MemoryUsage=`free -m | awk 'NR==2{printf "%s/%sMB {%.2f%%}\n", $3,$2,$3*100/$2 }
 HardDisk=`df -lh | awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
 Percentage=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
 UpTime=`uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes"}'`
-echo '᥀︙نظام التشغيل ↫ ⤈\n`'"$LinuxVersion"'`' 
-echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙الذاكره العشوائيه ↫ ⤈\n`'"$MemoryUsage"'`'
-echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙وحدة التخزين ↫ ⤈\n`'"$HardDisk"'`'
-echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙المعالج ↫ ⤈\n`'"`grep -c processor /proc/cpuinfo`""Core ~ {$Percentage%} "'`'
-echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙الدخول ↫ ⤈\n`'`whoami`'`'
-echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙مدة تشغيل السيرفر ↫ ⤈\n`'"$UpTime"'`'
+echo '☭︙نظام التشغيل ↫ ⤈\n`'"$LinuxVersion"'`' 
+echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙الذاكره العشوائيه ↫ ⤈\n`'"$MemoryUsage"'`'
+echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙وحدة التخزين ↫ ⤈\n`'"$HardDisk"'`'
+echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙المعالج ↫ ⤈\n`'"`grep -c processor /proc/cpuinfo`""Core ~ {$Percentage%} "'`'
+echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙الدخول ↫ ⤈\n`'`whoami`'`'
+echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙مدة تشغيل السيرفر ↫ ⤈\n`'"$UpTime"'`'
 ]]):read('*a'), 1, 'md')
 end
 end
@@ -11480,10 +11480,10 @@ elseif result.content_.ID == "MessageVideo" then Media = 'الفيديو'
 elseif result.content_.ID == "MessageAnimation" then Media = 'المتحركه'
 end
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,dp) 
-local SOFIname = '᥀︙العضو ↫ ['..dp.first_name_..'](tg://user?id='..dp.id_..')'
-local SOFIid = '᥀︙ايديه ↫ `'..dp.id_..'`'
-local SOFItext = '᥀︙قام بالتعديل على '..Media
-local SOFItxt = '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n᥀︙تعالو يامشرفين اكو مخرب'
+local SOFIname = '☭︙العضو ↫ ['..dp.first_name_..'](tg://user?id='..dp.id_..')'
+local SOFIid = '☭︙ايديه ↫ `'..dp.id_..'`'
+local SOFItext = '☭︙قام بالتعديل على '..Media
+local SOFItxt = '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n☭︙تعالو يامشرفين اكو مخرب'
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,SOFI) 
 local admins = SOFI.members_  
 text = '\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
@@ -11573,8 +11573,8 @@ end
 --     Source Virus     --
 end 
 ------------------------------------------------
--- This Source Was Developed By (SOFI) @tsttt.--
---   This Is The Source Channel @L9L9L .   --
---                - Virus -                 --
---        -- https://t.me/L9L9L --         --
+-- This Source Was Developed By (SOFI) @s00f4.--
+--   This Is The Source Channel @V_IRUS1 .    --
+--                - Virus -                   --
+--        -- https://t.me/V_IRUS1 --          --
 ------------------------------------------------    
